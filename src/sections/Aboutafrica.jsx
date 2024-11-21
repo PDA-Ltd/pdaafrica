@@ -16,7 +16,8 @@ const Aboutafrica = () => {
             <span className="text-orange"> Mission </span>
             {/* <span className='text-coral-red'>Quality </span> Shoes */}
           </h2>
-          <p className="mt-4 lg:max-w-lg text-base max-sm:text-sm md:text-sm font-poppins leading-6">
+          {/* <p className=" lg:max-w-lg text-base max-sm:text-sm md:text-sm "> */}
+          <p className="mt-4 text-xl font-poppins leading-6 lg:max-w-lg">
             PDA Africa works with communities, governments, local assemblies and
             like-minded partners to facilitate community-led development using
             sustainable, innovative and participatory approaches
@@ -51,16 +52,16 @@ const Aboutafrica = () => {
             <span className="text-orange"> Vision </span>
             {/* <span className='text-coral-red'>Quality </span> Shoes */}
           </h2>
-          <p className="mt-4 lg:max-w-lg text-base font-poppins leading-6 max-sm:text-sm md:text-sm">
+          <p className="mt-4 lg:max-w-lg text-xl font-poppins leading-6 ">
             We envisage countries where communities have the capacity to plan
             and implement their own development agendas
           </p>
-          <p className="mt-6 lg:max-w-lg text-base font-poppins leading-6 max-sm:text-sm md:text-sm">
+          <p className="mt-6 lg:max-w-lg text-xl font-poppins leading-6 ">
             We envisage a community where vulnerable, marginalized and minority
             groups participate actively in the development process for an
             inclusive society
           </p>
-          <p className="mt-6 lg:max-w-lg text-base font-poppins leading-6 max-sm:text-sm md:text-sm">
+          <p className="mt-6 lg:max-w-lg text-xl font-poppins leading-6 ">
             We envisage a community where the youth are empowered to make
             positive impact on society
           </p>

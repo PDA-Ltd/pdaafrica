@@ -243,7 +243,7 @@ const CCLP = () => {
             alt="Reading Festival"
             className="mx-auto rounded-lg shadow-lg w-11/12 md:w-8/12 mb-10"
           />
-          <div className="px-4 ml-10 max-lg:ml-20 animate-slide-in max-sm:ml-5 max-lg:mt-10 mb-5">
+          <div className="px-4 ml-0 max-lg:ml-20 animate-slide-in max-sm:ml-5 max-lg:mt-10 mb-5">
             <ul className="list-disc list-inside text-gray-700 leading-relaxed font-poppins">
               <li className="flex items-center">
                 <FaSchool className="mr-2 text-orange" /> Renovation of 2

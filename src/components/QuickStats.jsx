@@ -117,13 +117,16 @@ import CountUp from "react-countup"; // Animated Numbers
 const QuickStats = () => {
   return (
     <section className="py-12 bg-gray-100 font-poppins">
-      <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-8">
+      <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-4">
         About the Project
       </h2>
       <p className="text-gray-600 mt-4 px-4 md:px-12 font-poppins text-base text-center ">
         A 2-year initiative by Participatory Development Associates (PDA) in
-        partnership with Magic Libraries Foundation. It aims to promote reading
-        literacy among children in cocoa-growing communities in Ghana.
+        partnership with Magic Libraries Foundation.
+      </p>
+      <p className="text-gray-600 mt-2 px-4 md:px-12 font-poppins text-base text-center mb-4 ">
+        It aims to promote reading literacy among children in cocoa-growing
+        communities in Ghana.
       </p>
 
       {/* Flex container to display stats side-by-side */}

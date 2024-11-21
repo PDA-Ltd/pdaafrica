@@ -563,7 +563,7 @@ const Volunteer = () => {
           <div className="bg-white p-8 rounded-lg max-w-lg w-full relative">
             <button
               onClick={handleClose}
-              className="absolute top-4 right-4 text-red-500"
+              className="absolute top-4 right-4 text-red-500 "
             >
               <img src={close} alt="close" height={20} width={20} />
             </button>

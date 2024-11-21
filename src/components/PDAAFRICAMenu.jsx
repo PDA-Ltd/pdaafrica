@@ -515,11 +515,11 @@ const PDAAFRICAMenu = () => {
       <nav className="max-w-full shadow-3xl bg-white flex justify-around items-center relative z-10">
         <a href="/pdaafrica">
           <img
-            className=""
+            className="pt-5 pb-5"
             src={pdaafricalogo}
             alt="Logo"
-            width={90}
-            height={5}
+            width={100}
+            height={15}
           />
         </a>
 

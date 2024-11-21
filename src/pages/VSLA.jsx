@@ -113,9 +113,9 @@ const VSLA = () => {
         <div className="py-16 bg-gray-100 ">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">Who We Are</h2>
-            <p className="text-lg text-gray-700">
+            <p className="text-base text-gray-700">
               PDA has a proven track record of partnering with communities and
-              other development organizations...
+              other development organizations.
             </p>
             <div className="mt-6 flex justify-center space-x-8">
               <div>
@@ -134,12 +134,12 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-16 bg-white mx-10">
+        <div className="py-10 bg-white mx-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">
               Our VSLA+ Model
             </h2>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-base text-gray-700 mb-8">
               PDA adopts a unique integrated VSLA (VSLA+) model as a
               self-facilitated platform to plug in sustainable development
               interventions. Our diverse and customizable VSLA+ modules and
@@ -153,7 +153,7 @@ const VSLA = () => {
                 alt="VSLA+ Model Infographic"
                 className="mx-auto max-sm:w-auto shadow-lg rounded-lg"
               />
-              <p className="text-gray-600 mt-4">
+              <p className="text-gray-600 mt-4 italic">
                 The VSLA+ model incorporates interventions such as financial
                 literacy, gender sensitivity training, and child labor
                 remediation to create a sustainable impact.
@@ -162,7 +162,7 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-16 mx-10">
+        <div className="py-6 mx-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">
               Our Impact and Partnerships
@@ -174,7 +174,7 @@ const VSLA = () => {
               commodity supply chains and communities over the last 21 years.
             </p>
 
-            <div className="flex overflow-hidden group justify-center">
+            <div className="flex overflow-hidden group justify-center mt-10">
               <div className="flex animate-loop-scroll space-x-10 group-hover:paused relative">
                 {partners.map((partner, index) => (
                   <img
