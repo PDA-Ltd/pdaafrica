@@ -393,7 +393,7 @@ export const imageArray = [
       "A not-for-profit organisation which is responsible for the co-creation and design of community-led and community-driven development interventions with governments, the private sector and international development partners.",
   },
   {
-    src: Image3,
+    src: Image5,
     alt: "Image 3",
     title: "",
     description:
@@ -407,7 +407,7 @@ export const imageArray = [
       "We support local governance and, for that matter, decentralization programs",
   },
   {
-    src: Image5,
+    src: Image3,
     alt: "Image 5",
     title: "",
     description:

@@ -35,11 +35,11 @@ const successStories = [
 const SuccessStories = () => {
   const settings = { dots: true, infinite: true, autoplay: true, speed: 500 };
   return (
-    <section className="py-8 px-8 bg-gray-100 text-center">
+    <section className="py-8 px-8 bg-white text-center">
       <Slider {...settings}>
         {successStories.map((story, index) => (
           <div key={index} className="p-8">
-            <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <div className="max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
               <p className="text-orange">{story}</p>
             </div>
           </div>
@@ -110,7 +110,7 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-16 bg-gray-100 ">
+        <div className="py-16 bg-white ">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">Who We Are</h2>
             <p className="text-base text-gray-700">
@@ -134,7 +134,7 @@ const VSLA = () => {
           </div>
         </div>
 
-        <div className="py-10 bg-white mx-10">
+        <div className="py-10 bg-gray-100 px-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-red">
               Our VSLA+ Model
@@ -250,7 +250,7 @@ const VSLA = () => {
           </div>
         </div>
         {/* Success Stories Slider */}
-        <section className="py-16 px-8 bg-gray-100 text-center">
+        <section className="py-16 px-8 bg-white text-center">
           <h2 className="text-3xl font-bold text-red">Stories of Change</h2>
           <p className="mt-6 text-gray-700">
             Read about the real impact of our project on the lives of children

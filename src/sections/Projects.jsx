@@ -51,21 +51,21 @@ import { projects } from "../constants";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Projects = () => {
-  const [activeForm, setActiveForm] = useState(null);
-  const navigate = useNavigate(); // Create navigate function
+  // const [activeForm, setActiveForm] = useState(null);
+  // const navigate = useNavigate(); // Create navigate function
 
-  const handleButtonClick = (link) => {
-    setActiveForm(link);
-  };
+  // const handleButtonClick = (link) => {
+  //   setActiveForm(link);
+  // };
 
-  const handleClose = () => {
-    setActiveForm(null);
-  };
+  // const handleClose = () => {
+  //   setActiveForm(null);
+  // };
 
   // Function to handle navigation
-  const handleDashboardClick = () => {
-    navigate("/pdaafrica/dataanalytics"); // Navigate to the desired route
-  };
+  // const handleDashboardClick = () => {
+  //   navigate("/pdaafrica/dataanalytics"); // Navigate to the desired route
+  // };
 
   return (
     <section id="projects" className="max-container mx-auto px-4 py-8">
@@ -94,16 +94,17 @@ const Projects = () => {
           DASHBOARD
         </button>
       </div> */}
-      {activeForm && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg">
-            {/* Render the active form here based on activeForm */}
-            <Button onClick={handleClose}>Close</Button>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
+
+// {activeForm && (
+//   <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50">
+//     <div className="bg-white p-8 rounded-lg">
+//       {/* Render the active form here based on activeForm */}
+//       <Button onClick={handleClose}>Close</Button>
+//     </div>
+//   </div>
+// )}
 
 export default Projects;

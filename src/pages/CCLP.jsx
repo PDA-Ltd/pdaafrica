@@ -182,9 +182,12 @@ import ProjectStatus from "../components/ProjectStatus";
 import { boatengnew, boatengold, asuaold, asuanew } from "../assets/images";
 
 const successStories = [
-  "“Joining the VSLA group has helped me save for my children’s education.” – Cocoa Farmer",
-  "“With the project’s support, I now understand the importance of keeping my children in school.” – Parent",
-  "“The training sessions have changed our approach to child labor.” – Community Leader",
+  "“Reading interest has improved to the point that some children come to my house to call me for us to have reading sessions. On a scale of 1-10, I would say the reading  improvement is at 7.” – Patron, Asempaneye",
+  "“Since our community received the story books, we have experienced an increase in reading interest at the individual level . Even children who did not know how to read have been inspired to read.” – Patron,Abesewa",
+  "“For children who would not pick a book because they could not read before now  enjoy  reading club session especially to look at the beautiful pictures in the story books. Generally reading interest has improved tremendously.” – Patron, Potrikrom",
+  "“The quiz has given children something to focus on in the short-term. Now they learn and read with expectation.” – Patron, Kunsu",
+  "“Though we had a library, reading  interest was low but now the interest has increased  from 2 to 7 on a scale of 1-10.” – Patron, Asuadei",
+  "“Through this project, I have had the opportunity to mentor some teachers in the community school especially those who have volunteered to support me with facilitating the reading club session.” – Patron, Duntan Nkwanta",
 ];
 
 const SuccessStories = () => {
@@ -233,7 +236,7 @@ const CCLP = () => {
       <QuickStats />
 
       {/* Project Components Section */}
-      <div className="pt-5 ">
+      <div className="pt-5 bg-gray-100">
         <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8 justify-center">
           Project Objectives
         </h2>
@@ -275,7 +278,7 @@ const CCLP = () => {
       </div>
 
       {/* Project Goals Section */}
-      <div className="py-12 bg-gray-100">
+      <div className="py-12 bg-white">
         <h2 className="font-poppins font-semibold text-2xl text-center text-red mb-8">
           Rationale for Reading Festival & Competitions
         </h2>
@@ -311,7 +314,7 @@ const CCLP = () => {
       <ProjectStatus />
 
       {/* Reading Competition Flow Section */}
-      <div className="py-12  bg-gray-100">
+      <div className="py-12  bg-white">
         <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-8 mx-auto">
           Reading Festival & Competitions Structure
         </h2>
@@ -333,7 +336,7 @@ const CCLP = () => {
       </div>
 
       {/* Success Stories Slider */}
-      <section className="py-16 px-8 text-center">
+      <section className="py-16 px-8 text-center bg-gray-100">
         <h2 className="text-3xl font-bold text-red">Stories of Change</h2>
         <p className="mt-6 text-gray-700">
           Read about the real impact of our project on the lives of children and

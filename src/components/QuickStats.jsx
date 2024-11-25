@@ -116,7 +116,7 @@ import CountUp from "react-countup"; // Animated Numbers
 
 const QuickStats = () => {
   return (
-    <section className="py-12 bg-gray-100 font-poppins">
+    <section className="py-12 bg-white font-poppins">
       <h2 className="font-poppins font-semibold text-3xl text-center text-red mb-4">
         About the Project
       </h2>
