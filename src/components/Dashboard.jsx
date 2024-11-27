@@ -601,7 +601,7 @@
 import React from "react";
 const Dashboard = () => (
   <iframe
-    src="https://vsla-dashboards.herokuapp.com/"
+    src="https://vsla-dashboards.herokuapp.com/summary"
     style={{ width: "100%", height: "100vh", border: "none" }}
     title="Dashboard"
   ></iframe>
