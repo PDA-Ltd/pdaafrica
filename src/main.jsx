@@ -22,6 +22,9 @@ import OurImpact from "./pages/OurImpact.jsx";
 import Publications from "./pages/Publications.jsx";
 import VidPic from "./pages/VidPic.jsx";
 import Podcast from "./pages/Podcast.jsx";
+import CCLPDashboard from "./pages/CCLPDashboard.jsx";
+import VSLADashboard from "./pages/VSLADashboard.jsx";
+import NCLRDashboard from "./pages/NCLRDashboard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,18 @@ const router = createBrowserRouter([
       {
         path: "/pdaafrica/dataanalytics",
         element: <DataAnalytics />,
+      },
+      {
+        path: "/pdaafrica/dataanalytics/cclp-dashboard",
+        element: <CCLPDashboard />,
+      },
+      {
+        path: "/pdaafrica/dataanalytics/vsla-dashboard",
+        element: <VSLADashboard />,
+      },
+      {
+        path: "/pdaafrica/dataanalytics/nclr-dashboard",
+        element: <NCLRDashboard />,
       },
       {
         path: "/pdaafrica/cocoa-communities-library-project",

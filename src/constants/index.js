@@ -421,7 +421,28 @@ export const africaLinks = [
   { href: "/pdaafrica#gallery", label: "Gallery" },
   { href: "/pdaafrica#testimonials", label: "Testimonials" },
   { href: "/pdaafrica#get-involved", label: "Get Involved" },
-  { href: "/pdaafrica/dataanalytics", label: "Impact" },
+  {
+    href: "#",
+    label: "Impact",
+    submenu: [
+      {
+        href: "/pdaafrica/dataanalytics/cclp-dashboard",
+        label: "CCLP Dashboard ",
+      },
+      {
+        href: "/pdaafrica/dataanalytics/vsla-dashboard",
+        label: "VSLA Dashboard",
+      },
+      {
+        href: "/pdaafrica/dataanalytics/nclr-dashboard",
+        label: "NCLR Dashboard",
+      },
+      // {
+      //   href: "/pdaafrica/dataanalytics",
+      //   label: "Summary",
+      // },
+    ],
+  },
   { href: "/pdaafrica#contact-us", label: "Contact Us" },
 ];
 
