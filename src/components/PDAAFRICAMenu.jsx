@@ -394,14 +394,23 @@ const PDAAFRICAMenu = () => {
             {africaLinks.map((item) => (
               <li key={item.label}>
                 <div className="flex flex-col">
-                  <div className="flex justify-between items-center">
-                    <span
-                      onClick={() => handleMobileMenuClick(item.label)}
-                      className="font-poppins text-xl text-slate-gray hover:scale-110 hover:text-orange cursor-pointer"
-                    >
-                      {item.label}
-                    </span>
-                  </div>
+                  <Link
+                    to={item.href}
+                    onClick={() => {
+                      // Check if the item has a submenu
+                      if (item.submenu) {
+                        // If it has a submenu, just handle the submenu toggle
+                        handleMobileMenuClick(item.label);
+                      } else {
+                        // If it doesn't have a submenu, close the navigation
+                        toggleNavigation();
+                      }
+                    }}
+                    className="font-poppins text-xl text-slate-gray hover:scale-110 hover:text-orange cursor-pointer"
+                  >
+                    {item.label}
+                  </Link>
+
                   {/* Mobile Submenu */}
                   {item.submenu && openMobileSubmenu === item.label && (
                     <ul className="pl-4 mt-2 space-y-2">
@@ -409,7 +418,10 @@ const PDAAFRICAMenu = () => {
                         <li key={subItem.label}>
                           <Link
                             to={subItem.href}
-                            onClick={() => toggleNavigation()} // Close menu on submenu click
+                            onClick={() => {
+                              // Close menu on submenu click
+                              toggleNavigation();
+                            }}
                             className="font-poppins text-base text-black hover:scale-110 hover:text-orange"
                           >
                             {subItem.label}
