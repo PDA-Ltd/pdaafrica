@@ -376,13 +376,15 @@ const PDAAFRICAMenu = () => {
             <div className="spinner diagonal part-1 w-full h-[3px] bg-black absolute"></div>
             <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[10px]"></div>
             <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[10px]"></div>
-            <p className="font-poppins font-medium items-center mt-2">Menu</p>
+            <p className="font-poppins font-medium text-sm items-center mt-2">
+              Menu
+            </p>
           </label>
         </div>
 
         {/* Mobile Menu Content */}
         <div
-          className={`absolute left-0 w-full bg-white bg-opacity-80 transform transition-transform duration-1000 ease-in-out ${
+          className={`absolute left-0 w-full bg-white bg-opacity-95 transform transition-transform duration-1000 ease-in-out ${
             openNavigation ? "translate-y-[0]" : "translate-y-[-200%]"
           }`}
           style={{

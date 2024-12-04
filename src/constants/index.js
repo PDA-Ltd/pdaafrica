@@ -435,7 +435,7 @@ export const africaLinks = [
       },
       {
         href: "/pdaafrica/dataanalytics/nclr-dashboard",
-        label: "NCLR Dashboard",
+        label: "Child Abuse Tracker-Nyonkopa",
       },
       // {
       //   href: "/pdaafrica/dataanalytics",
