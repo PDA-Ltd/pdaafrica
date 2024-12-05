@@ -3,7 +3,7 @@ import { footerlogo, line } from "../assets/images";
 
 const Footer = () => {
   return (
-    <footer className="max-container min-h-full ">
+    <footer id="footer" className="max-container min-h-full ">
       <div className="flex flex-row justify-between">
         <a
           href="https://pdaghana.com/"

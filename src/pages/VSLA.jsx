@@ -16,6 +16,7 @@ import {
   sustainable,
   finan,
 } from "../assets/images";
+import Tab from "../components/Tab";
 
 // const ProjectCard = ({ title, description, location, officers }) => (
 //   <div className="border rounded-lg p-6 shadow-md">
@@ -194,6 +195,12 @@ const VSLA = () => {
                 ))}
               </div>
             </div>
+
+            <a href="https://vsla-dashboards.herokuapp.com/login">
+              <div className="flex justify-center mt-6">
+                <Tab label="Dashboard" />
+              </div>
+            </a>
           </div>
         </div>
 

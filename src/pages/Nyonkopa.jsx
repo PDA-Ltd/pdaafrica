@@ -387,6 +387,18 @@ const Nyonkopa = () => {
         </p>
         <SuccessStories />
       </section>
+      <section>
+        <div className="flex justify-center align-middle p-3">
+          <h1 className="font-poppins text-3xl font-bold text-red">
+            Child Abuse Tracker
+          </h1>
+        </div>
+        <iframe
+          src="https://stopviolenceagainstchildren.ushahidi.io/map"
+          style={{ width: "100%", height: "100vh", border: "none" }}
+          title="Dashboard"
+        ></iframe>
+      </section>
 
       {/* Get Involved Section */}
 

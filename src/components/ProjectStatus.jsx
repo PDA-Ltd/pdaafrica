@@ -1,6 +1,7 @@
 import React from "react";
 import { asuaold, asuanew, boatengold, boatengnew } from "../assets/images";
 import { FaCheckCircle } from "react-icons/fa";
+import Tab from "../components/Tab";
 
 const ProjectStatus = () => {
   return (
@@ -125,6 +126,11 @@ const ProjectStatus = () => {
           </div>
         </div>
       </div>
+      <a href="https://vsla-dashboards.herokuapp.com/magic-library">
+        <div className="flex justify-center mt-6 rounded-xl">
+          <Tab label="Dashboard" />
+        </div>
+      </a>
     </section>
   );
 };
