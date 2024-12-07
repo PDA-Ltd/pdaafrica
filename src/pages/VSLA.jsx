@@ -75,13 +75,9 @@ const partners = [
   { imgURL: cocoa, name: "Cocoa" },
   { imgURL: coram, name: "Coram" },
   { imgURL: kokoo, name: "Kokoo" },
-  { imgURL: mastercard, name: "Mastercard" },
   { imgURL: opm, name: "OPM" },
   { imgURL: pandemics, name: "Pandemics" },
   { imgURL: root, name: "Root" },
-  { imgURL: sabre, name: "Sabre" },
-  { imgURL: schol, name: "Schol" },
-  { imgURL: star, name: "Star" },
   { imgURL: sustainable, name: "Sustainable" },
 ];
 
