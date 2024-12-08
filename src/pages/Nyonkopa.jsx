@@ -286,21 +286,21 @@ const Nyonkopa = () => {
         <p className="mt-6 text-gray-700">
           The Nyonkopa Child Labor Remediation Project is a 2-year initiative
           between Barry-Callebaut and Participatory Development Associates
-          (PDA). It aims to remediate child labor for 6,678 children across 277
+          (PDA). It aims to remediate child labor for 10,436 children across 400
           communities.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-28">
           <div className="flex flex-col items-center max-w-xs">
             <FaChild className="h-10 w-10  text-orange mb-4" />
-            <p className="font-bold ">6,678 Children in Remediation</p>
+            <p className="font-bold ">10,436 Children in Remediation</p>
           </div>
           <div className="flex flex-col items-center max-w-xs">
             <FaMapMarkerAlt className="h-10 w-10 text-orange mb-4" />
-            <p className="font-bold">277 Communities Covered</p>
+            <p className="font-bold">400 Communities Covered</p>
           </div>
           <div className="flex flex-col items-center max-w-xs">
             <FaUsers className="h-10 w-10 text-orange mb-4" />
-            <p className="font-bold">20 VSLA Groups Formed</p>
+            <p className="font-bold">46 VSLA Groups Formed</p>
           </div>
         </div>
       </section>
