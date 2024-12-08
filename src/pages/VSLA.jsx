@@ -15,6 +15,9 @@ import {
   star,
   sustainable,
   finan,
+  sucden,
+  lindt,
+  nestle,
 } from "../assets/images";
 import Tab from "../components/Tab";
 
@@ -77,8 +80,9 @@ const partners = [
   { imgURL: kokoo, name: "Kokoo" },
   { imgURL: opm, name: "OPM" },
   { imgURL: pandemics, name: "Pandemics" },
-  { imgURL: root, name: "Root" },
-  { imgURL: sustainable, name: "Sustainable" },
+  { imgURL: sucden, name: "Sucden" },
+  { imgURL: lindt, name: "Lindt" },
+  { imgURL: nestle, name: "Nestle" },
 ];
 
 const VSLA = () => {

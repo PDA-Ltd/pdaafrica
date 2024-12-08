@@ -131,6 +131,9 @@ import asuaold from "./asuaold.jpg";
 import asuanew from "./asuanew.jpg";
 import boatengold from "./boatengold.jpg";
 import boatengnew from "./boatengnew.jpg";
+import lindt from "./lindt.png";
+import nestle from "./nestle.png";
+import sucden from "./sucden.jpg";
 
 export {
   image1,
@@ -257,4 +260,7 @@ export {
   boatengold,
   boatengnew,
   club,
+  sucden,
+  lindt,
+  nestle,
 };
