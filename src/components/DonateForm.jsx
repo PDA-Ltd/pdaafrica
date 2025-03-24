@@ -675,7 +675,7 @@ const DonateForm = () => {
     );
     if (userConfirmed) {
       setIsFormVisible(false); // Set form visibility to false
-      navigate("/pdaafrica"); // Redirect to homepage
+      navigate("/"); // Redirect to homepage
     }
   };
 
@@ -692,7 +692,7 @@ const DonateForm = () => {
     text: "Donate Now",
     onSuccess: (response) => {
       alert("Thank you for your donation!");
-      navigate("/pdaafrica/thank-you");
+      navigate("/thank-you");
     },
     onClose: () => {
       alert("Are you sure you want to close?");

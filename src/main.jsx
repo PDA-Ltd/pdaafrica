@@ -25,12 +25,12 @@ import Podcast from "./pages/Podcast.jsx";
 import CCLPDashboard from "./pages/CCLPDashboard.jsx";
 import VSLADashboard from "./pages/VSLADashboard.jsx";
 import NCLRDashboard from "./pages/NCLRDashboard.jsx";
-import Aboutafrica from "./sections/Aboutafrica.jsx";
-import AfricaGallery from "./sections/AfricaGallery.jsx";
-import PdaafricaContact from "./sections/PdaafricaContact.jsx";
-import CustomerReviews from "./sections/CustomerReviews.jsx";
-import Volunteer from "./sections/Volunteer.jsx";
-import Projects from "./sections/Projects.jsx";
+// import Aboutafrica from "./sections/Aboutafrica.jsx";
+// import AfricaGallery from "./sections/AfricaGallery.jsx";
+// import PdaafricaContact from "./sections/PdaafricaContact.jsx";
+// import CustomerReviews from "./sections/CustomerReviews.jsx";
+// import Volunteer from "./sections/Volunteer.jsx";
+// import Projects from "./sections/Projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -81,30 +81,30 @@ const router = createBrowserRouter([
         path: "/thank-you", // Route for the thank-you page after donation
         element: <ThankYouPage />,
       },
-      {
-        path: "/about-us",
-        element: <Aboutafrica />,
-      },
-      {
-        path: "/gallery",
-        element: <AfricaGallery />,
-      },
-      {
-        path: "/testimonials",
-        element: <CustomerReviews />,
-      },
-      {
-        path: "/get-involved",
-        element: <Volunteer />,
-      },
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-      {
-        path: "/contact-us",
-        element: <PdaafricaContact />,
-      },
+      // {
+      //   path: "/about-us",
+      //   element: <Aboutafrica />,
+      // },
+      // {
+      //   path: "/gallery",
+      //   element: <AfricaGallery />,
+      // },
+      // {
+      //   path: "/testimonials",
+      //   element: <CustomerReviews />,
+      // },
+      // {
+      //   path: "/get-involved",
+      //   element: <Volunteer />,
+      // },
+      // {
+      //   path: "/projects",
+      //   element: <Projects />,
+      // },
+      // {
+      //   path: "/contact-us",
+      //   element: <PdaafricaContact />,
+      // },
       {
         path: "/who-we-are",
         element: <WhoWeAre />,

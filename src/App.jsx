@@ -217,7 +217,8 @@ const App = () => {
         {location.pathname === "/" ? (
           <PDAAFRICAMenu /> // Render PDAAFRICA menu when on the home page
         ) : (
-          <Nav /> // Render a different menu for other routes
+          <PDAAFRICAMenu />
+          // Render a different menu for other routes
         )}
       </header>
 
@@ -225,25 +226,25 @@ const App = () => {
         // Render the PDAAFRICA sections when on "/"
         <>
           <PDAAFRICA />
-          <section className="padding">
+          <section className="padding" id="about-us">
             <Aboutafrica />
           </section>
-          <section className="padding bg-gray-200">
+          <section className="padding bg-gray-200" id="projects">
             <Projects />
           </section>
-          <section className="padding">
+          <section className="padding" id="gallery">
             <AfricaGallery />
           </section>
           <section className="padding">
             <VideoGallery />
           </section>
-          <section className="padding">
+          <section className="padding" id="testimonials">
             <CustomerReviews />
           </section>
-          <section className="padding bg-gray-200">
+          <section className="padding bg-gray-200" id="get-involved">
             <Volunteer />
           </section>
-          <section className="padding">
+          <section className="padding" id="contact-us">
             <PdaafricaContact />
           </section>
         </>

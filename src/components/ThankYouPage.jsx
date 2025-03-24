@@ -9,7 +9,7 @@ const ThankYouPage = () => {
           Your donation has been successfully processed. We appreciate your
           support in making a difference!
         </p>
-        <a href="/pdaafrica" className="text-orange font-bold">
+        <a href="/" className="text-orange font-bold">
           Go back to Home
         </a>
       </div>

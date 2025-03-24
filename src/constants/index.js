@@ -416,11 +416,11 @@ export const imageArray = [
 ];
 
 export const africaLinks = [
-  { href: "/about-us", label: "About Us" },
-  { href: "/projects", label: "Projects" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/get-involved", label: "Get Involved" },
+  { href: "#about-us", label: "About Us" },
+  { href: "#projects", label: "Projects" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#get-involved", label: "Get Involved" },
   // {
   //   href: "/pdaafrica/dataanalytics/vsla-dashboard",
   //   label: "Impact",
@@ -443,7 +443,7 @@ export const africaLinks = [
   //   // },
   //   // ],
   // },
-  { href: "/contact-us", label: "Contact Us" },
+  { href: "#contact-us", label: "Contact Us" },
 ];
 
 export const donateButton = [
