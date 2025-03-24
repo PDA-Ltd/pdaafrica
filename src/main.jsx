@@ -25,6 +25,12 @@ import Podcast from "./pages/Podcast.jsx";
 import CCLPDashboard from "./pages/CCLPDashboard.jsx";
 import VSLADashboard from "./pages/VSLADashboard.jsx";
 import NCLRDashboard from "./pages/NCLRDashboard.jsx";
+import Aboutafrica from "./sections/Aboutafrica.jsx";
+import AfricaGallery from "./sections/AfricaGallery.jsx";
+import PdaafricaContact from "./sections/PdaafricaContact.jsx";
+import CustomerReviews from "./sections/CustomerReviews.jsx";
+import Volunteer from "./sections/Volunteer.jsx";
+import Projects from "./sections/Projects.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,15 +54,15 @@ const router = createBrowserRouter([
         element: <NCLRDashboard />,
       },
       {
-        path: "/pdaafrica/cocoa-communities-library-project",
+        path: "/cocoa-communities-library-project",
         element: <CCLP />,
       },
       {
-        path: "/pdaafrica/nyonkopa-child-labour-remediation",
+        path: "/nyonkopa-child-labour-remediation",
         element: <Nyonkopa />,
       },
       {
-        path: "/pdaafrica/financial-inclusion-and-vsla",
+        path: "/financial-inclusion-and-vsla",
         element: <VSLA />,
       },
       {
@@ -64,16 +70,40 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/pdaafrica",
+        path: "/",
         element: <PDAAFRICA />,
       },
       {
-        path: "/pdaafrica/donate", // Add the route for the donation page
+        path: "/donate", // Add the route for the donation page
         element: <DonateForm />,
       },
       {
-        path: "/pdaafrica/thank-you", // Route for the thank-you page after donation
+        path: "/thank-you", // Route for the thank-you page after donation
         element: <ThankYouPage />,
+      },
+      {
+        path: "/about-us",
+        element: <Aboutafrica />,
+      },
+      {
+        path: "/gallery",
+        element: <AfricaGallery />,
+      },
+      {
+        path: "/testimonials",
+        element: <CustomerReviews />,
+      },
+      {
+        path: "/get-involved",
+        element: <Volunteer />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/contact-us",
+        element: <PdaafricaContact />,
       },
       {
         path: "/who-we-are",
