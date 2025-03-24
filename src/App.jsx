@@ -134,6 +134,71 @@ import { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// const App = () => {
+//   const location = useLocation();
+
+//   useEffect(() => {
+//     if (location.hash) {
+//       const element = document.querySelector(location.hash);
+//       if (element) {
+//         element.scrollIntoView({ behavior: "smooth" });
+//       }
+//     }
+//   }, [location]);
+
+//   // Redirect to /pdaafrica when on the root path "/"
+//   if (location.pathname === "/") {
+//     return <Navigate to="/pdaafrica" replace />;
+//   }
+
+//   return (
+//     <main className="relative">
+//       <header>
+//         {location.pathname.startsWith("/pdaafrica") ? (
+//           <PDAAFRICAMenu /> // Render PDAAFRICA menu
+//         ) : (
+//           <Nav /> // Render home page menu (not needed if PDAAFRICA is the main page)
+//         )}
+//       </header>
+
+//       {location.pathname === "/pdaafrica" ? (
+//         // PDAAFRICA page layout as the main page
+//         <>
+//           <PDAAFRICA />
+//           <section className="padding">
+//             <Aboutafrica />
+//           </section>
+//           <section className="padding bg-gray-200">
+//             <Projects />
+//           </section>
+//           <section className="padding">
+//             <AfricaGallery />
+//           </section>
+//           <section className="padding">
+//             <VideoGallery />
+//           </section>
+//           <section className="padding">
+//             <CustomerReviews />
+//           </section>
+//           <section className="padding bg-gray-200">
+//             <Volunteer />
+//           </section>
+//           <section className="padding">
+//             <PdaafricaContact />
+//           </section>
+//         </>
+//       ) : (
+//         // Outlet for other routes, like Contact page (if needed)
+//         <Outlet />
+//       )}
+
+//       <section className="bg-[#525050] padding">
+//         <Footer />
+//       </section>
+//     </main>
+//   );
+// };
+
 const App = () => {
   const location = useLocation();
 
@@ -146,23 +211,18 @@ const App = () => {
     }
   }, [location]);
 
-  // Redirect to /pdaafrica when on the root path "/"
-  if (location.pathname === "/") {
-    return <Navigate to="/pdaafrica" replace />;
-  }
-
   return (
     <main className="relative">
       <header>
-        {location.pathname.startsWith("/pdaafrica") ? (
-          <PDAAFRICAMenu /> // Render PDAAFRICA menu
+        {location.pathname === "/" ? (
+          <PDAAFRICAMenu /> // Render PDAAFRICA menu when on the home page
         ) : (
-          <Nav /> // Render home page menu (not needed if PDAAFRICA is the main page)
+          <Nav /> // Render a different menu for other routes
         )}
       </header>
 
-      {location.pathname === "/pdaafrica" ? (
-        // PDAAFRICA page layout as the main page
+      {location.pathname === "/" ? (
+        // Render the PDAAFRICA sections when on "/"
         <>
           <PDAAFRICA />
           <section className="padding">
@@ -188,7 +248,7 @@ const App = () => {
           </section>
         </>
       ) : (
-        // Outlet for other routes, like Contact page (if needed)
+        // Outlet for other routes like /contact, /about, etc.
         <Outlet />
       )}
 
