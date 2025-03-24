@@ -285,7 +285,7 @@ export const projects = [
       "Mobilizing, forming and training VSLA groups in communities for financial inclusion.",
     button: "Read More",
     // link: "https://pdaghana.com/pdas-financial-inclusion-programmes-in-sub-saharan-africa/",
-    link: "/pdaafrica/financial-inclusion-and-vsla",
+    link: "/financial-inclusion-and-vsla",
   },
   {
     imgURL: cclp,
@@ -294,7 +294,7 @@ export const projects = [
       "Promoting literacy and reading habits among children in cocoa-growing communities.",
     button: "Read More",
     // link: "https://pdaghana.com/59840-2/",
-    link: "/pdaafrica/cocoa-communities-library-project",
+    link: "/cocoa-communities-library-project",
   },
   {
     imgURL: ncrp,
@@ -303,7 +303,7 @@ export const projects = [
       "Remediating identified child labour cases in the supply chain of Barry Callebaut (Nyonkopa).",
     button: "Read More",
     // link: "https://pdaghana.com/nyonkopa-child-labour-remediation-vsla/",
-    link: "/pdaafrica/nyonkopa-child-labour-remediation",
+    link: "/nyonkopa-child-labour-remediation",
   },
 ];
 export const reviews = [
@@ -416,11 +416,11 @@ export const imageArray = [
 ];
 
 export const africaLinks = [
-  { href: "/pdaafrica#about-us", label: "About Us" },
-  { href: "/pdaafrica#projects", label: "Projects" },
-  { href: "/pdaafrica#gallery", label: "Gallery" },
-  { href: "/pdaafrica#testimonials", label: "Testimonials" },
-  { href: "/pdaafrica#get-involved", label: "Get Involved" },
+  { href: "/about-us", label: "About Us" },
+  { href: "/projects", label: "Projects" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/testimonials", label: "Testimonials" },
+  { href: "/get-involved", label: "Get Involved" },
   // {
   //   href: "/pdaafrica/dataanalytics/vsla-dashboard",
   //   label: "Impact",
@@ -443,13 +443,13 @@ export const africaLinks = [
   //   // },
   //   // ],
   // },
-  { href: "/pdaafrica#contact-us", label: "Contact Us" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 export const donateButton = [
   {
     label: "Donate now",
-    link: "/pdaafrica/donate",
+    link: "/donate",
   },
 ];
 
