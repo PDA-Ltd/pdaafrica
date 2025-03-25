@@ -126,11 +126,6 @@ const ProjectStatus = () => {
           </div>
         </div>
       </div>
-      <a href="https://vsla-dashboards.herokuapp.com/magic-library">
-        <div className="flex justify-center mt-6 rounded-xl">
-          <Tab label="Dashboard" />
-        </div>
-      </a>
     </section>
   );
 };

@@ -373,8 +373,8 @@ export const contacts = [
     imgURL: email,
     label: "Email Address:",
     links: [
-      { name: "Website:", link: "https://pdaghana.com" },
-      { name: "Email:", link: "mailto:info@pdaghana.com" },
+      { name: "Website:", link: "https://pdaafrica.org" },
+      { name: "Email:", link: "mailto:info@pdaafrica.org" },
     ],
   },
 ];

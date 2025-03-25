@@ -195,12 +195,6 @@ const VSLA = () => {
                 ))}
               </div>
             </div>
-
-            <a href="https://vsla-dashboards.herokuapp.com/login">
-              <div className="flex justify-center mt-6">
-                <Tab label="Dashboard" />
-              </div>
-            </a>
           </div>
         </div>
 

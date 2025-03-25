@@ -37,22 +37,22 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/pdaafrica/dataanalytics",
-        element: <DataAnalytics />,
-      },
-      {
-        path: "/pdaafrica/dataanalytics/cclp-dashboard",
-        element: <CCLPDashboard />,
-      },
-      {
-        path: "/pdaafrica/dataanalytics/vsla-dashboard",
-        element: <VSLADashboard />,
-      },
-      {
-        path: "/pdaafrica/dataanalytics/nclr-dashboard",
-        element: <NCLRDashboard />,
-      },
+      // {
+      //   path: "/pdaafrica/dataanalytics",
+      //   element: <DataAnalytics />,
+      // },
+      // {
+      //   path: "/pdaafrica/dataanalytics/cclp-dashboard",
+      //   element: <CCLPDashboard />,
+      // },
+      // {
+      //   path: "/pdaafrica/dataanalytics/vsla-dashboard",
+      //   element: <VSLADashboard />,
+      // },
+      // {
+      //   path: "/pdaafrica/dataanalytics/nclr-dashboard",
+      //   element: <NCLRDashboard />,
+      // },
       {
         path: "/cocoa-communities-library-project",
         element: <CCLP />,
