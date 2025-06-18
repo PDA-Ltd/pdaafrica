@@ -235,7 +235,7 @@ const App = () => {
           <section className="padding" id="gallery">
             <AfricaGallery />
           </section>
-          <section className="padding">
+          <section className="padding" id="gallery">
             <VideoGallery />
           </section>
           <section className="padding" id="testimonials">
