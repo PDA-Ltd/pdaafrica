@@ -326,7 +326,7 @@ export const reviews = [
   },
   {
     imgURL: customer3,
-    customerName: "Jin Penge",
+    customerName: "Bitras Wesrad",
     rating: "4",
     position: "Staff",
     feedback:
@@ -335,7 +335,7 @@ export const reviews = [
 
   {
     imgURL: customer4,
-    customerName: "Bitras Wesrad",
+    customerName: "Janet Delali",
     rating: "5",
     position: "Benefactor",
     feedback:
@@ -349,11 +349,11 @@ export const contacts = [
     label: "Head Office Address:",
     links: [
       {
-        name: " GA0472784 Asafoatse Oman Street",
+        name: " GES Office, Bolga-Tamale Road, Walewale",
         link: "https://www.ghanapostgps.com/map/#GA0472784",
       },
       {
-        name: "AK-849-3514 Anwomaso Rd",
+        name: "C/O P.O.Box 13. Walewale",
         link: "https://www.ghanapostgps.com/map/#AK8493514",
       },
     ],

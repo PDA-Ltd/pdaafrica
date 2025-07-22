@@ -31,9 +31,12 @@ import Tab from "../components/Tab";
 // );
 
 const successStories = [
-  "“Joining the VSLA group has helped me save for my children’s education.” – Cocoa Farmer",
-  "“With the project’s support, I now understand the importance of keeping my children in school.” – Parent",
-  "“The training sessions have changed our approach to child labor.” – Community Leader",
+  "“I am a member of the Yɛn Daakye group. The group has been of help to me. What we learned in our lessons has helped a lot. I took a loan from the group to purchase corn-mill machine. Currently, I have taken another loan to purchase footwears that I sell. You will be marvelled when you see my store in this community. If I say it hasn’t helped me, I would be lying. It has really helped me so I will continue to be a member of the group.” – Akosua Mensah",
+  "“I am a member of the Ayekoo group. I am the Chairman of the group. We learned about vision Journey, that is, our future goals. I wanted to build a house but I didn’t know how to start. When we started this group, what we learned helped me to know that if you and your spouse do not share similar idea, it will be difficult for the family to develop. After the training, I was able to build and roof a single room house where we currently stay.” – Eric Amoako",
+  "“I am a member of Love group at Oti Boateng. The training has been an eye opener to me. I used to spend money anyhow. The group has help me to save a lot of money. I have started a container about five years ago of which I am confident that I may finish before this year ends and start stocking it. The project has been helpful to me.” – Obeng Asiwe Collins",
+    "“The name of the group I join is called Nkabom Ma Nkɔsoɔ. The training has helped me a lot, especially the savings. At first, I used to be truant because I did not understand it. I later realized that I was able to get a loan from the group to support my building project. I used the money to purchase cement and paid later. The group has helped me a lot because I have gotten a lot of benefits which is helping me in my daily life.” – Akwasi Owusu",
+    "“The name of the VSLA group I joined is Nkabom in Ataase community. I have benefitted greatly from this project. At first getting money and access to credit facilities was very difficult such that I could not get money to pay my children school fees when I needed to. Before the project, none of my children attended senior high school but the loan scheme provided by the saving group enabled me to access a loan to help send my last born to senior high school. So, for me, this project has benefitted me greatly and I would like to say thank to the sponsors of the project.” – Akosua Felicia",
+    "“I belong to Yen ka Bom group in the Ayaasu community. The Gals training provided PDA has help foster more unity and stabilized my marriage as it was on the verge of collapse. I have also been able to take loans to pay my children school fees and also start a soap making business, so I am grateful to PDA for bringing this project to us” – Afia Adoma",
 ];
 
 const SuccessStories = () => {
