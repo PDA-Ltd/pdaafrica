@@ -308,16 +308,16 @@ export const projects = [
 ];
 export const reviews = [
   {
-    imgURL: customer1,
-    customerName: "Morich Brown",
+    imgURL: customer3,
+    customerName: "Eugene Asamoah",
     rating: "4",
     position: "Volunteer",
     feedback:
       "Volunteering with PDA Africa has been the most interesting and exciting experience ever.",
   },
   {
-    imgURL: customer2,
-    customerName: "Lota Mongeskar",
+    imgURL: beyond,
+    customerName: "Beyond Beans",
     rating: "5",
     position: "Partner",
 
@@ -325,18 +325,18 @@ export const reviews = [
       "Collaborating with PDA Africa has shown us how best we can serve the communities we find ourselves.",
   },
   {
-    imgURL: customer3,
-    customerName: "Bitras Wesrad",
-    rating: "4",
+    imgURL: customer1,
+    customerName: "Emelia Anawine",
+    rating: "5",
     position: "Staff",
     feedback:
-      "PDA Africa is a great place to spend your time, you feel as though your time on earth is really worth it!",
+      "PDA Africa is a great place to grow professionally, gain valuable experience, and enjoy the process while doing it.",
   },
 
   {
     imgURL: customer4,
     customerName: "Janet Delali",
-    rating: "5",
+    rating: "4",
     position: "Benefactor",
     feedback:
       "Their contributions and dedication to helping my community has really been life-changing",
@@ -350,7 +350,7 @@ export const contacts = [
     links: [
       {
         name: " GES Office, Bolga-Tamale Road, Walewale",
-        link: "https://www.ghanapostgps.com/map/#GA0472784",
+        link: "https://www.ghanapostgps.com/map/#GA0472784", 
       },
       {
         name: "C/O P.O.Box 13. Walewale",

@@ -44,8 +44,8 @@ import ncrp from "./ncrp.jpg";
 
 import customer1 from "./customer1.jpg";
 import customer2 from "./customer2.jpg";
-import customer3 from "./customer3.jpg";
-import customer4 from "./customer4.jpg";
+import customer3 from "./customer3.png";
+import customer4 from "./customer4.png";
 
 import reachout from "./reachout.jpg";
 
