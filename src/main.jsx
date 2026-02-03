@@ -4,7 +4,17 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "./pages/Contact.jsx";
-import PDAAFRICA from "./pages/PDAAFRICA.jsx";
+import Home from "./pages/Home.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import ProjectsPage from "./pages/ProjectsPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
+import TestimonialsPage from "./pages/TestimonialsPage.jsx";
+import NewsPage from "./pages/NewsPage.jsx";
+import GetInvolvedPage from "./pages/GetInvolvedPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import ImpactPage from "./pages/ImpactPage.jsx";
+import WhereWeWorkPage from "./pages/WhereWeWorkPage.jsx";
+import StaffPage from "./pages/StaffPage.jsx";
 import DonateForm from "./components/DonateForm.jsx"; // Import the DonateForm component
 import ThankYouPage from "./components/ThankYouPage.jsx"; // Import the ThankYou component
 import DataAnalytics from "./pages/DataAnalytics.jsx";
@@ -71,7 +81,47 @@ const router = createBrowserRouter([
       },
       {
         path: "/",
-        element: <PDAAFRICA />,
+        element: <Home />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutPage />,
+      },
+      {
+        path: "/about-us/where-we-work",
+        element: <WhereWeWorkPage />,
+      },
+      {
+        path: "/about-us/staff",
+        element: <StaffPage />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+      {
+        path: "/gallery",
+        element: <GalleryPage />,
+      },
+      {
+        path: "/impact",
+        element: <ImpactPage />,
+      },
+      {
+        path: "/testimonials",
+        element: <TestimonialsPage />,
+      },
+      {
+        path: "/news-and-updates",
+        element: <NewsPage />,
+      },
+      {
+        path: "/get-involved",
+        element: <GetInvolvedPage />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactPage />,
       },
       {
         path: "/donate", // Add the route for the donation page

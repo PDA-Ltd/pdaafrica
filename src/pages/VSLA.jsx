@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import { FaArrowLeft } from "react-icons/fa";
 import { modul, obuasi } from "../assets/images";
 import {
   beyond,
@@ -20,6 +22,10 @@ import {
   nestle,
 } from "../assets/images";
 import Tab from "../components/Tab";
+import { useLanguage } from "../contexts/LanguageContext";
+import { en } from "../translations/en";
+import { fr } from "../translations/fr";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 // const ProjectCard = ({ title, description, location, officers }) => (
 //   <div className="border rounded-lg p-6 shadow-md">
@@ -40,41 +46,54 @@ const successStories = [
 ];
 
 const SuccessStories = () => {
-  const settings = { dots: true, infinite: true, autoplay: true, speed: 500 };
+  const settings = { 
+    dots: true, 
+    infinite: true, 
+    autoplay: true, 
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+  };
   return (
-    <section className="py-8 px-8 bg-white text-center">
+    <div className="text-center">
       <Slider {...settings}>
         {successStories.map((story, index) => (
-          <div key={index} className="p-8">
-            <div className="max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
-              <p className="text-orange">{story}</p>
+          <div key={index} className="px-4">
+            <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-l-4 border-orange">
+              <p className="text-gray-700 text-lg leading-relaxed italic">{story}</p>
             </div>
           </div>
         ))}
       </Slider>
-    </section>
+    </div>
   );
 };
 
-const ProjectCard = ({ title, description, location, officers, text }) => (
-  <div className="flip-card">
-    <div className="flip-card-inner">
-      {/* Front of the card */}
-      <div className="flip-card-front border rounded-lg p-6 shadow-md bg-white font-poppins">
-        <h3 className="text-2xl font-bold mb-2 text-orange">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-        <p className="mt-4 text-gray-500">Location: {location}</p>
-        <p className="text-gray-500">Field Officers: {officers}</p>
-      </div>
+const ProjectCard = ({ title, description, location, officers, text, language }) => {
+  const t = language === "en" ? en.vsla : fr.vsla;
+  return (
+    <div className="flip-card h-full">
+      <div className="flip-card-inner h-full">
+        {/* Front of the card */}
+        <div className="flip-card-front border-2 border-gray-200 rounded-2xl p-6 shadow-lg bg-white font-poppins hover:shadow-xl transition-shadow duration-300">
+          <h3 className="text-xl font-bold mb-3 text-orange leading-tight">{title}</h3>
+          <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
+          <div className="mt-4 space-y-2">
+            <p className="text-gray-700 font-semibold"><span className="text-orange">{t.location}:</span> {location}</p>
+            <p className="text-gray-700 font-semibold"><span className="text-orange">{t.fieldOfficers}:</span> {officers}</p>
+          </div>
+        </div>
 
-      {/* Back of the card */}
-      <div className="flip-card-back border rounded-lg p-6 shadow-md bg-white font-poppins">
-        {/* <h3 className="text-2xl font-bold mb-2">{title}</h3> */}
-        <p className="text-gray-600 text-[12px]">{text}</p>
+        {/* Back of the card */}
+        <div className="flip-card-back border-2 border-orange rounded-2xl p-6 shadow-lg bg-gradient-to-br from-orange/5 to-orange/10 font-poppins">
+          <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const partners = [
   { imgURL: beyond, name: "Beyond" },
@@ -89,180 +108,230 @@ const partners = [
 ];
 
 const VSLA = () => {
+  const { language } = useLanguage();
+  const t = language === "en" ? en.vsla : fr.vsla;
+  
+  const [heroRef, heroVisible] = useScrollAnimation();
+  const [whoWeAreRef, whoWeAreVisible] = useScrollAnimation();
+  const [modelRef, modelVisible] = useScrollAnimation();
+  const [partnershipsRef, partnershipsVisible] = useScrollAnimation();
+  const [projectsRef, projectsVisible] = useScrollAnimation();
+  const [storiesRef, storiesVisible] = useScrollAnimation();
+
   return (
     <section
       id="pdaafrica"
       className="max-container max-w-full min-h-screen font-poppins"
     >
-      <div className="mt-26 ">
-        <div
-          className="relative bg-cover bg-center h-screen"
-          style={{ backgroundImage: `url(${obuasi})` }}
-        >
-          <div className="bg-black bg-opacity-50 h-full flex items-end justify-center">
-            <div className="text-center text-orange">
-              <h1 className="font-poppins font-bold text-6xl text-orange pt-20">
-                Financial Inclusions and VSLA's
-              </h1>
-              <p className="text-white mt-4 px-4 md:px-12 font-poppins mb-5 text-xl">
-                Empowering Communities, Building Resilient Futures
-              </p>
-              {/* <button className="mt-6 px-6 py-2 mb-10 bg-red text-white rounded-full hover:bg-orange">
-                Learn More About Our Work
-              </button> */}
-            </div>
+      {/* Back to Projects Button */}
+      <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <Link
+            to="/projects"
+            className="inline-flex items-center gap-2 text-gray-700 hover:text-orange font-semibold transition-colors duration-300 group"
+          >
+            <FaArrowLeft className="group-hover:-translate-x-1 transition-transform duration-300" />
+            <span>Back to Projects</span>
+          </Link>
+        </div>
+      </div>
+
+      {/* Enhanced Hero Section */}
+      <div
+        className="relative bg-cover bg-center h-screen"
+        style={{ backgroundImage: `url(${obuasi})` }}
+      >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70"></div>
+        
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-orange rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-orange rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
+        <div ref={heroRef} className={`relative h-full flex items-center justify-center px-6 ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+          <div className="text-center max-w-4xl">
+            <h1 className="font-poppins font-bold text-5xl md:text-7xl text-orange mb-6 drop-shadow-2xl">
+              {t.title}
+            </h1>
+            <p className="text-white mt-4 px-4 md:px-12 font-poppins mb-5 text-xl md:text-2xl leading-relaxed">
+              {t.subtitle}
+            </p>
           </div>
         </div>
+      </div>
 
-        <div className="py-16 bg-white ">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-red">Who We Are</h2>
-            <p className="text-base text-gray-700">
-              PDA has a proven track record of partnering with communities and
-              other development organizations.
-            </p>
-            <div className="mt-6 flex justify-center space-x-8">
-              <div>
-                <p className="text-4xl font-bold text-orange">21+</p>
-                <p className="text-gray-500">Years of Impact</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold text-orange">200+</p>
-                <p className="text-gray-500">Communities</p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold text-orange">1000+</p>
-                <p className="text-gray-500">Beneficiaries</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-10 bg-gray-100 px-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-red">
-              Our VSLA+ Model
-            </h2>
-            <p className="text-base text-gray-700 mb-8">
-              PDA adopts a unique integrated VSLA (VSLA+) model as a
-              self-facilitated platform to plug in sustainable development
-              interventions. Our diverse and customizable VSLA+ modules and
-              components allow for specific interventions to be co-designed with
-              our partners for the greatest impact in target communities.
-            </p>
-            <div className="mt-6">
-              {/* Replace this with an actual infographic or flowchart image */}
-              <img
-                src={modul}
-                alt="VSLA+ Model Infographic"
-                className="mx-auto max-sm:w-auto shadow-lg rounded-lg"
-              />
-              <p className="text-gray-600 mt-4 italic">
-                The VSLA+ model incorporates interventions such as financial
-                literacy, gender sensitivity training, and child labor
-                remediation to create a sustainable impact.
+        {/* Who We Are Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div ref={whoWeAreRef} className={`text-center mb-12 ${whoWeAreVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+                {t.whoWeAre.split(" ")[0]} <span className="text-orange">{t.whoWeAre.split(" ").slice(1).join(" ")}</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                {t.whoWeAreDesc}
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="py-6 mx-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-red">
-              Our Impact and Partnerships
-            </h2>
-            <p className="text-lg text-gray-700">
-              PDA has a proven track record of partnering with communities and
-              other development organizations to implement large-scale
-              development interventions in promoting ethical and transparent
-              commodity supply chains and communities over the last 21 years.
-            </p>
-
-            <div className="flex overflow-hidden group justify-center mt-10">
-              <div className="flex animate-loop-scroll space-x-10 group-hover:paused relative">
-                {partners.map((partner, index) => (
-                  <img
-                    key={index}
-                    src={partner.imgURL}
-                    alt={partner.name}
-                    className="w-20 h-20"
-                  />
-                ))}
-                {partners.map((partner, index) => (
-                  <img
-                    key={index + partners.length}
-                    src={partner.imgURL}
-                    alt={partner.name}
-                    className="w-20 h-20"
-                  />
-                ))}
+            <div className={`grid md:grid-cols-3 gap-8 ${whoWeAreVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <div className="bg-gradient-to-br from-orange/10 to-orange/5 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <p className="text-5xl font-bold text-orange mb-2">21+</p>
+                <p className="text-gray-700 font-semibold text-lg">{t.yearsOfImpact}</p>
+              </div>
+              <div className="bg-gradient-to-br from-orange/10 to-orange/5 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <p className="text-5xl font-bold text-orange mb-2">200+</p>
+                <p className="text-gray-700 font-semibold text-lg">{t.communities}</p>
+              </div>
+              <div className="bg-gradient-to-br from-orange/10 to-orange/5 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                <p className="text-5xl font-bold text-orange mb-2">1000+</p>
+                <p className="text-gray-700 font-semibold text-lg">{t.beneficiaries}</p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="py-16 bg-gray-100">
-          <div className="max-w-5xl max-md:max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-red">Our Projects</h2>
-            <div className="vslacard grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 md:gap-16 max-sm:px-20 md:px-14">
+        {/* VSLA+ Model Section */}
+        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div ref={modelRef} className={`text-center mb-12 ${modelVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+                {t.ourModel.split(" ")[0]} <span className="text-orange">{t.ourModel.split(" ").slice(1).join(" ")}</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                {t.ourModelDesc}
+              </p>
+            </div>
+            <div className={`${modelVisible ? 'animate-on-scroll visible scale' : 'animate-on-scroll scale'}`}>
+              <div className="bg-white rounded-2xl shadow-2xl p-8 hover:shadow-3xl transition-shadow duration-300">
+                <img
+                  src={modul}
+                  alt="VSLA+ Model Infographic"
+                  className="mx-auto w-full max-w-4xl rounded-xl"
+                />
+                <p className="text-gray-600 mt-6 italic text-center text-lg">
+                  {t.modelNote}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Impact and Partnerships Section */}
+        <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-7xl mx-auto px-6">
+            <div ref={partnershipsRef} className={`text-center mb-12 ${partnershipsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+                {t.impactPartnerships.split(" ")[0]} <span className="text-orange">{t.impactPartnerships.split(" ").slice(1).join(" ")}</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                {t.impactPartnershipsDesc}
+              </p>
+            </div>
+
+            <div className={`${partnershipsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <div className="bg-white rounded-2xl shadow-xl p-8 overflow-hidden">
+                <div className="flex overflow-hidden group justify-center">
+                  <div className="flex animate-loop-scroll space-x-12 group-hover:paused relative">
+                    {partners.map((partner, index) => (
+                      <div key={index} className="flex-shrink-0 w-24 h-24 bg-gray-50 rounded-xl p-4 flex items-center justify-center hover:bg-orange/10 transition-colors duration-300">
+                        <img
+                          src={partner.imgURL}
+                          alt={partner.name}
+                          className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                        />
+                      </div>
+                    ))}
+                    {partners.map((partner, index) => (
+                      <div key={index + partners.length} className="flex-shrink-0 w-24 h-24 bg-gray-50 rounded-xl p-4 flex items-center justify-center hover:bg-orange/10 transition-colors duration-300">
+                        <img
+                          src={partner.imgURL}
+                          alt={partner.name}
+                          className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div ref={projectsRef} className={`text-center mb-12 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+                {t.ourProjects.split(" ")[0]} <span className="text-orange">{t.ourProjects.split(" ").slice(1).join(" ")}</span>
+              </h2>
+            </div>
+            <div className={`vslacard grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
               <ProjectCard
-                title="Nestle Income Accelerator Programme [Cote D’Ivoire]"
-                description="Improving the livelihoods of cocoa-farming families through VSLA groups and Gender Action Learning Systems (GALS) training."
-                location="Cote D’Ivoire"
+                title={language === "en" ? "Nestle Income Accelerator Programme [Cote D'Ivoire]" : "Programme Nestlé Income Accelerator [Côte d'Ivoire]"}
+                description={language === "en" ? "Improving the livelihoods of cocoa-farming families through VSLA groups and Gender Action Learning Systems (GALS) training." : "Améliorer les moyens de subsistance des familles de producteurs de cacao grâce aux groupes VSLA et à la formation sur les systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS)."}
+                location={language === "en" ? "Cote D'Ivoire" : "Côte d'Ivoire"}
                 officers="7"
-                text="The Nestlé Income Accelerator Program (IAP) aims to improve the livelihoods of cocoa-farming families, while advancing regenerative agriculture practices.
-                PDA, in partnership with Beyond Beans, formed 77 VSLA groups under the project in Ivory Coast. Between January to March 2024, 17 of the VSLA groups had their share outs and completed Gender Action Learning Systems (GALS) training for their members. This training employs participatory techniques to sensitize participants on gender issues and increase their financial literacy, among other benefits."
+                text={language === "en" ? "The Nestlé Income Accelerator Program (IAP) aims to improve the livelihoods of cocoa-farming families, while advancing regenerative agriculture practices. PDA, in partnership with Beyond Beans, formed 77 VSLA groups under the project in Ivory Coast. Between January to March 2024, 17 of the VSLA groups had their share outs and completed Gender Action Learning Systems (GALS) training for their members. This training employs participatory techniques to sensitize participants on gender issues and increase their financial literacy, among other benefits." : "Le programme Nestlé Income Accelerator (IAP) vise à améliorer les moyens de subsistance des familles de producteurs de cacao, tout en faisant progresser les pratiques agricoles régénératrices. PDA, en partenariat avec Beyond Beans, a formé 77 groupes VSLA dans le cadre du projet en Côte d'Ivoire. Entre janvier et mars 2024, 17 des groupes VSLA ont effectué leurs partages et terminé la formation sur les systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS) pour leurs membres. Cette formation utilise des techniques participatives pour sensibiliser les participants aux questions de genre et augmenter leur éducation financière, entre autres avantages."}
+                language={language}
               />
               <ProjectCard
-                title="Nestle Income Accelerator Programme [Ghana]"
-                description="Income diversification and restructuring of VSLA groups for cocoa-farming communities."
+                title={language === "en" ? "Nestle Income Accelerator Programme [Ghana]" : "Programme Nestlé Income Accelerator [Ghana]"}
+                description={language === "en" ? "Income diversification and restructuring of VSLA groups for cocoa-farming communities." : "Diversification des revenus et restructuration des groupes VSLA pour les communautés productrices de cacao."}
                 location="Ghana"
                 officers="7"
-                text="In Ghana, the programme still has the overall goal of improving the livelihoods of cocoa-farming families, while advancing regenerative agriculture practices. Specifically, however, there are four pillars (the promotion of school enrolment; pruning; agroforestry; and income diversification). PDA is engaged for the pillar of income diversification, through the formation of VSLA groups for selected program beneficiaries and the restructuring of existing VSLA groups which have IAP beneficiaries.
-                Currently, project communities have been sensitized, and field officers have begun engaging interested project beneficiaries for the formation and restructuring of VSLA groups."
+                text={language === "en" ? "In Ghana, the programme still has the overall goal of improving the livelihoods of cocoa-farming families, while advancing regenerative agriculture practices. Specifically, however, there are four pillars (the promotion of school enrolment; pruning; agroforestry; and income diversification). PDA is engaged for the pillar of income diversification, through the formation of VSLA groups for selected program beneficiaries and the restructuring of existing VSLA groups which have IAP beneficiaries. Currently, project communities have been sensitized, and field officers have begun engaging interested project beneficiaries for the formation and restructuring of VSLA groups." : "Au Ghana, le programme a toujours pour objectif global d'améliorer les moyens de subsistance des familles de producteurs de cacao, tout en faisant progresser les pratiques agricoles régénératrices. Cependant, il y a quatre piliers spécifiques (la promotion de la scolarisation ; la taille ; l'agroforesterie ; et la diversification des revenus). PDA est engagé pour le pilier de la diversification des revenus, grâce à la formation de groupes VSLA pour les bénéficiaires sélectionnés du programme et la restructuration des groupes VSLA existants qui ont des bénéficiaires IAP. Actuellement, les communautés du projet ont été sensibilisées et les agents de terrain ont commencé à engager les bénéficiaires intéressés du projet pour la formation et la restructuration des groupes VSLA."}
+                language={language}
               />
               <ProjectCard
-                title="SUCDEN VSLA Programme"
-                description="Addressing cocoa sector challenges, improving women's earning capacity, and promoting financial literacy in Ghana."
-                location="Western North Region, Ghana"
+                title={language === "en" ? "SUCDEN VSLA Programme" : "Programme VSLA SUCDEN"}
+                description={language === "en" ? "Addressing cocoa sector challenges, improving women's earning capacity, and promoting financial literacy in Ghana." : "Répondre aux défis du secteur du cacao, améliorer la capacité de gain des femmes et promouvoir l'éducation financière au Ghana."}
+                location={language === "en" ? "Western North Region, Ghana" : "Région du Nord-Ouest, Ghana"}
                 officers="2"
-                text="The Women’s Empowerment, Access to Finance and Income Generation in Ghana project is aimed at addressing the primary challenges facing the cocoa sector in Ghana including low income, low productivity, lack of access to financial services and low financial literacy — which are all some of the root causes of child labour. The project is being implemented in Akontombra, Fosukrom and Adabokrom cocoa districts in the Western North region of Ghana in partnership with Sucden and Kuapa Kokoo Farmers’ Union (KKFU). 9 VSLA groups have been formed under the project, meeting weekly to save, grant loans, and conduct Gender Action Learning Systems (GALS) training for their members."
+                text={language === "en" ? "The Women's Empowerment, Access to Finance and Income Generation in Ghana project is aimed at addressing the primary challenges facing the cocoa sector in Ghana including low income, low productivity, lack of access to financial services and low financial literacy — which are all some of the root causes of child labour. The project is being implemented in Akontombra, Fosukrom and Adabokrom cocoa districts in the Western North region of Ghana in partnership with Sucden and Kuapa Kokoo Farmers' Union (KKFU). 9 VSLA groups have been formed under the project, meeting weekly to save, grant loans, and conduct Gender Action Learning Systems (GALS) training for their members." : "Le projet d'autonomisation des femmes, d'accès à la finance et de génération de revenus au Ghana vise à répondre aux principaux défis auxquels est confronté le secteur du cacao au Ghana, notamment les faibles revenus, la faible productivité, le manque d'accès aux services financiers et la faible éducation financière — qui sont toutes des causes profondes du travail des enfants. Le projet est mis en œuvre dans les districts de cacao d'Akontombra, Fosukrom et Adabokrom dans la région du Nord-Ouest du Ghana en partenariat avec Sucden et l'Union des agriculteurs Kuapa Kokoo (KKFU). 9 groupes VSLA ont été formés dans le cadre du projet, se réunissant chaque semaine pour épargner, accorder des prêts et mener une formation sur les systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS) pour leurs membres."}
+                language={language}
               />
               <ProjectCard
-                title="Enroute Project [Cote D’Ivoire]"
-                description="Testing interventions for supporting farmers' living income and implementing VSLA-CHILD and Empowering Better Decisions (EBD) trainings."
-                location="Cote D’Ivoire"
+                title={language === "en" ? "Enroute Project [Cote D'Ivoire]" : "Projet Enroute [Côte d'Ivoire]"}
+                description={language === "en" ? "Testing interventions for supporting farmers' living income and implementing VSLA-CHILD and Empowering Better Decisions (EBD) trainings." : "Tester des interventions pour soutenir le revenu de subsistance des agriculteurs et mettre en œuvre les formations VSLA-CHILD et Empowering Better Decisions (EBD)."}
+                location={language === "en" ? "Cote D'Ivoire" : "Côte d'Ivoire"}
                 officers="2"
-                text="The Enroute Project seeks to identify the most cost-effective ways to support farmers to earn a living income. The project is testing three interventions:Cash transfer only, Cash transfer and services, Only services. Under these three interventions, PDA is working with selected household members from the cash transfer only group, to train them on a series of sessions dubbed Empowering Better Decisions. PDA is also implementing the VSLA-CHILD methodology for the remaining two groups of intervention areas. 25 VSLA-CHILD groups and 14 Empowering Better Decisions (EBD) groups have been formed under the project."
+                text={language === "en" ? "The Enroute Project seeks to identify the most cost-effective ways to support farmers to earn a living income. The project is testing three interventions: Cash transfer only, Cash transfer and services, Only services. Under these three interventions, PDA is working with selected household members from the cash transfer only group, to train them on a series of sessions dubbed Empowering Better Decisions. PDA is also implementing the VSLA-CHILD methodology for the remaining two groups of intervention areas. 25 VSLA-CHILD groups and 14 Empowering Better Decisions (EBD) groups have been formed under the project." : "Le projet Enroute cherche à identifier les moyens les plus rentables de soutenir les agriculteurs pour gagner un revenu de subsistance. Le projet teste trois interventions : Transfert d'argent uniquement, Transfert d'argent et services, Services uniquement. Dans le cadre de ces trois interventions, PDA travaille avec des membres sélectionnés des ménages du groupe de transfert d'argent uniquement, pour les former sur une série de sessions appelées Empowering Better Decisions. PDA met également en œuvre la méthodologie VSLA-CHILD pour les deux groupes restants des zones d'intervention. 25 groupes VSLA-CHILD et 14 groupes Empowering Better Decisions (EBD) ont été formés dans le cadre du projet."}
+                language={language}
               />
               <ProjectCard
-                title="ECOM/NCP VSLA-GALS Programme"
-                description="Building economic and social capacities of cocoa farmers in Ghana, focusing on financial inclusion and gender empowerment."
-                location="Eastern & Central Regions, Ghana"
+                title={language === "en" ? "ECOM/NCP VSLA-GALS Programme" : "Programme ECOM/NCP VSLA-GALS"}
+                description={language === "en" ? "Building economic and social capacities of cocoa farmers in Ghana, focusing on financial inclusion and gender empowerment." : "Renforcer les capacités économiques et sociales des producteurs de cacao au Ghana, en se concentrant sur l'inclusion financière et l'autonomisation des femmes."}
+                location={language === "en" ? "Eastern & Central Regions, Ghana" : "Régions de l'Est et du Centre, Ghana"}
                 officers="4"
-                text="The ECOM/NCP VSLA-GALS project is a financial inclusion and gender empowerment project which is aimed at building the economic and social capacities of cocoa farmers in selected communities in the Eastern and Central Region of Ghana through Village Savings and Loans Association (VSLA) groups. The project is being implemented by Participatory Development Associates (PDA) in partnership with Nestle Cocoa Plan (NCP) and ECOM. 40 VSLAs are being run under this project"
+                text={language === "en" ? "The ECOM/NCP VSLA-GALS project is a financial inclusion and gender empowerment project which is aimed at building the economic and social capacities of cocoa farmers in selected communities in the Eastern and Central Region of Ghana through Village Savings and Loans Association (VSLA) groups. The project is being implemented by Participatory Development Associates (PDA) in partnership with Nestle Cocoa Plan (NCP) and ECOM. 40 VSLAs are being run under this project" : "Le projet ECOM/NCP VSLA-GALS est un projet d'inclusion financière et d'autonomisation des femmes qui vise à renforcer les capacités économiques et sociales des producteurs de cacao dans les communautés sélectionnées des régions de l'Est et du Centre du Ghana grâce aux groupes d'associations villageoises d'épargne et de crédit (VSLA). Le projet est mis en œuvre par Participatory Development Associates (PDA) en partenariat avec Nestle Cocoa Plan (NCP) et ECOM. 40 VSLA sont gérés dans le cadre de ce projet"}
+                language={language}
               />
               <ProjectCard
-                title="New ECOM VSLA GALS Project"
-                description="Economic and social empowerment through VSLA and GALS training for cocoa farmers across multiple regions in Ghana."
-                location="Eastern, Central, Ashanti, Western North, Oti Regions, Ghana"
+                title={language === "en" ? "New ECOM VSLA GALS Project" : "Nouveau projet ECOM VSLA GALS"}
+                description={language === "en" ? "Economic and social empowerment through VSLA and GALS training for cocoa farmers across multiple regions in Ghana." : "Autonomisation économique et sociale grâce à la formation VSLA et GALS pour les producteurs de cacao dans plusieurs régions du Ghana."}
+                location={language === "en" ? "Eastern, Central, Ashanti, Western North, Oti Regions, Ghana" : "Régions de l'Est, du Centre, d'Ashanti, du Nord-Ouest, d'Oti, Ghana"}
                 officers="4"
-                text="The VSLA-GALS project is a financial inclusion and gender empowerment project which is aimed at building the economic and social capacities of cocoa farmers in selected communities, Ofoase and Abenase in the Eastern Region, Dunkwa in the Central Region, Asankaragua in the Western North Region, Offinso in the Ashanti Region and Papase in Oti Region through Village Savings and Loans Association (VSLA) groups. The project is being implemented by Participatory Development Associates (PDA) in partnership with Lindt & Sprüngli Farming Program and ECOM. 49 VSLA groups have been formed under the project."
+                text={language === "en" ? "The VSLA-GALS project is a financial inclusion and gender empowerment project which is aimed at building the economic and social capacities of cocoa farmers in selected communities, Ofoase and Abenase in the Eastern Region, Dunkwa in the Central Region, Asankaragua in the Western North Region, Offinso in the Ashanti Region and Papase in Oti Region through Village Savings and Loans Association (VSLA) groups. The project is being implemented by Participatory Development Associates (PDA) in partnership with Lindt & Sprüngli Farming Program and ECOM. 49 VSLA groups have been formed under the project." : "Le projet VSLA-GALS est un projet d'inclusion financière et d'autonomisation des femmes qui vise à renforcer les capacités économiques et sociales des producteurs de cacao dans les communautés sélectionnées, Ofoase et Abenase dans la région de l'Est, Dunkwa dans la région du Centre, Asankaragua dans la région du Nord-Ouest, Offinso dans la région d'Ashanti et Papase dans la région d'Oti grâce aux groupes d'associations villageoises d'épargne et de crédit (VSLA). Le projet est mis en œuvre par Participatory Development Associates (PDA) en partenariat avec le programme agricole Lindt & Sprüngli et ECOM. 49 groupes VSLA ont été formés dans le cadre du projet."}
+                language={language}
               />
               {/* Add more ProjectCards as needed */}
             </div>
           </div>
-        </div>
-        {/* Success Stories Slider */}
-        <section className="py-16 px-8 bg-white text-center">
-          <h2 className="text-3xl font-bold text-red">Stories of Change</h2>
-          <p className="mt-6 text-gray-700">
-            Read about the real impact of our project on the lives of children
-            and families.
-          </p>
-          <SuccessStories />
         </section>
-      </div>
+        {/* Success Stories Slider */}
+        <section ref={storiesRef} className={`py-16 px-8 bg-gradient-to-b from-white to-gray-50 text-center ${storiesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              {t.storiesOfChange.split(" ")[0]} <span className="text-orange">{t.storiesOfChange.split(" ").slice(1).join(" ")}</span>
+            </h2>
+            <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+              {t.storiesDescription}
+            </p>
+            <div className="mt-12">
+              <SuccessStories />
+            </div>
+          </div>
+        </section>
     </section>
   );
 };

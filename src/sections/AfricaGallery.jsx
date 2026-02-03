@@ -79,8 +79,6 @@
 // export default AfricaGallery;
 
 import React from "react";
-
-import Tab from "../components/Tab";
 import {
   rand1,
   rand2,
@@ -219,25 +217,8 @@ const AfricaGallery = () => {
   ];
 
   return (
-    <section className="max-container justify-center max-sm:mx-5 " id="gallery">
-      <h2 className="text-red font-bold text-xl text-center mb-5 font-poppins">
-        Gallery
-      </h2>
-      <div className="flex justify-center w-full">
-        <h3 className="text-4xl leading-[68px] font-poppins font-bold mb-5">
-          Our<span className="text-orange"> Activities </span>
-        </h3>
-      </div>
-      <div className="flex justify-between mx-24 max-sm:ml-0 max-sm:gap-7">
-        <h3 className="font-poppins font-bold text-3xl text-ash pb-4">
-          Photos
-        </h3>
-        {/* <a href="" target="_blank" rel="noopener noreferrer">
-          <Tab label="MORE PHOTOS" />
-        </a> */}
-      </div>
-
-      <div className="grid lg:grid-cols-4 grid-cols-4 gap-4 max-w-7xl max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-3">
+    <div>
+      <div className="grid lg:grid-cols-4 grid-cols-4 gap-4 max-w-full max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-3">
         {albums.map((album, index) => (
           <a
             key={index}
@@ -256,7 +237,7 @@ const AfricaGallery = () => {
           </a>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

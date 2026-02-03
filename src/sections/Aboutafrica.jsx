@@ -18,9 +18,7 @@ const Aboutafrica = () => {
           </h2>
           {/* <p className=" lg:max-w-lg text-base max-sm:text-sm md:text-sm "> */}
           <p className="mt-4 text-xl font-poppins leading-6 lg:max-w-lg">
-            PDA Africa works with communities, governments, local assemblies and
-            like-minded partners to facilitate community-led development using
-            sustainable, innovative and participatory approaches
+            PDA Africa works with communities, organisations, and states to facilitate the participation of all people towards taking greater control over their lives, and contribute to a more sustainable environment and society
           </p>
         </div>
 
@@ -53,10 +51,9 @@ const Aboutafrica = () => {
             {/* <span className='text-coral-red'>Quality </span> Shoes */}
           </h2>
           <p className="mt-4 lg:max-w-lg text-xl font-poppins leading-6 ">
-            We envisage countries where communities have the capacity to plan
-            and implement their own development agendas
+            We envision a world where states, communities, and organisations foster an environment that empowers all individuals, regardless of gender, ethnicity, background, belief, age, or ability to reach their full potential and make meaningful contributions towards a more equitable and sustainable society.
           </p>
-          <p className="mt-6 lg:max-w-lg text-xl font-poppins leading-6 ">
+          {/* <p className="mt-6 lg:max-w-lg text-xl font-poppins leading-6 ">
             We envisage a community where vulnerable, marginalized and minority
             groups participate actively in the development process for an
             inclusive society
@@ -64,7 +61,7 @@ const Aboutafrica = () => {
           <p className="mt-6 lg:max-w-lg text-xl font-poppins leading-6 ">
             We envisage a community where the youth are empowered to make
             positive impact on society
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

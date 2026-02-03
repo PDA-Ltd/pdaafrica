@@ -172,48 +172,28 @@ export const footerLinks = [
         name: "+233 (0)302 252998 / 2970177",
         link: "tel:+233302252998, tel:+2333022970177",
       },
-      { name: "Email:", link: "mailto:info@pdaghana.com" },
-      { name: "info@pdaghana.com", link: "mailto:info@pdaghana.com" },
+      { name: "Email:", link: "mailto:info@pdaafrica.org" },
+      { name: "info@pdaafrica.org", link: "mailto:info@pdaafrica.org" },
     ],
   },
 
   {
     title: "Quick Links",
     links: [
-      { name: "Ethical Review Committee", link: "/" },
-      { name: "Child Abuse Tracker", link: "/" },
-      { name: "COVID 19", link: "/" },
-      { name: "Partners", link: "/" },
-      { name: "Events", link: "/" },
+      { name: "Home", link: "/" },
+      { name: "About Us", link: "/about-us" },
+      { name: "Projects", link: "/projects" },
+      { name: "News & Updates", link: "/news-and-updates" },
+      { name: "Get Involved", link: "/get-involved" },
     ],
   },
 
   {
-    title: "What we do",
+    title: "Programmes",
     links: [
-      { name: "Strategic Themes", link: "/" },
-      { name: "Our Projects", link: "/" },
-      { name: "Expertise", link: "/" },
-    ],
-  },
-
-  {
-    title: "Resources",
-    links: [
-      { name: "Publications", link: "/" },
-      { name: "Podcast", link: "/" },
-      { name: "Vodcast", link: "/" },
-      { name: "Videos", link: "/" },
-      { name: "Photos", link: "/" },
-    ],
-  },
-
-  {
-    title: "Impact",
-    links: [
-      { name: "Impact Stories", link: "/" },
-      { name: "Documentaries", link: "/" },
-      { name: "Case Studies", link: "/" },
+      { name: "Cocoa Communities Library", link: "/cocoa-communities-library-project" },
+      { name: "Financial Inclusion & VSLA", link: "/financial-inclusion-and-vsla" },
+      { name: "Child Labour Remediation", link: "/nyonkopa-child-labour-remediation" },
     ],
   },
 ];
@@ -390,60 +370,53 @@ export const imageArray = [
     alt: "Image 2",
     title: "",
     description:
-      "A not-for-profit organisation which is responsible for the co-creation and design of community-led and community-driven development interventions with governments, the private sector and international development partners.",
+      "A not-for-profit arm of Participatory Development Associates that co-creates the design, implementation, and management of community-led projects and programs.",
   },
   {
     src: Image5,
     alt: "Image 3",
     title: "",
     description:
-      "We view communities as agents of change and development partners",
+      "We use innovative, participatory methodologies to facilitate development processes that empower communities to take ownership of their growth.",
   },
   {
     src: Image4,
     alt: "Image 4",
     title: "",
     description:
-      "We support local governance and, for that matter, decentralization programs",
+      "We do this for communities and partners.",
   },
   {
     src: Image3,
     alt: "Image 5",
     title: "",
     description:
-      "We enhance local capacity through local level coordination, training, facilitation and technical support",
+      "Our partnerships span development interventions with governments, the private sector, and international development partners.",
   },
 ];
 
 export const africaLinks = [
-  { href: "#about-us", label: "About Us" },
-  { href: "#projects", label: "Projects" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#get-involved", label: "Get Involved" },
-  // {
-  //   href: "/pdaafrica/dataanalytics/vsla-dashboard",
-  //   label: "Impact",
-  //   // submenu: [
-  //   // {
-  //   //   href: "/pdaafrica/dataanalytics/cclp-dashboard",
-  //   //   label: "CCLP Dashboard ",
-  //   // },
-  //   // {
-  //   //   href: "/pdaafrica/dataanalytics/vsla-dashboard",
-  //   //   label: "Summary",
-  //   // },
-  //   // {
-  //   //   href: "/pdaafrica/dataanalytics/nclr-dashboard",
-  //   //   label: "Child Abuse Tracker-Nyonkopa",
-  //   // },
-  //   // {
-  //   //   href: "/pdaafrica/dataanalytics",
-  //   //   label: "Summary",
-  //   // },
-  //   // ],
-  // },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "/", label: "Home" },
+  {
+    href: "/about-us",
+    label: "About Us",
+    submenu: [
+      { href: "/about-us", label: "Overview" },
+      { href: "/about-us/where-we-work", label: "Where We Work" },
+      { href: "/about-us/staff", label: "Our Team" },
+    ],
+  },
+  {
+    label: "What We Do",
+    submenu: [
+      { href: "/projects", label: "Projects" },
+      { href: "/gallery", label: "Gallery" },
+      { href: "/news-and-updates", label: "News & Updates" },
+    ],
+  },
+  { href: "/impact", label: "Impact" },
+  { href: "/get-involved", label: "Get Involved" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 export const donateButton = [

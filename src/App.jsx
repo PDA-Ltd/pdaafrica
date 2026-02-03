@@ -116,20 +116,11 @@
 
 // export default App;
 
-import {
-  Footer,
-  Aboutafrica,
-  Volunteer,
-  Projects,
-  CustomerReviews,
-  PdaafricaContact,
-  AfricaGallery,
-  VideoGallery,
-} from "./sections";
-import Nav from "./components/Nav";
-import PDAAFRICA from "./pages/PDAAFRICA";
-import { Outlet, useLocation, Navigate } from "react-router-dom";
+import { Footer } from "./sections";
+import { Outlet, useLocation } from "react-router-dom";
 import PDAAFRICAMenu from "./components/PDAAFRICAMenu";
+import { LanguageProvider } from "./contexts/LanguageContext";
+import CookieConsent from "./components/CookieConsent";
 import { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -203,60 +194,28 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+    // Scroll to top when route changes
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
-    <main className="relative">
-      <header>
-        {location.pathname === "/" ? (
-          <PDAAFRICAMenu /> // Render PDAAFRICA menu when on the home page
-        ) : (
+    <LanguageProvider>
+      <main className="relative">
+        <header>
           <PDAAFRICAMenu />
-          // Render a different menu for other routes
-        )}
-      </header>
+        </header>
 
-      {location.pathname === "/" ? (
-        // Render the PDAAFRICA sections when on "/"
-        <>
-          <PDAAFRICA />
-          <section className="padding" id="about-us">
-            <Aboutafrica />
-          </section>
-          <section className="padding bg-gray-200" id="projects">
-            <Projects />
-          </section>
-          <section className="padding" id="gallery">
-            <AfricaGallery />
-          </section>
-          <section className="padding" id="gallery">
-            <VideoGallery />
-          </section>
-          <section className="padding" id="testimonials">
-            <CustomerReviews />
-          </section>
-          <section className="padding bg-gray-200" id="get-involved">
-            <Volunteer />
-          </section>
-          <section className="padding" id="contact-us">
-            <PdaafricaContact />
-          </section>
-        </>
-      ) : (
-        // Outlet for other routes like /contact, /about, etc.
+        {/* Render individual pages via Outlet */}
         <Outlet />
-      )}
 
-      <section className="bg-[#525050] padding">
-        <Footer />
-      </section>
-    </main>
+        <section className="bg-[#525050] padding">
+          <Footer />
+        </section>
+
+        {/* Cookie Consent Banner */}
+        <CookieConsent />
+      </main>
+    </LanguageProvider>
   );
 };
 

@@ -1,486 +1,53 @@
-// import React, { useState } from "react";
-// import { africaLinks } from "../constants";
-// import { Link } from "react-router-dom";
-// import { pdaafricalogo } from "../assets/icons";
-
-// const PDAAFRICAMenu = () => {
-//   const [openNavigation, setOpenNavigation] = useState(false);
-//   const [hoveredMenu, setHoveredMenu] = useState(null);
-
-//   const toggleNavigation = () => {
-//     setOpenNavigation(!openNavigation);
-//   };
-
-//   return (
-//     <header className="w-full h-24 fixed top-0 left-0 z-50">
-//       <div className="w-full h-3 bg-orange relative z-10"></div>
-//       <nav className="max-w-full shadow-3xl bg-white flex justify-around items-center relative z-10">
-//         <a href="/pdaafrica">
-//           <img
-//             className="pt-5 pb-5"
-//             src={pdaafricalogo}
-//             alt="Logo"
-//             width={100}
-//             height={15}
-//           />
-//         </a>
-
-//         {/* Custom menu items for PDAAFRICA page */}
-//         <ul className="flex gap-8 text-base max-lg:hidden">
-//           {africaLinks.map((item) => (
-//             <li
-//               key={item.label}
-//               className="relative group"
-//               onMouseEnter={() => item.submenu && setHoveredMenu(item.label)}
-//               onMouseLeave={() => setHoveredMenu(null)}
-//             >
-//               <Link
-//                 to={item.href}
-//                 className="font-poppins leading-normal text-lg text-slate-gray"
-//               >
-//                 {item.label}
-//               </Link>
-
-//               {/* Submenu */}
-//               {item.submenu && hoveredMenu === item.label && (
-//                 <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md py-2 w-48">
-//                   {item.submenu.map((subItem) => (
-//                     <li
-//                       key={subItem.label}
-//                       className="px-4 py-2 hover:bg-gray-100"
-//                     >
-//                       <Link
-//                         to={subItem.href}
-//                         className="font-poppins text-base text-gray-600"
-//                       >
-//                         {subItem.label}
-//                       </Link>
-//                     </li>
-//                   ))}
-//                 </ul>
-//               )}
-//             </li>
-//           ))}
-//         </ul>
-
-//         {/* Large screen Donate button */}
-//         <a href="/pdaafrica/donate">
-//           <button
-//             className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden"
-//             onClick={() => handleDonateClick(false)} // Large screen donate logic
-//           >
-//             Donate now
-//           </button>
-//         </a>
-
-//         {/* Mobile menu button */}
-//         <div className="hidden max-lg:block">
-//           <label
-//             htmlFor="openSidebarMenu"
-//             className="sidebarIconToggle cursor-pointer absolute top-[22px] lg:right-[300px] w-[35px] h-[35px] z-[99]"
-//             onClick={toggleNavigation}
-//           >
-//             <div className="spinner diagonal part-1 w-full h-[3px] bg-black absolute"></div>
-//             <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[10px]"></div>
-//             <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[10px]"></div>
-//             <p className="font-poppins font-medium items-center mt-2">Menu</p>
-//           </label>
-//         </div>
-
-//         {/* Mobile menu */}
-//         <div
-//           className={`absolute left-0 w-full bg-white bg-opacity-80 transform transition-transform duration-1000 ease-in-out ${
-//             openNavigation ? "translate-y-[0]" : "translate-y-[-200%]"
-//           }`}
-//           style={{
-//             top: "87px",
-//             zIndex: 1,
-//           }}
-//         >
-//           <ul className="flex flex-col gap-8 text-xl items-center mt-2 mb-4">
-//             {africaLinks.map((item) => (
-//               <li key={item.label}>
-//                 <Link
-//                   to={item.href}
-//                   onClick={() => {
-//                     toggleNavigation(); // Close the mobile menu after clicking
-//                   }}
-//                   className="font-poppins text-xl text-slate-gray"
-//                 >
-//                   {item.label}
-//                 </Link>
-//               </li>
-//             ))}
-//             <a href="/pdaafrica/donate">
-//               <button
-//                 className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none"
-//                 onClick={() => handleDonateClick(true)} // Trigger donation on mobile
-//               >
-//                 Donate now
-//               </button>
-//             </a>
-//           </ul>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default PDAAFRICAMenu;
-
-// import React, { useState } from "react";
-// import { africaLinks } from "../constants";
-// import { Link } from "react-router-dom";
-// import { pdaafricalogo } from "../assets/icons";
-
-// const PDAAFRICAMenu = () => {
-//   const [openNavigation, setOpenNavigation] = useState(false);
-//   const [hoveredMenu, setHoveredMenu] = useState(null);
-//   const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null); // State for mobile submenu
-
-//   const toggleNavigation = () => {
-//     setOpenNavigation(!openNavigation);
-//   };
-
-//   const toggleMobileSubmenu = (label) => {
-//     setOpenMobileSubmenu(openMobileSubmenu === label ? null : label);
-//   };
-
-//   const handleMouseEnter = (label) => {
-//     setHoveredMenu(label); // Show submenu for the hovered item
-//   };
-
-//   const handleMouseLeave = () => {
-//     setHoveredMenu(null); // Hide the submenu when the mouse leaves
-//   };
-
-//   return (
-//     <header className="w-full h-24 fixed top-0 left-0 z-50">
-//       <div className="w-full h-3 bg-orange relative z-10"></div>
-//       <nav className="max-w-full shadow-3xl bg-white flex justify-around items-center relative z-10">
-//         <a href="/pdaafrica">
-//           <img
-//             className="pt-5 pb-5"
-//             src={pdaafricalogo}
-//             alt="Logo"
-//             width={100}
-//             height={15}
-//           />
-//         </a>
-
-//         {/* Large screen menu */}
-//         <ul className="flex gap-8 text-base max-lg:hidden ">
-//           {africaLinks.map((item) => (
-//             <li
-//               key={item.label}
-//               className="relative group hover:scale-110 hover:text-orange"
-//               onMouseEnter={() => handleMouseEnter(item.label)}
-//               onMouseLeave={handleMouseLeave}
-//             >
-//               <Link
-//                 to={item.href}
-//                 className="font-poppins leading-normal text-lg text-slate-gray"
-//               >
-//                 {item.label}
-//               </Link>
-//               {item.submenu && hoveredMenu === item.label && (
-//                 <div className="absolute left-0 mt-2 bg-white shadow-md rounded-md py-2 w-48">
-//                   {item.submenu.map((subItem) => (
-//                     <Link
-//                       key={subItem.label}
-//                       to={subItem.href}
-//                       className="block px-4 py-2 hover:bg-orange hover:text-white font-poppins text-base text-black"
-//                     >
-//                       {subItem.label}
-//                     </Link>
-//                   ))}
-//                 </div>
-//               )}
-//             </li>
-//           ))}
-//         </ul>
-
-//         {/* Donate button */}
-//         <a href="/pdaafrica/donate">
-//           <button className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden">
-//             Donate now
-//           </button>
-//         </a>
-
-//         {/* Mobile menu */}
-//         <div className="hidden max-lg:block">
-//           <label
-//             htmlFor="openSidebarMenu"
-//             className="sidebarIconToggle cursor-pointer absolute top-[22px] lg:right-[300px] w-[35px] h-[35px] z-[99]"
-//             onClick={toggleNavigation}
-//           >
-//             <div className="spinner diagonal part-1 w-full h-[3px] bg-black absolute"></div>
-//             <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[10px]"></div>
-//             <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[10px]"></div>
-//             <p className="font-poppins font-medium items-center mt-2">Menu</p>
-//           </label>
-//         </div>
-
-//         {/* Mobile menu content */}
-//         <div
-//           className={`absolute left-0 w-full bg-white bg-opacity-80 transform transition-transform duration-1000 ease-in-out ${
-//             openNavigation ? "translate-y-[0]" : "translate-y-[-200%]"
-//           }`}
-//           style={{
-//             top: "87px",
-//             zIndex: 1,
-//           }}
-//         >
-//           <ul className="flex flex-col gap-8 text-xl items-center mt-2 mb-4">
-//             {africaLinks.map((item) => (
-//               <li key={item.label}>
-//                 <div className="flex flex-col">
-//                   <div className="flex justify-between items-center">
-//                     <Link
-//                       to={item.href}
-//                       onClick={() => toggleNavigation()} // Close menu on parent click
-//                       className="font-poppins text-xl text-slate-gray hover:scale-110 hover:text-orange"
-//                     >
-//                       {item.label}
-//                     </Link>
-//                     {item.submenu && (
-//                       <button
-//                         onClick={() => toggleMobileSubmenu(item.label)}
-//                         className="ml-2 text-lg"
-//                       >
-//                         {openMobileSubmenu === item.label ? "<" : ">"}
-//                       </button>
-//                     )}
-//                   </div>
-//                   {/* Mobile submenu */}
-//                   {item.submenu && openMobileSubmenu === item.label && (
-//                     <ul className="pl-4 mt-2 space-y-2">
-//                       {item.submenu.map((subItem) => (
-//                         <li key={subItem.label}>
-//                           <Link
-//                             to={subItem.href}
-//                             onClick={() => toggleNavigation()} // Close menu on submenu click
-//                             className="font-poppins text-base text-black hover:scale-110 hover:text-orange"
-//                           >
-//                             {subItem.label}
-//                           </Link>
-//                         </li>
-//                       ))}
-//                     </ul>
-//                   )}
-//                 </div>
-//               </li>
-//             ))}
-//             <a href="/pdaafrica/donate">
-//               <button className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none">
-//                 Donate now
-//               </button>
-//             </a>
-//           </ul>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default PDAAFRICAMenu;
-
-// import React, { useState } from "react";
-// import { africaLinks } from "../constants";
-// import { Link } from "react-router-dom";
-// import { pdaafricalogo } from "../assets/icons";
-// import { useNavigate } from "react-router-dom"; // Import useNavigate at the top
-
-// const PDAAFRICAMenu = () => {
-//   const [openNavigation, setOpenNavigation] = useState(false);
-//   const [hoveredMenu, setHoveredMenu] = useState(null); // For large screens
-//   const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null); // For mobile menu
-
-//   const toggleNavigation = () => {
-//     setOpenNavigation(!openNavigation);
-//   };
-
-//   const handleMobileMenuClick = (label) => {
-//     setOpenMobileSubmenu(openMobileSubmenu === label ? null : label); // Toggle submenu
-//   };
-
-//   const handleMouseEnter = (label) => {
-//     setHoveredMenu(label); // Show submenu for large screen
-//   };
-
-//   const handleMouseLeave = (label) => {
-//     setHoveredMenu(null); // Show submenu for large screen
-//   };
-
-//   const navigate = useNavigate(); // Initialize navigation function
-
-//   const handleNavigation = (hash) => {
-//     navigate("/", { replace: true }); // Reset URL
-//     setTimeout(() => {
-//       navigate(hash); // Navigate to the section
-//     }, 0);
-//   };
-
-//   return (
-//     <header className="w-full h-24 fixed top-0 left-0 z-50">
-//       <div className="w-full h-3 bg-orange relative z-10"></div>
-//       <nav className="max-w-full shadow-3xl bg-white flex justify-around items-center relative z-10">
-//         <a href="/">
-//           <img
-//             className="pt-5 pb-5"
-//             src={pdaafricalogo}
-//             alt="Logo"
-//             width={100}
-//             height={15}
-//           />
-//         </a>
-
-//         {/* Large Screen Menu */}
-//         <ul className="flex gap-8 text-base max-lg:hidden">
-//           {africaLinks.map((item) => (
-//             <li
-//               key={item.label}
-//               className="relative group hover:scale-110 hover:text-orange"
-//               onMouseEnter={() => handleMouseEnter(item.label)}
-//               onMouseLeave={handleMouseLeave}
-//               onClick={() => setHoveredMenu(item.label)} // Toggle submenu on click
-//             >
-//               <Link
-//                 to={item.href}
-//                 className="font-poppins leading-normal text-lg text-slate-gray"
-//               >
-//                 {item.label}
-//               </Link>
-//               {item.submenu && hoveredMenu === item.label && (
-//                 <div className="absolute left-0 bg-white shadow-md rounded-md py-2 w-48">
-//                   {item.submenu.map((subItem) => (
-//                     <Link
-//                       key={subItem.label}
-//                       to={subItem.href}
-//                       className="block px-4 py-2 hover:bg-orange hover:text-white font-poppins text-base text-black"
-//                       onClick={() => setHoveredMenu(null)} // Hide submenu on item click
-//                     >
-//                       {subItem.label}
-//                     </Link>
-//                   ))}
-//                 </div>
-//               )}
-//             </li>
-//           ))}
-//         </ul>
-
-//         {/* Donate Button */}
-//         {/* <a href="/donate">
-//           <button className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden">
-//             Donate now
-//           </button>
-//         </a> */}
-//         <button
-//           onClick={() => navigate("/donate")}
-//           className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden"
-//         >
-//           Donate now
-//         </button>
-
-//         {/* Mobile Menu */}
-//         <div className="hidden max-lg:block">
-//           <label
-//             htmlFor="openSidebarMenu"
-//             className="sidebarIconToggle cursor-pointer absolute top-[22px] lg:right-[300px] w-[35px] h-[35px] z-[99]"
-//             onClick={toggleNavigation}
-//           >
-//             <div className="spinner diagonal part-1 w-full h-[3px] bg-black absolute"></div>
-//             <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[10px]"></div>
-//             <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[10px]"></div>
-//             <p className="font-poppins font-medium text-sm items-center mt-2">
-//               Menu
-//             </p>
-//           </label>
-//         </div>
-
-//         {/* Mobile Menu Content */}
-//         <div
-//           className={`absolute left-0 w-full bg-white bg-opacity-95 transform transition-transform duration-1000 ease-in-out ${
-//             openNavigation ? "translate-y-[0]" : "translate-y-[-200%]"
-//           }`}
-//           style={{
-//             top: "87px",
-//             zIndex: 1,
-//           }}
-//         >
-//           <ul className="flex flex-col gap-8 text-xl items-center mt-2 mb-4">
-//             {africaLinks.map((item) => (
-//               <li key={item.label}>
-//                 <div className="flex flex-col">
-//                   <Link
-//                     to={item.href}
-//                     onClick={() => {
-//                       // Check if the item has a submenu
-//                       if (item.submenu) {
-//                         // If it has a submenu, just handle the submenu toggle
-//                         handleMobileMenuClick(item.label);
-//                       } else {
-//                         // If it doesn't have a submenu, close the navigation
-//                         toggleNavigation();
-//                       }
-//                     }}
-//                     className="font-poppins text-xl text-slate-gray hover:scale-110 hover:text-orange cursor-pointer"
-//                   >
-//                     {item.label}
-//                   </Link>
-
-//                   {/* Mobile Submenu */}
-//                   {item.submenu && openMobileSubmenu === item.label && (
-//                     <ul className="pl-4 mt-2 space-y-2">
-//                       {item.submenu.map((subItem) => (
-//                         <li key={subItem.label}>
-//                           <Link
-//                             to={subItem.href}
-//                             onClick={() => {
-//                               // Close menu on submenu click
-//                               toggleNavigation();
-//                             }}
-//                             className="font-poppins text-base text-black hover:scale-110 hover:text-orange"
-//                           >
-//                             {subItem.label}
-//                           </Link>
-//                         </li>
-//                       ))}
-//                     </ul>
-//                   )}
-//                 </div>
-//               </li>
-//             ))}
-//             {/* <a href="/donate">
-//               <button className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none">
-//                 Donate now
-//               </button>
-//             </a> */}
-//             <button
-//               onClick={() => navigate("/donate")}
-//               className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none "
-//             >
-//               Donate now
-//             </button>
-//           </ul>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default PDAAFRICAMenu;
-
 import React, { useState } from "react";
 import { africaLinks } from "../constants";
 import { Link, useNavigate } from "react-router-dom";
 import { pdaafricalogo } from "../assets/icons";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "../contexts/LanguageContext";
+import { en } from "../translations/en";
+import { fr } from "../translations/fr";
 
 const PDAAFRICAMenu = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState(null);
   const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null);
+  const [hoverTimeout, setHoverTimeout] = useState(null);
   const navigate = useNavigate();
+  const { language } = useLanguage();
+  const t = language === "en" ? en.nav : fr.nav;
+
+  // Map menu items with translations
+  const translatedLinks = africaLinks.map((link) => {
+    const translationMap = {
+      "Home": t.home,
+      "About Us": t.about,
+      "Overview": t.overview,
+      "Where We Work": t.whereWeWork,
+      "Our Team": t.ourTeam,
+      "What We Do": t.whatWeDo,
+      "Projects": t.projects,
+      "Gallery": t.gallery,
+      "News & Updates": t.news,
+      "Impact": t.impact,
+      "Get Involved": t.getInvolved,
+      "Contact Us": t.contact,
+    };
+    
+    const translatedLink = {
+      ...link,
+      label: translationMap[link.label] || link.label,
+    };
+    
+    // Translate submenu items if they exist
+    if (link.submenu) {
+      translatedLink.submenu = link.submenu.map((subItem) => ({
+        ...subItem,
+        label: translationMap[subItem.label] || subItem.label,
+      }));
+    }
+    
+    return translatedLink;
+  });
 
   const toggleNavigation = () => {
     setOpenNavigation(!openNavigation);
@@ -491,57 +58,101 @@ const PDAAFRICAMenu = () => {
   };
 
   const handleMouseEnter = (label) => {
+    // Clear any existing timeout
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
     setHoveredMenu(label);
   };
 
   const handleMouseLeave = () => {
+    // Add a delay before hiding the submenu to allow users to move their mouse
+    const timeout = setTimeout(() => {
+      setHoveredMenu(null);
+    }, 200); // 200ms delay
+    setHoverTimeout(timeout);
+  };
+
+  const handleSubmenuMouseEnter = () => {
+    // Clear timeout when mouse enters submenu
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+  };
+
+  const handleSubmenuMouseLeave = () => {
+    // Hide submenu when mouse leaves
     setHoveredMenu(null);
   };
 
-  // Fix for hash issue
-  const handleNavigation = (hash) => {
-    navigate("/", { replace: true }); // Reset URL
-    setTimeout(() => {
-      navigate(hash); // Navigate to the section
-    }, 0);
+  const handleNavigation = (href) => {
+    if (href) {
+      navigate(href);
+      window.scrollTo(0, 0);
+      setOpenNavigation(false);
+    }
   };
 
   return (
-    <header className="w-full h-24 fixed top-0 left-0 z-50">
-      <div className="w-full h-3 bg-orange relative z-10"></div>
-      <nav className="max-w-full shadow-3xl bg-white flex justify-around items-center relative z-10">
-        <a href="/">
+    <header className="w-full h-20 fixed top-0 left-0 z-50 bg-white shadow-md">
+      <div className="w-full h-2 bg-orange"></div>
+      <nav className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+        <Link to="/" className="flex-shrink-0">
           <img
-            className="pt-5 pb-5"
             src={pdaafricalogo}
-            alt="Logo"
-            width={100}
-            height={15}
+            alt="PDA Africa Logo"
+            className="h-10"
           />
-        </a>
+        </Link>
 
-        {/* Large Screen Menu */}
-        <ul className="flex gap-8 text-base max-lg:hidden">
-          {africaLinks.map((item) => (
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex items-center gap-6">
+          {translatedLinks.map((item) => (
             <li
               key={item.label}
-              className="relative group hover:scale-110 hover:text-orange"
-              onMouseEnter={() => handleMouseEnter(item.label)}
+              className="relative group"
+              onMouseEnter={() => item.submenu && handleMouseEnter(item.label)}
               onMouseLeave={handleMouseLeave}
             >
-              <button
-                onClick={() => handleNavigation(item.href)}
-                className="font-poppins leading-normal text-lg text-slate-gray"
-              >
-                {item.label}
-              </button>
+              {item.href ? (
+                <button
+                  onClick={() => handleNavigation(item.href)}
+                  className="font-poppins text-base text-gray-700 hover:text-orange font-medium transition-colors py-2 flex items-center gap-1"
+                >
+                  {item.label}
+                  {item.submenu && (
+                    <svg className="w-3 h-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                </button>
+              ) : (
+                <button
+                  className="font-poppins text-base text-gray-700 hover:text-orange font-medium transition-colors py-2 flex items-center gap-1"
+                >
+                  {item.label}
+                  {item.submenu && (
+                    <svg className="w-3 h-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                </button>
+              )}
+              
+              {/* Desktop Submenu */}
               {item.submenu && hoveredMenu === item.label && (
-                <div className="absolute left-0 bg-white shadow-md rounded-md py-2 w-48">
+                <div
+                  className="absolute left-0 mt-1 bg-white shadow-lg rounded-md py-2 w-48 border border-gray-100 z-50"
+                  onMouseEnter={handleSubmenuMouseEnter}
+                  onMouseLeave={handleSubmenuMouseLeave}
+                >
                   {item.submenu.map((subItem) => (
                     <button
                       key={subItem.label}
                       onClick={() => handleNavigation(subItem.href)}
-                      className="block px-4 py-2 hover:bg-orange hover:text-white font-poppins text-base text-black"
+                      className="block w-full text-left px-4 py-2 hover:bg-orange hover:text-white font-poppins text-sm text-gray-700 transition-colors"
                     >
                       {subItem.label}
                     </button>
@@ -552,95 +163,99 @@ const PDAAFRICAMenu = () => {
           ))}
         </ul>
 
-        {/* Donate Button */}
-        <button
-          onClick={() => {
-            navigate("/donate");
-            window.scrollTo(0, 0);
-          }}
-          className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none max-lg:hidden"
-        >
-          Donate now
-        </button>
-
-        {/* Mobile Menu */}
-        <div className="hidden max-lg:block">
-          <label
-            htmlFor="openSidebarMenu"
-            className="sidebarIconToggle cursor-pointer absolute top-[22px] w-[35px] h-[35px] z-[99]"
-            onClick={toggleNavigation}
+        {/* Desktop Actions */}
+        <div className="hidden lg:flex items-center gap-4">
+          <LanguageSwitcher />
+          <button
+            onClick={() => handleNavigation("/donate")}
+            className="bg-orange text-white px-6 py-2.5 rounded-lg font-poppins font-semibold text-sm hover:bg-orange-600 transition-colors"
           >
-            <div className="spinner diagonal part-1 w-full h-[3px] bg-black absolute"></div>
-            <div className="spinner horizontal w-full h-[3px] bg-black absolute mt-[10px]"></div>
-            <div className="spinner diagonal part-2 w-full h-[3px] bg-black absolute mt-[10px]"></div>
-            <p className="font-poppins font-medium text-sm items-center mt-2">
-              Menu
-            </p>
-          </label>
+            {t.donate}
+          </button>
         </div>
 
-        {/* Mobile Menu Content */}
-        <div
-          className={`absolute left-0 w-full bg-white bg-opacity-95 transform transition-transform duration-1000 ease-in-out ${
-            openNavigation ? "translate-y-[0]" : "translate-y-[-200%]"
-          }`}
-          style={{
-            top: "87px",
-            zIndex: 1,
-          }}
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleNavigation}
+          className="lg:hidden flex flex-col gap-1.5 w-8 h-8 justify-center"
+          aria-label="Toggle menu"
         >
-          <ul className="flex flex-col gap-8 text-xl items-center mt-2 mb-4">
-            {africaLinks.map((item) => (
-              <li key={item.label}>
-                <div className="flex flex-col">
-                  <button
-                    onClick={() => {
-                      if (item.submenu) {
-                        handleMobileMenuClick(item.label);
-                      } else {
-                        handleNavigation(item.href);
-                        toggleNavigation();
-                      }
-                    }}
-                    className="font-poppins text-xl text-slate-gray hover:scale-110 hover:text-orange cursor-pointer"
-                  >
-                    {item.label}
-                  </button>
-
-                  {/* Mobile Submenu */}
-                  {item.submenu && openMobileSubmenu === item.label && (
-                    <ul className="pl-4 mt-2 space-y-2">
-                      {item.submenu.map((subItem) => (
-                        <li key={subItem.label}>
-                          <button
-                            onClick={() => {
-                              handleNavigation(subItem.href);
-                              toggleNavigation();
-                            }}
-                            className="font-poppins text-base text-black hover:scale-110 hover:text-orange"
-                          >
-                            {subItem.label}
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </li>
-            ))}
-            <button
-              onClick={() => {
-                navigate("/donate");
-                setOpenNavigation(false); // Close the mobile menu
-                window.scrollTo(0, 0);
-              }}
-              className="flex rounded-xl px-7 py-4 border font-poppins text-lg leading-none bg-orange text-white font-bold border-none"
-            >
-              Donate now
-            </button>
-          </ul>
-        </div>
+          <span className={`block h-0.5 w-full bg-gray-700 transition-all ${openNavigation ? 'rotate-45 translate-y-2' : ''}`}></span>
+          <span className={`block h-0.5 w-full bg-gray-700 transition-all ${openNavigation ? 'opacity-0' : ''}`}></span>
+          <span className={`block h-0.5 w-full bg-gray-700 transition-all ${openNavigation ? '-rotate-45 -translate-y-2' : ''}`}></span>
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {openNavigation && (
+        <div className="lg:hidden fixed inset-0 top-20 bg-white z-40 overflow-y-auto">
+          <div className="max-w-7xl mx-auto px-6 py-8">
+            <ul className="flex flex-col gap-1">
+              {translatedLinks.map((item) => (
+                <li key={item.label}>
+                  <div className="flex flex-col">
+                    <button
+                      onClick={() => {
+                        if (item.submenu) {
+                          handleMobileMenuClick(item.label);
+                        } else if (item.href) {
+                          handleNavigation(item.href);
+                        }
+                      }}
+                      className="w-full text-left font-poppins text-lg text-gray-700 hover:text-orange hover:bg-orange-50 font-medium transition-colors py-3 px-4 rounded-lg flex items-center justify-between"
+                    >
+                      <span>{item.label}</span>
+                      {item.submenu && (
+                        <svg
+                          className={`w-4 h-4 transition-transform ${openMobileSubmenu === item.label ? 'rotate-90' : ''}`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      )}
+                    </button>
+
+                    {/* Mobile Submenu */}
+                    {item.submenu && openMobileSubmenu === item.label && (
+                      <ul className="pl-4 mt-2 space-y-2">
+                        {item.submenu.map((subItem) => (
+                          <li key={subItem.label}>
+                            <button
+                              onClick={() => {
+                                handleNavigation(subItem.href);
+                                setOpenNavigation(false);
+                              }}
+                              className="w-full text-left font-poppins text-base text-gray-600 hover:text-orange hover:bg-orange-50 transition-colors py-2 px-4 rounded-lg"
+                            >
+                              {subItem.label}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col gap-4">
+              <LanguageSwitcher />
+              <button
+                onClick={() => handleNavigation("/donate")}
+                className="w-full bg-orange text-white px-6 py-3 rounded-lg font-poppins font-semibold text-base hover:bg-orange-600 transition-colors"
+              >
+                {t.donate}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

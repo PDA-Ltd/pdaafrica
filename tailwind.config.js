@@ -20,6 +20,7 @@ export default {
     extend: {
       colors: {
         orange: "#F89A23",
+        lightOrange: "#fbc98b",
         red: "#F75123",
         ash: "#393636",
       },

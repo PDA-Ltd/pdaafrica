@@ -1,663 +1,11 @@
-// import React, { useState } from "react";
-// import { PaystackButton } from "react-paystack";
-// import { useNavigate } from "react-router-dom"; // If you're using React Router for navigation
-
-// const DonateForm = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [contact, setContact] = useState("");
-//   const [amount, setAmount] = useState("");
-
-//   const publicKey = "pk_test_2d8d00de7ecfca4c21a140a6226b5ee48f9f7f64"; // Replace with your actual Paystack public key
-//   const navigate = useNavigate(); // React Router hook for redirect
-
-//   const handlePaystackSuccessAction = (response) => {
-//     console.log(response); // Handle successful response
-//     // Redirect to a thank-you page after successful payment
-//     navigate("/thank-you");
-//   };
-
-//   const handlePaystackCloseAction = () => {
-//     console.log("Payment popup closed");
-//   };
-
-//   // Paystack expects the amount in kobo (1 GHS = 100 kobo)
-//   const amountInKobo = amount * 100;
-
-//   const componentProps = {
-//     email,
-//     amount: amountInKobo,
-//     metadata: {
-//       name,
-//       phone: contact,
-//     },
-//     publicKey,
-//     text: "Donate Now",
-//     onSuccess: handlePaystackSuccessAction,
-//     onClose: handlePaystackCloseAction,
-//   };
-
-//   return (
-//     <section className="min-h-screen">
-//       <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg p-8 mt-32 mb-10">
-//         <h2 className="text-2xl font-bold mb-4">Donate to Support</h2>
-//         <form>
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Name</label>
-//             <input
-//               type="text"
-//               placeholder="Enter your name"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Email</label>
-//             <input
-//               type="email"
-//               placeholder="Enter your email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Contact</label>
-//             <input
-//               type="tel"
-//               placeholder="Enter your contact number"
-//               value={contact}
-//               onChange={(e) => setContact(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">
-//               Amount (GHS)
-//             </label>
-//             <input
-//               type="number"
-//               placeholder="Enter amount to donate"
-//               value={amount}
-//               onChange={(e) => setAmount(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mt-6">
-//             {/* Paystack Button */}
-//             <PaystackButton
-//               {...componentProps}
-//               className="w-full bg-orange text-white py-2 rounded"
-//             />
-//           </div>
-//         </form>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default DonateForm;
-
-// import React, { useState } from "react";
-// import { PaystackButton } from "react-paystack";
-// import { useNavigate } from "react-router-dom"; // If you're using React Router for navigation
-
-// const DonateForm = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [contact, setContact] = useState("");
-//   const [amount, setAmount] = useState("");
-
-//   const publicKey = "pk_test_2d8d00de7ecfca4c21a140a6226b5ee48f9f7f64"; // Replace with your actual Paystack public key
-//   const navigate = useNavigate(); // React Router hook for redirect
-
-//   const handlePaystackSuccessAction = (response) => {
-//     console.log(response); // Handle successful response
-//     // Redirect to a thank-you page after successful payment
-//     navigate("/thank-you");
-//   };
-
-//   const handlePaystackCloseAction = () => {
-//     console.log("Payment popup closed");
-//   };
-
-//   // Paystack expects the amount in kobo (1 GHS = 100 kobo)
-//   const amountInKobo = amount * 100;
-
-//   const componentProps = {
-//     email,
-//     amount: amountInKobo,
-//     metadata: {
-//       name,
-//       phone: contact,
-//     },
-//     publicKey,
-//     text: "Donate Now",
-//     onSuccess: handlePaystackSuccessAction,
-//     onClose: handlePaystackCloseAction,
-//   };
-
-//   // Close form handler (replace with desired logic)
-//   const handleCloseForm = () => {
-//     navigate(-1); // Navigates to the previous page or you can hide the form with state
-//   };
-
-//   return (
-//     <section className="min-h-screen">
-//       <div className="relative max-w-md mx-auto bg-white shadow-lg rounded-lg p-8 mt-32 mb-10">
-//         {/* Close Button */}
-//         <button
-//           onClick={handleCloseForm}
-//           className="absolute top-2 right-2 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
-//         >
-//           ✕
-//         </button>
-
-//         <h2 className="text-2xl font-bold mb-4">Donate to Support</h2>
-//         <form>
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Name</label>
-//             <input
-//               type="text"
-//               placeholder="Enter your name"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Email</label>
-//             <input
-//               type="email"
-//               placeholder="Enter your email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Contact</label>
-//             <input
-//               type="tel"
-//               placeholder="Enter your contact number"
-//               value={contact}
-//               onChange={(e) => setContact(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">
-//               Amount (GHS)
-//             </label>
-//             <input
-//               type="number"
-//               placeholder="Enter amount to donate"
-//               value={amount}
-//               onChange={(e) => setAmount(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mt-6">
-//             {/* Paystack Button */}
-//             <PaystackButton
-//               {...componentProps}
-//               className="w-full bg-orange text-white py-2 rounded"
-//             />
-//           </div>
-//         </form>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default DonateForm;
-
-// import React, { useState } from "react";
-// import { PaystackButton } from "react-paystack";
-// import { useNavigate } from "react-router-dom"; // If you're using React Router for navigation
-
-// const DonateForm = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [contact, setContact] = useState("");
-//   const [amount, setAmount] = useState("");
-//   const [isFormVisible, setIsFormVisible] = useState(true); // State to manage form visibility
-
-//   const publicKey = "pk_test_2d8d00de7ecfca4c21a140a6226b5ee48f9f7f64"; // Replace with your actual Paystack public key
-//   const navigate = useNavigate(); // React Router hook for redirect
-
-//   const handlePaystackSuccessAction = (response) => {
-//     console.log(response); // Handle successful response
-//     navigate("/thank-you"); // Redirect to a thank-you page after successful payment
-//   };
-
-//   const handlePaystackCloseAction = () => {
-//     console.log("Payment popup closed");
-//   };
-
-//   // Paystack expects the amount in kobo (1 GHS = 100 kobo)
-//   const amountInKobo = amount * 100;
-
-//   const componentProps = {
-//     email,
-//     amount: amountInKobo,
-//     metadata: {
-//       name,
-//       phone: contact,
-//     },
-//     publicKey,
-//     text: "Donate Now",
-//     onSuccess: handlePaystackSuccessAction,
-//     onClose: handlePaystackCloseAction,
-//   };
-
-//   // Close form handler
-//   const handleCloseForm = () => {
-//     setIsFormVisible(false); // Set the form visibility to false to hide it
-//   };
-
-//   // Conditionally render the form based on isFormVisible state
-//   return isFormVisible ? (
-//     <section className="min-h-screen">
-//       <div className="relative max-w-md mx-auto bg-white shadow-lg rounded-lg p-8 mt-32 mb-10">
-//         {/* Close Button */}
-//         <button
-//           onClick={handleCloseForm}
-//           className="absolute top-2 right-2 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
-//         >
-//           ✕
-//         </button>
-
-//         <h2 className="text-2xl font-bold mb-4">Donate to Support</h2>
-//         <form>
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Name</label>
-//             <input
-//               type="text"
-//               placeholder="Enter your name"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Email</label>
-//             <input
-//               type="email"
-//               placeholder="Enter your email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Contact</label>
-//             <input
-//               type="tel"
-//               placeholder="Enter your contact number"
-//               value={contact}
-//               onChange={(e) => setContact(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">
-//               Amount (GHS)
-//             </label>
-//             <input
-//               type="number"
-//               placeholder="Enter amount to donate"
-//               value={amount}
-//               onChange={(e) => setAmount(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mt-6">
-//             {/* Paystack Button */}
-//             <PaystackButton
-//               {...componentProps}
-//               className="w-full bg-orange text-white py-2 rounded"
-//             />
-//           </div>
-//         </form>
-//       </div>
-//     </section>
-//   ) : null; // If isFormVisible is false, return null to hide the form
-// };
-
-// export default DonateForm;
-
-// import React, { useState } from "react";
-// import { PaystackButton } from "react-paystack";
-// import { useNavigate } from "react-router-dom"; // If you're using React Router for navigation
-
-// const DonateForm = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [contact, setContact] = useState("");
-//   const [amount, setAmount] = useState("");
-//   const [isFormVisible, setIsFormVisible] = useState(true); // State to manage form visibility
-
-//   const publicKey = "pk_test_2d8d00de7ecfca4c21a140a6226b5ee48f9f7f64"; // Replace with your actual Paystack public key
-//   const navigate = useNavigate(); // React Router hook for redirect
-
-//   const handlePaystackSuccessAction = (response) => {
-//     console.log(response); // Handle successful response
-//     alert("Thank you for your donation!"); // Show success message
-//     navigate("/thank-you"); // Redirect to a thank-you page after successful payment
-//   };
-
-//   const handlePaystackCloseAction = () => {
-//     alert("Are you sure you want to close?");
-//   };
-
-//   // Paystack expects the amount in kobo (1 GHS = 100 kobo)
-//   const amountInKobo = amount * 100;
-
-//   const componentProps = {
-//     email,
-//     amount: amountInKobo,
-//     metadata: {
-//       name,
-//       phone: contact,
-//     },
-//     publicKey,
-//     text: "Donate Now",
-//     onSuccess: handlePaystackSuccessAction,
-//     onClose: handlePaystackCloseAction,
-//   };
-
-//   // Close form handler
-//   const handleCloseForm = () => {
-//     setIsFormVisible(false); // Set the form visibility to false to hide it
-//   };
-
-//   // Validate the amount to ensure it's positive and non-zero
-//   const handleAmountChange = (e) => {
-//     const inputAmount = e.target.value;
-//     if (inputAmount < 1) {
-//       alert("Amount must be greater than 0");
-//       setAmount("");
-//     } else {
-//       setAmount(inputAmount);
-//     }
-//   };
-
-//   // Check if the form is valid before enabling the Paystack button
-//   const isFormValid = name && email && contact && amount > 0;
-
-//   // Conditionally render the form based on isFormVisible state
-//   return isFormVisible ? (
-//     <section className="min-h-screen">
-//       <div className="relative max-w-md mx-auto bg-white shadow-lg rounded-lg p-8 mt-32 mb-10">
-//         {/* Close Button */}
-//         <button
-//           onClick={handleCloseForm}
-//           className="absolute top-2 right-2 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
-//         >
-//           ✕
-//         </button>
-
-//         <h2 className="text-2xl font-bold mb-4">Donate to Support</h2>
-//         <form>
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Name</label>
-//             <input
-//               type="text"
-//               placeholder="Enter your name"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Email</label>
-//             <input
-//               type="email"
-//               placeholder="Enter your email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Contact</label>
-//             <input
-//               type="tel"
-//               placeholder="Enter your contact number"
-//               value={contact}
-//               onChange={(e) => setContact(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">
-//               Amount (GHS)
-//             </label>
-//             <input
-//               type="number"
-//               placeholder="Enter amount to donate"
-//               value={amount}
-//               onChange={handleAmountChange}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mt-6">
-//             {/* Paystack Button */}
-//             <PaystackButton
-//               {...componentProps}
-//               disabled={!isFormValid}
-//               className={`w-full py-2 rounded ${
-//                 isFormValid ? "bg-orange text-white" : "bg-gray-300"
-//               }`}
-//             />
-//           </div>
-//         </form>
-//       </div>
-//     </section>
-//   ) : null; // If isFormVisible is false, return null to hide the form
-// };
-
-// export default DonateForm;
-
-// correct working code
-
-// import React, { useState } from "react";
-// import { PaystackButton } from "react-paystack";
-// import { useNavigate } from "react-router-dom"; // If you're using React Router for navigation
-
-// const DonateForm = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [contact, setContact] = useState("");
-//   const [amount, setAmount] = useState("");
-//   const [isFormVisible, setIsFormVisible] = useState(true); // State to manage form visibility
-
-//   // const publicKey = "pk_test_466f60b5081faa6734168152196e0bc3fdaa3277"; // Replace with your actual Paystack public key
-//   const publicKey = "pk_test_2d8d00de7ecfca4c21a140a6226b5ee48f9f7f64";
-//   // const publicKey = "pk_live_cb54b7d6231bb859072e97f00d6889a639ef6b1c";
-//   const navigate = useNavigate(); // React Router hook for redirect
-
-//   const handlePaystackSuccessAction = (response) => {
-//     console.log(response); // Handle successful response
-//     alert("Thank you for your donation!"); // Show success message
-//     navigate("/pdaafrica/thank-you"); // Redirect to a thank-you page after successful payment
-//   };
-
-//   const handlePaystackCloseAction = () => {
-//     alert("Are you sure you want to close?");
-//   };
-
-//   // Paystack expects the amount in kobo (1 GHS = 100 kobo)
-//   // const amountInKobo = amount * 100;
-
-//   const componentProps = {
-//     email,
-//     amount: amount * 100,
-//     currency: "GHS",
-//     metadata: {
-//       name,
-//       phone: contact,
-//     },
-//     publicKey,
-//     text: "Donate Now",
-//     onSuccess: handlePaystackSuccessAction,
-//     onClose: handlePaystackCloseAction,
-//   };
-
-//   // Close form handler
-//   const handleCloseForm = () => {
-//     setIsFormVisible(false);
-//     const userConfirmed = window.confirm(
-//       "Are you sure you want to close the donation form?"
-//     );
-//     if (userConfirmed) {
-//       setIsFormVisible(false);
-//       navigate("/pdaafrica"); // Redirect to the homepage
-//     }
-//   };
-//   // const handleCloseForm = () => {
-//   //   setIsFormVisible(false); // Set the form visibility to false to hide it
-//   // };
-
-//   // Validate the amount to ensure it's positive and non-zero
-//   // const handleAmountChange = (e) => {
-//   //   const inputAmount = e.target.value;
-//   //   if (inputAmount < 1) {
-//   //     alert("Amount must be greater than 0");
-//   //     setAmount("");
-//   //   } else {
-//   //     setAmount(inputAmount);
-//   //   }
-//   // };
-
-//   // Prevent form reload on submit
-//   const handleSubmit = (e) => {
-//     e.preventDefault(); // Prevent default form submission behavior
-//   };
-
-//   // Check if the form is valid before enabling the Paystack button
-//   const isFormValid = name && email && contact && amount > 0;
-
-//   // Conditionally render the form based on isFormVisible state
-//   return isFormVisible ? (
-//     <section className="min-h-screen">
-//       <div className="relative max-w-md mx-auto bg-white shadow-lg rounded-lg p-8 mt-32 mb-10">
-//         {/* Close Button */}
-//         <button
-//           onClick={handleCloseForm}
-//           className="absolute top-2 right-2 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
-//         >
-//           ✕
-//         </button>
-
-//         <h2 className="text-2xl font-bold mb-4">Donate to Support</h2>
-//         <form onSubmit={handleSubmit}>
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Name</label>
-//             <input
-//               type="text"
-//               placeholder="Enter your name"
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Email</label>
-//             <input
-//               type="email"
-//               placeholder="Enter your email"
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">Contact</label>
-//             <input
-//               type="tel"
-//               placeholder="Enter your contact number"
-//               value={contact}
-//               onChange={(e) => setContact(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mb-4">
-//             <label className="block text-sm font-medium mb-2">
-//               Amount (GHS)
-//             </label>
-//             <input
-//               type="number"
-//               placeholder="Enter amount to donate"
-//               value={amount}
-//               onChange={(e) => setAmount(e.target.value)}
-//               className="w-full p-2 border border-gray-300 rounded"
-//               required
-//             />
-//           </div>
-
-//           <div className="mt-6">
-//             {/* Paystack Button */}
-//             <PaystackButton
-//               {...componentProps}
-//               disabled={!isFormValid}
-//               className={`w-full py-2 rounded ${
-//                 isFormValid ? "bg-orange text-white" : "bg-gray-300"
-//               }`}
-//             />
-//           </div>
-//         </form>
-//       </div>
-//     </section>
-//   ) : null; // If isFormVisible is false, return null to hide the form
-// };
-
-// export default DonateForm;
-// correct working code end
-
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import { useNavigate } from "react-router-dom";
+import { givelove, close } from "../assets/icons";
+import { africateam } from "../assets/images";
+import { useLanguage } from "../contexts/LanguageContext";
+import { en } from "../translations/en";
+import { fr } from "../translations/fr";
 
 const DonateForm = () => {
   const [name, setName] = useState("");
@@ -668,14 +16,17 @@ const DonateForm = () => {
 
   const publicKey = "pk_test_2d8d00de7ecfca4c21a140a6226b5ee48f9f7f64";
   const navigate = useNavigate();
+  const { language } = useLanguage();
+  const t = language === "en" ? en.donate : fr.donate;
 
   const handleCloseForm = () => {
-    const userConfirmed = window.confirm(
-      "Are you sure you want to close the donation form?"
-    );
+    const confirmMessage = language === "en" 
+      ? "Are you sure you want to close the donation form?"
+      : "Êtes-vous sûr de vouloir fermer le formulaire de don ?";
+    const userConfirmed = window.confirm(confirmMessage);
     if (userConfirmed) {
-      setIsFormVisible(false); // Set form visibility to false
-      navigate("/"); // Redirect to homepage
+      setIsFormVisible(false);
+      navigate("/");
     }
   };
 
@@ -691,92 +42,199 @@ const DonateForm = () => {
     publicKey,
     text: "Donate Now",
     onSuccess: (response) => {
-      alert("Thank you for your donation!");
+      alert(language === "en" ? "Thank you for your donation!" : "Merci pour votre don !");
       navigate("/thank-you");
     },
     onClose: () => {
-      alert("Are you sure you want to close?");
+      alert(language === "en" ? "Are you sure you want to close?" : "Êtes-vous sûr de vouloir fermer ?");
     },
   };
 
+  const isFormValid = name && email && contact && amount > 0;
+
+  const quickAmounts = [50, 100, 200, 500, 1000];
+
   return isFormVisible ? (
-    <section className="min-h-screen">
-      <div className="relative max-w-md mx-auto bg-white shadow-lg rounded-lg p-8 mt-32 mb-10">
-        {/* Close Button */}
-        <button
-          onClick={handleCloseForm}
-          className="absolute top-2 right-2 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center"
-        >
-          ✕
-        </button>
-
-        <h2 className="text-2xl font-bold mb-4">Donate to Support</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Name</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
+    <div className="min-h-screen pt-24 font-poppins bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* Hero Section */}
+      <section className="relative w-full h-[300px] mb-12">
+        <div className="absolute inset-0">
+          <img
+            src={africateam}
+            alt="Donate"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+        </div>
+        <div className="relative z-10 flex items-end h-full padding pb-8">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+              {t.title.split("Difference")[0]} <span className="text-orange">{language === "en" ? "Difference" : "Différence"}</span>
+            </h1>
+            <p className="text-lg text-white/90">
+              {t.subtitle}
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Email</label>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
+      {/* Donation Form */}
+      <section className="padding py-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Left Column - Info */}
+            <div className="md:col-span-1">
+              <div className="bg-white rounded-lg shadow-lg p-6 sticky top-24">
+                <div className="bg-orange/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                  <img src={givelove} alt="Donate" className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+                  {t.whyDonate}
+                </h3>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange mt-1">✓</span>
+                    <span>{t.supportCommunity}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange mt-1">✓</span>
+                    <span>{t.empowerWomen}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange mt-1">✓</span>
+                    <span>{t.createChange}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange mt-1">✓</span>
+                    <span>{t.transparentFunds}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Contact</label>
-            <input
-              type="tel"
-              placeholder="Enter your contact number"
-              value={contact}
-              onChange={(e) => setContact(e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
+            {/* Right Column - Form */}
+            <div className="md:col-span-2">
+              <div className="bg-white rounded-lg shadow-xl p-8 md:p-10">
+                <div className="flex justify-between items-center mb-8">
+                  <h2 className="text-3xl font-bold text-gray-800">
+                    {t.donateToSupport}
+                  </h2>
+                  <button
+                    onClick={handleCloseForm}
+                    className="bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition-colors"
+                  >
+                    <img src={close} alt="close" height={20} width={20} />
+                  </button>
+                </div>
 
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">
-              Amount (GHS)
-            </label>
-            <input
-              type="number"
-              placeholder="Enter amount to donate"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Name */}
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.fullName} *
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your full name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all"
+                      required
+                    />
+                  </div>
 
-          <div className="mt-6">
-            <PaystackButton
-              {...componentProps}
-              disabled={!name || !email || !contact || amount <= 0}
-              className={`w-full py-2 rounded ${
-                name && email && contact && amount > 0
-                  ? "bg-orange text-white"
-                  : "bg-gray-300"
-              }`}
-            />
+                  {/* Email */}
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.emailAddress} *
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all"
+                      required
+                    />
+                  </div>
+
+                  {/* Contact */}
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.phoneNumber} *
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="Enter your phone number"
+                      value={contact}
+                      onChange={(e) => setContact(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all"
+                      required
+                    />
+                  </div>
+
+                  {/* Amount */}
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      {t.donationAmount} *
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="Enter amount"
+                      value={amount}
+                      onChange={(e) => setAmount(e.target.value)}
+                      min="1"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all text-lg font-semibold"
+                      required
+                    />
+
+                    {/* Quick Amount Buttons */}
+                    <div className="mt-4">
+                      <p className="text-sm text-gray-600 mb-2">{t.quickAmounts}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {quickAmounts.map((quickAmount) => (
+                          <button
+                            key={quickAmount}
+                            type="button"
+                            onClick={() => setAmount(quickAmount.toString())}
+                            className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+                              amount === quickAmount.toString()
+                                ? "bg-orange text-white"
+                                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                            }`}
+                          >
+                            GHS {quickAmount}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Donate Button */}
+                  <div className="pt-4">
+                    <PaystackButton
+                      {...componentProps}
+                      disabled={!isFormValid}
+                      className={`w-full py-4 rounded-lg font-bold text-lg transition-all ${
+                        isFormValid
+                          ? "bg-orange text-white hover:bg-orange-600 shadow-lg hover:shadow-xl transform hover:scale-105"
+                          : "bg-gray-300 text-gray-500 cursor-not-allowed"
+                      }`}
+                    />
+                  </div>
+
+                  {/* Security Note */}
+                  <p className="text-xs text-gray-500 text-center mt-4">
+                    🔒 {t.securePayment}
+                  </p>
+                </form>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
-  ) : null; // Return null if the form is not visible
+        </div>
+      </section>
+    </div>
+  ) : null;
 };
 
 export default DonateForm;
