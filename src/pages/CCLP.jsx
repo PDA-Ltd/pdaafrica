@@ -265,7 +265,7 @@ const CCLP = () => {
         {/* Hero Text Content */}
         <div ref={heroRef} className={`relative flex items-center justify-center h-full px-6 ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
           <div className="text-center text-white max-w-4xl">
-            <h1 className="font-poppins font-bold text-5xl md:text-7xl mb-6 text-orange drop-shadow-2xl">
+            <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl mb-6 text-orange drop-shadow-2xl">
               {t.title}
             </h1>
             <p className="text-xl md:text-2xl mt-4 mb-5 font-poppins text-white/90 leading-relaxed">

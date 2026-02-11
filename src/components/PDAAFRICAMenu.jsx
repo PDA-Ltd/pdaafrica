@@ -119,22 +119,22 @@ const PDAAFRICAMenu = () => {
               {item.href ? (
                 <button
                   onClick={() => handleNavigation(item.href)}
-                  className="font-poppins text-base text-gray-700 hover:text-orange font-medium transition-colors py-2 flex items-center gap-1"
+                  className="font-poppins text-lg text-gray-700 hover:text-orange font-semibold transition-colors py-2 flex items-center gap-1.5"
                 >
                   {item.label}
                   {item.submenu && (
-                    <svg className="w-3 h-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
                 </button>
               ) : (
                 <button
-                  className="font-poppins text-base text-gray-700 hover:text-orange font-medium transition-colors py-2 flex items-center gap-1"
+                  className="font-poppins text-lg text-gray-700 hover:text-orange font-semibold transition-colors py-2 flex items-center gap-1.5"
                 >
                   {item.label}
                   {item.submenu && (
-                    <svg className="w-3 h-3 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
@@ -152,7 +152,7 @@ const PDAAFRICAMenu = () => {
                     <button
                       key={subItem.label}
                       onClick={() => handleNavigation(subItem.href)}
-                      className="block w-full text-left px-4 py-2 hover:bg-orange hover:text-white font-poppins text-sm text-gray-700 transition-colors"
+                      className="block w-full text-left px-4 py-2.5 hover:bg-orange hover:text-white font-poppins text-base text-gray-700 transition-colors"
                     >
                       {subItem.label}
                     </button>
@@ -165,13 +165,33 @@ const PDAAFRICAMenu = () => {
 
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center gap-4">
+          <a
+            href="https://www.pdaghana.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative font-poppins text-lg font-bold text-gray-800 hover:text-orange transition-all py-2 px-4 rounded-lg border-2 border-gray-200 hover:border-orange bg-gradient-to-r from-gray-50 to-white hover:from-orange-50 hover:to-orange-100 flex items-center gap-2 shadow-sm hover:shadow-md"
+            title="Visit PDA Ltd - Parent Organization"
+          >
+            <span className="absolute -top-1 -right-1 bg-orange text-white text-xs font-bold px-1.5 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+              ↗
+            </span>
+            <svg className="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <span>{t.pda}</span>
+            <svg className="w-4 h-4 text-gray-500 group-hover:text-orange transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
           <LanguageSwitcher />
+          {/* Donate button - hidden but code preserved
           <button
             onClick={() => handleNavigation("/donate")}
             className="bg-orange text-white px-6 py-2.5 rounded-lg font-poppins font-semibold text-sm hover:bg-orange-600 transition-colors"
           >
             {t.donate}
           </button>
+          */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -245,13 +265,32 @@ const PDAAFRICAMenu = () => {
               ))}
             </ul>
             <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col gap-4">
+              <a
+                href="https://www.pdaghana.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-full text-left font-poppins text-lg font-bold text-gray-800 hover:text-orange transition-all py-3 px-4 rounded-lg border-2 border-gray-200 hover:border-orange bg-gradient-to-r from-gray-50 to-white hover:from-orange-50 hover:to-orange-100 flex items-center justify-between shadow-sm hover:shadow-md"
+                title="Visit PDA Ltd - Parent Organization"
+              >
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span>{t.pda}</span>
+                </div>
+                <svg className="w-4 h-4 text-gray-500 group-hover:text-orange transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
               <LanguageSwitcher />
+              {/* Donate button - hidden but code preserved
               <button
                 onClick={() => handleNavigation("/donate")}
                 className="w-full bg-orange text-white px-6 py-3 rounded-lg font-poppins font-semibold text-base hover:bg-orange-600 transition-colors"
               >
                 {t.donate}
               </button>
+              */}
             </div>
           </div>
         </div>

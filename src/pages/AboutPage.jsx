@@ -1,6 +1,6 @@
 import React from "react";
 import { mission, reachout } from "../assets/images";
-import { peak, dart, bulb, puzzle, globe, signal, finance, clipboard } from "../assets/icons";
+import { peak, dart, bulb, puzzle, globe, signal, finance, clipboard, star, user, research, givelove, respect } from "../assets/icons";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -13,13 +13,14 @@ const AboutPage = () => {
 
   const values = [
     {
-      icon: puzzle,
+      icon: star,
       title: language === "en" ? "Integrity" : "Intégrité",
       description: language === "en" 
         ? "We commit to honest and ethical conduct in all interactions; fostering trust, transparency, and accountability."
         : "Nous nous engageons à une conduite honnête et éthique dans toutes les interactions ; favorisant la confiance, la transparence et la responsabilité.",
       color: "bg-blue-50",
       iconColor: "bg-blue-500",
+      iconFilter: "brightness-0 invert",
     },
     {
       icon: globe,
@@ -29,33 +30,37 @@ const AboutPage = () => {
         : "Nous favorisons des environnements inclusifs où chaque voix est entendue, valorisée et contribue à notre objectif.",
       color: "bg-green-50",
       iconColor: "bg-green-500",
+      iconFilter: "",
     },
     {
-      icon: signal,
+      icon: dart,
       title: language === "en" ? "Impact" : "Impact",
       description: language === "en"
         ? "We focus on outcomes that empower and transform people's lives and communities."
         : "Nous nous concentrons sur les résultats qui autonomisent et transforment la vie des gens et des communautés.",
       color: "bg-lightOrange",
       iconColor: "bg-orange",
+      iconFilter: "brightness-0 invert",
     },
     {
-      icon: bulb,
+      icon: respect,
       title: language === "en" ? "Respect" : "Respect",
       description: language === "en"
         ? "We value the uniqueness of every individual (everyone matters), so we create a safe and supportive environment where the views, opinions, and contributions of everyone is encouraged and respected."
         : "Nous valorisons l'unicité de chaque individu (chacun compte), nous créons donc un environnement sûr et favorable où les opinions, points de vue et contributions de chacun sont encouragés et respectés.",
       color: "bg-purple-50",
       iconColor: "bg-purple-500",
+      iconFilter: "brightness-0 invert",
     },
     {
-      icon: finance,
+      icon: research,
       title: language === "en" ? "Resourcefulness" : "Ingéniosité",
       description: language === "en"
         ? "We work innovatively with communities to harness and effectively utilize local resources for community-led development."
         : "Nous travaillons de manière innovante avec les communautés pour exploiter et utiliser efficacement les ressources locales pour un développement dirigé par la communauté.",
       color: "bg-yellow-50",
       iconColor: "bg-yellow-500",
+      iconFilter: "",
     },
   ];
 
@@ -136,7 +141,7 @@ const AboutPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div ref={heroRef} className={`max-w-4xl mx-auto text-center ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
               {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-yellow-300">{t.title.split(" ").slice(1).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
@@ -241,7 +246,7 @@ const AboutPage = () => {
                 className={`${value.color} rounded-lg p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer`}
               >
                 <div className={`${value.iconColor} rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                  <img src={value.icon} alt={value.title} className="w-8 h-8" />
+                  <img src={value.icon} alt={value.title} className={`w-8 h-8 ${value.iconFilter || ""}`} />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">
                   {value.title}

@@ -35,6 +35,8 @@ import Podcast from "./pages/Podcast.jsx";
 import CCLPDashboard from "./pages/CCLPDashboard.jsx";
 import VSLADashboard from "./pages/VSLADashboard.jsx";
 import NCLRDashboard from "./pages/NCLRDashboard.jsx";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
+import TermsOfServicePage from "./pages/TermsOfServicePage.jsx";
 // import Aboutafrica from "./sections/Aboutafrica.jsx";
 // import AfricaGallery from "./sections/AfricaGallery.jsx";
 // import PdaafricaContact from "./sections/PdaafricaContact.jsx";
@@ -123,14 +125,15 @@ const router = createBrowserRouter([
         path: "/contact-us",
         element: <ContactPage />,
       },
-      {
-        path: "/donate", // Add the route for the donation page
-        element: <DonateForm />,
-      },
-      {
-        path: "/thank-you", // Route for the thank-you page after donation
-        element: <ThankYouPage />,
-      },
+      // Donate route - hidden but code preserved
+      // {
+      //   path: "/donate", // Add the route for the donation page
+      //   element: <DonateForm />,
+      // },
+      // {
+      //   path: "/thank-you", // Route for the thank-you page after donation
+      //   element: <ThankYouPage />,
+      // },
       // {
       //   path: "/about-us",
       //   element: <Aboutafrica />,
@@ -198,6 +201,14 @@ const router = createBrowserRouter([
       {
         path: "/covid-19",
         element: <Covid19 />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicyPage />,
+      },
+      {
+        path: "/terms-of-service",
+        element: <TermsOfServicePage />,
       },
     ],
   },

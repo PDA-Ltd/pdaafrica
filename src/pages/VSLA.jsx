@@ -152,7 +152,7 @@ const VSLA = () => {
         
         <div ref={heroRef} className={`relative h-full flex items-center justify-center px-6 ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
           <div className="text-center max-w-4xl">
-            <h1 className="font-poppins font-bold text-5xl md:text-7xl text-orange mb-6 drop-shadow-2xl">
+            <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl text-orange mb-6 drop-shadow-2xl">
               {t.title}
             </h1>
             <p className="text-white mt-4 px-4 md:px-12 font-poppins mb-5 text-xl md:text-2xl leading-relaxed">

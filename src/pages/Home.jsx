@@ -61,8 +61,8 @@ const Home = () => {
         <HomeSlider />
       </section>
 
-      {/* Impact Statistics Section */}
-      <section className="bg-white py-12 border-b border-gray-200">
+      {/* Impact Statistics Section - hidden but code preserved */}
+      {/* <section className="bg-white py-12 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6">
           <div ref={statsRef} className={`grid grid-cols-1 md:grid-cols-3 gap-6 ${statsVisible ? 'animate-on-scroll visible bounce' : 'animate-on-scroll bounce'}`}>
             <div className="text-center group cursor-pointer transform hover:scale-105 transition-transform">
@@ -79,7 +79,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section - Featured */}
       <section className="py-12 bg-white">
