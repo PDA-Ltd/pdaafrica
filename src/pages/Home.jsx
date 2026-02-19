@@ -230,7 +230,7 @@ const Home = () => {
                 <span className="text-orange font-semibold text-sm uppercase tracking-wide">
                   {t.featuredStory || "Featured Story"}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mt-4 mb-4 leading-snug">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mt-4 mb-4" style={{ lineHeight: '1.1' }}>
                   {t.featuredStoryTitle || "Farmers' Voice Radio Academy: Empowering Ghana's Cocoa Farmers"}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
