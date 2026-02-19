@@ -269,7 +269,7 @@ export const projects = [
   },
   {
     imgURL: cclp,
-    label: "Cocoa Communities’ Library Project",
+    label: "Cocoa Communities' Library Project",
     subtext:
       "Promoting literacy and reading habits among children in cocoa-growing communities.",
     button: "Read More",
@@ -284,6 +284,22 @@ export const projects = [
     button: "Read More",
     // link: "https://pdaghana.com/nyonkopa-child-labour-remediation-vsla/",
     link: "/nyonkopa-child-labour-remediation",
+  },
+  {
+    imgURL: cocoa,
+    label: "The iMPACT Project",
+    subtext:
+      "Transforming cocoa-dependent communities through integrated development approaches combining agriculture, environment, education, and health.",
+    button: "Read More",
+    link: "/the-impact-project",
+  },
+  {
+    imgURL: child,
+    label: "\"Yen Daakye\" Programme",
+    subtext:
+      "Eliminating the worst forms of child labour and forced labour in cocoa production and marketing through community-driven approaches.",
+    button: "Read More",
+    link: "/yen-daakye-programme",
   },
 ];
 export const reviews = [

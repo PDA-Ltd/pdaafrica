@@ -42,8 +42,8 @@ const GalleryPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div ref={heroRef} className={`max-w-4xl mx-auto text-center ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
-              {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-yellow-300">{t.title.split(" ").slice(1).join(" ")}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3">
+              {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-black">{t.title.split(" ").slice(1).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               {t.subtitle}
@@ -57,7 +57,7 @@ const GalleryPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div ref={videosRef} className={`flex justify-between items-center mb-10 ${videosVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
                 {t.videos}
               </h2>
               <p className="text-lg text-gray-600">
@@ -139,7 +139,7 @@ const GalleryPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div ref={photosRef} className={`flex justify-between items-center mb-10 ${photosVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
                 {t.photos}
               </h2>
               <p className="text-lg text-gray-600">

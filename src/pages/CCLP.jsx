@@ -265,7 +265,7 @@ const CCLP = () => {
         {/* Hero Text Content */}
         <div ref={heroRef} className={`relative flex items-center justify-center h-full px-6 ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
           <div className="text-center text-white max-w-4xl">
-            <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl mb-6 text-orange drop-shadow-2xl">
+            <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl mb-3 text-orange drop-shadow-2xl">
               {t.title}
             </h1>
             <p className="text-xl md:text-2xl mt-4 mb-5 font-poppins text-white/90 leading-relaxed">
@@ -280,8 +280,8 @@ const CCLP = () => {
       {/* Project Components Section */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={objectivesRef} className={`text-center mb-12 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-4">
+          <div ref={objectivesRef} className={`text-center mb-6 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
               {t.projectObjectives.split(" ")[0]} <span className="text-orange">{t.projectObjectives.split(" ").slice(1).join(" ")}</span>
             </h2>
           </div>
@@ -321,8 +321,8 @@ const CCLP = () => {
       {/* Project Goals Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={rationaleRef} className={`text-center mb-12 ${rationaleVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-4">
+          <div ref={rationaleRef} className={`text-center mb-6 ${rationaleVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
               {t.rationale.split(" ")[0]} <span className="text-orange">{t.rationale.split(" ").slice(1).join(" ")}</span>
             </h2>
           </div>
@@ -359,8 +359,8 @@ const CCLP = () => {
       {/* Reading Competition Flow Section */}
       <section className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={competitionRef} className={`text-center mb-12 ${competitionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-4">
+          <div ref={competitionRef} className={`text-center mb-6 ${competitionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
               {t.competitionStructure.split(" ")[0]} <span className="text-orange">{t.competitionStructure.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mt-4">

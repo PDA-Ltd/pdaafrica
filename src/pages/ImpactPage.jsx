@@ -114,8 +114,8 @@ const ImpactPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div ref={heroRef} className={`max-w-4xl mx-auto text-center ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
-              {t.title.split(" ")[0]} <span className="text-yellow-300">{t.title.split(" ").slice(1).join(" ")}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3">
+              {t.title.split(" ")[0]} <span className="text-black">{t.title.split(" ").slice(1).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               {t.subtitle}
@@ -127,8 +127,8 @@ const ImpactPage = () => {
       {/* Impact Statistics */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={statsRef} className={`text-center mb-10 ${statsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={statsRef} className={`text-center mb-6 ${statsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.impactStats}
             </h2>
           </div>
@@ -166,8 +166,8 @@ const ImpactPage = () => {
       {/* Areas of Work */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={areasRef} className={`text-center mb-10 ${areasVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={areasRef} className={`text-center mb-6 ${areasVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.areasOfWork}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -186,15 +186,11 @@ const ImpactPage = () => {
                     : "hover:shadow-xl"
                 }`}
               >
-                <div className={`bg-orange/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${
-                  hoveredArea === index ? "bg-orange scale-110 rotate-6" : ""
-                }`}>
+                <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-all duration-300">
                   <img 
                     src={area.icon} 
                     alt={area.title} 
-                    className={`w-8 h-8 transition-all duration-300 ${
-                      hoveredArea === index ? "brightness-0 invert" : ""
-                    }`}
+                    className="w-8 h-8 transition-all duration-300 brightness-0 invert"
                   />
                 </div>
                 <h3 className={`text-xl font-bold mb-2 transition-colors ${
@@ -216,8 +212,8 @@ const ImpactPage = () => {
       {/* Program Impact */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={programRef} className={`text-center mb-10 ${programVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={programRef} className={`text-center mb-6 ${programVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.programImpact}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -237,16 +233,14 @@ const ImpactPage = () => {
                     : "from-orange/10 to-white border-orange/20 shadow-md hover:shadow-xl"
                 }`}
               >
-                <div className={`mb-4 transition-all duration-300 ${
-                  hoveredProgram === index ? "scale-110" : ""
-                }`}>
-                  <img 
-                    src={program.icon} 
-                    alt={program.title}
-                    className={`w-12 h-12 transition-all duration-300 ${
-                      hoveredProgram === index ? "brightness-0 invert" : ""
-                    }`}
-                  />
+                <div className="mb-4 transition-all duration-300">
+                  <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                    <img 
+                      src={program.icon} 
+                      alt={program.title}
+                      className="w-10 h-10 transition-all duration-300 brightness-0 invert"
+                    />
+                  </div>
                 </div>
                 <h3 className={`text-2xl font-bold mb-4 transition-colors ${
                   hoveredProgram === index ? "text-white" : "text-gray-800"
@@ -277,8 +271,8 @@ const ImpactPage = () => {
       {/* Testimonials Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={testimonialsRef} className={`text-center mb-10 ${testimonialsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={testimonialsRef} className={`text-center mb-6 ${testimonialsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.testimonials}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">

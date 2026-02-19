@@ -45,8 +45,8 @@ const GetInvolvedPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
-              {t.title.split(" ").slice(0, 2).join(" ")} <span className="text-yellow-300">{t.title.split(" ").slice(2).join(" ")}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3">
+              {t.title.split(" ").slice(0, 2).join(" ")} <span className="text-black">{t.title.split(" ").slice(2).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               {t.subtitle}
@@ -58,8 +58,8 @@ const GetInvolvedPage = () => {
       {/* Ways to Get Involved */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div className="text-center mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.waysToGetInvolved.split(" ").slice(0, 2).join(" ")} <span className="text-orange">{t.waysToGetInvolved.split(" ").slice(2).join(" ")}</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -67,9 +67,10 @@ const GetInvolvedPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Filter out donate service - hidden but code preserved */}
-            {services.filter(service => service.linkType !== "paystack").map((service, index) => {
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
+              {/* Filter out donate service - hidden but code preserved */}
+              {services.filter(service => service.linkType !== "paystack").map((service, index) => {
               const icon = serviceIcons[service.label] || volunteer;
               // Get translated service data
               const serviceTranslations = t.services || {};
@@ -84,7 +85,7 @@ const GetInvolvedPage = () => {
                     <img
                       src={icon}
                       alt={translatedService.label || service.label}
-                      className="w-12 h-12 group-hover:brightness-0 group-hover:invert transition-all"
+                      className="w-12 h-12"
                     />
                   </div>
 
@@ -106,6 +107,7 @@ const GetInvolvedPage = () => {
                 </div>
               );
             })}
+            </div>
           </div>
         </div>
       </section>
@@ -113,8 +115,8 @@ const GetInvolvedPage = () => {
       {/* Why Get Involved Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div className="text-center mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.whyGetInvolved.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.whyGetInvolved.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">

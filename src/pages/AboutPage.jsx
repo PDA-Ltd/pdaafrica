@@ -141,8 +141,8 @@ const AboutPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div ref={heroRef} className={`max-w-4xl mx-auto text-center ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
-              {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-yellow-300">{t.title.split(" ").slice(1).join(" ")}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3">
+              {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-black">{t.title.split(" ").slice(1).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               {t.subtitle}
@@ -154,8 +154,8 @@ const AboutPage = () => {
       {/* Profile Section */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={profileRef} className={`text-center mb-10 ${profileVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <div ref={profileRef} className={`text-center mb-6 ${profileVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
               {t.profile.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.profile.split(" ").slice(1).join(" ")}</span>
             </h2>
           </div>
@@ -180,7 +180,7 @@ const AboutPage = () => {
             <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center">
-                  <img src={peak} alt="Vision" className="w-10 h-10" />
+                  <img src={peak} alt="Vision" className="w-10 h-10 brightness-0 invert" />
                 </div>
                 <h3 className="text-3xl font-bold text-gray-800">
                   {t.vision.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.vision.split(" ").slice(1).join(" ")}</span>
@@ -195,7 +195,7 @@ const AboutPage = () => {
             <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center">
-                  <img src={dart} alt="Mission" className="w-10 h-10" />
+                  <img src={dart} alt="Mission" className="w-10 h-10 brightness-0 invert" />
                 </div>
                 <h3 className="text-3xl font-bold text-gray-800">
                   {t.mission.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.mission.split(" ").slice(1).join(" ")}</span>
@@ -230,11 +230,11 @@ const AboutPage = () => {
       {/* Values Section */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={valuesRef} className={`text-center mb-10 ${valuesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={valuesRef} className={`text-center mb-6 ${valuesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.values.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.values.split(" ").slice(1).join(" ")}</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-24">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               {t.valuesDesc}
             </p>
           </div>
@@ -263,11 +263,11 @@ const AboutPage = () => {
       {/* Strategic Objectives Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={objectivesRef} className={`text-center mb-10 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={objectivesRef} className={`text-center mb-6 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.strategicObjectives.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.strategicObjectives.split(" ").slice(1).join(" ")}</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-24">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               {t.strategicDesc}
             </p>
           </div>
@@ -279,11 +279,11 @@ const AboutPage = () => {
                 to={objective.link}
                 className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
               >
-                <div className="bg-lightOrange rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-orange group-hover:scale-110 transition-all">
+                <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
                   <img
                     src={objective.icon}
                     alt={objective.title}
-                    className="w-8 h-8 group-hover:brightness-0 group-hover:invert transition-all"
+                    className="w-8 h-8 brightness-0 invert"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-orange transition-colors">

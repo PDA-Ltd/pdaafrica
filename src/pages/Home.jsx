@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HomeSlider from "../components/HomeSlider";
-import { mission, farmer, child, africateam, reachout, cclp, vsla } from "../assets/images";
+import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa } from "../assets/images";
 import { reviews } from "../constants";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../constants";
@@ -41,6 +41,18 @@ const Home = () => {
       description: t.featuredProjects?.childLabour?.description || "Protecting children and ensuring their rights in cocoa-growing communities.",
       image: child,
       link: "/nyonkopa-child-labour-remediation",
+    },
+    {
+      title: t.featuredProjects?.impact?.title || "The iMPACT Project",
+      description: t.featuredProjects?.impact?.description || "Transforming cocoa-dependent communities through integrated development approaches.",
+      image: cocoa,
+      link: "/the-impact-project",
+    },
+    {
+      title: t.featuredProjects?.yenDaakye?.title || "\"Yen Daakye\" Programme",
+      description: t.featuredProjects?.yenDaakye?.description || "Eliminating the worst forms of child labour and forced labour in cocoa production.",
+      image: child,
+      link: "/yen-daakye-programme",
     },
   ];
 
@@ -86,7 +98,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3 leading-tight">
                 {t.aboutTitle.split("PDA Africa")[0]} <span className="text-orange">PDA Africa</span>
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -129,8 +141,8 @@ const Home = () => {
       {/* Featured Projects Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={projectsRef} className={`text-center mb-12 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div ref={projectsRef} className={`text-center mb-6 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
               {t.programmes.split("Programmes")[0]} <span className="text-orange">{language === "en" ? "Programmes" : "Programmes"}</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -139,7 +151,7 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {featuredProjects.map((project, index) => (
+            {featuredProjects.slice(0, 3).map((project, index) => (
               <Link
                 key={index}
                 to={project.link}
@@ -160,21 +172,8 @@ const Home = () => {
                   <p className="text-gray-600 leading-relaxed mb-4 text-sm">
                     {project.description}
                   </p>
-                  <span className="text-orange font-semibold group-hover:underline inline-flex items-center text-sm">
+                  <span className="text-orange font-semibold group-hover:underline text-sm">
                     {t.exploreProject || "Explore Project"}
-                    <svg
-                      className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
                   </span>
                 </div>
               </Link>
@@ -195,9 +194,9 @@ const Home = () => {
       {/* News & Updates Section */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={newsRef} className={`flex justify-between items-center mb-10 ${newsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+          <div ref={newsRef} className={`flex justify-between items-center mb-6 ${newsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
                 {t.latestNews.split("News")[0]} <span className="text-orange">{language === "en" ? "News" : "Actualités"}</span>
               </h2>
               <p className="text-lg text-gray-600">
@@ -231,7 +230,7 @@ const Home = () => {
                 <span className="text-orange font-semibold text-sm uppercase tracking-wide">
                   {t.featuredStory || "Featured Story"}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mt-4 mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mt-4 mb-4 leading-snug">
                   {t.featuredStoryTitle || "Farmers' Voice Radio Academy: Empowering Ghana's Cocoa Farmers"}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
@@ -274,7 +273,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div ref={galleryRef} className={`flex justify-between items-center mb-10 ${galleryVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
                 {t.activities.split("Activities")[0]} <span className="text-orange">{language === "en" ? "Activities" : "Activités"}</span>
               </h2>
               <p className="text-lg text-gray-600">
@@ -324,8 +323,8 @@ const Home = () => {
       {/* Testimonials Preview Section */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={testimonialRef} className={`text-center mb-12 ${testimonialVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div ref={testimonialRef} className={`text-center mb-6 ${testimonialVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
               {t.impact.split("Impact")[0]} <span className="text-orange">{language === "en" ? "Impact" : "Impact"}</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -371,7 +370,7 @@ const Home = () => {
       <section className="py-12 bg-gradient-to-r from-orange/90 to-orange/80">
         <div className="max-w-7xl mx-auto px-6">
           <div ref={ctaRef} className={`max-w-4xl mx-auto text-center ${ctaVisible ? 'animate-on-scroll visible scale' : 'animate-on-scroll scale'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-2 text-white">
             {t.readyToMakeDifference}
           </h2>
           <p className="text-xl mb-8 text-white/95 leading-relaxed">

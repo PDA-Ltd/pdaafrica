@@ -37,6 +37,8 @@ import VSLADashboard from "./pages/VSLADashboard.jsx";
 import NCLRDashboard from "./pages/NCLRDashboard.jsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 import TermsOfServicePage from "./pages/TermsOfServicePage.jsx";
+import ImpactProject from "./pages/ImpactProject.jsx";
+import YenDaakye from "./pages/YenDaakye.jsx";
 // import Aboutafrica from "./sections/Aboutafrica.jsx";
 // import AfricaGallery from "./sections/AfricaGallery.jsx";
 // import PdaafricaContact from "./sections/PdaafricaContact.jsx";
@@ -209,6 +211,14 @@ const router = createBrowserRouter([
       {
         path: "/terms-of-service",
         element: <TermsOfServicePage />,
+      },
+      {
+        path: "/the-impact-project",
+        element: <ImpactProject />,
+      },
+      {
+        path: "/yen-daakye-programme",
+        element: <YenDaakye />,
       },
     ],
   },

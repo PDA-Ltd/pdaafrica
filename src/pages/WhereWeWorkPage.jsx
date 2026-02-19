@@ -130,8 +130,8 @@ const WhereWeWorkPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div ref={heroRef} className={`max-w-4xl mx-auto text-center ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
-              {t.title.split(" ").slice(0, 2).join(" ")} <span className="text-yellow-300">{t.title.split(" ").slice(2).join(" ")}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3">
+              {t.title.split(" ").slice(0, 2).join(" ")} <span className="text-black">{t.title.split(" ").slice(2).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               {t.subtitle}
@@ -166,8 +166,8 @@ const WhereWeWorkPage = () => {
       {/* Country Selector */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={countriesRef} className={`text-center mb-10 ${countriesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={countriesRef} className={`text-center mb-6 ${countriesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.presence}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -236,7 +236,7 @@ const WhereWeWorkPage = () => {
                 <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="bg-gradient-to-br from-orange to-orange/80 rounded-lg p-3">
-                      <img src={globe} alt="Regions" className="w-6 h-6 brightness-0 invert" />
+                      <img src={globe} alt="Regions" className="w-6 h-6" />
                     </div>
                     <h4 className="text-2xl font-bold text-gray-800">{t.regionsWeWork}</h4>
                   </div>
@@ -252,7 +252,7 @@ const WhereWeWorkPage = () => {
                 <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="bg-gradient-to-br from-red to-red/80 rounded-lg p-3">
-                      <img src={clipboard} alt="Programs" className="w-6 h-6 brightness-0 invert" />
+                      <img src={clipboard} alt="Programs" className="w-6 h-6" />
                     </div>
                     <h4 className="text-2xl font-bold text-gray-800">{t.keyPrograms}</h4>
                   </div>
@@ -261,8 +261,8 @@ const WhereWeWorkPage = () => {
                       const icon = programIcons[program] || globe;
                       return (
                         <li key={index} className="flex items-start gap-3 text-gray-700 bg-gray-50 rounded-lg p-3 hover:bg-red/5 transition-colors group">
-                          <div className="bg-gradient-to-br from-orange/20 to-orange/10 rounded-lg p-2 group-hover:from-orange/30 group-hover:to-orange/20 transition-colors mt-1">
-                            <img src={icon} alt={program} className="w-5 h-5" />
+                          <div className="bg-orange rounded-lg p-2 transition-colors mt-1">
+                            <img src={icon} alt={program} className="w-5 h-5 brightness-0 invert" />
                           </div>
                           <span className="font-medium flex-1">{program}</span>
                         </li>

@@ -301,7 +301,7 @@ const Nyonkopa = () => {
         
         <div ref={heroRef} className={`relative flex items-center justify-center h-full px-6 ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
           <div className="text-center text-white max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl text-orange font-bold font-poppins mb-6 drop-shadow-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-orange font-bold font-poppins mb-3 drop-shadow-2xl">
               {t.title}
             </h1>
             <p className="text-xl md:text-2xl mt-4 mb-5 leading-relaxed">
@@ -314,8 +314,8 @@ const Nyonkopa = () => {
       {/* Project Overview and Objectives */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div ref={aboutRef} className={`text-center mb-12 ${aboutVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={aboutRef} className={`text-center mb-6 ${aboutVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.aboutProject.split(" ")[0]} <span className="text-orange">{t.aboutProject.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="mt-6 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -351,8 +351,8 @@ const Nyonkopa = () => {
       {/* Objectives and Goals Section */}
       <section className="py-16 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
-          <div ref={objectivesRef} className={`text-center mb-12 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={objectivesRef} className={`text-center mb-6 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.projectObjectives.split(" ")[0]} <span className="text-orange">{t.projectObjectives.split(" ").slice(1).join(" ")}</span>
             </h2>
           </div>
@@ -388,8 +388,8 @@ const Nyonkopa = () => {
       {/* Module */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div ref={moduleRef} className={`text-center mb-12 ${moduleVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={moduleRef} className={`text-center mb-6 ${moduleVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.projectModule.split(" ")[0]} <span className="text-orange">{t.projectModule.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="mt-6 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -494,8 +494,8 @@ const Nyonkopa = () => {
       {/* Map Section */}
       <section className="py-16 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
-          <div ref={coverageRef} className={`text-center mb-12 ${coverageVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={coverageRef} className={`text-center mb-6 ${coverageVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.projectCoverage.split(" ")[0]} <span className="text-orange">{t.projectCoverage.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="mt-6 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">

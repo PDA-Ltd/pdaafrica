@@ -21,6 +21,7 @@ import {
   lindt,
   nestle,
 } from "../assets/images";
+import { finance, globe, clipboard } from "../assets/icons";
 import Tab from "../components/Tab";
 import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
@@ -71,24 +72,78 @@ const SuccessStories = () => {
   );
 };
 
-const ProjectCard = ({ title, description, location, officers, text, language }) => {
+const ProjectCard = ({ title, description, location, officers, text, language, index }) => {
   const t = language === "en" ? en.vsla : fr.vsla;
+  
+  // Different gradient colors for variety
+  const gradients = [
+    "from-orange via-orange/90 to-orange/80",
+    "from-blue-500 via-blue-400 to-blue-600",
+    "from-purple-500 via-purple-400 to-purple-600",
+    "from-green-500 via-green-400 to-green-600",
+    "from-red via-red/90 to-red/80",
+    "from-indigo-500 via-indigo-400 to-indigo-600",
+  ];
+  
+  const gradient = gradients[index % gradients.length];
+  const icon = index % 3 === 0 ? finance : index % 3 === 1 ? globe : clipboard;
+  
   return (
     <div className="flip-card h-full">
       <div className="flip-card-inner h-full">
         {/* Front of the card */}
-        <div className="flip-card-front border-2 border-gray-200 rounded-2xl p-6 shadow-lg bg-white font-poppins hover:shadow-xl transition-shadow duration-300">
-          <h3 className="text-xl font-bold mb-3 text-orange leading-tight">{title}</h3>
-          <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
-          <div className="mt-4 space-y-2">
-            <p className="text-gray-700 font-semibold"><span className="text-orange">{t.location}:</span> {location}</p>
-            <p className="text-gray-700 font-semibold"><span className="text-orange">{t.fieldOfficers}:</span> {officers}</p>
+        <div className="flip-card-front border-0 rounded-2xl p-0 shadow-xl font-poppins hover:shadow-2xl transition-all duration-300 overflow-hidden w-full relative group">
+          {/* Gradient Background */}
+          <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-90 group-hover:opacity-100 transition-opacity`}>
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
+          </div>
+          
+          {/* Decorative circles */}
+          <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12 blur-2xl"></div>
+          
+          {/* Content */}
+          <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col">
+            {/* Icon */}
+            <div className="mb-4 flex items-start justify-between">
+              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3 group-hover:bg-white/30 transition-all group-hover:scale-110">
+                <img src={icon} alt="Project" className="w-6 h-6 sm:w-8 sm:h-8" />
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5">
+                <span className="text-white text-xs font-bold">{officers} {t.fieldOfficers}</span>
+              </div>
+            </div>
+            
+            {/* Title */}
+            <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 text-white leading-tight break-words overflow-wrap-anywhere drop-shadow-lg">{title}</h3>
+            
+            {/* Description */}
+            <p className="text-white/90 mb-4 leading-relaxed text-xs sm:text-sm md:text-base break-words overflow-wrap-anywhere flex-1 drop-shadow">{description}</p>
+            
+            {/* Location Badge */}
+            <div className="mt-auto pt-4 border-t border-white/20">
+              <div className="flex items-center gap-2">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <p className="text-white text-xs sm:text-sm font-semibold break-words overflow-wrap-anywhere">{location}</p>
+              </div>
+            </div>
+            
+            {/* Hover indicator */}
+            <div className="absolute bottom-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            </div>
           </div>
         </div>
 
         {/* Back of the card */}
-        <div className="flip-card-back border-2 border-orange rounded-2xl p-6 shadow-lg bg-gradient-to-br from-orange/5 to-orange/10 font-poppins">
-          <p className="text-gray-700 text-sm leading-relaxed">{text}</p>
+        <div className="flip-card-back border-2 border-orange rounded-2xl p-4 sm:p-6 shadow-lg bg-gradient-to-br from-orange/5 to-orange/10 font-poppins overflow-y-auto w-full">
+          <p className="text-gray-700 text-xs sm:text-sm leading-relaxed break-words overflow-wrap-anywhere">{text}</p>
         </div>
       </div>
     </div>
@@ -152,7 +207,7 @@ const VSLA = () => {
         
         <div ref={heroRef} className={`relative h-full flex items-center justify-center px-6 ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
           <div className="text-center max-w-4xl">
-            <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl text-orange mb-6 drop-shadow-2xl">
+            <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-7xl text-orange mb-3 drop-shadow-2xl">
               {t.title}
             </h1>
             <p className="text-white mt-4 px-4 md:px-12 font-poppins mb-5 text-xl md:text-2xl leading-relaxed">
@@ -165,8 +220,8 @@ const VSLA = () => {
         {/* Who We Are Section */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6">
-            <div ref={whoWeAreRef} className={`text-center mb-12 ${whoWeAreVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+            <div ref={whoWeAreRef} className={`text-center mb-6 ${whoWeAreVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">
                 {t.whoWeAre.split(" ")[0]} <span className="text-orange">{t.whoWeAre.split(" ").slice(1).join(" ")}</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -193,8 +248,8 @@ const VSLA = () => {
         {/* VSLA+ Model Section */}
         <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-6">
-            <div ref={modelRef} className={`text-center mb-12 ${modelVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+            <div ref={modelRef} className={`text-center mb-6 ${modelVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">
                 {t.ourModel.split(" ")[0]} <span className="text-orange">{t.ourModel.split(" ").slice(1).join(" ")}</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
@@ -219,8 +274,8 @@ const VSLA = () => {
         {/* Impact and Partnerships Section */}
         <section className="py-16 bg-gradient-to-b from-white to-gray-50">
           <div className="max-w-7xl mx-auto px-6">
-            <div ref={partnershipsRef} className={`text-center mb-12 ${partnershipsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+            <div ref={partnershipsRef} className={`text-center mb-6 ${partnershipsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">
                 {t.impactPartnerships.split(" ")[0]} <span className="text-orange">{t.impactPartnerships.split(" ").slice(1).join(" ")}</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -260,13 +315,14 @@ const VSLA = () => {
         {/* Projects Section */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6">
-            <div ref={projectsRef} className={`text-center mb-12 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+            <div ref={projectsRef} className={`text-center mb-6 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+              <h2 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">
                 {t.ourProjects.split(" ")[0]} <span className="text-orange">{t.ourProjects.split(" ").slice(1).join(" ")}</span>
               </h2>
             </div>
             <div className={`vslacard grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
               <ProjectCard
+                index={0}
                 title={language === "en" ? "Nestle Income Accelerator Programme [Cote D'Ivoire]" : "Programme Nestlé Income Accelerator [Côte d'Ivoire]"}
                 description={language === "en" ? "Improving the livelihoods of cocoa-farming families through VSLA groups and Gender Action Learning Systems (GALS) training." : "Améliorer les moyens de subsistance des familles de producteurs de cacao grâce aux groupes VSLA et à la formation sur les systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS)."}
                 location={language === "en" ? "Cote D'Ivoire" : "Côte d'Ivoire"}
@@ -275,6 +331,7 @@ const VSLA = () => {
                 language={language}
               />
               <ProjectCard
+                index={1}
                 title={language === "en" ? "Nestle Income Accelerator Programme [Ghana]" : "Programme Nestlé Income Accelerator [Ghana]"}
                 description={language === "en" ? "Income diversification and restructuring of VSLA groups for cocoa-farming communities." : "Diversification des revenus et restructuration des groupes VSLA pour les communautés productrices de cacao."}
                 location="Ghana"
@@ -283,6 +340,7 @@ const VSLA = () => {
                 language={language}
               />
               <ProjectCard
+                index={2}
                 title={language === "en" ? "SUCDEN VSLA Programme" : "Programme VSLA SUCDEN"}
                 description={language === "en" ? "Addressing cocoa sector challenges, improving women's earning capacity, and promoting financial literacy in Ghana." : "Répondre aux défis du secteur du cacao, améliorer la capacité de gain des femmes et promouvoir l'éducation financière au Ghana."}
                 location={language === "en" ? "Western North Region, Ghana" : "Région du Nord-Ouest, Ghana"}
@@ -291,6 +349,7 @@ const VSLA = () => {
                 language={language}
               />
               <ProjectCard
+                index={3}
                 title={language === "en" ? "Enroute Project [Cote D'Ivoire]" : "Projet Enroute [Côte d'Ivoire]"}
                 description={language === "en" ? "Testing interventions for supporting farmers' living income and implementing VSLA-CHILD and Empowering Better Decisions (EBD) trainings." : "Tester des interventions pour soutenir le revenu de subsistance des agriculteurs et mettre en œuvre les formations VSLA-CHILD et Empowering Better Decisions (EBD)."}
                 location={language === "en" ? "Cote D'Ivoire" : "Côte d'Ivoire"}
@@ -299,6 +358,7 @@ const VSLA = () => {
                 language={language}
               />
               <ProjectCard
+                index={4}
                 title={language === "en" ? "ECOM/NCP VSLA-GALS Programme" : "Programme ECOM/NCP VSLA-GALS"}
                 description={language === "en" ? "Building economic and social capacities of cocoa farmers in Ghana, focusing on financial inclusion and gender empowerment." : "Renforcer les capacités économiques et sociales des producteurs de cacao au Ghana, en se concentrant sur l'inclusion financière et l'autonomisation des femmes."}
                 location={language === "en" ? "Eastern & Central Regions, Ghana" : "Régions de l'Est et du Centre, Ghana"}
@@ -307,6 +367,7 @@ const VSLA = () => {
                 language={language}
               />
               <ProjectCard
+                index={5}
                 title={language === "en" ? "New ECOM VSLA GALS Project" : "Nouveau projet ECOM VSLA GALS"}
                 description={language === "en" ? "Economic and social empowerment through VSLA and GALS training for cocoa farmers across multiple regions in Ghana." : "Autonomisation économique et sociale grâce à la formation VSLA et GALS pour les producteurs de cacao dans plusieurs régions du Ghana."}
                 location={language === "en" ? "Eastern, Central, Ashanti, Western North, Oti Regions, Ghana" : "Régions de l'Est, du Centre, d'Ashanti, du Nord-Ouest, d'Oti, Ghana"}
@@ -321,7 +382,7 @@ const VSLA = () => {
         {/* Success Stories Slider */}
         <section ref={storiesRef} className={`py-16 px-8 bg-gradient-to-b from-white to-gray-50 text-center ${storiesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.storiesOfChange.split(" ")[0]} <span className="text-orange">{t.storiesOfChange.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">

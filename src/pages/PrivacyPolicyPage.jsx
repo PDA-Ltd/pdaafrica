@@ -49,7 +49,7 @@ const PrivacyPolicyPage = () => {
               </svg>
               <span className="text-orange text-sm font-semibold">{t.title}</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3 leading-tight">
               {t.title}
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
@@ -109,7 +109,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.introduction}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -128,7 +128,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.informationWeCollect}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -147,7 +147,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.howWeUseInformation}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -166,7 +166,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.dataProtection}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -185,7 +185,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.cookies}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -204,7 +204,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.thirdPartyLinks}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -223,7 +223,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.yourRights}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">
@@ -242,7 +242,7 @@ const PrivacyPolicyPage = () => {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                         {t.contactUs}
                       </h2>
                       <p className="text-lg text-gray-700 leading-relaxed">

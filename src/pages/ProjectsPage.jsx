@@ -17,6 +17,8 @@ const ProjectsPage = () => {
     "Financial Inclusion and VSLAs": finance,
     "Cocoa Communities' Library Project": clipboard,
     "Nyonkopa Child Labour Remediation": globe,
+    "The iMPACT Project": globe,
+    "\"Yen Daakye\" Programme": globe,
   };
 
   return (
@@ -31,8 +33,8 @@ const ProjectsPage = () => {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div ref={heroRef} className={`max-w-4xl mx-auto text-center ${heroVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
-              {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-yellow-300">{t.title.split(" ").slice(1).join(" ")}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3">
+              {t.title.split(" ").slice(0, 1).join(" ")} <span className="text-black">{t.title.split(" ").slice(1).join(" ")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               {t.subtitle}
@@ -44,8 +46,8 @@ const ProjectsPage = () => {
       {/* Projects Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={projectsRef} className={`text-center mb-10 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div ref={projectsRef} className={`text-center mb-6 ${projectsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.featured.split(" ")[0]} <span className="text-orange">{t.featured.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -71,13 +73,6 @@ const ProjectsPage = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 group-hover:bg-orange group-hover:scale-110 transition-all">
-                      <img
-                        src={icon}
-                        alt="Project icon"
-                        className="w-6 h-6 group-hover:brightness-0 group-hover:invert"
-                      />
-                    </div>
                   </div>
 
                   {/* Content Section */}
@@ -115,8 +110,8 @@ const ProjectsPage = () => {
       {/* Impact Stats Section */}
       <section className="padding py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <div className="text-center mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
               {t.impact.split(" ")[0]} <span className="text-orange">{t.impact.split(" ").slice(1).join(" ")}</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -126,24 +121,24 @@ const ProjectsPage = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
-              <div className="bg-orange/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <img src={globe} alt={t.communitiesReached} className="w-10 h-10" />
+              <div className="bg-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <img src={globe} alt={t.communitiesReached} className="w-10 h-10 brightness-0 invert" />
               </div>
               <h3 className="text-4xl font-bold text-orange mb-2">100+</h3>
               <p className="text-gray-600 text-lg">{t.communitiesReached}</p>
             </div>
 
             <div className="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
-              <div className="bg-orange/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <img src={finance} alt={t.vslaGroups} className="w-10 h-10" />
+              <div className="bg-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <img src={finance} alt={t.vslaGroups} className="w-10 h-10 brightness-0 invert" />
               </div>
               <h3 className="text-4xl font-bold text-orange mb-2">500+</h3>
               <p className="text-gray-600 text-lg">{t.vslaGroups}</p>
             </div>
 
             <div className="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
-              <div className="bg-orange/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <img src={clipboard} alt={t.libraries} className="w-10 h-10" />
+              <div className="bg-orange rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <img src={clipboard} alt={t.libraries} className="w-10 h-10 brightness-0 invert" />
               </div>
               <h3 className="text-4xl font-bold text-orange mb-2">50+</h3>
               <p className="text-gray-600 text-lg">{t.libraries}</p>
