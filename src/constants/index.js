@@ -358,11 +358,8 @@ export const contacts = [
     imgURL: call,
     label: "Contact Number:",
     links: [
-      { name: "+233 (0)208129622", link: "tel:+233208129622" },
-      {
-        name: "+233 (0)302 252998 / 2970177",
-        link: "tel:+233302252998, tel:+2333022970177",
-      },
+      { name: "+233 (0)508493316", link: "tel:+233508493316" },
+      { name: "+233 (0)508500017", link: "tel:+233508500017" },
     ],
   },
   {
@@ -370,7 +367,7 @@ export const contacts = [
     label: "Email Address:",
     links: [
       { name: "Website:", link: "https://pdaafrica.org" },
-      { name: "Email:", link: "mailto:info@pdaafrica.org" },
+      { name: "info@pdaafrica.org", link: "mailto:info@pdaafrica.org" },
     ],
   },
 ];

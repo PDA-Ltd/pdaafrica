@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HomeSlider from "../components/HomeSlider";
-import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa } from "../assets/images";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa, chocoa, etg1, farmervoice, ksw, cclphero } from "../assets/images";
 import { reviews } from "../constants";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../constants";
@@ -68,9 +70,49 @@ const Home = () => {
 
   return (
     <div className="min-h-screen font-poppins">
-      {/* Hero Section */}
-      <section className="w-full">
-        <HomeSlider />
+      {/* Hero Section - Video */}
+      <section className="relative w-full h-[70vh] md:h-[80vh] bg-black overflow-hidden">
+        <video
+          src={cclphero}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
+
+        {/* Hero Content */}
+        <div className="relative z-10 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-2xl">
+              <p className="text-sm md:text-base uppercase tracking-[0.2em] text-orange mb-3">
+                {language === "en" ? "Everyone Matters" : "Chacun compte"}
+              </p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+                {t.welcome}
+              </h1>
+              <p className="text-base md:text-lg text-white/90 max-w-xl mb-8">
+                {t.aboutDescription}
+              </p>
+              <div className="flex flex-wrap gap-3 md:gap-4">
+                <Link
+                  to="/about-us"
+                  className="inline-flex items-center justify-center min-h-[44px] px-6 py-3 md:px-8 md:py-4 bg-orange text-white font-semibold rounded-lg shadow-lg hover:bg-orange/90 transition-colors text-sm md:text-base"
+                >
+                  {t.learnMore}
+                </Link>
+                <Link
+                  to="/projects"
+                  className="inline-flex items-center justify-center min-h-[44px] px-6 py-3 md:px-8 md:py-4 bg-white/10 text-white font-semibold rounded-lg border border-white/40 backdrop-blur hover:bg-white/20 transition-colors text-sm md:text-base"
+                >
+                  {t.programmes}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Impact Statistics Section - hidden but code preserved */}
@@ -150,7 +192,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
             {featuredProjects.slice(0, 3).map((project, index) => (
               <Link
                 key={index}
@@ -183,7 +225,7 @@ const Home = () => {
           <div className="text-center">
             <Link
               to="/projects"
-              className="inline-block bg-orange text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-orange/90 transition-colors"
+              className="inline-flex items-center justify-center min-h-[44px] bg-orange text-white px-6 md:px-8 py-3 rounded-lg font-semibold text-base md:text-lg hover:bg-orange/90 transition-colors"
             >
               {t.viewAllProjects}
             </Link>
@@ -194,22 +236,22 @@ const Home = () => {
       {/* News & Updates Section */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={newsRef} className={`flex justify-between items-center mb-6 ${newsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-                {t.latestNews.split("News")[0]} <span className="text-orange">{language === "en" ? "News" : "Actualités"}</span>
+          <div ref={newsRef} className={`flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 ${newsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <div className="flex-1">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-2 leading-tight tracking-tight">
+                {t.latestNews.split("News")[0]}<span className="text-orange">{language === "en" ? "News" : "Actualités"}</span>
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-base md:text-lg text-gray-600">
                 {t.newsDesc}
               </p>
             </div>
             <Link
               to="/news-and-updates"
-              className="hidden md:inline-flex items-center text-orange font-semibold hover:text-orange/80 transition-colors"
+              className="inline-flex items-center min-h-[44px] px-4 py-2 text-orange font-semibold hover:text-orange/80 transition-colors text-sm md:text-base"
             >
               {t.viewAllNews}
               <svg
-                className="w-5 h-5 ml-2"
+                className="w-4 h-4 md:w-5 md:h-5 ml-2"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -224,46 +266,105 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="bg-gradient-to-r from-orange/10 to-orange/20 rounded-lg p-8 md:p-12 hover:shadow-lg transition-shadow">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <span className="text-orange font-semibold text-sm uppercase tracking-wide">
-                  {t.featuredStory || "Featured Story"}
-                </span>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mt-4 mb-4" style={{ lineHeight: '1.1' }}>
-                  {t.featuredStoryTitle || "Farmers' Voice Radio Academy: Empowering Ghana's Cocoa Farmers"}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {t.featuredStoryDesc || "We are working to empower 100,000 smallholder cocoa farmers in Ghana by raising under-represented voices and connecting farmers with the knowledge they need to build resilient, inclusive and thriving cocoa communities."}
-                </p>
-                <Link
-                  to="/news-and-updates"
-                  className="inline-flex items-center text-orange font-semibold hover:text-orange/80 transition-colors group"
-                >
-                  {t.readFullStory || "Read Full Story"}
-                  <svg
-                    className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-              <div>
-                <img
-                  src={farmer}
-                  alt="Farmers Voice Radio Academy"
-                  className="rounded-lg shadow-lg w-full h-auto"
-                />
-              </div>
-            </div>
+          {/* News Slider */}
+          <div className="news-slider-container">
+            <Slider
+              dots={true}
+              infinite={true}
+              speed={500}
+              slidesToShow={1}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={5000}
+              pauseOnHover={true}
+              arrows={true}
+              className="news-slider"
+            >
+              {[
+                {
+                  id: 1,
+                  title: "PDA Delivers GALS + CHILD Methodology Training for ETG Uganda",
+                  date: "March 9, 2026",
+                  category: "PDA Activities and Events",
+                  image: etg1,
+                  excerpt: "Participatory Development Associates (PDA) is currently implementing a Training of Trainers (TOT) programme on the Gender Action Learning System (GALS) + CHILD methodology for Export Trading Group (ETG) Uganda.",
+                },
+                {
+                  id: 2,
+                  title: "PDA at Amsterdam Chocoa Week 2026",
+                  date: "February 20, 2026",
+                  category: "PDA Activities and Events",
+                  image: chocoa,
+                  excerpt: "Participatory Development Associates Ltd (PDA) will participate in the Chocoa Conference 2026, held as part of Amsterdam Chocoa Week, one of the leading global platforms for dialogue on sustainable cocoa and responsible chocolate production.",
+                },
+                {
+                  id: 3,
+                  title: "Farmers' Voice Radio Academy: Empowering Ghana's Cocoa Farmers Through Participatory Local Language Radio",
+                  date: "December 15, 2025",
+                  category: "PDA Activities and Events",
+                  image: farmervoice,
+                  excerpt: "We are working to empower 100,000 smallholder cocoa farmers in Ghana by raising under-represented voices and connecting farmers with the knowledge they need to build resilient, inclusive and thriving cocoa communities.",
+                },
+                {
+                  id: 4,
+                  title: "PDA Holds 8th Child Protection Workshop Spotlighting Galamsey's Threat to Children",
+                  date: "December 11, 2025",
+                  category: "PDA Activities and Events",
+                  image: ksw,
+                  excerpt: "Participatory Development Associates (PDA), in partnership with the Department of Children under the Ministry of Gender, Children and Social Protection, convened the 8th Knowledge Sharing Workshop on Child Protection (KSWoCP) with two multi-level events in Accra and Bechem.",
+                },
+              ].map((article) => (
+                <div key={article.id} className="px-2">
+                  <div className="bg-gradient-to-r from-orange/10 to-orange/20 rounded-xl p-6 md:p-10 hover:shadow-lg transition-shadow">
+                    <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+                      <div className="order-2 md:order-1">
+                        <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4">
+                          <span className="text-orange font-semibold text-xs md:text-sm uppercase tracking-wide">
+                            {article.category}
+                          </span>
+                          <span className="text-gray-400 hidden sm:inline">•</span>
+                          <span className="text-gray-500 text-xs md:text-sm">{article.date}</span>
+                        </div>
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4 leading-tight tracking-tight" style={{ lineHeight: '1.1' }}>
+                          {article.title}
+                        </h3>
+                        <p className="text-gray-700 leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
+                          {article.excerpt}
+                        </p>
+                        <Link
+                          to="/news-and-updates"
+                          className="inline-flex items-center min-h-[44px] text-orange font-semibold hover:text-orange/80 transition-colors group text-sm md:text-base"
+                        >
+                          {t.readFullStory || "Read Full Story"}
+                          <svg
+                            className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </Link>
+                      </div>
+                      <div className="flex items-center justify-center order-1 md:order-2">
+                        <img
+                          src={article.image}
+                          alt={article.title}
+                          className={`rounded-lg shadow-lg max-w-full md:max-w-sm w-full h-auto object-cover ${
+                            article.id === 2 || article.id === 4 ? 'max-h-48 sm:max-h-64 md:max-h-80' : 'max-h-64 md:max-h-96'
+                          }`}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </section>
@@ -332,33 +433,60 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8 md:p-12 mb-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="mb-6">
-                <img
-                  src={featuredTestimonial.imgURL}
-                  alt={featuredTestimonial.customerName}
-                  className="w-20 h-20 rounded-full mx-auto object-cover"
-                />
-              </div>
-              <p className="text-xl md:text-2xl text-gray-700 italic mb-6 leading-relaxed">
-                "{featuredTestimonial.feedback}"
-              </p>
-              <div className="flex items-center justify-center gap-4">
-                <div className="text-center">
-                  <p className="font-semibold text-gray-800 text-lg">
-                    {featuredTestimonial.customerName}
-                  </p>
-                  <p className="text-gray-600 text-sm">{featuredTestimonial.position}</p>
-                </div>
-              </div>
-            </div>
+          {/* Impact Testimonials Slider */}
+          <div className="impact-slider-container mb-8">
+            <Slider
+              dots={true}
+              infinite={true}
+              speed={500}
+              slidesToShow={1}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={5000}
+              pauseOnHover={true}
+              arrows={true}
+              className="impact-slider"
+            >
+              {reviews.map((review, index) => {
+                const reviewKeys = ["eugene", "beyondBeans", "emelia", "janet"];
+                const reviewKey = reviewKeys[index];
+                const reviewTranslations = language === "en" ? en.reviews : fr.reviews;
+                const translatedReview = reviewTranslations[reviewKey] || {};
+                
+                return (
+                  <div key={index} className="px-2">
+                    <div className="bg-gray-50 rounded-lg p-8 md:p-12">
+                      <div className="max-w-3xl mx-auto text-center">
+                        <div className="mb-6">
+                          <img
+                            src={review.imgURL}
+                            alt={translatedReview.name || review.customerName}
+                            className="w-20 h-20 rounded-full mx-auto object-cover"
+                          />
+                        </div>
+                        <p className="text-xl md:text-2xl text-gray-700 italic mb-6 leading-relaxed">
+                          "{translatedReview.feedback || review.feedback}"
+                        </p>
+                        <div className="flex items-center justify-center gap-4">
+                          <div className="text-center">
+                            <p className="font-semibold text-gray-800 text-lg">
+                              {translatedReview.name || review.customerName}
+                            </p>
+                            <p className="text-gray-600 text-sm">{translatedReview.position || review.position}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
 
           <div className="text-center">
             <Link
               to="/impact"
-              className="inline-block bg-orange text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-orange/90 transition-colors"
+              className="inline-flex items-center justify-center min-h-[44px] bg-orange text-white px-6 md:px-8 py-3 rounded-lg font-semibold text-base md:text-lg hover:bg-orange/90 transition-colors"
             >
               {language === "en" ? "View Our Impact" : "Voir notre impact"}
             </Link>

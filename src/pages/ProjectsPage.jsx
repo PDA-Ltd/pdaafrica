@@ -55,7 +55,7 @@ const ProjectsPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {projects.map((project, index) => {
               const icon = projectIcons[project.label] || clipboard;
               const projectTranslation = t.projectList[project.label] || project;
@@ -76,11 +76,11 @@ const ProjectsPage = () => {
                   </div>
 
                   {/* Content Section */}
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-orange transition-colors">
+                  <div className="p-4 sm:p-6">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 group-hover:text-orange transition-colors break-words">
                       {projectTranslation.label || project.label}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">
+                    <p className="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base break-words">
                       {projectTranslation.subtext || project.subtext}
                     </p>
                     <div className="flex items-center text-orange font-semibold group-hover:underline">

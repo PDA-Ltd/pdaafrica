@@ -175,40 +175,40 @@ const AboutPage = () => {
       {/* Vision & Mission Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={visionRef} className={`grid md:grid-cols-2 gap-8 mb-10 ${visionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+          <div ref={visionRef} className={`grid sm:grid-cols-2 gap-6 md:gap-8 mb-10 ${visionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             {/* Vision */}
-            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center">
-                  <img src={peak} alt="Vision" className="w-10 h-10 brightness-0 invert" />
+            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                <div className="bg-orange rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center flex-shrink-0">
+                  <img src={peak} alt="Vision" className="w-8 h-8 sm:w-10 sm:h-10 brightness-0 invert" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-800">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
                   {t.vision.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.vision.split(" ").slice(1).join(" ")}</span>
                 </h3>
               </div>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed break-words">
                 {visionText}
               </p>
             </div>
 
             {/* Mission */}
-            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center">
-                  <img src={dart} alt="Mission" className="w-10 h-10 brightness-0 invert" />
+            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                <div className="bg-orange rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center flex-shrink-0">
+                  <img src={dart} alt="Mission" className="w-8 h-8 sm:w-10 sm:h-10 brightness-0 invert" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-800">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
                   {t.mission.split(" ").slice(0, 1).join(" ")} <span className="text-orange">{t.mission.split(" ").slice(1).join(" ")}</span>
                 </h3>
               </div>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed break-words">
                 {missionText}
               </p>
             </div>
           </div>
 
           {/* Images */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img
                 src={mission}
@@ -239,19 +239,19 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {values.map((value, index) => (
               <div
                 key={index}
-                className={`${value.color} rounded-lg p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer`}
+                className={`${value.color} rounded-lg p-4 md:p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer`}
               >
-                <div className={`${value.iconColor} rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                  <img src={value.icon} alt={value.title} className={`w-8 h-8 ${value.iconFilter || ""}`} />
+                <div className={`${value.iconColor} rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform`}>
+                  <img src={value.icon} alt={value.title} className={`w-6 h-6 md:w-8 md:h-8 ${value.iconFilter || ""}`} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 md:mb-3 break-words">
                   {value.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-sm md:text-base break-words">
                   {value.description}
                 </p>
               </div>
@@ -272,24 +272,24 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {strategicObjectives.map((objective, index) => (
               <Link
                 key={index}
                 to={objective.link}
-                className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+                className="bg-white rounded-lg shadow-md p-4 md:p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
               >
-                <div className="bg-orange rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-all">
+                <div className="bg-orange rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-all">
                   <img
                     src={objective.icon}
                     alt={objective.title}
-                    className="w-8 h-8 brightness-0 invert"
+                    className="w-6 h-6 md:w-8 md:h-8 brightness-0 invert"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-orange transition-colors">
+                <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 md:mb-3 group-hover:text-orange transition-colors break-words">
                   {objective.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-gray-600 leading-relaxed mb-3 md:mb-4 text-sm md:text-base break-words">
                   {objective.description}
                 </p>
                 <span className="inline-flex items-center text-orange font-semibold group-hover:underline">

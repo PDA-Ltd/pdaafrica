@@ -39,6 +39,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 import TermsOfServicePage from "./pages/TermsOfServicePage.jsx";
 import ImpactProject from "./pages/ImpactProject.jsx";
 import YenDaakye from "./pages/YenDaakye.jsx";
+import VSLAImpactStories from "./pages/VSLAImpactStories.jsx";
 // import Aboutafrica from "./sections/Aboutafrica.jsx";
 // import AfricaGallery from "./sections/AfricaGallery.jsx";
 // import PdaafricaContact from "./sections/PdaafricaContact.jsx";
@@ -219,6 +220,10 @@ const router = createBrowserRouter([
       {
         path: "/yen-daakye-programme",
         element: <YenDaakye />,
+      },
+      {
+        path: "/vsla-impact-stories",
+        element: <VSLAImpactStories />,
       },
     ],
   },

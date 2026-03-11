@@ -68,7 +68,7 @@ const GetInvolvedPage = () => {
           </div>
 
           <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
+            <div className="grid sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl w-full">
               {/* Filter out donate service - hidden but code preserved */}
               {services.filter(service => service.linkType !== "paystack").map((service, index) => {
               const icon = serviceIcons[service.label] || volunteer;
@@ -100,7 +100,7 @@ const GetInvolvedPage = () => {
                   {/* Button */}
                   <button
                     onClick={() => handleButtonClick(service)}
-                    className="w-full bg-orange text-white px-6 py-4 rounded-lg font-semibold text-lg hover:bg-orange/90 transition-colors shadow-md hover:shadow-lg transform hover:scale-105"
+                    className="w-full min-h-[44px] bg-orange text-white px-6 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg hover:bg-orange/90 transition-colors shadow-md hover:shadow-lg transform hover:scale-105"
                   >
                     {translatedService.button || service.button}
                   </button>
@@ -124,7 +124,7 @@ const GetInvolvedPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {[
               {
                 title: t.directImpact,

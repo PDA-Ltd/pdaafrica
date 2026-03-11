@@ -198,6 +198,135 @@ body {
     overflow-y: auto;
   }
 
+  /* News Slider Styles */
+  .news-slider-container {
+    position: relative;
+  }
+
+  .news-slider .slick-dots {
+    bottom: -40px;
+  }
+
+  .news-slider .slick-dots li button:before {
+    color: #f97316;
+    font-size: 12px;
+  }
+
+  .news-slider .slick-dots li.slick-active button:before {
+    color: #f97316;
+  }
+
+  .news-slider .slick-prev,
+  .news-slider .slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+  }
+
+  .news-slider .slick-prev {
+    left: -50px;
+  }
+
+  .news-slider .slick-next {
+    right: -50px;
+  }
+
+  .news-slider .slick-prev:before,
+  .news-slider .slick-next:before {
+    color: #f97316;
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    .news-slider .slick-prev {
+      left: -20px;
+    }
+
+    .news-slider .slick-next {
+      right: -20px;
+    }
+
+    .news-slider .slick-prev:before,
+    .news-slider .slick-next:before {
+      font-size: 24px;
+    }
+  }
+
+  /* Impact Slider Styles */
+  .impact-slider-container {
+    position: relative;
+  }
+
+  .impact-slider .slick-dots {
+    bottom: -30px;
+  }
+
+  .impact-slider .slick-dots li button:before {
+    color: #f97316;
+    font-size: 12px;
+  }
+
+  .impact-slider .slick-dots li.slick-active button:before {
+    color: #f97316;
+  }
+
+  .impact-slider .slick-prev,
+  .impact-slider .slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+  }
+
+  .impact-slider .slick-prev {
+    left: -50px;
+  }
+
+  .impact-slider .slick-next {
+    right: -50px;
+  }
+
+  .impact-slider .slick-prev:before,
+  .impact-slider .slick-next:before {
+    color: #f97316;
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    .impact-slider .slick-prev {
+      left: -20px;
+    }
+
+    .impact-slider .slick-next {
+      right: -20px;
+    }
+
+    .impact-slider .slick-prev:before,
+    .impact-slider .slick-next:before {
+      font-size: 24px;
+    }
+  }
+
+  /* Responsive improvements */
+  @media (max-width: 640px) {
+    /* Ensure text doesn't overflow */
+    h1, h2, h3, h4, h5, h6 {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Better touch targets */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Better image handling */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 
   .vslacard {
     display: grid;

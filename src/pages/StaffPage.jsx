@@ -14,7 +14,17 @@ import {
   joshua, 
   guide, 
   bashiru, 
-  eunice 
+  eunice,
+  philip,
+  yaro,
+  harrison,
+  eugene,
+  racheal,
+  emelia,
+  abu,
+  sanni,
+  incoom,
+  tietaar
 } from "../assets/images";
 
 const StaffPage = () => {
@@ -90,14 +100,15 @@ const StaffPage = () => {
     },
     {
       id: 5,
-      name: "Louis Ahoin Mensah",
-      position: t.staffMembers?.louis?.position || "Field Officer",
-      department: "fieldOfficers",
-      image: louis,
-      bio: t.staffMembers?.louis?.bio || "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: t.staffMembers?.louis?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
+       name: "Louis Nyar Tietaar",
+      position: "Project Officer, PDA Africa",
+      department: "programs",
+      image: tietaar,
+      bio: "Louis is a data analyst with a strong foundation in Excel and a growing expertise in machine learning and data analytics. He holds a Bachelor's degree in Accounting from Kwame Nkrumah University of Science and Technology and a Data Analytics certification from Azubi Africa. Louis is passionate about using data to generate insights, support decision-making, and build practical, data-driven solutions while continuously developing his skills in analytics and AI technologies.",
+      expertise: ["Data Analysis", "Excel", "Machine Learning", "Data Analytics", "AI Technologies"],
       experience: "3+",
-      location: t.staffMembers?.louis?.location || "Ghana",
+      location: "Ghana",
+      education: "Bachelor's degree in Accounting, Data Analytics certification from Azubi Africa",
     },
     {
       id: 6,
@@ -154,6 +165,116 @@ const StaffPage = () => {
       experience: "3+",
       location: t.staffMembers?.eunice?.location || "Ghana",
     },
+    {
+      id: 12,
+      name: "Louis Ahoin Mensah",
+      position: t.staffMembers?.louis?.position || "Field Officer",
+      department: "fieldOfficers",
+      image: louis,
+      bio: t.staffMembers?.louis?.bio || "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.louis?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: t.staffMembers?.louis?.location || "Ghana",
+    },
+    {
+      id: 13,
+      name: "PHILIP QUAICOE",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: philip,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 14,
+      name: "EUNICE YARO",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: yaro,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 15,
+      name: "HARRISSON ADU",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: harrison,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 16,
+      name: "EUGENE ASAMOAH BOAKYE",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: eugene,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 17,
+      name: "RACHEL KANJAMBUDA BLESSING",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: racheal,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 18,
+      name: "EMELIA ANAWINE",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: emelia,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 19,
+      name: "ABU MUSAH",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: abu,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 20,
+      name: "ISSIFU SANI",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: sanni,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
+    {
+      id: 21,
+      name: "SAMUEL INCOOM JUNIOR",
+      position: "Field Officer",
+      department: "fieldOfficers",
+      image: incoom,
+      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      experience: "3+",
+      location: "Ghana",
+    },
   ];
 
   const departments = [
@@ -192,12 +313,12 @@ const StaffPage = () => {
       {/* Department Filter */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 md:mb-10">
             {departments.map((dept) => (
               <button
                 key={dept.id}
                 onClick={() => setSelectedDepartment(dept.id)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                className={`min-h-[44px] px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-semibold transition-all text-sm md:text-base ${
                   selectedDepartment === dept.id
                     ? "bg-orange text-white shadow-lg"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -209,7 +330,7 @@ const StaffPage = () => {
           </div>
 
           {/* Staff Grid */}
-          <div ref={staffRef} className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 ${staffVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+          <div ref={staffRef} className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 ${staffVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             {filteredStaff.map((staff) => (
               <div
                 key={staff.id}
@@ -239,25 +360,25 @@ const StaffPage = () => {
 
       {/* Staff Detail Modal */}
       {selectedStaff && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4">
-          <div className="bg-white rounded-lg max-w-2xl w-full relative max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4 overflow-y-auto">
+          <div className="bg-white rounded-lg max-w-2xl w-full relative max-h-[90vh] overflow-y-auto my-auto">
             <button
               onClick={() => setSelectedStaff(null)}
-              className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-gray-100 transition-colors shadow-lg"
+              className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 min-w-[44px] min-h-[44px] flex items-center justify-center hover:bg-gray-100 transition-colors shadow-lg"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <div className="p-8 pt-12">
-              <div className="flex flex-col md:flex-row gap-6 mb-6">
-                <div className="w-32 h-32 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
+            <div className="p-4 sm:p-6 md:p-8 pt-12 md:pt-12">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-6 mb-6">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 mx-auto md:mx-0">
                   <img src={selectedStaff.image} alt={selectedStaff.name} className="w-full h-full object-cover" />
                 </div>
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-800 mb-2">{selectedStaff.name}</h2>
-                  <p className="text-orange font-semibold text-lg mb-4">{selectedStaff.position}</p>
-                  <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+                <div className="text-center md:text-left">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2 break-words">{selectedStaff.name}</h2>
+                  <p className="text-orange font-semibold text-base sm:text-lg mb-4">{selectedStaff.position}</p>
+                  <div className="flex flex-wrap gap-3 md:gap-4 text-xs sm:text-sm text-gray-600 justify-center md:justify-start">
                     <div>
                       <span className="font-semibold">{t.department}:</span> {departments.find(d => d.id === selectedStaff.department)?.label || selectedStaff.department}
                     </div>
@@ -276,16 +397,16 @@ const StaffPage = () => {
                 </div>
               </div>
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{t.about}</h3>
-                <p className="text-gray-700 leading-relaxed">{selectedStaff.bio}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">{t.about}</h3>
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base break-words">{selectedStaff.bio}</p>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{t.areasOfExpertise}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">{t.areasOfExpertise}</h3>
                 <div className="flex flex-wrap gap-2">
                   {selectedStaff.expertise.map((area, index) => (
                     <span
                       key={index}
-                      className="bg-orange/10 text-orange px-4 py-2 rounded-lg text-sm font-semibold"
+                      className="bg-orange/10 text-orange px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold"
                     >
                       {area}
                     </span>

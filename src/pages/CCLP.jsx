@@ -173,7 +173,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { FaBook, FaChild, FaSchool, FaChartLine, FaArrowLeft } from "react-icons/fa";
+import { FaBook, FaChild, FaSchool, FaChartLine, FaArrowLeft, FaHandshake, FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaTasks, FaClock, FaBuilding, FaBookOpen, FaCheckCircle } from "react-icons/fa";
 import { FiBox } from "react-icons/fi";
 import { IoIosPeople } from "react-icons/io";
 import { competition, reading, cluster, club } from "../assets/images";
@@ -225,9 +225,13 @@ const CCLP = () => {
   const t = language === "en" ? en.cclp : fr.cclp;
   
   const [heroRef, heroVisible] = useScrollAnimation();
+  const [snapshotRef, snapshotVisible] = useScrollAnimation();
+  const [taskRef, taskVisible] = useScrollAnimation();
+  const [timelineRef, timelineVisible] = useScrollAnimation();
   const [objectivesRef, objectivesVisible] = useScrollAnimation();
   const [rationaleRef, rationaleVisible] = useScrollAnimation();
   const [competitionRef, competitionVisible] = useScrollAnimation();
+  const [communitiesRef, communitiesVisible] = useScrollAnimation();
   const [storiesRef, storiesVisible] = useScrollAnimation();
 
   return (
@@ -275,9 +279,54 @@ const CCLP = () => {
         </div>
       </div>
 
+      {/* Project Snapshot Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div ref={snapshotRef} className={`text-center mb-8 ${snapshotVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
+              {t.projectSnapshot}
+            </h2>
+          </div>
+          
+          {/* Project Info Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div className="bg-gradient-to-br from-orange to-orange/80 rounded-xl p-6 text-white shadow-lg hover:shadow-2xl transition-shadow">
+              <FaHandshake className="text-3xl mb-3" />
+              <div className="text-sm opacity-90 mb-1">{t.partner}</div>
+              <div className="text-lg font-bold">Magic Libraries Foundation</div>
+            </div>
+            <div className="bg-gradient-to-br from-red to-red/80 rounded-xl p-6 text-white shadow-lg hover:shadow-2xl transition-shadow">
+              <FaCalendarAlt className="text-3xl mb-3" />
+              <div className="text-sm opacity-90 mb-1">{t.period}</div>
+              <div className="text-lg font-bold">2023 – 2026</div>
+            </div>
+            <div className="bg-gradient-to-br from-orange to-orange/80 rounded-xl p-6 text-white shadow-lg hover:shadow-2xl transition-shadow">
+              <FaMapMarkerAlt className="text-3xl mb-3" />
+              <div className="text-sm opacity-90 mb-1">{t.country}</div>
+              <div className="text-lg font-bold">Ghana</div>
+            </div>
+            <div className="bg-gradient-to-br from-red to-red/80 rounded-xl p-6 text-white shadow-lg hover:shadow-2xl transition-shadow">
+              <FaBookOpen className="text-3xl mb-3" />
+              <div className="text-sm opacity-90 mb-1">{t.category}</div>
+              <div className="text-lg font-bold">Education and Child Literacy</div>
+            </div>
+          </div>
+
+          {/* Description */}
+          <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-l-4 border-orange">
+            <p className="text-gray-700 leading-relaxed text-base md:text-lg">
+              {t.snapshotDescription}
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* About the Project / Quick Stats */}
       <QuickStats />
 
-      {/* Project Components Section */}
+          {/* Project Objectives Section */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           <div ref={objectivesRef} className={`text-center mb-6 ${objectivesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
@@ -318,8 +367,224 @@ const CCLP = () => {
         </div>
       </section>
 
-      {/* Project Goals Section */}
+      {/* Project Objectives Section */}
       <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div ref={taskRef} className={`text-center mb-8 ${taskVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
+              <span className="text-orange">{t.pdasTask}</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto mt-4">
+              {t.pdasTaskDescription}
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {t.pdasTaskPoints.map((point, index) => (
+              <div key={index} className="bg-gradient-to-br from-orange/5 to-orange/10 rounded-xl p-6 border border-orange/20 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="bg-orange rounded-full p-3 flex-shrink-0">
+                    <FaTasks className="text-white text-xl" />
+                  </div>
+                  <p className="text-gray-700 leading-relaxed flex-1">{point}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How We Went About It - Timeline Section */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div ref={timelineRef} className={`text-center mb-12 ${timelineVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
+              {t.howWeWentAboutIt}
+            </h2>
+          </div>
+
+          {/* Timeline with animated cards */}
+          <div className="relative">
+            {/* Original Phase */}
+            <div className="mb-12 relative">
+              <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
+                <div className="bg-orange rounded-full p-4 shadow-lg transform hover:scale-110 transition-transform duration-300 z-10">
+                  <FaClock className="text-white text-2xl" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">{t.originalPhase}</h3>
+              </div>
+              <div className="grid md:grid-cols-3 gap-4">
+                {t.originalPhasePoints.slice(0, 5).map((point, index) => {
+                  const titles = ["Weekly Reading Clubs", "Inter-District Competitions", "Annual Reading Festival", "Training Workshops", "Community Engagement"];
+                  return (
+                    <div key={index} className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-orange hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform group">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-orange rounded-full p-2 group-hover:scale-110 transition-transform">
+                          <FaCheckCircle className="text-white text-sm" />
+                        </div>
+                        <h4 className="font-bold text-orange text-sm md:text-base">{titles[index] || `Activity ${index + 1}`}</h4>
+                      </div>
+                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed line-clamp-3">{point.split(":")[0] || point.substring(0, 80) + "..."}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Renewal Phase */}
+            <div className="mb-12 relative">
+              <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
+                <div className="bg-red rounded-full p-4 shadow-lg transform hover:scale-110 transition-transform duration-300 z-10">
+                  <FaChartLine className="text-white text-2xl" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">{t.renewalPhase}</h3>
+              </div>
+              <div className="grid md:grid-cols-3 gap-4">
+                {t.renewalPhasePoints.slice(0, 6).map((point, index) => {
+                  const titles = ["Contract & Reporting", "Community Profiling", "Reading Assessments", "Club Formation", "Monitoring", "Book Procurement"];
+                  return (
+                    <div key={index} className="bg-white rounded-xl p-5 shadow-lg border-l-4 border-red hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform group">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-red rounded-full p-2 group-hover:scale-110 transition-transform">
+                          <FaCheckCircle className="text-white text-sm" />
+                        </div>
+                        <h4 className="font-bold text-red text-sm md:text-base">{titles[index] || `Activity ${index + 1}`}</h4>
+                      </div>
+                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed line-clamp-3">{point.split(":")[0] || point.substring(0, 80) + "..."}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Recent Activities 2025 */}
+            <div className="mb-12 relative">
+              <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
+                <div className="bg-orange rounded-full p-4 shadow-lg transform hover:scale-110 transition-transform duration-300 z-10">
+                  <FaCalendarAlt className="text-white text-2xl" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 text-center md:text-left">{t.recentActivities2025}</h3>
+              </div>
+              <div className="grid md:grid-cols-3 gap-4">
+                {t.recentActivities2025Points.slice(0, 6).map((point, index) => {
+                  const titles = ["Club Monitoring", "Book Distribution", "Facilitator Training", "District Activities", "Library Renovation", "Community Engagement"];
+                  return (
+                    <div key={index} className="bg-gradient-to-br from-orange/5 to-orange/10 rounded-xl p-5 border border-orange/20 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 transform group">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-orange rounded-full p-2 group-hover:scale-110 transition-transform">
+                          <FaCheckCircle className="text-white text-sm" />
+                        </div>
+                        <h4 className="font-bold text-orange text-sm md:text-base">{titles[index] || `Activity ${index + 1}`}</h4>
+                      </div>
+                      <p className="text-gray-600 text-xs md:text-sm leading-relaxed line-clamp-3">{point.split(":")[0] || point.substring(0, 80) + "..."}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Recent Activities 2026 */}
+            <div className="bg-gradient-to-br from-yellow-50 to-orange/10 rounded-2xl p-6 md:p-8 border-2 border-orange/30 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="bg-yellow-500 rounded-full p-3 shadow-lg transform hover:rotate-12 transition-transform">
+                  <FaBuilding className="text-white text-xl" />
+                </div>
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-800">{t.recentActivities2026}</h3>
+                  <h4 className="text-lg md:text-xl font-bold text-orange mt-1">{t.recentActivities2026Title}</h4>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-3">
+                {t.recentActivities2026Description}
+              </p>
+              <p className="text-gray-600 leading-relaxed text-xs md:text-sm line-clamp-4">
+                {t.recentActivities2026Details}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Communities & Stakeholders Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Communities Involved */}
+            <div ref={communitiesRef} className={`${communitiesVisible ? 'animate-on-scroll visible fade-in-left' : 'animate-on-scroll fade-in-left'}`}>
+              <div className="bg-gradient-to-br from-orange/5 to-orange/10 rounded-2xl p-8 shadow-lg border border-orange/20">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="bg-orange rounded-full p-3">
+                    <FaMapMarkerAlt className="text-white text-2xl" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-800">{t.communitiesInvolved}</h3>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {t.communitiesList.map((community, index) => (
+                    <div key={index} className="bg-white rounded-lg p-3 text-center shadow-md hover:shadow-lg transition-shadow">
+                      <span className="text-gray-700 font-medium">{community}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Stakeholders Engaged */}
+            <div className={`${communitiesVisible ? 'animate-on-scroll visible fade-in-right' : 'animate-on-scroll fade-in-right'}`}>
+              <div className="bg-gradient-to-br from-red/5 to-red/10 rounded-2xl p-8 shadow-lg border border-red/20">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="bg-red rounded-full p-3">
+                    <FaUsers className="text-white text-2xl" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-800">{t.stakeholdersEngaged}</h3>
+                </div>
+                <div className="space-y-4">
+                  {t.stakeholdersList.map((stakeholder, index) => (
+                    <div key={index} className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+                      <div className="flex items-start gap-3">
+                        <FaCheckCircle className="text-red text-xl mt-1 flex-shrink-0" />
+                        <span className="text-gray-700 font-medium">{stakeholder}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  
+
+      {/* PDA's Task Section */}
+      {/* <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div ref={taskRef} className={`text-center mb-8 ${taskVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
+              <span className="text-orange">{t.pdasTask}</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto mt-4">
+              {t.pdasTaskDescription}
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {t.pdasTaskPoints.map((point, index) => (
+              <div key={index} className="bg-gradient-to-br from-orange/5 to-orange/10 rounded-xl p-6 border border-orange/20 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="bg-orange rounded-full p-3 flex-shrink-0">
+                    <FaTasks className="text-white text-xl" />
+                  </div>
+                  <p className="text-gray-700 leading-relaxed flex-1">{point}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+
+      {/* Rationale for Reading Festival & Competitions */}
+ {/*   <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div ref={rationaleRef} className={`text-center mb-6 ${rationaleVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
@@ -351,13 +616,10 @@ const CCLP = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Project Status Section */}
-      <ProjectStatus />
-
-      {/* Reading Competition Flow Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+      {/* Reading Competition Flow Section - Commented Out */}
+      {false && <section className="py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div ref={competitionRef} className={`text-center mb-6 ${competitionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
             <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
@@ -369,39 +631,39 @@ const CCLP = () => {
           </div>
 
           {/* Visual Competition Structure */}
-          <div className={`mt-12 ${competitionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+          <div className={`mt-8 md:mt-12 ${competitionVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <div className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-12 overflow-hidden">
               {/* Cluster A and B */}
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12">
                 {/* Cluster A */}
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-300 hover:shadow-lg transition-shadow duration-300">
-                  <h3 className="text-2xl font-bold text-blue-700 mb-4 text-center">Cluster A</h3>
-                  <div className="grid grid-cols-5 gap-3">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 md:p-6 border-2 border-blue-300 hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-3 md:mb-4 text-center">Cluster A</h3>
+                  <div className="grid grid-cols-5 gap-2 md:gap-3 overflow-x-auto -mx-2 px-2 md:mx-0 md:px-0">
                     {[1, 2, 3, 4, 5].map((num) => (
-                      <div key={num} className="bg-white rounded-lg p-3 text-center shadow-md hover:scale-110 transition-transform duration-300">
-                        <span className="text-blue-600 font-bold text-sm">School {num}</span>
+                      <div key={num} className="bg-white rounded-lg p-2 md:p-3 text-center shadow-md hover:scale-110 transition-transform duration-300 min-w-0">
+                        <span className="text-blue-600 font-bold text-xs md:text-sm break-words">School {num}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-4 text-center">
-                    <div className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold">
+                  <div className="mt-3 md:mt-4 text-center">
+                    <div className="inline-block bg-blue-500 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-semibold text-xs md:text-sm">
                       1st & 2nd Place
                     </div>
                   </div>
                 </div>
 
                 {/* Cluster B */}
-                <div className="bg-gradient-to-br from-orange/10 to-orange/20 rounded-xl p-6 border-2 border-orange/30 hover:shadow-lg transition-shadow duration-300">
-                  <h3 className="text-2xl font-bold text-orange mb-4 text-center">Cluster B</h3>
-                  <div className="grid grid-cols-5 gap-3">
+                <div className="bg-gradient-to-br from-orange/10 to-orange/20 rounded-xl p-4 md:p-6 border-2 border-orange/30 hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <h3 className="text-xl md:text-2xl font-bold text-orange mb-3 md:mb-4 text-center">Cluster B</h3>
+                  <div className="grid grid-cols-5 gap-2 md:gap-3 overflow-x-auto -mx-2 px-2 md:mx-0 md:px-0">
                     {[1, 2, 3, 4, 5].map((num) => (
-                      <div key={num} className="bg-white rounded-lg p-3 text-center shadow-md hover:scale-110 transition-transform duration-300">
-                        <span className="text-orange font-bold text-sm">School {num}</span>
+                      <div key={num} className="bg-white rounded-lg p-2 md:p-3 text-center shadow-md hover:scale-110 transition-transform duration-300 min-w-0">
+                        <span className="text-orange font-bold text-xs md:text-sm break-words">School {num}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-4 text-center">
-                    <div className="inline-block bg-orange text-white px-4 py-2 rounded-lg font-semibold">
+                  <div className="mt-3 md:mt-4 text-center">
+                    <div className="inline-block bg-orange text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg font-semibold text-xs md:text-sm">
                       1st & 2nd Place
                     </div>
                   </div>
@@ -409,23 +671,23 @@ const CCLP = () => {
               </div>
 
               {/* Arrow pointing down */}
-              <div className="flex justify-center mb-8">
-                <div className="w-1 h-16 bg-gradient-to-b from-gray-400 to-gray-300 rounded-full"></div>
+              <div className="flex justify-center mb-6 md:mb-8">
+                <div className="w-1 h-12 md:h-16 bg-gradient-to-b from-gray-400 to-gray-300 rounded-full"></div>
               </div>
 
               {/* Final Competition */}
               <div className="text-center">
-                <div className="inline-block bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                  <div className="bg-white rounded-xl p-6 mb-4">
-                    <h3 className="text-3xl font-bold text-yellow-700 mb-2">Reading Champion</h3>
-                    <p className="text-gray-600 text-lg">Overall Winner</p>
+                <div className="inline-block w-full max-w-md bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 rounded-2xl p-4 md:p-8 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                  <div className="bg-white rounded-xl p-4 md:p-6 mb-3 md:mb-4">
+                    <h3 className="text-2xl md:text-3xl font-bold text-yellow-700 mb-2 break-words">Reading Champion</h3>
+                    <p className="text-gray-600 text-base md:text-lg break-words">Overall Winner</p>
                   </div>
-                  <div className="flex justify-center gap-4 mt-4">
-                    <div className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg">
+                  <div className="flex flex-col sm:flex-row justify-center items-center gap-3 md:gap-4 mt-3 md:mt-4">
+                    <div className="bg-blue-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow-lg text-sm md:text-base min-w-[120px] text-center break-words">
                       Cluster A Winners
                     </div>
-                    <span className="text-white text-2xl font-bold">VS</span>
-                    <div className="bg-orange text-white px-6 py-3 rounded-lg font-semibold shadow-lg">
+                    <span className="text-white text-xl md:text-2xl font-bold">VS</span>
+                    <div className="bg-orange text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold shadow-lg text-sm md:text-base min-w-[120px] text-center break-words">
                       Cluster B Winners
                     </div>
                   </div>
@@ -434,7 +696,11 @@ const CCLP = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
+
+
+      {/* Project Status Section */}
+      <ProjectStatus />
 
       {/* Success Stories Slider */}
       <section ref={storiesRef} className={`py-16 px-8 text-center bg-gradient-to-b from-gray-100 to-white ${storiesVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
@@ -450,6 +716,29 @@ const CCLP = () => {
           </div>
         </div>
       </section>
+
+      {/* Upcoming Activities Section - Commented Out */}
+      {false && <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <h2 className="font-poppins font-bold text-4xl md:text-5xl text-gray-800 mb-2">
+              {t.upcomingActivities}
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {t.upcomingActivitiesList.map((activity, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-orange hover:shadow-xl transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="bg-orange rounded-full p-3 flex-shrink-0">
+                    <FaTasks className="text-white text-xl" />
+                  </div>
+                  <p className="text-gray-700 leading-relaxed flex-1">{activity}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>}
     </section>
   );
 };

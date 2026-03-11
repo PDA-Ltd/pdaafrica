@@ -143,21 +143,21 @@ const WhereWeWorkPage = () => {
       {/* Summary Stats */}
       <section className="py-12 bg-gradient-to-br from-orange/5 via-white to-orange/5">
         <div className="max-w-7xl mx-auto px-6">
-          <div ref={statsRef} className={`grid md:grid-cols-3 gap-8 ${statsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-            <div className="bg-gradient-to-br from-orange to-orange/80 rounded-xl p-8 text-center text-white shadow-lg transform hover:scale-105 transition-transform">
-              <div className="text-6xl font-bold mb-3">5</div>
-              <div className="text-xl font-semibold">{t.countriesLabel || "Countries"}</div>
-              <div className="text-sm opacity-90 mt-2">{language === "en" ? "Across Africa" : "À travers l'Afrique"}</div>
+          <div ref={statsRef} className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 ${statsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
+            <div className="bg-gradient-to-br from-orange to-orange/80 rounded-xl p-6 md:p-8 text-center text-white shadow-lg transform hover:scale-105 transition-transform">
+              <div className="text-4xl md:text-6xl font-bold mb-2 md:mb-3">5</div>
+              <div className="text-base md:text-xl font-semibold break-words">{t.countriesLabel || "Countries"}</div>
+              <div className="text-xs md:text-sm opacity-90 mt-2 break-words">{language === "en" ? "Across Africa" : "À travers l'Afrique"}</div>
             </div>
-            <div className="bg-gradient-to-br from-red to-red/80 rounded-xl p-8 text-center text-white shadow-lg transform hover:scale-105 transition-transform">
-              <div className="text-6xl font-bold mb-3">100K+</div>
-              <div className="text-xl font-semibold">{t.communitiesReached || "Communities Reached"}</div>
-              <div className="text-sm opacity-90 mt-2">{language === "en" ? "Empowered" : "Autonomisées"}</div>
+            <div className="bg-gradient-to-br from-red to-red/80 rounded-xl p-6 md:p-8 text-center text-white shadow-lg transform hover:scale-105 transition-transform">
+              <div className="text-4xl md:text-6xl font-bold mb-2 md:mb-3">100K+</div>
+              <div className="text-base md:text-xl font-semibold break-words">{t.communitiesReached || "Communities Reached"}</div>
+              <div className="text-xs md:text-sm opacity-90 mt-2 break-words">{language === "en" ? "Empowered" : "Autonomisées"}</div>
             </div>
-            <div className="bg-gradient-to-br from-orange to-orange/80 rounded-xl p-8 text-center text-white shadow-lg transform hover:scale-105 transition-transform">
-              <div className="text-6xl font-bold mb-3">21+</div>
-              <div className="text-xl font-semibold">{t.yearsOfImpact || "Years of Impact"}</div>
-              <div className="text-sm opacity-90 mt-2">{language === "en" ? "Of Service" : "De service"}</div>
+            <div className="bg-gradient-to-br from-orange to-orange/80 rounded-xl p-6 md:p-8 text-center text-white shadow-lg transform hover:scale-105 transition-transform sm:col-span-2 lg:col-span-1">
+              <div className="text-4xl md:text-6xl font-bold mb-2 md:mb-3">21+</div>
+              <div className="text-base md:text-xl font-semibold break-words">{t.yearsOfImpact || "Years of Impact"}</div>
+              <div className="text-xs md:text-sm opacity-90 mt-2 break-words">{language === "en" ? "Of Service" : "De service"}</div>
             </div>
           </div>
         </div>
@@ -175,19 +175,19 @@ const WhereWeWorkPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 mb-8 md:mb-12 overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
             {countries.map((country) => (
               <button
                 key={country.id}
                 onClick={() => setSelectedCountry(country.id)}
-                className={`p-6 rounded-xl border-2 transition-all transform hover:scale-110 hover:shadow-xl ${
+                className={`p-4 md:p-6 rounded-xl border-2 transition-all transform hover:scale-110 hover:shadow-xl min-w-0 ${
                   selectedCountry === country.id
                     ? `${country.bgColor} ${country.borderColor} border-4 shadow-2xl scale-105`
                     : "border-gray-200 bg-white hover:border-orange/50 hover:bg-gray-50"
                 }`}
               >
-                <div className="text-5xl mb-3 transform hover:scale-110 transition-transform">{country.flag}</div>
-                <div className={`font-bold text-sm ${selectedCountry === country.id ? 'text-gray-800' : 'text-gray-600'}`}>
+                <div className="text-4xl md:text-5xl mb-2 md:mb-3 transform hover:scale-110 transition-transform">{country.flag}</div>
+                <div className={`font-bold text-xs md:text-sm break-words ${selectedCountry === country.id ? 'text-gray-800' : 'text-gray-600'}`}>
                   {country.name}
                 </div>
               </button>
@@ -196,75 +196,75 @@ const WhereWeWorkPage = () => {
 
           {/* Country Details */}
           {selectedCountryInfo && (
-            <div ref={detailsRef} className={`bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 md:p-12 border-2 ${selectedCountryInfo.borderColor} ${detailsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'}`}>
-              <div className="flex items-center gap-6 mb-8">
-                <div className="text-7xl transform hover:scale-110 transition-transform">{selectedCountryInfo.flag}</div>
-                <div className="flex-1">
-                  <h3 className="text-4xl font-bold text-gray-800 mb-2">{selectedCountryInfo.name}</h3>
-                  <div className={`h-1 w-24 bg-gradient-to-r ${selectedCountryInfo.color} rounded-full mb-4`}></div>
+            <div ref={detailsRef} className={`bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-12 border-2 ${selectedCountryInfo.borderColor} ${detailsVisible ? 'animate-on-scroll visible fade-up' : 'animate-on-scroll fade-up'} overflow-hidden`}>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6 mb-6 md:mb-8">
+                <div className="text-5xl sm:text-6xl md:text-7xl transform hover:scale-110 transition-transform flex-shrink-0">{selectedCountryInfo.flag}</div>
+                <div className="flex-1 w-full min-w-0">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2 break-words">{selectedCountryInfo.name}</h3>
+                  <div className={`h-1 w-16 md:w-24 bg-gradient-to-r ${selectedCountryInfo.color} rounded-full mb-3 md:mb-4`}></div>
                   
                   {/* Country Basic Info */}
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-                    <div className="bg-gradient-to-br from-orange/10 to-orange/20 rounded-lg p-3 border border-orange/20">
-                      <div className="text-xs text-gray-600 mb-1 font-semibold uppercase">{t.population}</div>
-                      <div className="text-lg font-bold text-orange">{selectedCountryInfo.population}</div>
-                      <div className="text-xs text-gray-500 mt-1">{t.estimate}</div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mt-4">
+                    <div className="bg-gradient-to-br from-orange/10 to-orange/20 rounded-lg p-2 md:p-3 border border-orange/20">
+                      <div className="text-[10px] md:text-xs text-gray-600 mb-1 font-semibold uppercase break-words">{t.population}</div>
+                      <div className="text-sm md:text-lg font-bold text-orange break-words">{selectedCountryInfo.population}</div>
+                      <div className="text-[10px] md:text-xs text-gray-500 mt-1">{t.estimate}</div>
                     </div>
-                    <div className="bg-gradient-to-br from-red/10 to-red/20 rounded-lg p-3 border border-red/20">
-                      <div className="text-xs text-gray-600 mb-1 font-semibold uppercase">{t.capital}</div>
-                      <div className="text-lg font-bold text-red">{selectedCountryInfo.capital}</div>
+                    <div className="bg-gradient-to-br from-red/10 to-red/20 rounded-lg p-2 md:p-3 border border-red/20">
+                      <div className="text-[10px] md:text-xs text-gray-600 mb-1 font-semibold uppercase break-words">{t.capital}</div>
+                      <div className="text-sm md:text-lg font-bold text-red break-words">{selectedCountryInfo.capital}</div>
                     </div>
-                    <div className="bg-gradient-to-br from-orange/10 to-orange/20 rounded-lg p-3 border border-orange/20">
-                      <div className="text-xs text-gray-600 mb-1 font-semibold uppercase">{t.communities}</div>
-                      <div className="text-lg font-bold text-orange">{selectedCountryInfo.communities}</div>
+                    <div className="bg-gradient-to-br from-orange/10 to-orange/20 rounded-lg p-2 md:p-3 border border-orange/20">
+                      <div className="text-[10px] md:text-xs text-gray-600 mb-1 font-semibold uppercase break-words">{t.communities}</div>
+                      <div className="text-sm md:text-lg font-bold text-orange break-words">{selectedCountryInfo.communities}</div>
                     </div>
-                    <div className="bg-gradient-to-br from-red/10 to-red/20 rounded-lg p-3 border border-red/20">
-                      <div className="text-xs text-gray-600 mb-1 font-semibold uppercase">{t.participants}</div>
-                      <div className="text-lg font-bold text-red">{selectedCountryInfo.participants}</div>
+                    <div className="bg-gradient-to-br from-red/10 to-red/20 rounded-lg p-2 md:p-3 border border-red/20">
+                      <div className="text-[10px] md:text-xs text-gray-600 mb-1 font-semibold uppercase break-words">{t.participants}</div>
+                      <div className="text-sm md:text-lg font-bold text-red break-words">{selectedCountryInfo.participants}</div>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-r from-orange/10 to-orange/20 rounded-xl p-6 mb-8 border-l-4 border-orange">
-                <p className="text-lg text-gray-700 leading-relaxed">
+              <div className="bg-gradient-to-r from-orange/10 to-orange/20 rounded-xl p-4 md:p-6 mb-6 md:mb-8 border-l-4 border-orange">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed break-words">
                   {selectedCountryData.description}
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="bg-gradient-to-br from-orange to-orange/80 rounded-lg p-3">
-                      <img src={globe} alt="Regions" className="w-6 h-6" />
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 mb-6 md:mb-8">
+                <div className="bg-white rounded-xl p-4 md:p-6 shadow-lg border border-gray-200">
+                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                    <div className="bg-gradient-to-br from-orange to-orange/80 rounded-lg p-2 md:p-3 flex-shrink-0">
+                      <img src={globe} alt="Regions" className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
-                    <h4 className="text-2xl font-bold text-gray-800">{t.regionsWeWork}</h4>
+                    <h4 className="text-xl md:text-2xl font-bold text-gray-800 break-words">{t.regionsWeWork}</h4>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 md:space-y-3">
                     {selectedCountryData.regions.map((region, index) => (
-                      <li key={index} className="flex items-center gap-3 text-gray-700 bg-gray-50 rounded-lg p-3 hover:bg-orange/5 transition-colors">
-                        <span className="text-orange text-xl font-bold">•</span>
-                        <span className="font-medium">{region}</span>
+                      <li key={index} className="flex items-center gap-2 md:gap-3 text-gray-700 bg-gray-50 rounded-lg p-2 md:p-3 hover:bg-orange/5 transition-colors">
+                        <span className="text-orange text-lg md:text-xl font-bold flex-shrink-0">•</span>
+                        <span className="font-medium text-sm md:text-base break-words">{region}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="bg-gradient-to-br from-red to-red/80 rounded-lg p-3">
-                      <img src={clipboard} alt="Programs" className="w-6 h-6" />
+                <div className="bg-white rounded-xl p-4 md:p-6 shadow-lg border border-gray-200">
+                  <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
+                    <div className="bg-gradient-to-br from-red to-red/80 rounded-lg p-2 md:p-3 flex-shrink-0">
+                      <img src={clipboard} alt="Programs" className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
-                    <h4 className="text-2xl font-bold text-gray-800">{t.keyPrograms}</h4>
+                    <h4 className="text-xl md:text-2xl font-bold text-gray-800 break-words">{t.keyPrograms}</h4>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 md:space-y-3">
                     {selectedCountryData.programs.map((program, index) => {
                       const icon = programIcons[program] || globe;
                       return (
-                        <li key={index} className="flex items-start gap-3 text-gray-700 bg-gray-50 rounded-lg p-3 hover:bg-red/5 transition-colors group">
-                          <div className="bg-orange rounded-lg p-2 transition-colors mt-1">
-                            <img src={icon} alt={program} className="w-5 h-5 brightness-0 invert" />
+                        <li key={index} className="flex items-start gap-2 md:gap-3 text-gray-700 bg-gray-50 rounded-lg p-2 md:p-3 hover:bg-red/5 transition-colors group">
+                          <div className="bg-orange rounded-lg p-1.5 md:p-2 transition-colors mt-1 flex-shrink-0">
+                            <img src={icon} alt={program} className="w-4 h-4 md:w-5 md:h-5 brightness-0 invert" />
                           </div>
-                          <span className="font-medium flex-1">{program}</span>
+                          <span className="font-medium flex-1 text-sm md:text-base break-words">{program}</span>
                         </li>
                       );
                     })}
@@ -273,36 +273,36 @@ const WhereWeWorkPage = () => {
               </div>
 
               {/* Impact Stats for Selected Country */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-gradient-to-br from-orange/20 to-orange/10 rounded-lg p-4 text-center border border-orange/20">
-                  <div className="text-3xl font-bold text-orange mb-1">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+                <div className="bg-gradient-to-br from-orange/20 to-orange/10 rounded-lg p-3 md:p-4 text-center border border-orange/20">
+                  <div className="text-xl md:text-3xl font-bold text-orange mb-1 break-words">
                     {selectedCountry === "ghana" ? "200+" : selectedCountry === "coteDivoire" ? "77" : "50+"}
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-xs md:text-sm text-gray-600 font-medium break-words">
                     {language === "en" ? "VSLA Groups" : "Groupes VSLA"}
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-red/20 to-red/10 rounded-lg p-4 text-center border border-red/20">
-                  <div className="text-3xl font-bold text-red mb-1">
+                <div className="bg-gradient-to-br from-red/20 to-red/10 rounded-lg p-3 md:p-4 text-center border border-red/20">
+                  <div className="text-xl md:text-3xl font-bold text-red mb-1 break-words">
                     {selectedCountryInfo.communities}
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-xs md:text-sm text-gray-600 font-medium break-words">
                     {t.communities}
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-orange/20 to-orange/10 rounded-lg p-4 text-center border border-orange/20">
-                  <div className="text-3xl font-bold text-orange mb-1">
+                <div className="bg-gradient-to-br from-orange/20 to-orange/10 rounded-lg p-3 md:p-4 text-center border border-orange/20">
+                  <div className="text-xl md:text-3xl font-bold text-orange mb-1 break-words">
                     {selectedCountryInfo.participants}
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-xs md:text-sm text-gray-600 font-medium break-words">
                     {t.participants}
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-red/20 to-red/10 rounded-lg p-4 text-center border border-red/20">
-                  <div className="text-3xl font-bold text-red mb-1">
+                <div className="bg-gradient-to-br from-red/20 to-red/10 rounded-lg p-3 md:p-4 text-center border border-red/20">
+                  <div className="text-xl md:text-3xl font-bold text-red mb-1 break-words">
                     {selectedCountryInfo.yearsActive}
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">
+                  <div className="text-xs md:text-sm text-gray-600 font-medium break-words">
                     {t.yearsActive}
                   </div>
                 </div>

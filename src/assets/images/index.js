@@ -46,6 +46,8 @@ import customer1 from "./customer1.jpg";
 import customer2 from "./customer2.jpg";
 import customer3 from "./customer3.png";
 import customer4 from "./customer4.png";
+import comfort from "./ComfortKwakye.jpg";
+import emmanuel from "./EmmanuelZoryiku.jpg";
 
 import reachout from "./reachout.jpg";
 
@@ -163,7 +165,24 @@ import araba from "./Araba.jpg";
 import aseda from "./Aseda.jpg";
 import clement from "./Clement.jpg";
 import osei from "./Osei.jpg";
-
+import chocoa from "./chocoaConference.jpg";
+import etg1 from "./davidETG.jpg";
+import etg2 from "./etgtraining.jpg";
+import ksw from "./tksw.jpg";
+import farmervoice from "./farmervoice.jpg";
+import pdaafricahero from "./pdaafricahero.mp4";
+import cclphero from "./cclphero.mp4";
+import philip from "./philip.jpg";
+import yaro from "./Eunice-Yaro.jpg";
+import harrison from "./harrison.jpg";
+import eugene from "./Eugene-1.jpg";
+import racheal from "./racheal.jpg";
+import emelia from "./emelia.jpg";
+import abu from "./abu.jpg";
+import sanni from "./sanni.jpg";
+import incoom from "./incoom.jpg";
+import tietaar from "./tietaar.jpg";
+import socam from "./Socam.jpg";
 
 export {
   image1,
@@ -211,6 +230,8 @@ export {
   customer2,
   customer3,
   customer4,
+  comfort,
+  emmanuel,
   reachout,
   Image1,
   Image2,
@@ -321,4 +342,22 @@ export {
   aseda,
   clement,
   osei,
+  chocoa,
+  etg1,
+  etg2,
+  ksw,
+  farmervoice,
+  pdaafricahero,
+  cclphero,
+  philip,
+  yaro,
+  harrison,
+  eugene,
+  racheal,
+  emelia,
+  abu,
+  sanni,
+  incoom,
+  tietaar,
+  socam,
 };
