@@ -176,12 +176,12 @@ import philip from "./philip.jpg";
 import yaro from "./Eunice-Yaro.jpg";
 import harrison from "./harrison.jpg";
 import eugene from "./Eugene-1.jpg";
-import racheal from "./racheal.jpg";
+import racheal from "./Racheal.jpg";
 import emelia from "./Emelia.jpg";
-import abu from "./abu.jpg";
-import sanni from "./sanni.jpg";
-import incoom from "./incoom.jpg";
-import tietaar from "./tietaar.jpg";
+import abu from "./Abu.jpg";
+import sanni from "./Sanni.jpg";
+import incoom from "./Incoom.jpg";
+import tietaar from "./Tietaar.jpg";
 import socam from "./Socam.jpg";
 
 export {
