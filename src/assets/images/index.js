@@ -177,7 +177,7 @@ import yaro from "./Eunice-Yaro.jpg";
 import harrison from "./harrison.jpg";
 import eugene from "./Eugene-1.jpg";
 import racheal from "./racheal.jpg";
-import emelia from "./emelia.jpg";
+import emelia from "./Emelia.jpg";
 import abu from "./abu.jpg";
 import sanni from "./sanni.jpg";
 import incoom from "./incoom.jpg";
