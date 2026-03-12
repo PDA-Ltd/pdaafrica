@@ -346,7 +346,7 @@ export const en = {
       ghana: {
         description: "Ghana is our primary operational base, where we implement our flagship programs including the Cocoa Communities Library Project, Financial Inclusion and VSLA programs, and Child Labour Remediation initiatives.",
         regions: ["Ashanti Region", "Eastern Region", "Central Region", "Western Region", "Ahafo Ano South"],
-        programs: ["Cocoa Communities Library Project", "VSLA-GALS Programme", "Nyonkopa Child Labour Remediation", "Farmers' Voice Radio Academy"],
+        programs: ["Cocoa Communities Library Project", "VSLA-GALS Programme", "Nyonkopa Child Labour Remediation", "Farmers' Voice Radio Academy", "VSLA-CHILD Programme"],
       },
       coteDivoire: {
         description: "We work with cocoa-growing communities in Cote D'Ivoire to implement financial inclusion programs and support farmers' living income through VSLA and Empowering Better Decisions (EBD) trainings.",

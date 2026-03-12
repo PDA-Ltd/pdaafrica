@@ -318,7 +318,7 @@ export const fr = {
       ghana: {
         description: "Le Ghana est notre base opérationnelle principale, où nous mettons en œuvre nos programmes phares, notamment le projet de bibliothèque des communautés de cacao, les programmes d'inclusion financière et VSLA, et les initiatives de remédiation du travail des enfants.",
         regions: ["Région d'Ashanti", "Région orientale", "Région centrale", "Région occidentale", "Ahafo Ano Sud"],
-        programs: ["Projet de bibliothèque des communautés de cacao", "Programme VSLA-GALS", "Remédiation du travail des enfants Nyonkopa", "Académie de radio de la voix des agriculteurs"],
+        programs: ["Projet de bibliothèque des communautés de cacao", "Programme VSLA-GALS", "Remédiation du travail des enfants Nyonkopa", "Académie de radio de la voix des agriculteurs", "Programme VSLA-CHILD"],
       },
       coteDivoire: {
         description: "Nous travaillons avec les communautés productrices de cacao en Côte d'Ivoire pour mettre en œuvre des programmes d'inclusion financière et soutenir le revenu de subsistance des agriculteurs grâce aux formations VSLA et Empowering Better Decisions (EBD).",

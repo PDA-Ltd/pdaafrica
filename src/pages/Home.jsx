@@ -71,14 +71,15 @@ const Home = () => {
   return (
     <div className="min-h-screen font-poppins">
       {/* Hero Section - Video */}
-      <section className="relative w-full h-[70vh] md:h-[80vh] bg-black overflow-hidden">
+      <section className="relative w-full h-[70vh] min-h-[400px] md:h-[80vh] bg-black overflow-hidden">
         <video
           src={cclphero}
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-0"
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />

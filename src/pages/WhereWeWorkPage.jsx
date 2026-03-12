@@ -27,7 +27,7 @@ const WhereWeWorkPage = () => {
       capital: language === "en" ? "Accra" : "Accra",
       communities: "150+",
       participants: "50K+",
-      programs: "4",
+      programs: "5",
       yearsActive: "15+",
     },
     { 

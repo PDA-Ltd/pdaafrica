@@ -364,8 +364,8 @@ const VSLA = () => {
                 title={language === "en" ? "Nestle Income Accelerator Programme [Cote D'Ivoire]" : "Programme Nestlé Income Accelerator [Côte d'Ivoire]"}
                 description={language === "en" ? "Improving the livelihoods of cocoa-farming families through VSLA groups and Gender Action Learning Systems (GALS) training." : "Améliorer les moyens de subsistance des familles de producteurs de cacao grâce aux groupes VSLA et à la formation sur les systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS)."}
                 location={language === "en" ? "Cote D'Ivoire" : "Côte d'Ivoire"}
-                officers="7"
-                text={language === "en" ? "The Nestlé Income Accelerator Programme (IAP) is an initiative aimed at improving the livelihoods of cocoa-farming families in Côte D'Ivoire while advancing regenerative agriculture practices. In collaboration with Beyond Beans, PDA has been instrumental in forming 87 Village Savings and Loans Association (VSLA) groups. Seven field officers actively facilitate project activities, including financial literacy and gender empowerment training, leveraging the Gender Action Learning Systems (GALS) methodology to ensure inclusivity and impact. The program was extended to October 2025 to allow all VSLA groups to complete their full 52-week cycle and successfully complete GALS training. By May, some groups had already conducted their first share-out and commenced a second cycle. All 88 VSLA groups formed under the project successfully named their groups and were trained on VSLA leadership and elected their management committee members." : "Le programme Nestlé Income Accelerator (IAP) est une initiative visant à améliorer les moyens de subsistance des familles de producteurs de cacao en Côte d'Ivoire tout en faisant progresser les pratiques agricoles régénératrices. En collaboration avec Beyond Beans, PDA a joué un rôle déterminant dans la formation de 87 groupes d'associations villageoises d'épargne et de crédit (VSLA). Sept agents de terrain facilitent activement les activités du projet, notamment la formation en éducation financière et l'autonomisation des femmes, en utilisant la méthodologie des systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS) pour assurer l'inclusivité et l'impact. Le programme a été prolongé jusqu'en octobre 2025 pour permettre à tous les groupes VSLA de terminer leur cycle complet de 52 semaines et de terminer avec succès la formation GALS. En mai, certains groupes avaient déjà effectué leur premier partage et commencé un deuxième cycle. Les 88 groupes VSLA formés dans le cadre du projet ont nommé avec succès leurs groupes et ont été formés sur le leadership VSLA et ont élu les membres de leur comité de gestion."}
+                officers="13"
+                text={language === "en" ? "The Nestlé Income Accelerator Programme (IAP) is an initiative aimed at improving the livelihoods of cocoa-farming families in Côte D'Ivoire while advancing regenerative agriculture practices. In collaboration with Beyond Beans, PDA has been instrumental in forming 87 Village Savings and Loans Association (VSLA) groups. Thirteen field officers actively facilitate project activities, including financial literacy and gender empowerment training, leveraging the Gender Action Learning Systems (GALS) methodology to ensure inclusivity and impact. The program was extended to October 2025 to allow all VSLA groups to complete their full 52-week cycle and successfully complete GALS training. By May, some groups had already conducted their first share-out and commenced a second cycle. All 88 VSLA groups formed under the project successfully named their groups and were trained on VSLA leadership and elected their management committee members." : "Le programme Nestlé Income Accelerator (IAP) est une initiative visant à améliorer les moyens de subsistance des familles de producteurs de cacao en Côte d'Ivoire tout en faisant progresser les pratiques agricoles régénératrices. En collaboration avec Beyond Beans, PDA a joué un rôle déterminant dans la formation de 87 groupes d'associations villageoises d'épargne et de crédit (VSLA). Treize agents de terrain facilitent activement les activités du projet, notamment la formation en éducation financière et l'autonomisation des femmes, en utilisant la méthodologie des systèmes d'apprentissage de l'action pour l'égalité des sexes (GALS) pour assurer l'inclusivité et l'impact. Le programme a été prolongé jusqu'en octobre 2025 pour permettre à tous les groupes VSLA de terminer leur cycle complet de 52 semaines et de terminer avec succès la formation GALS. En mai, certains groupes avaient déjà effectué leur premier partage et commencé un deuxième cycle. Les 88 groupes VSLA formés dans le cadre du projet ont nommé avec succès leurs groupes et ont été formés sur le leadership VSLA et ont élu les membres de leur comité de gestion."}
                 language={language}
                 onClick={() =>
                   openProjectModal({
@@ -374,7 +374,7 @@ const VSLA = () => {
                         ? "Nestle Income Accelerator Programme [Cote D'Ivoire]"
                         : "Programme Nestlé Income Accelerator [Côte d'Ivoire]",
                     location: language === "en" ? "Cote D'Ivoire" : "Côte d'Ivoire",
-                    officers: "7",
+                    officers: "13",
                     partner: "Beyond Beans",
                     period: "2025 –",
                     url:
@@ -384,12 +384,12 @@ const VSLA = () => {
                     highlights:
                       language === "en"
                         ? [
-                            "87 VSLA groups formed with 7 PDA field officers supporting implementation.",
+                            "87 VSLA groups formed with 13 PDA field officers supporting implementation.",
                             "Extended to October 2025 so all groups complete a 52‑week cycle and GALS training.",
                             "All groups trained in financial literacy, gender empowerment and VSLA leadership.",
                           ]
                         : [
-                            "87 groupes VSLA formés avec 7 agents de terrain PDA chargés de la mise en œuvre.",
+                            "87 groupes VSLA formés avec 13 agents de terrain PDA chargés de la mise en œuvre.",
                             "Prolongé jusqu'en octobre 2025 pour permettre à tous les groupes de terminer un cycle de 52 semaines et la formation GALS.",
                             "Tous les groupes ont été formés à l'éducation financière, à l'autonomisation des femmes et au leadership VSLA.",
                           ],
@@ -652,7 +652,7 @@ const VSLA = () => {
                     : "Création de groupes VSLA dans le district d'Obala pour former les membres à l'épargne, à l'investissement et à l'harmonie familiale grâce à la formation GALS-IGA."
                 }
                 location={language === "en" ? "Obala District, Cameroon" : "District d'Obala, Cameroun"}
-                officers="7"
+                officers="1"
                 text={
                   language === "en"
                     ? "The VSLA-GALS Project in Cameroon aims to create 10 VSLA groups in the district of Obala, training members on how to save and use their money to invest, and teaching them how to live happily with their loved ones. 11 groups were created in 7 communities with a total of 280 members (111 males and 169 females). Activities carried out within the cycle include savings, social fund contribution, loan taking and repayment, GALS training and implementation, share outs, and launch of the second cycle. 22 champions underwent GALS-IGA training in May, who later took what they learnt to their various groups. The training helped farmers first to mend their family bonds, and secondly, IGA helped them to get creative with little project ideas. The loans they took after the training were to realize the projects they conceived. The members are still implementing what they gathered from the training, and when they face a difficulty, they bring it to the group for assistance. All the major objectives of this project were met. The farmers even commented that the VSLA groups made things easier on them this year based on the aspect of finding funds to take care of their farms, send their children to school, and also for medical emergencies. In all the 7 communities, at least 1 extra group (mostly 2) has been formed at the beginning of the second cycle. One of the communities is forming 3 more groups. Other communities in the district of Obala are requesting for the project after seeing how it is positively affecting their neighboring communities."
@@ -663,8 +663,8 @@ const VSLA = () => {
                   openProjectModal({
                     title: language === "en" ? "VSLA-GALS Project - Cameroon" : "Projet VSLA-GALS - Cameroun",
                     location: language === "en" ? "Obala District, Cameroon" : "District d'Obala, Cameroun",
-                    officers: "7",
-                    partner: language === "en" ? "SOCAM 5C" : "SOCAM 5C",
+                    officers: "1",
+                    partner: language === "en" ? "Beyond Beans" : "Beyond Beans",
                     period: language === "en" ? "Ongoing" : "En cours",
                     description:
                       language === "en"
