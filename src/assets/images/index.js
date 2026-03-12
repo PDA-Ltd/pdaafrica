@@ -171,6 +171,7 @@ import etg2 from "./etgtraining.jpg";
 import ksw from "./tksw.jpg";
 import farmervoice from "./farmervoice.jpg";
 import pdaafricahero from "./pdaafricahero.mp4";
+import newhero from "./newhero.mp4";
 import cclphero from "./cclphero.mp4";
 import philip from "./philip.jpg";
 import yaro from "./Eunice-Yaro.jpg";
@@ -348,6 +349,7 @@ export {
   ksw,
   farmervoice,
   pdaafricahero,
+  newhero,
   cclphero,
   philip,
   yaro,

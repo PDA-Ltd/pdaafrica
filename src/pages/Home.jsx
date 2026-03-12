@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa, chocoa, etg1, farmervoice, ksw, cclphero } from "../assets/images";
+import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa, chocoa, etg1, farmervoice, ksw, newhero } from "../assets/images";
 import { reviews } from "../constants";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../constants";
@@ -73,7 +73,7 @@ const Home = () => {
       {/* Hero Section - Video */}
       <section className="relative w-full h-[70vh] min-h-[400px] md:h-[80vh] bg-black overflow-hidden">
         <video
-          src={cclphero}
+          src={newhero}
           autoPlay
           muted
           loop
