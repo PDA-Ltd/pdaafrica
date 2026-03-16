@@ -167,11 +167,8 @@ export const footerLinks = [
   {
     title: "Contact Us",
     links: [
-      { name: "+233 (0)208129622", link: "tel:+233208129622" },
-      {
-        name: "+233 (0)302 252998 / 2970177",
-        link: "tel:+233302252998, tel:+2333022970177",
-      },
+     { name: "+233 (0)508493316", link: "tel:+233508493316" },
+      { name: "+233 (0)508500017", link: "tel:+233508500017" },
       { name: "Email:", link: "mailto:info@pdaafrica.org" },
       { name: "info@pdaafrica.org", link: "mailto:info@pdaafrica.org" },
     ],
