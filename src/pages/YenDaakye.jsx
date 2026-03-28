@@ -5,7 +5,6 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
-import { child, farmer } from "../assets/images";
 
 const YenDaakye = () => {
   const { language } = useLanguage();

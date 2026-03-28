@@ -276,7 +276,7 @@ const VSLA = () => {
                 <p className="text-gray-700 font-semibold text-lg">{t.communities}</p>
               </div>
               <div className="bg-gradient-to-br from-orange/10 to-orange/5 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
-                <p className="text-5xl font-bold text-orange mb-2">1000+</p>
+                <p className="text-5xl font-bold text-orange mb-2">2000+</p>
                 <p className="text-gray-700 font-semibold text-lg">{t.beneficiaries}</p>
               </div>
             </div>

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const ProjectCard = ({ imgURL, label, subtext, button, link }) => {
   return (
     // <motion.div

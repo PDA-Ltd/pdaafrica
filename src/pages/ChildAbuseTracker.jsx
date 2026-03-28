@@ -15,13 +15,17 @@ const ChildAbuseTracker = () => {
         <Button label="NEWS & UPDATES>>" />
       </div>
       <div className="w-full mb-10">
-        <img src={childabuse} alt="" className="w-full " />
+        <img
+          src={childabuse}
+          alt="Child Abuse Tracker — awareness graphic"
+          className="w-full "
+        />
       </div>
       <div className="ml-32 mb-10">
         <Button label="NEWS & UPDATES>>" />
       </div>
       <div className="mt-10 mb-10 ml-32">
-        <img src={abusecase} alt="" />
+        <img src={abusecase} alt="Illustration related to child abuse case tracking" />
       </div>
     </section>
   );

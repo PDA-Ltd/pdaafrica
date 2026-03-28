@@ -15,9 +15,6 @@ import ContactPage from "./pages/ContactPage.jsx";
 import ImpactPage from "./pages/ImpactPage.jsx";
 import WhereWeWorkPage from "./pages/WhereWeWorkPage.jsx";
 import StaffPage from "./pages/StaffPage.jsx";
-import DonateForm from "./components/DonateForm.jsx"; // Import the DonateForm component
-import ThankYouPage from "./components/ThankYouPage.jsx"; // Import the ThankYou component
-import DataAnalytics from "./pages/DataAnalytics.jsx";
 import CCLP from "./pages/CCLP.jsx";
 import Nyonkopa from "./pages/Nyonkopa.jsx";
 import VSLA from "./pages/VSLA.jsx";
@@ -32,14 +29,15 @@ import OurImpact from "./pages/OurImpact.jsx";
 import Publications from "./pages/Publications.jsx";
 import VidPic from "./pages/VidPic.jsx";
 import Podcast from "./pages/Podcast.jsx";
-import CCLPDashboard from "./pages/CCLPDashboard.jsx";
-import VSLADashboard from "./pages/VSLADashboard.jsx";
-import NCLRDashboard from "./pages/NCLRDashboard.jsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 import TermsOfServicePage from "./pages/TermsOfServicePage.jsx";
 import ImpactProject from "./pages/ImpactProject.jsx";
 import YenDaakye from "./pages/YenDaakye.jsx";
-import VSLAImpactStories from "./pages/VSLAImpactStories.jsx";
+import VSLAImpactStoriesIndex from "./pages/VSLAImpactStoriesIndex.jsx";
+import VSLAImpactStoryPage from "./pages/VSLAImpactStoryPage.jsx";
+import YoFeB4G from "./pages/YoFeB4G.jsx";
+import CLDCollaborative from "./pages/CLDCollaborative.jsx";
+import KnowledgeSharingWorkshops from "./pages/KnowledgeSharingWorkshops.jsx";
 // import Aboutafrica from "./sections/Aboutafrica.jsx";
 // import AfricaGallery from "./sections/AfricaGallery.jsx";
 // import PdaafricaContact from "./sections/PdaafricaContact.jsx";
@@ -223,7 +221,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/vsla-impact-stories",
-        element: <VSLAImpactStories />,
+        element: <VSLAImpactStoriesIndex />,
+      },
+      {
+        path: "/vsla-impact-stories/:slug",
+        element: <VSLAImpactStoryPage />,
+      },
+      {
+        path: "/yofeb-4g",
+        element: <YoFeB4G />,
+      },
+      {
+        path: "/ghana-cld-collaborative",
+        element: <CLDCollaborative />,
+      },
+      {
+        path: "/knowledge-sharing-workshops-child-protection",
+        element: <KnowledgeSharingWorkshops />,
       },
     ],
   },

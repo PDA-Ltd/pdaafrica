@@ -38,7 +38,7 @@ const Nav = () => {
             id="openSidebarMenu"
           ></input>
           <label
-            for="openSidebarMenu"
+            htmlFor="openSidebarMenu"
             className="sidebarIconToggle cursor-pointer absolute top-[22px] lg:right-[300px] w-[35px] h-[35px] z-[99] "
             onClick={toggleMenu}
           >

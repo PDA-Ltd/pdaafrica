@@ -10,7 +10,8 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
-import { finance, clipboard, globe, signal, bulb } from "../assets/icons";
+import { finance, clipboard, globe, signal } from "../assets/icons";
+import { getVslaImpactStorySummaries } from "../data/vslaImpactStories";
 
 const ImpactPage = () => {
   const { language } = useLanguage();
@@ -24,7 +25,11 @@ const ImpactPage = () => {
   const [statsRef, statsVisible] = useScrollAnimation();
   const [areasRef, areasVisible] = useScrollAnimation();
   const [programRef, programVisible] = useScrollAnimation();
+  const [vslaStoriesRef, vslaStoriesVisible] = useScrollAnimation();
   const [testimonialsRef, testimonialsVisible] = useScrollAnimation();
+
+  const tv = language === "en" ? en.vslaImpactStories : fr.vslaImpactStories;
+  const vslaStorySummaries = getVslaImpactStorySummaries(tv);
 
   useEffect(() => {
     if (isModalOpen) {
@@ -261,6 +266,66 @@ const ImpactPage = () => {
                   }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VSLA impact stories (one story per page) */}
+      <section className="py-12 bg-gradient-to-b from-orange/[0.07] to-white border-t border-orange/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div
+            ref={vslaStoriesRef}
+            className={`text-center mb-10 ${
+              vslaStoriesVisible ? "animate-on-scroll visible fade-up" : "animate-on-scroll fade-up"
+            }`}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
+              {t.vslaStoriesHighlightTitle}
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-2">{t.vslaStoriesHighlightDesc}</p>
+            <Link
+              to="/vsla-impact-stories"
+              className="inline-flex items-center gap-2 text-orange font-semibold hover:underline mt-2"
+            >
+              {t.viewAllVslaStories}
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {vslaStorySummaries.map((item) => (
+              <Link
+                key={item.slug}
+                to={`/vsla-impact-stories/${item.slug}`}
+                className="group flex flex-col sm:flex-row bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-orange/40 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="sm:w-[42%] min-h-[220px] sm:min-h-[260px] relative overflow-hidden shrink-0">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent sm:from-black/40" />
+                </div>
+                <div className="p-6 flex flex-col flex-1 justify-center">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-orange mb-1">VSLA</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-orange transition-colors">
+                    {item.name}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-3">
+                    {item.location} · {item.group}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed line-clamp-3 mb-4">{item.introduction}</p>
+                  <span className="text-orange font-semibold inline-flex items-center gap-2 mt-auto">
+                    {t.readStory}
+                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
                 </div>
               </Link>
             ))}

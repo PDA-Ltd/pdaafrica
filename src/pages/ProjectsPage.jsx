@@ -19,6 +19,9 @@ const ProjectsPage = () => {
     "Nyonkopa Child Labour Remediation": globe,
     "The iMPACT Project": globe,
     "\"Yen Daakye\" Programme": globe,
+    "Young Female Businesses for Growth (YoFeB-4G)": globe,
+    "Ghana Community-Led Development Collaborative": clipboard,
+    "Knowledge Sharing Workshops on Child Protection": clipboard,
   };
 
   return (
@@ -59,12 +62,9 @@ const ProjectsPage = () => {
             {projects.map((project, index) => {
               const icon = projectIcons[project.label] || clipboard;
               const projectTranslation = t.projectList[project.label] || project;
-              return (
-                <Link
-                  key={index}
-                  to={project.link}
-                  className="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-                >
+              const isExternal = typeof project.link === "string" && project.link.startsWith("http");
+              const CardInner = () => (
+                <>
                   {/* Image Section */}
                   <div className="relative h-64 overflow-hidden">
                     <img
@@ -73,6 +73,13 @@ const ProjectsPage = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 group-hover:bg-orange group-hover:scale-110 transition-all">
+                      <img
+                        src={icon}
+                        alt="Project icon"
+                        className="w-6 h-6 group-hover:brightness-0 group-hover:invert"
+                      />
+                    </div>
                   </div>
 
                   {/* Content Section */}
@@ -100,6 +107,25 @@ const ProjectsPage = () => {
                       </svg>
                     </div>
                   </div>
+                </>
+              );
+              return isExternal ? (
+                <a
+                  key={index}
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <CardInner />
+                </a>
+              ) : (
+                <Link
+                  key={index}
+                  to={project.link}
+                  className="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <CardInner />
                 </Link>
               );
             })}

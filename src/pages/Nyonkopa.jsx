@@ -9,16 +9,14 @@ import {
   FaArrowLeft,
   FaHandshake,
   FaCalendarAlt,
-  FaBookOpen,
   FaShieldAlt,
   FaBuilding,
-  FaCheckCircle,
   FaTasks,
   FaChartLine,
   FaArrowRight,
   FaArrowDown,
 } from "react-icons/fa";
-import { slide, nyomodul, nyonk } from "../assets/images";
+import { nyonk } from "../assets/images";
 import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
@@ -290,7 +288,7 @@ const Nyonkopa = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {activityCards.map((activity, index) => {
+            {activityCards.map((activity) => {
               const Icon = activity.icon;
               const isExpanded = expandedSection === activity.id;
               const colorClasses = {
@@ -525,21 +523,7 @@ const Nyonkopa = () => {
             <SuccessStories />
           </div>
         </div>
-      </section>
-
-      {/* Child Abuse Tracker */}
-      <section>
-        <div className="flex justify-center align-middle p-3">
-          <h1 className="font-poppins text-3xl font-bold text-red">
-            {t.childAbuseTracker}
-          </h1>
-        </div>
-        <iframe
-          src="https://stopviolenceagainstchildren.ushahidi.io/map"
-          style={{ width: "100%", height: "100vh", border: "none" }}
-          title="Dashboard"
-        ></iframe>
-      </section>
+      </section>  
     </section>
   );
 };

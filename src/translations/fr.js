@@ -18,6 +18,42 @@ export const fr = {
     partners: "Partenaires",
     pda: "PDA",
   },
+  // YoFeB-4G Page
+  yofeb4g: {
+    title: "Entreprises de jeunes femmes pour la croissance (YoFeB-4G)",
+    subtitle: "Soutien à 100 jeunes artisannes pour la formalisation et le développement d'entreprises afin d'accéder à un travail décent dans le secteur de la construction",
+    backToProjects: "Retour aux projets",
+    snapshotTitle: "Aperçu du projet",
+    partner: "Partenaire",
+    partnerName: "Artisans Association of Ghana (AAG) & PDA (Financé par WUSC Ghana - PIF)",
+    period: "Période",
+    periodValue: "En cours",
+    country: "Pays d'opération",
+    countryValue: "Ghana",
+    category: "Catégorie",
+    categoryValue: "Autonomisation économique des femmes et formalisation des entreprises",
+    snapshotDescription: "YoFeB-4G autonomise les jeunes artisannes à formaliser et développer leurs entreprises, à réduire les risques de harcèlement et de fraude, à renforcer leur compétitivité et l'accès à un travail décent, et à créer des environnements de travail sûrs et sains grâce à la formation, au mentorat, au plaidoyer et au soutien continu.",
+    objectivesTitle: "Objectifs clés",
+    obj1: "Soutenir les jeunes artisannes à formaliser leurs entreprises en tant que MPME et start-ups.",
+    obj2: "Assurer la conformité aux réglementations et exigences de certification pertinentes.",
+    obj3: "Renforcer la compétitivité et l'accès à un travail décent et à l'autonomisation financière.",
+    obj4: "Aider à relever les défis sur la voie de la formalisation, notamment le harcèlement sexuel.",
+    phasesTitle: "Phases du projet",
+    phases: {
+      formalization: "Formation à la formalisation des entreprises",
+      tvet: "Renforcement des compétences TVET",
+      mentorship: "Programme de mentorat",
+      advocacy: "Campagnes de plaidoyer",
+      mel: "Suivi, évaluation et apprentissage (MEL)",
+    },
+    phasesDesc: {
+      formalization: "Production d'un manuel de formalisation d'entreprise et sessions de formation en présentiel.",
+      tvet: "Visites industrielles pour mettre à jour les connaissances sur les outils et compétences disponibles.",
+      mentorship: "Mentorat avec des femmes entrepreneures expérimentées dans divers corps de métiers.",
+      advocacy: "Dialogues avec les parties prenantes et campagnes sur les réseaux sociaux pour impulser le changement.",
+      mel: "Séances continues de suivi, d'évaluation et d'apprentissage.",
+    },
+  },
   // Home Page
   home: {
     welcome: "Bienvenue sur PDA Africa",
@@ -123,12 +159,157 @@ export const fr = {
         subtext: "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées combinant l'agriculture, l'environnement, l'éducation et la santé.",
         button: "Lire la suite",
       },
+      "Young Female Businesses for Growth (YoFeB-4G)": {
+        label: "Entreprises de jeunes femmes pour la croissance (YoFeB-4G)",
+        subtext: "Soutien à la formalisation et au développement des entreprises pour 100 jeunes artisannes afin de renforcer leur participation dans le secteur de la construction.",
+        button: "Lire la suite",
+      },
+      "Ghana Community-Led Development Collaborative": {
+        label: "Collaborative ghanéenne pour le développement dirigé par la communauté",
+        subtext: "Renforcer les approches communautaires de l’éducation et de l’alphabétisation grâce à l’apprentissage, aux preuves et à l’influence politique.",
+        button: "Lire la suite",
+      },
+      "Knowledge Sharing Workshops on Child Protection": {
+        label: "Ateliers de partage des connaissances sur la protection de l’enfance",
+        subtext:
+          "Rencontres annuelles reliant recherche, politiques et pratique en matière de protection de l’enfance au Ghana — des outils probants au dialogue sectoriel.",
+        button: "Lire la suite",
+      },
       "\"Yen Daakye\" Programme": {
         label: "Programme \"Yen Daakye\"",
         subtext: "Éliminer les pires formes de travail des enfants et du travail forcé dans la production et la commercialisation du cacao grâce à des approches communautaires.",
         button: "Lire la suite",
       },
     },
+  },
+  // CLD Collaborative Page
+  cldCollaborative: {
+    title: "Collaborative ghanéenne pour le développement dirigé par la communauté",
+    subtitle: "Renforcer les approches communautaires de l’éducation et de l’alphabétisation grâce à l’apprentissage, aux preuves et à l’influence politique",
+    backToProjects: "Retour aux projets",
+    snapshotTitle: "Aperçu du projet",
+    partner: "Partenaires",
+    partnerName: "Fondation mc2h ; Global Fund for Children",
+    period: "Période",
+    periodValue: "2026 –",
+    country: "Pays d’opération",
+    countryValue: "Ghana",
+    category: "Catégorie",
+    categoryValue: "Éducation et alphabétisation, développement communautaire, MERL, politique et plaidoyer",
+    snapshotDescription: "La Collaborative soutient les organisations locales, les communautés et les acteurs gouvernementaux pour placer la voix des communautés au cœur des solutions éducatives. Grâce à l’apprentissage partagé, à la production de preuves et à la collaboration entre partenaires, elle vise à influencer la pratique et la politique vers des systèmes éducatifs équitables et localement dirigés.",
+    objectivesTitle: "Objectifs du projet",
+    goal: "Objectif principal",
+    goalDesc: "Promouvoir et institutionnaliser les approches de développement dirigées par la communauté (CLD) dans l’écosystème éducatif ghanéen.",
+    objectives: [
+      "Promouvoir des approches communautaires plaçant les communautés au centre des solutions éducatives.",
+      "Renforcer les capacités des acteurs locaux à concevoir, diriger, plaider et pérenniser des initiatives pour l’éducation des enfants.",
+      "Favoriser l’apprentissage croisé entre organisations locales pour approfondir les stratégies communautaires efficaces.",
+      "Plaider pour des changements de politiques et de pratiques reconnaissant et investissant dans les communautés pour une éducation équitable et de qualité.",
+      "Documenter, analyser et partager les leçons des initiatives communautaires pour soutenir l’adaptation et la mise à l’échelle.",
+    ],
+    pdaTaskTitle: "Rôle de PDA",
+    pdaTaskDesc: "PDA agit comme partenaire de recherche participative et d’apprentissage, en concevant et mettant en œuvre un cadre d’apprentissage et d’évaluation robuste intégrant des méthodologies participatives, le suivi des résultats, des processus d’apprentissage et d’action participatifs (PLA) et la synthèse de preuves pour soutenir le plaidoyer en faveur des approches CLD.",
+    approachTitle: "Notre démarche",
+    approachPoints: [
+      "Participation à l’atelier d’intégration inaugural pour aligner la vision, les principes et les priorités d’apprentissage partagées.",
+      "Participation à une formation intensive de 10 jours sur l’amélioration du bien-être dirigé par la communauté (Tostan, Thiès, Sénégal).",
+      "Co-développement d’un cadre d’apprentissage et d’évaluation intégrant les niveaux communauté, partenaires et ensemble de la Collaborative.",
+    ],
+  },
+  // Knowledge Sharing Workshops (Child Protection) Page
+  ksw: {
+    title: "Ateliers de partage des connaissances sur la protection de l’enfance",
+    subtitle:
+      "Huit éditions annuelles organisées par Participatory Development Associates (PDA) Ghana pour relier les preuves, les communautés et les décideurs.",
+    backToProjects: "Retour aux projets",
+    snapshotTitle: "À propos de la série",
+    snapshotLead:
+      "La série phare de PDA Ghana sur la protection de l’enfance, la recherche et le renforcement des systèmes nationaux.",
+    partner: "Organisateur",
+    partnerName: "Participatory Development Associates (PDA) Ghana",
+    period: "Éditions",
+    periodValue: "2017 – 2025 (8 ateliers)",
+    country: "Lieux",
+    countryValue: "Grand Accra, North East, Ahafo et sessions virtuelles ou hybrides",
+    category: "Axes thématiques",
+    categoryValue: "Protection de l’enfance, politiques fondées sur les preuves, recherche et pratique",
+    snapshotDescription:
+      "Depuis 2017, PDA Ghana organise le Knowledge Sharing Workshop (KSW) sur la protection de l’enfance comme espace national d’apprentissage. Chaque année, chercheurs, praticiens, pouvoirs publics, ONG et communautés examinent des enjeux émergents — des données sur les abus suivis dans les médias et la sécurité à l’école aux risques en ligne, la remédiation du travail des enfants, le mariage des enfants dans le Nord et les effets de l’orpaillage illégal (galamsey) dans les zones cacaoyères. La série s’inscrit dans le travail plus large de PDA sur la recherche participative, les systèmes de protection et des recommandations concrètes pour les politiques et la pratique.",
+    seriesTitle: "Ateliers organisés à ce jour",
+    seriesSubtitle: "Thèmes, lieux et temps forts de chaque session annuelle.",
+    editionLabel: "Édition",
+    reportHeading: "Compte rendu détaillé",
+    workshops: [
+      {
+        edition: "1re édition",
+        theme: "Transformer la recherche en politiques et pratiques fondées sur les preuves",
+        date: "28 novembre 2017",
+        venue: "Tomreik Hotel, East Legon, Accra",
+        report:
+          "Cette session inaugurale a officiellement lancé la série KSW. Elle a réuni 78 parties prenantes pour traiter du décalage entre la recherche universitaire et la protection de l’enfance sur le terrain. Un temps fort a été le lancement du Child Abuse Tracker, un outil en ligne pour suivre et visualiser les cas de maltraitance rapportés dans les médias. Les échanges ont porté sur l’outil de plaidoyer « SDG Kids » et sur les facteurs pédagogiques liant au décrochage scolaire, en soulignant que les politiques doivent s’appuyer sur des données de terrain en temps réel.",
+      },
+      {
+        edition: "2e édition",
+        theme:
+          "Le système de protection de l’enfance au Ghana : combler le fossé entre recherche, politique et pratique",
+        date: "27 novembre 2018",
+        venue: "Auditorium du British Council, Accra",
+        report:
+          "Avec 101 participants, cet atelier a mis l’accent sur le rapport provisoire sur « L’état de la protection de l’enfance au Ghana ». Des sessions clés ont abordé « Enfants, errance et économie de la mendicité », analysant la situation des enfants dans les centres urbains, ainsi que « Travail des enfants, traite et esclavage moderne ». Une séquence distinctive a présenté des récits « Most Significant Change » soutenus par l’UNICEF, utilisant des récits qualitatifs pour évaluer l’impact des interventions de protection dans le pays.",
+      },
+      {
+        edition: "3e édition",
+        theme:
+          "Protéger l’écolier ghanéen : renforcer les partenariats entre acteurs étatiques et non étatiques",
+        date: "26 novembre 2019",
+        venue: "Auditorium du British Council, Accra",
+        report:
+          "Organisé avec le Département des enfants, cette session a examiné la sécurité au sein du système éducatif. Elle comprenait une discussion de type « World Café » où des acteurs du secteur privé ont partagé leurs initiatives de protection de l’enfance. Une conclusion majeure a été l’appel à mieux doter la DOVVSU, avec des propositions de compte public de contributions volontaires et d’amendes pour financer les enquêtes.",
+      },
+      {
+        edition: "4e édition",
+        theme: "Protection de l’enfance face à la COVID-19 : tendances et réalités émergentes",
+        date: "Novembre 2020",
+        venue: "Virtuel / hybride (restrictions liées à la pandémie)",
+        report:
+          "Cette session a été réorientée vers les vulnérabilités liées à la pandémie mondiale. Les débats ont porté sur la fermeture des écoles touchant plus de 9 millions d’apprenants au Ghana et sur l’augmentation des violences domestiques envers les enfants. L’atelier a analysé l’efficacité de la stratégie EdTech du gouvernement et la hausse des risques de travail des enfants avec l’évolution des revenus des ménages, soulignant le besoin de filets de protection sociale flexibles et adaptés aux crises.",
+      },
+      {
+        edition: "5e édition",
+        theme:
+          "Sécuriser la présence en ligne de l’enfant ghanéen : mobiliser la communauté et la recherche",
+        date: "25 novembre 2021",
+        venue: "Ghana-India Kofi Annan Centre of Excellence in ICT (AITI-KACE), Accra",
+        report:
+          "Pour le 5e anniversaire, l’atelier a abordé la « frontière numérique » de la sécurité des enfants : cyber-piegeage, exposition à des contenus sexuels inappropriés, etc. Une recommandation clé visait l’intégration de mesures spécifiques à la sécurité des enfants en ligne dans la loi sur la cybersécurité (2020). PDA a aussi souligné les liens entre interactions en ligne et crimes hors ligne comme l’enlèvement et la traite.",
+      },
+      {
+        edition: "6e édition",
+        theme: "Approches institutionnelles de la remédiation du travail des enfants au Ghana",
+        date: "24 novembre 2022",
+        venue: "Centre international de formation et de maintien de la paix Kofi Annan (KAIPTC)",
+        report:
+          "Cette session a fortement mis l’accent sur l’ODD 8.7 (éliminer le travail des enfants). PDA a présenté ses projets de remédiation du travail des enfants et VSLA-CHILD. L’atelier a insisté sur le fait que la remédiation doit dépasser l’aide financière pour inclure le « bien-être psychosocial », le travail des enfants entraînant des traumatismes psychologiques durables souvent négligés par les cadres institutionnels.",
+      },
+      {
+        edition: "7e édition",
+        theme:
+          "Lutter contre le mariage des enfants dans le Nord du Ghana : du discours à un plaidoyer fondé sur les preuves",
+        date: "30 novembre 2023",
+        venue: "Walewale, région North East (hybride)",
+        report:
+          "En partenariat avec Afrikids Ghana, ce fut le premier KSW hors d’Accra pour toucher directement une région à forte prévalence. L’atelier a questionné certaines croyances patriarcales traditionnelles et a présenté des données sur les facteurs du mariage des enfants dans le Nord. Il a mis en avant des histoires de sauvetage réussies et appelé à passer du « discours » à l’application de la loi et au démantèlement des obstacles systémiques.",
+      },
+      {
+        edition: "8e édition",
+        theme:
+          "Protéger les enfants dans la ceinture cacaoyère du Ghana face au galamsey : mobiliser le public, le privé et les citoyens",
+        date: "27 novembre 2025 ; 4 décembre 2025",
+        venue: "Accra ; Bechem (région d’Ahafo)",
+        report:
+          "Cet atelier a ciblé les liens entre orpaillage illégal (galamsey) et la filière cacao : risques de déscolarisation et de travail dangereux, contamination de l’eau, etc. Une coalition intersectorielle — ministère des Terres et des Ressources naturelles, équipes de durabilité cacao — a été mobilisée pour élaborer un plan d’action local dans les districts très exposés au galamsey.",
+      },
+    ],
   },
   // iMPACT Project Page
   impactProject: {
@@ -439,6 +620,11 @@ export const fr = {
     areasOfWorkDesc: "Notre approche globale de l'autonomisation communautaire",
     programImpact: "Impact du programme",
     programImpactDesc: "Transformer des vies grâce à nos programmes phares",
+    vslaStoriesHighlightTitle: "Témoignages de bénéficiaires VSLA",
+    vslaStoriesHighlightDesc:
+      "Récits détaillés de membres de groupes d'épargne sur les moyens de subsistance, la gestion de l'argent et le renforcement des foyers.",
+    viewAllVslaStories: "Voir toutes les histoires VSLA",
+    readStory: "Lire l'histoire",
     testimonials: "Témoignages",
     testimonialsSubtitle: "Écoutez les histoires authentiques de nos bienfaiteurs et bénévoles sur leurs expériences exceptionnelles avec nous.",
     leaveReview: "Laisser un avis",
@@ -653,6 +839,11 @@ export const fr = {
     title: "Histoires d'impact VSLA",
     subtitle: "Vraies histoires de bénéficiaires dont la vie a été transformée grâce à nos programmes VSLA",
     backToVSLA: "Retour à VSLA",
+    backToAllStories: "Toutes les histoires",
+    readFullStory: "Lire l'histoire complète",
+    previousStory: "Histoire précédente",
+    nextStory: "Histoire suivante",
+    storyNavigationLabel: "Navigation entre les histoires",
     storiesTitle: "Histoires d'impact",
     storiesDescription: "Découvrez comment nos programmes VSLA ont permis aux individus et aux communautés de construire de meilleurs avenirs.",
     seeingPossibilities: "Voir les possibilités différemment",

@@ -56,6 +56,7 @@ import Image2 from "./Image2.jpg";
 import Image3 from "./Image3.jpg";
 import Image4 from "./Image4.jpg";
 import Image5 from "./Image5.jpg";
+import gcled from "./GCLED.jpg";
 
 import launch from "./launch.jpg";
 import clpproject from "./clpproject.jpg";
@@ -239,6 +240,7 @@ export {
   Image3,
   Image4,
   Image5,
+  gcled,
   launch,
   clpproject,
   vslagals,

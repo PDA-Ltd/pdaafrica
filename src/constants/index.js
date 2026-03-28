@@ -46,7 +46,6 @@ import {
   vsla,
   ncrp,
   customer1,
-  customer2,
   customer3,
   customer4,
   Image1,
@@ -60,6 +59,8 @@ import {
   child,
   vslaintro,
   female,
+  gcled,
+  ksw,
   abiba,
   salomey,
   // crp,
@@ -297,6 +298,30 @@ export const projects = [
       "Eliminating the worst forms of child labour and forced labour in cocoa production and marketing through community-driven approaches.",
     button: "Read More",
     link: "/yen-daakye-programme",
+  },
+  {
+    imgURL: female,
+    label: "Young Female Businesses for Growth (YoFeB-4G)",
+    subtext:
+      "Business formalization and development support to 100 young female artisans to strengthen participation in the construction sector.",
+    button: "Read More",
+    link: "/yofeb-4g",
+  },
+  {
+    imgURL: gcled,
+    label: "Ghana Community-Led Development Collaborative",
+    subtext:
+      "Strengthening community-driven approaches to education and literacy through learning, evidence, and policy influence.",
+    button: "Read More",
+    link: "/ghana-cld-collaborative",
+  },
+  {
+    imgURL: ksw,
+    label: "Knowledge Sharing Workshops on Child Protection",
+    subtext:
+      "Annual convenings bridging research, policy, and practice on child protection in Ghana—from evidence tools to sector-wide dialogue.",
+    button: "Read More",
+    link: "/knowledge-sharing-workshops-child-protection",
   },
 ];
 export const reviews = [
