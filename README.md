@@ -7,8 +7,8 @@ Public website for **PDA Africa**, the not-for-profit arm of Participatory Devel
 - **Styling**: Tailwind CSS
 - **Languages**: English + French
 
-**Live**: [pdaafrica.vercel.app](https://pdaafrica.vercel.app/)
-**Live**: [PDA Africa](https://pdaafrica.org/)
+**Live**: [pdaafrica.vercel.app](https://pdaafrica.vercel.app)
+**Live**: [PDA Africa](https://pdaafrica.org)
 
 ## First-Day Checklist
 
