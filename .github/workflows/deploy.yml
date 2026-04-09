@@ -49,7 +49,7 @@ jobs:
           local-dir: ./dist/
           # Must match cPanel “document root” for pdaafrica.org (here: ~/pdaafrica.org/).
           # Override with repo variable ORANGE_FTP_SERVER_DIR if it ever changes.
-          server-dir: ${{ vars.ORANGE_FTP_SERVER_DIR != '' && vars.ORANGE_FTP_SERVER_DIR || 'pdaafrica.org/' }}
+          server-dir: ${{ vars.ORANGE_FTP_SERVER_DIR != '' && vars.ORANGE_FTP_SERVER_DIR || '/home/pdaghan1' }}
           # Most shared hosts require explicit FTPS on port 21. If you see TLS errors, try
           # protocol: ftps-legacy instead, or remove protocol for plain FTP (rare).
           protocol: ftps
