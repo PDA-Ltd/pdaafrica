@@ -47,9 +47,9 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          # Relative to the FTP user home (typical cPanel). Addon domains often use e.g.
-          # public_html/pdaafrica.org/ — match FileZilla’s remote path after login.
-          server-dir: public_html/
+          # Must match cPanel “document root” for pdaafrica.org (here: ~/pdaafrica.org/).
+          # Override with repo variable ORANGE_FTP_SERVER_DIR if it ever changes.
+          server-dir: ${{ vars.ORANGE_FTP_SERVER_DIR != '' && vars.ORANGE_FTP_SERVER_DIR || 'pdaafrica.org/' }}
           # Most shared hosts require explicit FTPS on port 21. If you see TLS errors, try
           # protocol: ftps-legacy instead, or remove protocol for plain FTP (rare).
           protocol: ftps
