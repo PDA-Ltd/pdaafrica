@@ -1,0 +1,10 @@
+# Apache (Orange Host / cPanel): send all non-file routes to the SPA shell.
+# Vercel does this via vercel.json; static hosting needs this file in site root (dist/).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
