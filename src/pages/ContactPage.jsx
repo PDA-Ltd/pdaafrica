@@ -29,7 +29,8 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      {/* <PdaafricaContact /> */}
+      <PdaafricaContact />
+      <PdaafricaContact />
     </div>
   );
 };
