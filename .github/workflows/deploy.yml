@@ -47,9 +47,11 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          # Relative to the FTP user home (typical cPanel). Avoid a leading "/" — that can
-          # resolve to the server root instead of your account's public_html.
+          # Relative to the FTP user home (typical cPanel). Addon domains often use e.g.
+          # public_html/pdaafrica.org/ — match FileZilla’s remote path after login.
           server-dir: public_html/
-          # If uploads fail with TLS errors, try uncommenting one of these (host-dependent):
-          # protocol: ftps
-          # protocol: ftps-legacy
+          # Most shared hosts require explicit FTPS on port 21. If you see TLS errors, try
+          # protocol: ftps-legacy instead, or remove protocol for plain FTP (rare).
+          protocol: ftps
+          security: loose
+          timeout: 120000
