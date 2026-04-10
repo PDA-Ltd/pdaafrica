@@ -53,7 +53,10 @@ jobs:
           # - If FTP opens at account home and the site lives in a subfolder: set repo variable
           #   ORANGE_FTP_SERVER_DIR to that folder name with trailing slash, e.g. "pdaafrica.org/"
           # Do NOT use absolute paths like /home/username — the action expects FTP-relative paths.
-          server-dir: ${{ vars.ORANGE_FTP_SERVER_DIR != '' && vars.ORANGE_FTP_SERVER_DIR || '/home/pdaghan1/' }}
+          # Never use Linux paths like /home/username here — only FTP-relative paths.
+          # Default "./" = folder you see right after FTP login. If login is /home/user, set
+          # repo variable ORANGE_FTP_SERVER_DIR to pdaafrica.org/
+          server-dir: ${{ vars.ORANGE_FTP_SERVER_DIR != '' && vars.ORANGE_FTP_SERVER_DIR || './' }}
           # Most shared hosts require explicit FTPS on port 21. If you see TLS errors, try
           # protocol: ftps-legacy instead, or remove protocol for plain FTP (rare).
           protocol: ftps
