@@ -30,8 +30,7 @@ const ContactPage = () => {
         </div>
       </section>
       <PdaafricaContact />
-      <PdaafricaContact />
-    </div>
+      </div>
   );
 };
 
