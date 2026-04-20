@@ -30,7 +30,7 @@ const ReviewForm = ({ closeModal }) => {
 
     try {
       // Sending form data to Formspree
-      const response = await fetch("https://formspree.io/f/xblrvbld", {
+      const response = await fetch("https://formspree.io/f/mgorzvzn", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

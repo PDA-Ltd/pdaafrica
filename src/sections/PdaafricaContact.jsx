@@ -330,7 +330,7 @@ const Contacts = () => {
     e.preventDefault();
 
     // Use Formspree or any backend API to handle the form submission
-    fetch("https://formspree.io/f/xanwzwoa", {
+    fetch("https://formspree.io/f/xqewladk", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,773 +1,948 @@
 export const fr = {
-  // Navigation
-  nav: {
-    home: "Accueil",
-    about: "À propos de nous",
-    overview: "Aperçu",
-    whereWeWork: "Où nous travaillons",
-    ourTeam: "Notre équipe",
-    whatWeDo: "Ce que nous faisons",
-    projects: "Projets",
-    gallery: "Galerie",
-    impact: "Impact",
-    testimonials: "Témoignages",
-    news: "Actualités et mises à jour",
-    getInvolved: "S'impliquer",
-    contact: "Nous contacter",
-    donate: "Faire un don maintenant",
-    partners: "Partenaires",
-    pda: "PDA",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "overview": "Aperçu",
+    "whereWeWork": "Où nous travaillons",
+    "ourTeam": "Notre équipe",
+    "whatWeDo": "Ce que nous faisons",
+    "projects": "Projets",
+    "gallery": "Galerie",
+    "impact": "Impact",
+    "testimonials": "Témoignages",
+    "news": "Actualités et mises à jour",
+    "getInvolved": "S'impliquer",
+    "contact": "Nous contacter",
+    "donate": "Faire un don maintenant",
+    "partners": "Partenaires",
+    "pda": "PDA"
   },
-  // YoFeB-4G Page
-  yofeb4g: {
-    title: "Entreprises de jeunes femmes pour la croissance (YoFeB-4G)",
-    subtitle: "Soutien à 100 jeunes artisannes pour la formalisation et le développement d'entreprises afin d'accéder à un travail décent dans le secteur de la construction",
-    backToProjects: "Retour aux projets",
-    snapshotTitle: "Aperçu du projet",
-    partner: "Partenaire",
-    partnerName: "Artisans Association of Ghana (AAG) & PDA (Financé par WUSC Ghana - PIF)",
-    period: "Période",
-    periodValue: "En cours",
-    country: "Pays d'opération",
-    countryValue: "Ghana",
-    category: "Catégorie",
-    categoryValue: "Autonomisation économique des femmes et formalisation des entreprises",
-    snapshotDescription: "YoFeB-4G autonomise les jeunes artisannes à formaliser et développer leurs entreprises, à réduire les risques de harcèlement et de fraude, à renforcer leur compétitivité et l'accès à un travail décent, et à créer des environnements de travail sûrs et sains grâce à la formation, au mentorat, au plaidoyer et au soutien continu.",
-    objectivesTitle: "Objectifs clés",
-    obj1: "Soutenir les jeunes artisannes à formaliser leurs entreprises en tant que MPME et start-ups.",
-    obj2: "Assurer la conformité aux réglementations et exigences de certification pertinentes.",
-    obj3: "Renforcer la compétitivité et l'accès à un travail décent et à l'autonomisation financière.",
-    obj4: "Aider à relever les défis sur la voie de la formalisation, notamment le harcèlement sexuel.",
-    phasesTitle: "Phases du projet",
-    phases: {
-      formalization: "Formation à la formalisation des entreprises",
-      tvet: "Renforcement des compétences TVET",
-      mentorship: "Programme de mentorat",
-      advocacy: "Campagnes de plaidoyer",
-      mel: "Suivi, évaluation et apprentissage (MEL)",
+  "yofeb4g": {
+    "title": "Entreprises de jeunes femmes pour la croissance (YoFeB-4G)",
+    "subtitle": "Soutien à 100 jeunes artisannes pour la formalisation et le développement d'entreprises afin d'accéder à un travail décent dans le secteur de la construction",
+    "backToProjects": "Retour aux projets",
+    "snapshotTitle": "Aperçu du projet",
+    "partner": "Partenaire",
+    "partnerName": "Artisans Association of Ghana (AAG) & PDA (Financé par WUSC Ghana - PIF)",
+    "period": "Période",
+    "periodValue": "En cours",
+    "country": "Pays d'opération",
+    "countryValue": "Ghana",
+    "category": "Catégorie",
+    "categoryValue": "Autonomisation économique des femmes et formalisation des entreprises",
+    "snapshotDescription": "YoFeB-4G autonomise les jeunes artisannes à formaliser et développer leurs entreprises, à réduire les risques de harcèlement et de fraude, à renforcer leur compétitivité et l'accès à un travail décent, et à créer des environnements de travail sûrs et sains grâce à la formation, au mentorat, au plaidoyer et au soutien continu.",
+    "objectivesTitle": "Objectifs clés",
+    "obj1": "Soutenir les jeunes artisannes à formaliser leurs entreprises en tant que MPME et start-ups.",
+    "obj2": "Assurer la conformité aux réglementations et exigences de certification pertinentes.",
+    "obj3": "Renforcer la compétitivité et l'accès à un travail décent et à l'autonomisation financière.",
+    "obj4": "Aider à relever les défis sur la voie de la formalisation, notamment le harcèlement sexuel.",
+    "phasesTitle": "Phases du projet",
+    "phases": {
+      "formalization": "Formation à la formalisation des entreprises",
+      "tvet": "Renforcement des compétences TVET",
+      "mentorship": "Programme de mentorat",
+      "advocacy": "Campagnes de plaidoyer",
+      "mel": "Suivi, évaluation et apprentissage (MEL)"
     },
-    phasesDesc: {
-      formalization: "Production d'un manuel de formalisation d'entreprise et sessions de formation en présentiel.",
-      tvet: "Visites industrielles pour mettre à jour les connaissances sur les outils et compétences disponibles.",
-      mentorship: "Mentorat avec des femmes entrepreneures expérimentées dans divers corps de métiers.",
-      advocacy: "Dialogues avec les parties prenantes et campagnes sur les réseaux sociaux pour impulser le changement.",
-      mel: "Séances continues de suivi, d'évaluation et d'apprentissage.",
-    },
+    "phasesDesc": {
+      "formalization": "Production d'un manuel de formalisation d'entreprise et sessions de formation en présentiel.",
+      "tvet": "Visites industrielles pour mettre à jour les connaissances sur les outils et compétences disponibles.",
+      "mentorship": "Mentorat avec des femmes entrepreneures expérimentées dans divers corps de métiers.",
+      "advocacy": "Dialogues avec les parties prenantes et campagnes sur les réseaux sociaux pour impulser le changement.",
+      "mel": "Séances continues de suivi, d'évaluation et d'apprentissage."
+    }
   },
-  // Home Page
-  home: {
-    welcome: "Bienvenue sur PDA Africa",
-    aboutTitle: "À propos de PDA Africa",
-    aboutDescription: "PDA Africa est la branche à but non lucratif de Participatory Development Associates qui co-crée la conception, la mise en œuvre et la gestion de projets et programmes dirigés par les communautés.",
-    aboutDescription2: "Nous utilisons des méthodologies participatives innovantes pour faciliter les processus de développement qui permettent aux communautés de prendre en charge leur croissance. Nous le faisons pour les communautés et les partenaires. Nos partenariats couvrent des interventions de développement avec les gouvernements, le secteur privé et les partenaires de développement internationaux.",
-    learnMore: "En savoir plus sur nous",
-    programmes: "Nos programmes",
-    programmesDesc: "Découvrez notre gamme diversifiée de programmes conçus pour autonomiser les communautés et créer un changement positif durable.",
-    viewAllProjects: "Voir tous les projets",
-    latestNews: "Dernières actualités",
-    newsDesc: "Restez informé de nos dernières activités et réalisations",
-    viewAllNews: "Voir toutes les actualités",
-    activities: "Nos activités",
-    activitiesDesc: "Un aperçu de nos engagements communautaires et de notre impact",
-    viewGallery: "Voir la galerie",
-    impact: "Notre impact",
-    impactDesc: "Écoutez les membres de la communauté, les partenaires et les bénéficiaires parler de l'impact positif de nos programmes.",
-    readMoreTestimonials: "Lire plus de témoignages",
-    communitiesReached: "Communautés atteintes",
-    vslaGroups: "Groupes VSLA formés",
-    libraries: "Bibliothèques communautaires",
-    exploreProject: "Explorer le projet",
-    featuredStory: "Histoire vedette",
-    featuredStoryTitle: "Académie de radio Farmers' Voice : Autonomiser les producteurs de cacao du Ghana",
-    featuredStoryDesc: "Nous travaillons à autonomiser 100 000 petits producteurs de cacao au Ghana en élevant les voix sous-représentées et en connectant les agriculteurs aux connaissances dont ils ont besoin pour construire des communautés cacaoyères résilientes, inclusives et prospères.",
-    readFullStory: "Lire l'histoire complète",
-    getInvolvedTitle: "S'impliquer",
-    getInvolvedDesc: "Rejoignez-nous pour faire la différence ! Il existe de nombreuses façons de soutenir nos initiatives de développement communautaire.",
-    readyToMakeDifference: "Prêt à faire la différence ?",
-    readyDesc: "Rejoignez-nous pour autonomiser les communautés et créer un changement positif durable à travers l'Afrique subsaharienne.",
-    getInvolvedBtn: "S'impliquer",
-    contactUsBtn: "Nous contacter",
-    featuredProjects: {
-      cclp: {
-        title: "Projet de bibliothèque des communautés de cacao",
-        description: "Autonomiser les communautés productrices de cacao grâce à des programmes d'éducation et d'alphabétisation.",
+  "home": {
+    "welcome": "Bienvenue sur PDA Africa",
+    "aboutTitle": "À propos de PDA Africa",
+    "aboutDescription": "PDA Africa est la branche à but non lucratif de Participatory Development Associates qui co-crée la conception, la mise en œuvre et la gestion de projets et programmes dirigés par les communautés.",
+    "aboutDescription2": "Nous utilisons des méthodologies participatives innovantes pour faciliter les processus de développement qui permettent aux communautés de prendre en charge leur croissance. Nous le faisons pour les communautés et les partenaires. Nos partenariats couvrent des interventions de développement avec les gouvernements, le secteur privé et les partenaires de développement internationaux.",
+    "learnMore": "En savoir plus sur nous",
+    "programmes": "Nos programmes",
+    "programmesDesc": "Découvrez notre gamme diversifiée de programmes conçus pour autonomiser les communautés et créer un changement positif durable.",
+    "viewAllProjects": "Voir tous les projets",
+    "latestNews": "Dernières actualités",
+    "newsDesc": "Restez informé de nos dernières activités et réalisations",
+    "viewAllNews": "Voir toutes les actualités",
+    "activities": "Nos activités",
+    "activitiesDesc": "Un aperçu de nos engagements communautaires et de notre impact",
+    "viewGallery": "Voir la galerie",
+    "impact": "Notre impact",
+    "impactDesc": "Écoutez les membres de la communauté, les partenaires et les bénéficiaires parler de l'impact positif de nos programmes.",
+    "readMoreTestimonials": "Lire plus de témoignages",
+    "communitiesReached": "Communautés atteintes",
+    "vslaGroups": "Groupes VSLA formés",
+    "libraries": "Bibliothèques communautaires",
+    "exploreProject": "Explorer le projet",
+    "featuredStory": "Histoire vedette",
+    "featuredStoryTitle": "Académie de radio Farmers' Voice : Autonomiser les producteurs de cacao du Ghana",
+    "featuredStoryDesc": "Nous travaillons à autonomiser 100 000 petits producteurs de cacao au Ghana en élevant les voix sous-représentées et en connectant les agriculteurs aux connaissances dont ils ont besoin pour construire des communautés cacaoyères résilientes, inclusives et prospères.",
+    "readFullStory": "Lire l'histoire complète",
+    "getInvolvedTitle": "S'impliquer",
+    "getInvolvedDesc": "Rejoignez-nous pour faire la différence ! Il existe de nombreuses façons de soutenir nos initiatives de développement communautaire.",
+    "readyToMakeDifference": "Prêt à faire la différence ?",
+    "readyDesc": "Rejoignez-nous pour autonomiser les communautés et créer un changement positif durable à travers l'Afrique subsaharienne.",
+    "getInvolvedBtn": "S'impliquer",
+    "contactUsBtn": "Nous contacter",
+    "featuredProjects": {
+      "cclp": {
+        "title": "Projet de bibliothèque des communautés de cacao",
+        "description": "Autonomiser les communautés productrices de cacao grâce à des programmes d'éducation et d'alphabétisation."
       },
-      vsla: {
-        title: "Inclusion financière et VSLA",
-        description: "Soutenir l'inclusion financière grâce aux associations villageoises d'épargne et de crédit.",
+      "vsla": {
+        "title": "Inclusion financière et VSLA",
+        "description": "Soutenir l'inclusion financière grâce aux associations villageoises d'épargne et de crédit."
       },
-      childLabour: {
-        title: "Remédiation au travail des enfants",
-        description: "Protéger les enfants et garantir leurs droits dans les communautés productrices de cacao.",
+      "childLabour": {
+        "title": "Remédiation au travail des enfants",
+        "description": "Protéger les enfants et garantir leurs droits dans les communautés productrices de cacao."
       },
-      impact: {
-        title: "Le projet iMPACT",
-        description: "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées.",
+      "impact": {
+        "title": "Le projet iMPACT",
+        "description": "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées."
       },
-      yenDaakye: {
-        title: "Programme \"Yen Daakye\"",
-        description: "Éliminer les pires formes de travail des enfants et du travail forcé dans la production de cacao.",
-      },
-    },
+      "yenDaakye": {
+        "title": "Programme \"Yen Daakye\"",
+        "description": "Éliminer les pires formes de travail des enfants et du travail forcé dans la production de cacao."
+      }
+    }
   },
-  // About Page
-  about: {
-    title: "À propos de PDA Africa",
-    subtitle: "Autonomiser les communautés grâce à des approches de développement participatif",
-    profile: "Notre profil",
-    vision: "Notre vision",
-    mission: "Notre mission",
-    values: "Nos valeurs",
-    valuesDesc: "Les principes fondamentaux qui guident tout ce que nous faisons",
-    strategicObjectives: "Objectifs stratégiques",
-    strategicDesc: "Nos domaines d'intervention clés pour créer un changement positif durable",
-    joinUs: "Rejoignez-nous pour faire la différence",
-    joinDesc: "Partenaire avec nous pour autonomiser les communautés et créer un changement positif durable à travers l'Afrique subsaharienne.",
+  "about": {
+    "title": "À propos de PDA Africa",
+    "subtitle": "Autonomiser les communautés grâce à des approches de développement participatif",
+    "profile": "Notre profil",
+    "vision": "Notre vision",
+    "mission": "Notre mission",
+    "values": "Nos valeurs",
+    "valuesDesc": "Les principes fondamentaux qui guident tout ce que nous faisons",
+    "strategicObjectives": "Objectifs stratégiques",
+    "strategicDesc": "Nos domaines d'intervention clés pour créer un changement positif durable",
+    "joinUs": "Rejoignez-nous pour faire la différence",
+    "joinDesc": "Partenaire avec nous pour autonomiser les communautés et créer un changement positif durable à travers l'Afrique subsaharienne."
   },
-  // Projects Page
-  projects: {
-    title: "Nos programmes",
-    subtitle: "Autonomiser les communautés grâce à des approches de développement participatif innovantes",
-    featured: "Projets vedettes",
-    featuredDesc: "Découvrez comment nous faisons la différence à travers l'Afrique subsaharienne grâce à nos initiatives dirigées par les communautés",
-    exploreProject: "Explorer le projet",
-    viewAllProjects: "Voir tous les projets",
-    impact: "Notre impact",
-    impactDesc: "Mesurer le succès grâce à la transformation communautaire et au développement durable",
-    communitiesReached: "Communautés atteintes",
-    vslaGroups: "Groupes VSLA formés",
-    libraries: "Bibliothèques communautaires",
-    wantToLearnMore: "À propos de notre travail",
-    projectList: {
+  "projects": {
+    "title": "Nos programmes",
+    "subtitle": "Autonomiser les communautés grâce à des approches de développement participatif innovantes",
+    "featured": "Projets vedettes",
+    "featuredDesc": "Découvrez comment nous faisons la différence à travers l'Afrique subsaharienne grâce à nos initiatives dirigées par les communautés",
+    "exploreProject": "Explorer le projet",
+    "viewAllProjects": "Voir tous les projets",
+    "impact": "Notre impact",
+    "impactDesc": "Mesurer le succès grâce à la transformation communautaire et au développement durable",
+    "communitiesReached": "Communautés atteintes",
+    "vslaGroups": "Groupes VSLA formés",
+    "libraries": "Bibliothèques communautaires",
+    "wantToLearnMore": "À propos de notre travail",
+    "projectList": {
       "Financial Inclusion and VSLAs": {
-        label: "Inclusion financière et VSLA",
-        subtext: "Mobiliser, former et entraîner des groupes VSLA dans les communautés pour l'inclusion financière.",
-        button: "Lire la suite",
+        "label": "Inclusion financière et VSLA",
+        "subtext": "Mobiliser, former et entraîner des groupes VSLA dans les communautés pour l'inclusion financière.",
+        "button": "Lire la suite"
       },
       "Cocoa Communities' Library Project": {
-        label: "Projet de bibliothèque des communautés de cacao",
-        subtext: "Promouvoir l'alphabétisation et les habitudes de lecture chez les enfants des communautés productrices de cacao.",
-        button: "Lire la suite",
+        "label": "Projet de bibliothèque des communautés de cacao",
+        "subtext": "Promouvoir l'alphabétisation et les habitudes de lecture chez les enfants des communautés productrices de cacao.",
+        "button": "Lire la suite"
       },
       "Nyonkopa Child Labour Remediation": {
-        label: "Remédiation du travail des enfants Nyonkopa",
-        subtext: "Remédier aux cas de travail des enfants identifiés dans la chaîne d'approvisionnement de Barry Callebaut (Nyonkopa).",
-        button: "Lire la suite",
+        "label": "Remédiation du travail des enfants Nyonkopa",
+        "subtext": "Remédier aux cas de travail des enfants identifiés dans la chaîne d'approvisionnement de Barry Callebaut (Nyonkopa).",
+        "button": "Lire la suite"
       },
       "The iMPACT Project": {
-        label: "Le projet iMPACT",
-        subtext: "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées combinant l'agriculture, l'environnement, l'éducation et la santé.",
-        button: "Lire la suite",
+        "label": "Le projet iMPACT",
+        "subtext": "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées combinant l'agriculture, l'environnement, l'éducation et la santé.",
+        "button": "Lire la suite"
       },
       "Young Female Businesses for Growth (YoFeB-4G)": {
-        label: "Entreprises de jeunes femmes pour la croissance (YoFeB-4G)",
-        subtext: "Soutien à la formalisation et au développement des entreprises pour 100 jeunes artisannes afin de renforcer leur participation dans le secteur de la construction.",
-        button: "Lire la suite",
+        "label": "Entreprises de jeunes femmes pour la croissance (YoFeB-4G)",
+        "subtext": "Soutien à la formalisation et au développement des entreprises pour 100 jeunes artisannes afin de renforcer leur participation dans le secteur de la construction.",
+        "button": "Lire la suite"
       },
       "Ghana Community-Led Development Collaborative": {
-        label: "Collaborative ghanéenne pour le développement dirigé par la communauté",
-        subtext: "Renforcer les approches communautaires de l’éducation et de l’alphabétisation grâce à l’apprentissage, aux preuves et à l’influence politique.",
-        button: "Lire la suite",
+        "label": "Collaborative ghanéenne pour le développement dirigé par la communauté",
+        "subtext": "Renforcer les approches communautaires de l’éducation et de l’alphabétisation grâce à l’apprentissage, aux preuves et à l’influence politique.",
+        "button": "Lire la suite"
       },
       "Knowledge Sharing Workshops on Child Protection": {
-        label: "Ateliers de partage des connaissances sur la protection de l’enfance",
-        subtext:
-          "Rencontres annuelles reliant recherche, politiques et pratique en matière de protection de l’enfance au Ghana — des outils probants au dialogue sectoriel.",
-        button: "Lire la suite",
+        "label": "Ateliers de partage des connaissances sur la protection de l’enfance",
+        "subtext": "Rencontres annuelles reliant recherche, politiques et pratique en matière de protection de l’enfance au Ghana — des outils probants au dialogue sectoriel.",
+        "button": "Lire la suite"
       },
       "\"Yen Daakye\" Programme": {
-        label: "Programme \"Yen Daakye\"",
-        subtext: "Éliminer les pires formes de travail des enfants et du travail forcé dans la production et la commercialisation du cacao grâce à des approches communautaires.",
-        button: "Lire la suite",
-      },
-    },
+        "label": "Programme \"Yen Daakye\"",
+        "subtext": "Éliminer les pires formes de travail des enfants et du travail forcé dans la production et la commercialisation du cacao grâce à des approches communautaires.",
+        "button": "Lire la suite"
+      }
+    }
   },
-  // CLD Collaborative Page
-  cldCollaborative: {
-    title: "Collaborative ghanéenne pour le développement dirigé par la communauté",
-    subtitle: "Renforcer les approches communautaires de l’éducation et de l’alphabétisation grâce à l’apprentissage, aux preuves et à l’influence politique",
-    backToProjects: "Retour aux projets",
-    snapshotTitle: "Aperçu du projet",
-    partner: "Partenaires",
-    partnerName: "Fondation mc2h ; Global Fund for Children",
-    period: "Période",
-    periodValue: "2026 –",
-    country: "Pays d’opération",
-    countryValue: "Ghana",
-    category: "Catégorie",
-    categoryValue: "Éducation et alphabétisation, développement communautaire, MERL, politique et plaidoyer",
-    snapshotDescription: "La Collaborative soutient les organisations locales, les communautés et les acteurs gouvernementaux pour placer la voix des communautés au cœur des solutions éducatives. Grâce à l’apprentissage partagé, à la production de preuves et à la collaboration entre partenaires, elle vise à influencer la pratique et la politique vers des systèmes éducatifs équitables et localement dirigés.",
-    objectivesTitle: "Objectifs du projet",
-    goal: "Objectif principal",
-    goalDesc: "Promouvoir et institutionnaliser les approches de développement dirigées par la communauté (CLD) dans l’écosystème éducatif ghanéen.",
-    objectives: [
+  "cldCollaborative": {
+    "title": "Collaborative ghanéenne pour le développement dirigé par la communauté",
+    "subtitle": "Renforcer les approches communautaires de l’éducation et de l’alphabétisation grâce à l’apprentissage, aux preuves et à l’influence politique",
+    "backToProjects": "Retour aux projets",
+    "snapshotTitle": "Aperçu du projet",
+    "partner": "Partenaires",
+    "partnerName": "Fondation mc2h ; Global Fund for Children",
+    "period": "Période",
+    "periodValue": "2026 –",
+    "country": "Pays d’opération",
+    "countryValue": "Ghana",
+    "category": "Catégorie",
+    "categoryValue": "Éducation et alphabétisation, développement communautaire, MERL, politique et plaidoyer",
+    "snapshotDescription": "La Collaborative soutient les organisations locales, les communautés et les acteurs gouvernementaux pour placer la voix des communautés au cœur des solutions éducatives. Grâce à l’apprentissage partagé, à la production de preuves et à la collaboration entre partenaires, elle vise à influencer la pratique et la politique vers des systèmes éducatifs équitables et localement dirigés.",
+    "objectivesTitle": "Objectifs du projet",
+    "goal": "Objectif principal",
+    "goalDesc": "Promouvoir et institutionnaliser les approches de développement dirigées par la communauté (CLD) dans l’écosystème éducatif ghanéen.",
+    "objectives": [
       "Promouvoir des approches communautaires plaçant les communautés au centre des solutions éducatives.",
       "Renforcer les capacités des acteurs locaux à concevoir, diriger, plaider et pérenniser des initiatives pour l’éducation des enfants.",
       "Favoriser l’apprentissage croisé entre organisations locales pour approfondir les stratégies communautaires efficaces.",
       "Plaider pour des changements de politiques et de pratiques reconnaissant et investissant dans les communautés pour une éducation équitable et de qualité.",
-      "Documenter, analyser et partager les leçons des initiatives communautaires pour soutenir l’adaptation et la mise à l’échelle.",
+      "Documenter, analyser et partager les leçons des initiatives communautaires pour soutenir l’adaptation et la mise à l’échelle."
     ],
-    pdaTaskTitle: "Rôle de PDA",
-    pdaTaskDesc: "PDA agit comme partenaire de recherche participative et d’apprentissage, en concevant et mettant en œuvre un cadre d’apprentissage et d’évaluation robuste intégrant des méthodologies participatives, le suivi des résultats, des processus d’apprentissage et d’action participatifs (PLA) et la synthèse de preuves pour soutenir le plaidoyer en faveur des approches CLD.",
-    approachTitle: "Notre démarche",
-    approachPoints: [
+    "pdaTaskTitle": "Rôle de PDA",
+    "pdaTaskDesc": "PDA agit comme partenaire de recherche participative et d’apprentissage, en concevant et mettant en œuvre un cadre d’apprentissage et d’évaluation robuste intégrant des méthodologies participatives, le suivi des résultats, des processus d’apprentissage et d’action participatifs (PLA) et la synthèse de preuves pour soutenir le plaidoyer en faveur des approches CLD.",
+    "approachTitle": "Notre démarche",
+    "approachPoints": [
       "Participation à l’atelier d’intégration inaugural pour aligner la vision, les principes et les priorités d’apprentissage partagées.",
       "Participation à une formation intensive de 10 jours sur l’amélioration du bien-être dirigé par la communauté (Tostan, Thiès, Sénégal).",
-      "Co-développement d’un cadre d’apprentissage et d’évaluation intégrant les niveaux communauté, partenaires et ensemble de la Collaborative.",
-    ],
+      "Co-développement d’un cadre d’apprentissage et d’évaluation intégrant les niveaux communauté, partenaires et ensemble de la Collaborative."
+    ]
   },
-  // Knowledge Sharing Workshops (Child Protection) Page
-  ksw: {
-    title: "Ateliers de partage des connaissances sur la protection de l’enfance",
-    subtitle:
-      "Huit éditions annuelles organisées par Participatory Development Associates (PDA) Ghana pour relier les preuves, les communautés et les décideurs.",
-    backToProjects: "Retour aux projets",
-    snapshotTitle: "À propos de la série",
-    snapshotLead:
-      "La série phare de PDA Ghana sur la protection de l’enfance, la recherche et le renforcement des systèmes nationaux.",
-    partner: "Organisateur",
-    partnerName: "Participatory Development Associates (PDA) Ghana",
-    period: "Éditions",
-    periodValue: "2017 – 2025 (8 ateliers)",
-    country: "Lieux",
-    countryValue: "Grand Accra, North East, Ahafo et sessions virtuelles ou hybrides",
-    category: "Axes thématiques",
-    categoryValue: "Protection de l’enfance, politiques fondées sur les preuves, recherche et pratique",
-    snapshotDescription:
-      "Depuis 2017, PDA Ghana organise le Knowledge Sharing Workshop (KSW) sur la protection de l’enfance comme espace national d’apprentissage. Chaque année, chercheurs, praticiens, pouvoirs publics, ONG et communautés examinent des enjeux émergents — des données sur les abus suivis dans les médias et la sécurité à l’école aux risques en ligne, la remédiation du travail des enfants, le mariage des enfants dans le Nord et les effets de l’orpaillage illégal (galamsey) dans les zones cacaoyères. La série s’inscrit dans le travail plus large de PDA sur la recherche participative, les systèmes de protection et des recommandations concrètes pour les politiques et la pratique.",
-    seriesTitle: "Ateliers organisés à ce jour",
-    seriesSubtitle: "Thèmes, lieux et temps forts de chaque session annuelle.",
-    editionLabel: "Édition",
-    reportHeading: "Compte rendu détaillé",
-    workshops: [
+  "ksw": {
+    "title": "Ateliers de partage des connaissances sur la protection de l’enfance",
+    "subtitle": "Huit éditions annuelles organisées par Participatory Development Associates (PDA) Ghana pour relier les preuves, les communautés et les décideurs.",
+    "backToProjects": "Retour aux projets",
+    "snapshotTitle": "À propos de la série",
+    "snapshotLead": "La série phare de PDA Ghana sur la protection de l’enfance, la recherche et le renforcement des systèmes nationaux.",
+    "partner": "Organisateur",
+    "partnerName": "Participatory Development Associates (PDA) Ghana",
+    "period": "Éditions",
+    "periodValue": "2017 – 2025 (8 ateliers)",
+    "country": "Lieux",
+    "countryValue": "Grand Accra, North East, Ahafo et sessions virtuelles ou hybrides",
+    "category": "Axes thématiques",
+    "categoryValue": "Protection de l’enfance, politiques fondées sur les preuves, recherche et pratique",
+    "snapshotDescription": "Depuis 2017, PDA Ghana organise le Knowledge Sharing Workshop (KSW) sur la protection de l’enfance comme espace national d’apprentissage. Chaque année, chercheurs, praticiens, pouvoirs publics, ONG et communautés examinent des enjeux émergents — des données sur les abus suivis dans les médias et la sécurité à l’école aux risques en ligne, la remédiation du travail des enfants, le mariage des enfants dans le Nord et les effets de l’orpaillage illégal (galamsey) dans les zones cacaoyères. La série s’inscrit dans le travail plus large de PDA sur la recherche participative, les systèmes de protection et des recommandations concrètes pour les politiques et la pratique.",
+    "seriesTitle": "Ateliers organisés à ce jour",
+    "seriesSubtitle": "Thèmes, lieux et temps forts de chaque session annuelle.",
+    "editionLabel": "Édition",
+    "reportHeading": "Compte rendu détaillé",
+    "workshops": [
       {
-        edition: "1re édition",
-        theme: "Transformer la recherche en politiques et pratiques fondées sur les preuves",
-        date: "28 novembre 2017",
-        venue: "Tomreik Hotel, East Legon, Accra",
-        report:
-          "Cette session inaugurale a officiellement lancé la série KSW. Elle a réuni 78 parties prenantes pour traiter du décalage entre la recherche universitaire et la protection de l’enfance sur le terrain. Un temps fort a été le lancement du Child Abuse Tracker, un outil en ligne pour suivre et visualiser les cas de maltraitance rapportés dans les médias. Les échanges ont porté sur l’outil de plaidoyer « SDG Kids » et sur les facteurs pédagogiques liant au décrochage scolaire, en soulignant que les politiques doivent s’appuyer sur des données de terrain en temps réel.",
+        "edition": "1re édition",
+        "theme": "Transformer la recherche en politiques et pratiques fondées sur les preuves",
+        "date": "28 novembre 2017",
+        "venue": "Tomreik Hotel, East Legon, Accra",
+        "report": "Cette session inaugurale a officiellement lancé la série KSW. Elle a réuni 78 parties prenantes pour traiter du décalage entre la recherche universitaire et la protection de l’enfance sur le terrain. Un temps fort a été le lancement du Child Abuse Tracker, un outil en ligne pour suivre et visualiser les cas de maltraitance rapportés dans les médias. Les échanges ont porté sur l’outil de plaidoyer « SDG Kids » et sur les facteurs pédagogiques liant au décrochage scolaire, en soulignant que les politiques doivent s’appuyer sur des données de terrain en temps réel."
       },
       {
-        edition: "2e édition",
-        theme:
-          "Le système de protection de l’enfance au Ghana : combler le fossé entre recherche, politique et pratique",
-        date: "27 novembre 2018",
-        venue: "Auditorium du British Council, Accra",
-        report:
-          "Avec 101 participants, cet atelier a mis l’accent sur le rapport provisoire sur « L’état de la protection de l’enfance au Ghana ». Des sessions clés ont abordé « Enfants, errance et économie de la mendicité », analysant la situation des enfants dans les centres urbains, ainsi que « Travail des enfants, traite et esclavage moderne ». Une séquence distinctive a présenté des récits « Most Significant Change » soutenus par l’UNICEF, utilisant des récits qualitatifs pour évaluer l’impact des interventions de protection dans le pays.",
+        "edition": "2e édition",
+        "theme": "Le système de protection de l’enfance au Ghana : combler le fossé entre recherche, politique et pratique",
+        "date": "27 novembre 2018",
+        "venue": "Auditorium du British Council, Accra",
+        "report": "Avec 101 participants, cet atelier a mis l’accent sur le rapport provisoire sur « L’état de la protection de l’enfance au Ghana ». Des sessions clés ont abordé « Enfants, errance et économie de la mendicité », analysant la situation des enfants dans les centres urbains, ainsi que « Travail des enfants, traite et esclavage moderne ». Une séquence distinctive a présenté des récits « Most Significant Change » soutenus par l’UNICEF, utilisant des récits qualitatifs pour évaluer l’impact des interventions de protection dans le pays."
       },
       {
-        edition: "3e édition",
-        theme:
-          "Protéger l’écolier ghanéen : renforcer les partenariats entre acteurs étatiques et non étatiques",
-        date: "26 novembre 2019",
-        venue: "Auditorium du British Council, Accra",
-        report:
-          "Organisé avec le Département des enfants, cette session a examiné la sécurité au sein du système éducatif. Elle comprenait une discussion de type « World Café » où des acteurs du secteur privé ont partagé leurs initiatives de protection de l’enfance. Une conclusion majeure a été l’appel à mieux doter la DOVVSU, avec des propositions de compte public de contributions volontaires et d’amendes pour financer les enquêtes.",
+        "edition": "3e édition",
+        "theme": "Protéger l’écolier ghanéen : renforcer les partenariats entre acteurs étatiques et non étatiques",
+        "date": "26 novembre 2019",
+        "venue": "Auditorium du British Council, Accra",
+        "report": "Organisé avec le Département des enfants, cette session a examiné la sécurité au sein du système éducatif. Elle comprenait une discussion de type « World Café » où des acteurs du secteur privé ont partagé leurs initiatives de protection de l’enfance. Une conclusion majeure a été l’appel à mieux doter la DOVVSU, avec des propositions de compte public de contributions volontaires et d’amendes pour financer les enquêtes."
       },
       {
-        edition: "4e édition",
-        theme: "Protection de l’enfance face à la COVID-19 : tendances et réalités émergentes",
-        date: "Novembre 2020",
-        venue: "Virtuel / hybride (restrictions liées à la pandémie)",
-        report:
-          "Cette session a été réorientée vers les vulnérabilités liées à la pandémie mondiale. Les débats ont porté sur la fermeture des écoles touchant plus de 9 millions d’apprenants au Ghana et sur l’augmentation des violences domestiques envers les enfants. L’atelier a analysé l’efficacité de la stratégie EdTech du gouvernement et la hausse des risques de travail des enfants avec l’évolution des revenus des ménages, soulignant le besoin de filets de protection sociale flexibles et adaptés aux crises.",
+        "edition": "4e édition",
+        "theme": "Protection de l’enfance face à la COVID-19 : tendances et réalités émergentes",
+        "date": "Novembre 2020",
+        "venue": "Virtuel / hybride (restrictions liées à la pandémie)",
+        "report": "Cette session a été réorientée vers les vulnérabilités liées à la pandémie mondiale. Les débats ont porté sur la fermeture des écoles touchant plus de 9 millions d’apprenants au Ghana et sur l’augmentation des violences domestiques envers les enfants. L’atelier a analysé l’efficacité de la stratégie EdTech du gouvernement et la hausse des risques de travail des enfants avec l’évolution des revenus des ménages, soulignant le besoin de filets de protection sociale flexibles et adaptés aux crises."
       },
       {
-        edition: "5e édition",
-        theme:
-          "Sécuriser la présence en ligne de l’enfant ghanéen : mobiliser la communauté et la recherche",
-        date: "25 novembre 2021",
-        venue: "Ghana-India Kofi Annan Centre of Excellence in ICT (AITI-KACE), Accra",
-        report:
-          "Pour le 5e anniversaire, l’atelier a abordé la « frontière numérique » de la sécurité des enfants : cyber-piegeage, exposition à des contenus sexuels inappropriés, etc. Une recommandation clé visait l’intégration de mesures spécifiques à la sécurité des enfants en ligne dans la loi sur la cybersécurité (2020). PDA a aussi souligné les liens entre interactions en ligne et crimes hors ligne comme l’enlèvement et la traite.",
+        "edition": "5e édition",
+        "theme": "Sécuriser la présence en ligne de l’enfant ghanéen : mobiliser la communauté et la recherche",
+        "date": "25 novembre 2021",
+        "venue": "Ghana-India Kofi Annan Centre of Excellence in ICT (AITI-KACE), Accra",
+        "report": "Pour le 5e anniversaire, l’atelier a abordé la « frontière numérique » de la sécurité des enfants : cyber-piegeage, exposition à des contenus sexuels inappropriés, etc. Une recommandation clé visait l’intégration de mesures spécifiques à la sécurité des enfants en ligne dans la loi sur la cybersécurité (2020). PDA a aussi souligné les liens entre interactions en ligne et crimes hors ligne comme l’enlèvement et la traite."
       },
       {
-        edition: "6e édition",
-        theme: "Approches institutionnelles de la remédiation du travail des enfants au Ghana",
-        date: "24 novembre 2022",
-        venue: "Centre international de formation et de maintien de la paix Kofi Annan (KAIPTC)",
-        report:
-          "Cette session a fortement mis l’accent sur l’ODD 8.7 (éliminer le travail des enfants). PDA a présenté ses projets de remédiation du travail des enfants et VSLA-CHILD. L’atelier a insisté sur le fait que la remédiation doit dépasser l’aide financière pour inclure le « bien-être psychosocial », le travail des enfants entraînant des traumatismes psychologiques durables souvent négligés par les cadres institutionnels.",
+        "edition": "6e édition",
+        "theme": "Approches institutionnelles de la remédiation du travail des enfants au Ghana",
+        "date": "24 novembre 2022",
+        "venue": "Centre international de formation et de maintien de la paix Kofi Annan (KAIPTC)",
+        "report": "Cette session a fortement mis l’accent sur l’ODD 8.7 (éliminer le travail des enfants). PDA a présenté ses projets de remédiation du travail des enfants et VSLA-CHILD. L’atelier a insisté sur le fait que la remédiation doit dépasser l’aide financière pour inclure le « bien-être psychosocial », le travail des enfants entraînant des traumatismes psychologiques durables souvent négligés par les cadres institutionnels."
       },
       {
-        edition: "7e édition",
-        theme:
-          "Lutter contre le mariage des enfants dans le Nord du Ghana : du discours à un plaidoyer fondé sur les preuves",
-        date: "30 novembre 2023",
-        venue: "Walewale, région North East (hybride)",
-        report:
-          "En partenariat avec Afrikids Ghana, ce fut le premier KSW hors d’Accra pour toucher directement une région à forte prévalence. L’atelier a questionné certaines croyances patriarcales traditionnelles et a présenté des données sur les facteurs du mariage des enfants dans le Nord. Il a mis en avant des histoires de sauvetage réussies et appelé à passer du « discours » à l’application de la loi et au démantèlement des obstacles systémiques.",
+        "edition": "7e édition",
+        "theme": "Lutter contre le mariage des enfants dans le Nord du Ghana : du discours à un plaidoyer fondé sur les preuves",
+        "date": "30 novembre 2023",
+        "venue": "Walewale, région North East (hybride)",
+        "report": "En partenariat avec Afrikids Ghana, ce fut le premier KSW hors d’Accra pour toucher directement une région à forte prévalence. L’atelier a questionné certaines croyances patriarcales traditionnelles et a présenté des données sur les facteurs du mariage des enfants dans le Nord. Il a mis en avant des histoires de sauvetage réussies et appelé à passer du « discours » à l’application de la loi et au démantèlement des obstacles systémiques."
       },
       {
-        edition: "8e édition",
-        theme:
-          "Protéger les enfants dans la ceinture cacaoyère du Ghana face au galamsey : mobiliser le public, le privé et les citoyens",
-        date: "27 novembre 2025 ; 4 décembre 2025",
-        venue: "Accra ; Bechem (région d’Ahafo)",
-        report:
-          "Cet atelier a ciblé les liens entre orpaillage illégal (galamsey) et la filière cacao : risques de déscolarisation et de travail dangereux, contamination de l’eau, etc. Une coalition intersectorielle — ministère des Terres et des Ressources naturelles, équipes de durabilité cacao — a été mobilisée pour élaborer un plan d’action local dans les districts très exposés au galamsey.",
-      },
-    ],
+        "edition": "8e édition",
+        "theme": "Protéger les enfants dans la ceinture cacaoyère du Ghana face au galamsey : mobiliser le public, le privé et les citoyens",
+        "date": "27 novembre 2025 ; 4 décembre 2025",
+        "venue": "Accra ; Bechem (région d’Ahafo)",
+        "report": "Cet atelier a ciblé les liens entre orpaillage illégal (galamsey) et la filière cacao : risques de déscolarisation et de travail dangereux, contamination de l’eau, etc. Une coalition intersectorielle — ministère des Terres et des Ressources naturelles, équipes de durabilité cacao — a été mobilisée pour élaborer un plan d’action local dans les districts très exposés au galamsey."
+      }
+    ]
   },
-  // iMPACT Project Page
-  impactProject: {
-    title: "Le projet iMPACT",
-    subtitle: "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées",
-    backToProjects: "Retour aux projets",
-    snapshotTitle: "Aperçu du projet",
-    partner: "Partenaire",
-    partnerName: "Le Consortium iMPACT (un partenariat incluant AFRICARE, GTZ, ICI, IFESH, MARS Inc, Rainforest Alliance et STCP)",
-    period: "Période",
-    periodValue: "Décembre 2007 – Janvier 2012",
-    country: "Pays d'opération",
-    countryValue: "Ghana",
-    category: "Catégorie",
-    categoryValue: "Agriculture et développement communautaire",
-    snapshotDescription: "Le projet iMPACT, financé par Mars Incorporated dans le cadre du Partenariat Mars pour les communautés de cacao africaines de demain, ciblait les communautés rurales dépendantes du cacao au Ghana. Pilote dans 18 communautés à travers deux districts—Wasa Amenfi West (Asankrangwa) et Assin North (Assin Fosu)—le projet visait à démontrer qu'une approche intégrée combinant l'agriculture, l'environnement, l'éducation et la santé peut transformer les revenus et le bien-être des communautés. En renforçant la capacité des communautés de producteurs de cacao à identifier et améliorer leurs conditions sociales, économiques et environnementales, le projet cherchait à faire de la culture du cacao un moyen de subsistance rentable, socialement gratifiant et écologiquement durable, tout en le positionnant comme une profession attrayante pour les générations futures.",
-    objectivesTitle: "Objectifs du projet",
-    capacityBuilding: "Renforcement des capacités",
-    capacityBuildingDesc: "Autonomiser les communautés de producteurs de cacao pour évaluer et améliorer leurs conditions sociales, économiques et environnementales.",
-    integratedDevelopment: "Développement intégré",
-    integratedDevelopmentDesc: "Démontrer les avantages de l'intégration des interventions en agriculture, éducation, environnement et santé.",
-    sustainableLivelihoods: "Moyens de subsistance durables",
-    sustainableLivelihoodsDesc: "Améliorer la rentabilité et la durabilité de la culture du cacao, en en faisant un moyen de subsistance attrayant et viable pour les familles.",
-    stakeholderSynergy: "Synergie des parties prenantes",
-    stakeholderSynergyDesc: "Renforcer la collaboration entre les membres de la communauté, les ONG locales et d'autres parties prenantes grâce à des processus participatifs et une planification fondée sur des preuves.",
-    pdaTaskTitle: "Tâche de PDA",
-    pdaTaskDescription: "PDA était responsable de fournir un soutien au renforcement des capacités tout au long du processus d'engagement communautaire. Les tâches clés comprenaient :",
-    task1: "Former les partenaires d'engagement communautaire (CEP) et les principales parties prenantes du district aux méthodologies participatives.",
-    task2: "Faciliter les sessions de dialogue et de sensibilisation pour sensibiliser aux problèmes communautaires.",
-    task3: "Soutenir le processus de planification participative et l'élaboration de plans d'action communautaires.",
-    task4: "Coordonner, soutenir et surveiller la mise en œuvre de ces plans d'action communautaires par les CEP.",
-    approachTitle: "Comment nous nous y sommes pris",
-    trainingTitle: "Formation et renforcement des capacités",
-    trainingDesc: "Organisé des ateliers et des sessions de formation pour équiper les CEP et les parties prenantes du district d'outils participatifs pour le dialogue, la sensibilisation et la planification.",
-    engagementTitle: "Engagement communautaire facilité",
-    engagementDesc: "Conduit des sessions interactives qui ont permis aux communautés d'exprimer leurs défis et de concevoir collaborativement des plans d'action.",
-    planningTitle: "Planification participative",
-    planningDesc: "Guidé les communautés dans l'élaboration de plans d'action complets qui intégraient l'agriculture, l'éducation, l'environnement et les stratégies de santé.",
-    supportTitle: "Soutien continu",
-    supportDesc: "Fourni un soutien continu de coordination et de suivi pour s'assurer que les CEP mettent efficacement en œuvre les plans d'action communautaires et adaptent les stratégies en fonction des commentaires.",
+  "impactProject": {
+    "title": "Le projet iMPACT",
+    "subtitle": "Transformer les communautés dépendantes du cacao grâce à des approches de développement intégrées",
+    "backToProjects": "Retour aux projets",
+    "snapshotTitle": "Aperçu du projet",
+    "partner": "Partenaire",
+    "partnerName": "Le Consortium iMPACT (un partenariat incluant AFRICARE, GTZ, ICI, IFESH, MARS Inc, Rainforest Alliance et STCP)",
+    "period": "Période",
+    "periodValue": "Décembre 2007 – Janvier 2012",
+    "country": "Pays d'opération",
+    "countryValue": "Ghana",
+    "category": "Catégorie",
+    "categoryValue": "Agriculture et développement communautaire",
+    "snapshotDescription": "Le projet iMPACT, financé par Mars Incorporated dans le cadre du Partenariat Mars pour les communautés de cacao africaines de demain, ciblait les communautés rurales dépendantes du cacao au Ghana. Pilote dans 18 communautés à travers deux districts—Wasa Amenfi West (Asankrangwa) et Assin North (Assin Fosu)—le projet visait à démontrer qu'une approche intégrée combinant l'agriculture, l'environnement, l'éducation et la santé peut transformer les revenus et le bien-être des communautés. En renforçant la capacité des communautés de producteurs de cacao à identifier et améliorer leurs conditions sociales, économiques et environnementales, le projet cherchait à faire de la culture du cacao un moyen de subsistance rentable, socialement gratifiant et écologiquement durable, tout en le positionnant comme une profession attrayante pour les générations futures.",
+    "objectivesTitle": "Objectifs du projet",
+    "capacityBuilding": "Renforcement des capacités",
+    "capacityBuildingDesc": "Autonomiser les communautés de producteurs de cacao pour évaluer et améliorer leurs conditions sociales, économiques et environnementales.",
+    "integratedDevelopment": "Développement intégré",
+    "integratedDevelopmentDesc": "Démontrer les avantages de l'intégration des interventions en agriculture, éducation, environnement et santé.",
+    "sustainableLivelihoods": "Moyens de subsistance durables",
+    "sustainableLivelihoodsDesc": "Améliorer la rentabilité et la durabilité de la culture du cacao, en en faisant un moyen de subsistance attrayant et viable pour les familles.",
+    "stakeholderSynergy": "Synergie des parties prenantes",
+    "stakeholderSynergyDesc": "Renforcer la collaboration entre les membres de la communauté, les ONG locales et d'autres parties prenantes grâce à des processus participatifs et une planification fondée sur des preuves.",
+    "pdaTaskTitle": "Tâche de PDA",
+    "pdaTaskDescription": "PDA était responsable de fournir un soutien au renforcement des capacités tout au long du processus d'engagement communautaire. Les tâches clés comprenaient :",
+    "task1": "Former les partenaires d'engagement communautaire (CEP) et les principales parties prenantes du district aux méthodologies participatives.",
+    "task2": "Faciliter les sessions de dialogue et de sensibilisation pour sensibiliser aux problèmes communautaires.",
+    "task3": "Soutenir le processus de planification participative et l'élaboration de plans d'action communautaires.",
+    "task4": "Coordonner, soutenir et surveiller la mise en œuvre de ces plans d'action communautaires par les CEP.",
+    "approachTitle": "Comment nous nous y sommes pris",
+    "trainingTitle": "Formation et renforcement des capacités",
+    "trainingDesc": "Organisé des ateliers et des sessions de formation pour équiper les CEP et les parties prenantes du district d'outils participatifs pour le dialogue, la sensibilisation et la planification.",
+    "engagementTitle": "Engagement communautaire facilité",
+    "engagementDesc": "Conduit des sessions interactives qui ont permis aux communautés d'exprimer leurs défis et de concevoir collaborativement des plans d'action.",
+    "planningTitle": "Planification participative",
+    "planningDesc": "Guidé les communautés dans l'élaboration de plans d'action complets qui intégraient l'agriculture, l'éducation, l'environnement et les stratégies de santé.",
+    "supportTitle": "Soutien continu",
+    "supportDesc": "Fourni un soutien continu de coordination et de suivi pour s'assurer que les CEP mettent efficacement en œuvre les plans d'action communautaires et adaptent les stratégies en fonction des commentaires."
   },
-  // News Page
-  news: {
-    title: "Actualités et mises à jour",
-    subtitle: "Restez informé de nos dernières activités, événements et réalisations",
-    latestNews: "Dernières actualités",
-    readFullArticle: "Lire l'article complet",
-    showLess: "Afficher moins",
+  "yenDaakye": {
+    "title": "Programme \"Yen Daakye\"",
+    "subtitle": "Éliminer les pires formes de travail des enfants et de travail forcé dans la production du cacao",
+    "backToProjects": "Retour aux projets",
+    "snapshotTitle": "Aperçu du projet",
+    "partner": "Partenaire",
+    "partnerName": "Initiative internationale du cacao",
+    "period": "Période",
+    "periodValue": "Novembre 2004 – 2010",
+    "country": "Pays d’opération",
+    "countryValue": "Ghana",
+    "category": "Catégorie",
+    "categoryValue": "Agriculture et protection de l’enfance",
+    "snapshotDescription": "PDA agit comme agence locale de coordination du programme \"Yen Daakye\" (« Notre avenir »), une initiative pilote visant à éliminer les pires formes de travail des enfants et de travail forcé dans la production et la commercialisation du cacao. Ce projet piloté par les communautés s’inscrit dans l’effort plus large de l’ICI pour promouvoir un développement durable et centré sur l’enfant dans les communautés cacaoyères. Le pilote est mis en œuvre dans trois districts — New Edubiase (région Ashanti), ainsi que Daboase et Asankrangwa (région de l’Ouest) — avec des ONG de district comme partenaires de mise en œuvre, appuyées par une équipe PDA composée de facilitateurs de district, d’un coordinateur terrain et d’un consultant technique communautaire.",
+    "objectivesTitle": "Objectifs du projet",
+    "eliminateLabour": "Éliminer les pires formes de travail",
+    "eliminateLabourDesc": "Éliminer les pires formes de travail des enfants et de travail forcé dans la production et la commercialisation du cacao.",
+    "sustainableApproaches": "Approches durables",
+    "sustainableApproachesDesc": "Développer des approches durables, pilotées par les communautés, pour améliorer les moyens de subsistance des communautés productrices de cacao.",
+    "enhanceSustainability": "Renforcer la durabilité",
+    "enhanceSustainabilityDesc": "Renforcer la durabilité sociale, économique et environnementale de la production du cacao.",
+    "pdaTaskTitle": "Rôle de PDA",
+    "pdaTaskDescription": "PDA a assuré un appui au renforcement des capacités et à la coordination des partenaires de mise en œuvre au niveau des districts. Cela comprenait la formation, l’appui technique dans les processus d’engagement communautaire, la planification participative et le suivi continu des plans d’action communautaires.",
+    "approachTitle": "Notre démarche",
+    "capacityBuildingTitle": "Renforcement des capacités",
+    "capacityBuildingDesc": "Organisation de formations et d’ateliers pour renforcer les compétences des facilitateurs locaux et des groupes communautaires.",
+    "participatoryPlanningTitle": "Planification participative",
+    "participatoryPlanningDesc": "Animation de sessions de dialogue pour élaborer des plans d’action communautaires traitant du travail des enfants et du travail forcé.",
+    "coordinationTitle": "Coordination et appui",
+    "coordinationDesc": "Coordination des activités des facilitateurs de district et accompagnement continu pour le suivi de la mise en œuvre du projet."
   },
-  // Get Involved Page
-  getInvolved: {
-    title: "Faisons la différence",
-    subtitle: "Rejoignez-nous pour autonomiser les communautés et créer un changement positif durable à travers l'Afrique subsaharienne",
-    waysToGetInvolved: "Façons de s'impliquer",
-    waysDesc: "Il existe de nombreuses façons de soutenir notre mission. Choisissez l'option qui vous convient le mieux.",
-    whyGetInvolved: "Pourquoi s'impliquer ?",
-    whyDesc: "Votre soutien fait une réelle différence dans la vie des communautés à travers l'Afrique subsaharienne",
-    directImpact: "Impact direct",
-    directImpactDesc: "Voyez vos contributions transformer les communautés en temps réel",
-    sustainableChange: "Changement durable",
-    sustainableChangeDesc: "Soutenez des programmes qui créent des résultats positifs durables",
-    communityLed: "Dirigé par la communauté",
-    communityLedDesc: "Autonomiser les communautés pour qu'elles prennent en charge leur développement",
-    transparent: "Transparent",
-    transparentDesc: "Suivez comment votre soutien fait la différence",
-    haveQuestions: "Des questions ?",
-    haveQuestionsDesc: "Nous serions ravis de vous entendre et de répondre à toutes vos questions sur la façon de s'impliquer",
-    testimonial: "S'impliquer avec PDA Africa a été l'une des expériences les plus enrichissantes. Savoir que ma contribution a un impact direct sur les communautés et aide à créer un changement durable est incroyablement gratifiant.",
-    testimonialAuthor: "- Partenaire communautaire",
-    services: {
+  "news": {
+    "title": "Actualités et mises à jour",
+    "subtitle": "Restez informé de nos dernières activités, événements et réalisations",
+    "latestNews": "Dernières actualités",
+    "readFullArticle": "Lire l'article complet",
+    "showLess": "Afficher moins"
+  },
+  "getInvolved": {
+    "title": "Faisons la différence",
+    "subtitle": "Rejoignez-nous pour autonomiser les communautés et créer un changement positif durable à travers l'Afrique subsaharienne",
+    "waysToGetInvolved": "Façons de s'impliquer",
+    "waysDesc": "Il existe de nombreuses façons de soutenir notre mission. Choisissez l'option qui vous convient le mieux.",
+    "whyGetInvolved": "Pourquoi s'impliquer ?",
+    "whyDesc": "Votre soutien fait une réelle différence dans la vie des communautés à travers l'Afrique subsaharienne",
+    "directImpact": "Impact direct",
+    "directImpactDesc": "Voyez vos contributions transformer les communautés en temps réel",
+    "sustainableChange": "Changement durable",
+    "sustainableChangeDesc": "Soutenez des programmes qui créent des résultats positifs durables",
+    "communityLed": "Dirigé par la communauté",
+    "communityLedDesc": "Autonomiser les communautés pour qu'elles prennent en charge leur développement",
+    "transparent": "Transparent",
+    "transparentDesc": "Suivez comment votre soutien fait la différence",
+    "haveQuestions": "Des questions ?",
+    "haveQuestionsDesc": "Nous serions ravis de vous entendre et de répondre à toutes vos questions sur la façon de s'impliquer",
+    "testimonial": "S'impliquer avec PDA Africa a été l'une des expériences les plus enrichissantes. Savoir que ma contribution a un impact direct sur les communautés et aide à créer un changement durable est incroyablement gratifiant.",
+    "testimonialAuthor": "- Partenaire communautaire",
+    "services": {
       "Become a Volunteer": {
-        label: "Devenir bénévole",
-        subtext: "Les bénévoles sont l'épine dorsale de notre organisation, aidez-nous à avoir un impact sur le monde aujourd'hui.",
-        button: "Rejoignez-nous maintenant",
+        "label": "Devenir bénévole",
+        "subtext": "Les bénévoles sont l'épine dorsale de notre organisation, aidez-nous à avoir un impact sur le monde aujourd'hui.",
+        "button": "Rejoignez-nous maintenant"
       },
       "Donate to support": {
-        label: "Faire un don pour soutenir",
-        subtext: "Grand ou petit, votre don aide à changer la vie des gens en Afrique, jeunes et vieux.",
-        button: "Faire un don maintenant",
+        "label": "Faire un don pour soutenir",
+        "subtext": "Grand ou petit, votre don aide à changer la vie des gens en Afrique, jeunes et vieux.",
+        "button": "Faire un don maintenant"
       },
       "Become a Partner": {
-        label: "Devenir partenaire",
-        subtext: "Travaillez en étroite collaboration avec notre équipe pour développer des initiatives mutuellement bénéfiques avec un impact indéniable.",
-        button: "Entrer en contact",
+        "label": "Devenir partenaire",
+        "subtext": "Travaillez en étroite collaboration avec notre équipe pour développer des initiatives mutuellement bénéfiques avec un impact indéniable.",
+        "button": "Entrer en contact"
+      }
+    }
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Nous serions ravis d'avoir de vos nouvelles. Contactez-nous dès aujourd'hui.",
+    "getInTouch": "Entrer en contact",
+    "feelFree": "N'hésitez pas à",
+    "contactReach": "nous contacter et",
+    "us": "nous joindre !",
+    "enterName": "Entrez le nom*",
+    "enterEmail": "Entrez l'e-mail*",
+    "enterSubject": "Entrez le sujet*",
+    "enterPhone": "Entrez le numéro de téléphone*",
+    "enterMessage": "Entrez le message*",
+    "submitNow": "Soumettre maintenant",
+    "thankYou": "Merci d'avoir soumis votre demande, nous vous contacterons bientôt !",
+    "thankYouMessage": "Merci d'avoir soumis votre demande, nous vous contacterons bientôt !"
+  },
+  "footer": {
+    "description": "PDA Africa travaille avec les communautés, les organisations et les États pour faciliter la participation de tous les peuples à prendre un plus grand contrôle sur leur vie.",
+    "contactUs": "Nous contacter",
+    "quickLinks": "Liens rapides",
+    "programmes": "Programmes",
+    "copyright": "Droits d'auteur",
+    "allRightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "email": "E-mail :",
+    "home": "Accueil",
+    "aboutUs": "À propos de nous",
+    "projects": "Projets",
+    "newsUpdates": "Actualités et mises à jour",
+    "getInvolved": "S'impliquer",
+    "cocoaCommunitiesLibrary": "Bibliothèque des communautés de cacao",
+    "financialInclusionVSLA": "Inclusion financière et VSLA",
+    "childLabourRemediation": "Remédiation au travail des enfants"
+  },
+  "cookies": {
+    "title": "Nous utilisons des cookies",
+    "message": "Nous utilisons des cookies pour améliorer votre expérience de navigation, fournir du contenu personnalisé et analyser notre trafic. En cliquant sur 'Tout accepter', vous acceptez notre utilisation des cookies.",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "customize": "Personnaliser",
+    "necessary": "Nécessaire",
+    "analytics": "Analytique",
+    "marketing": "Marketing"
+  },
+  "donate": {
+    "title": "Faire la différence",
+    "subtitle": "Votre don aide à autonomiser les communautés à travers l'Afrique subsaharienne",
+    "whyDonate": "Pourquoi faire un don ?",
+    "supportCommunity": "Soutenir le développement dirigé par la communauté",
+    "empowerWomen": "Autonomiser les femmes et les enfants",
+    "createChange": "Créer un changement positif durable",
+    "transparentFunds": "Utilisation transparente des fonds",
+    "donateToSupport": "Faire un don pour soutenir",
+    "fullName": "Nom complet",
+    "emailAddress": "Adresse e-mail",
+    "phoneNumber": "Numéro de téléphone",
+    "donationAmount": "Montant du don (GHS)",
+    "quickAmounts": "Montants rapides :",
+    "securePayment": "Votre paiement est sécurisé et crypté. Propulsé par Paystack."
+  },
+  "gallery": {
+    "title": "Notre galerie",
+    "subtitle": "Explorez nos photos et vidéos présentant notre impact à travers l'Afrique subsaharienne",
+    "videos": "Nos vidéos",
+    "videosDesc": "Regardez nos dernières vidéos sur YouTube",
+    "moreVideos": "PLUS DE VIDÉOS",
+    "watchNow": "Regarder maintenant",
+    "watchOnYouTube": "Regarder sur YouTube",
+    "photos": "Nos photos",
+    "photosDesc": "Parcourez nos albums photo présentant nos engagements et activités communautaires",
+    "morePhotos": "PLUS DE PHOTOS"
+  },
+  "whereWeWork": {
+    "title": "Où nous travaillons",
+    "subtitle": "Autonomiser les communautés à travers l'Afrique subsaharienne grâce au développement participatif",
+    "presence": "Notre présence",
+    "presenceDesc": "Cliquez sur un pays pour explorer notre travail et notre impact",
+    "regionsWeWork": "Régions où nous travaillons",
+    "keyPrograms": "Programmes clés",
+    "population": "Population",
+    "capital": "Capitale",
+    "communities": "Communautés",
+    "participants": "Participants",
+    "programs": "Programmes",
+    "yearsActive": "Années d'activité",
+    "impactAcrossAfrica": "Notre impact à travers l'Afrique",
+    "countriesLabel": "Pays",
+    "communitiesReached": "Communautés atteintes",
+    "yearsOfImpact": "Années d'impact",
+    "estimate": "Estimation 2024",
+    "countries": {
+      "ghana": {
+        "description": "Le Ghana est notre base opérationnelle principale, où nous mettons en œuvre nos programmes phares, notamment le projet de bibliothèque des communautés de cacao, les programmes d'inclusion financière et VSLA, et les initiatives de remédiation du travail des enfants.",
+        "regions": [
+          "Région d'Ashanti",
+          "Région orientale",
+          "Région centrale",
+          "Région occidentale",
+          "Ahafo Ano Sud"
+        ],
+        "programs": [
+          "Projet de bibliothèque des communautés de cacao",
+          "Programme VSLA-GALS",
+          "Remédiation du travail des enfants Nyonkopa",
+          "Académie de radio de la voix des agriculteurs",
+          "Programme VSLA-CHILD"
+        ]
       },
+      "coteDivoire": {
+        "description": "Nous travaillons avec les communautés productrices de cacao en Côte d'Ivoire pour mettre en œuvre des programmes d'inclusion financière et soutenir le revenu de subsistance des agriculteurs grâce aux formations VSLA et Empowering Better Decisions (EBD).",
+        "regions": [
+          "Régions productrices de cacao"
+        ],
+        "programs": [
+          "Projet Enroute",
+          "VSLA-CHILD",
+          "Empowering Better Decisions (EBD)"
+        ]
+      },
+      "cameroon": {
+        "description": "Notre travail au Cameroun se concentre sur les initiatives de développement dirigées par la communauté et les programmes de renforcement des capacités.",
+        "regions": [
+          "Plusieurs régions"
+        ],
+        "programs": [
+          "Programmes de développement communautaire",
+          "Renforcement des capacités"
+        ]
+      },
+      "kenya": {
+        "description": "Nous nous associons avec les communautés au Kenya pour mettre en œuvre des programmes de développement participatif et soutenir les initiatives de développement durable.",
+        "regions": [
+          "Plusieurs régions"
+        ],
+        "programs": [
+          "Programmes d'autonomisation communautaire"
+        ]
+      },
+      "uganda": {
+        "description": "Nos programmes en Ouganda se concentrent sur le développement dirigé par la communauté et l'autonomisation économique durable.",
+        "regions": [
+          "Plusieurs régions"
+        ],
+        "programs": [
+          "Programmes de développement communautaire"
+        ]
+      }
     },
+    "multipleRegions": "Plusieurs régions"
   },
-  // Contact Page
-  contact: {
-    title: "Nous contacter",
-    subtitle: "Nous serions ravis d'avoir de vos nouvelles. Contactez-nous dès aujourd'hui.",
-    getInTouch: "Entrer en contact",
-    feelFree: "N'hésitez pas à",
-    contactReach: "nous contacter et",
-    us: "nous joindre !",
-    enterName: "Entrez le nom*",
-    enterEmail: "Entrez l'e-mail*",
-    enterSubject: "Entrez le sujet*",
-    enterPhone: "Entrez le numéro de téléphone*",
-    enterMessage: "Entrez le message*",
-    submitNow: "Soumettre maintenant",
-    thankYou: "Merci d'avoir soumis votre demande, nous vous contacterons bientôt !",
-    thankYouMessage: "Merci d'avoir soumis votre demande, nous vous contacterons bientôt !",
-  },
-  // Footer
-  footer: {
-    description: "PDA Africa travaille avec les communautés, les organisations et les États pour faciliter la participation de tous les peuples à prendre un plus grand contrôle sur leur vie.",
-    contactUs: "Nous contacter",
-    quickLinks: "Liens rapides",
-    programmes: "Programmes",
-    copyright: "Droits d'auteur",
-    allRightsReserved: "Tous droits réservés.",
-    privacyPolicy: "Politique de confidentialité",
-    termsOfService: "Conditions d'utilisation",
-    email: "E-mail :",
-    // Footer Links
-    home: "Accueil",
-    aboutUs: "À propos de nous",
-    projects: "Projets",
-    newsUpdates: "Actualités et mises à jour",
-    getInvolved: "S'impliquer",
-    cocoaCommunitiesLibrary: "Bibliothèque des communautés de cacao",
-    financialInclusionVSLA: "Inclusion financière et VSLA",
-    childLabourRemediation: "Remédiation au travail des enfants",
-  },
-  // Cookie Consent
-  cookies: {
-    title: "Nous utilisons des cookies",
-    message: "Nous utilisons des cookies pour améliorer votre expérience de navigation, fournir du contenu personnalisé et analyser notre trafic. En cliquant sur 'Tout accepter', vous acceptez notre utilisation des cookies.",
-    acceptAll: "Tout accepter",
-    rejectAll: "Tout refuser",
-    customize: "Personnaliser",
-    necessary: "Nécessaire",
-    analytics: "Analytique",
-    marketing: "Marketing",
-  },
-  // Donate Form
-  donate: {
-    title: "Faire la différence",
-    subtitle: "Votre don aide à autonomiser les communautés à travers l'Afrique subsaharienne",
-    whyDonate: "Pourquoi faire un don ?",
-    supportCommunity: "Soutenir le développement dirigé par la communauté",
-    empowerWomen: "Autonomiser les femmes et les enfants",
-    createChange: "Créer un changement positif durable",
-    transparentFunds: "Utilisation transparente des fonds",
-    donateToSupport: "Faire un don pour soutenir",
-    fullName: "Nom complet",
-    emailAddress: "Adresse e-mail",
-    phoneNumber: "Numéro de téléphone",
-    donationAmount: "Montant du don (GHS)",
-    quickAmounts: "Montants rapides :",
-    securePayment: "Votre paiement est sécurisé et crypté. Propulsé par Paystack.",
-  },
-  // Gallery Page
-  gallery: {
-    title: "Notre galerie",
-    subtitle: "Explorez nos photos et vidéos présentant notre impact à travers l'Afrique subsaharienne",
-    videos: "Nos vidéos",
-    videosDesc: "Regardez nos dernières vidéos sur YouTube",
-    moreVideos: "PLUS DE VIDÉOS",
-    watchNow: "Regarder maintenant",
-    watchOnYouTube: "Regarder sur YouTube",
-    photos: "Nos photos",
-    photosDesc: "Parcourez nos albums photo présentant nos engagements et activités communautaires",
-    morePhotos: "PLUS DE PHOTOS",
-  },
-  // Where We Work Page
-  whereWeWork: {
-    title: "Où nous travaillons",
-    subtitle: "Autonomiser les communautés à travers l'Afrique subsaharienne grâce au développement participatif",
-    presence: "Notre présence",
-    presenceDesc: "Cliquez sur un pays pour explorer notre travail et notre impact",
-    regionsWeWork: "Régions où nous travaillons",
-    keyPrograms: "Programmes clés",
-    population: "Population",
-    capital: "Capitale",
-    communities: "Communautés",
-    participants: "Participants",
-    programs: "Programmes",
-    yearsActive: "Années d'activité",
-    impactAcrossAfrica: "Notre impact à travers l'Afrique",
-    countriesLabel: "Pays",
-    communitiesReached: "Communautés atteintes",
-    yearsOfImpact: "Années d'impact",
-    estimate: "Estimation 2024",
-    countries: {
-      ghana: {
-        description: "Le Ghana est notre base opérationnelle principale, où nous mettons en œuvre nos programmes phares, notamment le projet de bibliothèque des communautés de cacao, les programmes d'inclusion financière et VSLA, et les initiatives de remédiation du travail des enfants.",
-        regions: ["Région d'Ashanti", "Région orientale", "Région centrale", "Région occidentale", "Ahafo Ano Sud"],
-        programs: ["Projet de bibliothèque des communautés de cacao", "Programme VSLA-GALS", "Remédiation du travail des enfants Nyonkopa", "Académie de radio de la voix des agriculteurs", "Programme VSLA-CHILD"],
+  "staff": {
+    "title": "Notre équipe",
+    "subtitle": "Rencontrez les personnes passionnées qui conduisent le changement à travers l'Afrique subsaharienne",
+    "allTeam": "Toute l'équipe",
+    "viewProfile": "Voir le profil",
+    "about": "À propos",
+    "areasOfExpertise": "Domaines d'expertise",
+    "yearsExperience": "Années d'expérience",
+    "department": "Département",
+    "location": "Localisation",
+    "contact": "Contacter",
+    "education": "Éducation",
+    "staffMembers": {
+      "patrick": {
+        "position": "Agent de projet principal",
+        "bio": "Patrick est un agent de projet principal de l'équipe PDA Africa et apporte plus de 16 ans d'expérience dans la direction d'initiatives de développement communautaire. Il supervise des projets au Ghana, au Cameroun et en Côte d'Ivoire. Il a joué un rôle clé dans la mise en forme des initiatives d'inclusion financière de PDA au niveau communautaire.",
+        "expertise": [
+          "Formation",
+          "Facilitation",
+          "Rédaction de rapports",
+          "Analyse de données",
+          "Mobilisation communautaire"
+        ],
+        "location": "Ghana, Cameroun, Côte d'Ivoire",
+        "education": "HND en journalisme et communication"
       },
-      coteDivoire: {
-        description: "Nous travaillons avec les communautés productrices de cacao en Côte d'Ivoire pour mettre en œuvre des programmes d'inclusion financière et soutenir le revenu de subsistance des agriculteurs grâce aux formations VSLA et Empowering Better Decisions (EBD).",
-        regions: ["Régions productrices de cacao"],
-        programs: ["Projet Enroute", "VSLA-CHILD", "Empowering Better Decisions (EBD)"],
+      "david": {
+        "position": "Coordinateur de projet",
+        "bio": "David est coordinateur de projet pour PDA Africa. David a 14 ans d'expérience dans la direction de la mise en œuvre de plusieurs initiatives au niveau communautaire au Ghana et en Côte d'Ivoire. Il tire parti de ses nombreuses années d'expérience et de compétences en conception et coordination de projets, facilitation de la formation sur les systèmes d'action et d'apprentissage pour l'égalité des sexes, analyse de données, conception de manuels de formation et suivi et évaluation pour offrir une excellente mise en œuvre de projet.",
+        "expertise": [
+          "Conception de projets",
+          "Coordination",
+          "Formation GALS",
+          "Analyse de données",
+          "Suivi et évaluation"
+        ],
+        "location": "Ghana, Côte d'Ivoire",
+        "education": "MSc en économie, BSc en gestion des ressources naturelles"
       },
-      cameroon: {
-        description: "Notre travail au Cameroun se concentre sur les initiatives de développement dirigées par la communauté et les programmes de renforcement des capacités.",
-        regions: ["Plusieurs régions"],
-        programs: ["Programmes de développement communautaire", "Renforcement des capacités"],
+      "kamil": {
+        "position": "Coordinateur de projet adjoint",
+        "bio": "Kamil est coordinateur de projet adjoint avec PDA Africa, dirigeant le projet de remédiation du travail des enfants. En tant que professionnel du développement expérimenté avec une expertise dans la conception et la mise en œuvre d'interventions de développement communautaire, Kamil a dirigé de nombreux projets en planification d'action communautaire (CAP), santé et bien-être communautaires, projets de développement durable, mobilisation sociale et organisation et développement de partenariats avec les institutions communautaires et étatiques. Il aime partager ses opinions et expériences sur les blogs de développement social et économique sur le développement humain et social.",
+        "expertise": [
+          "Planification d'action communautaire",
+          "Santé communautaire",
+          "Développement durable",
+          "Mobilisation sociale",
+          "Développement de partenariats"
+        ],
+        "location": "Ghana",
+        "education": "MSc en planification des politiques de développement, BSc en planification"
       },
-      kenya: {
-        description: "Nous nous associons avec les communautés au Kenya pour mettre en œuvre des programmes de développement participatif et soutenir les initiatives de développement durable.",
-        regions: ["Plusieurs régions"],
-        programs: ["Programmes d'autonomisation communautaire"],
+      "andrews": {
+        "position": "Agent de projet adjoint",
+        "bio": "Andrews est un agent de projet adjoint avec PDA Africa. Tout au long de sa carrière, Andrews a développé une expertise en facilitation de formation, supervision sur le terrain, suivi et mobilisation communautaire. Il est passionné par les initiatives qui cherchent à autonomiser économiquement les femmes et les jeunes.",
+        "expertise": [
+          "Facilitation de formation",
+          "Supervision sur le terrain",
+          "Suivi",
+          "Mobilisation communautaire"
+        ],
+        "location": "Ghana",
+        "education": "BSc en développement organisationnel"
       },
-      uganda: {
-        description: "Nos programmes en Ouganda se concentrent sur le développement dirigé par la communauté et l'autonomisation économique durable.",
-        regions: ["Plusieurs régions"],
-        programs: ["Programmes de développement communautaire"],
+      "godsway": {
+        "position": "Agent financier et administratif adjoint",
+        "bio": "Godsway est l'agent financier de PDA Africa. Tout au long de ses cinq années d'expérience dans les rôles financiers, il a développé une riche expertise en reporting et analyse financiers.",
+        "expertise": [
+          "Reporting financier",
+          "Analyse financière",
+          "Comptabilité"
+        ],
+        "location": "Ghana",
+        "education": "BSc Administration (Comptabilité)"
       },
+      "louis": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "abdallah": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "joshua": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "guide": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "bashiru": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "eunice": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "tietaar": {
+        "position": "Agent de projet, PDA Africa",
+        "bio": "Louis est analyste de données, avec une solide maîtrise d'Excel et une expertise croissante en apprentissage automatique et en analyse de données. Il est titulaire d'une licence en comptabilité de la Kwame Nkrumah University of Science and Technology et d'une certification en analyse de données d'Azubi Africa. Louis est passionné par l'utilisation des données pour générer des informations, soutenir la prise de décision et développer des solutions pratiques fondées sur les données, tout en continuant à renforcer ses compétences en analyse et en technologies d'IA.",
+        "expertise": [
+          "Analyse de données",
+          "Excel",
+          "Apprentissage automatique",
+          "Analyse de données",
+          "Technologies d'IA"
+        ],
+        "location": "Ghana",
+        "education": "Licence en comptabilité, certification en analyse de données d'Azubi Africa"
+      },
+      "philip": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "yaro": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "harrison": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "eugene": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "racheal": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "emelia": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "abu": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "sanni": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      },
+      "incoom": {
+        "position": "Agent de terrain",
+        "bio": "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
+        "expertise": [
+          "Engagement communautaire",
+          "Travail sur le terrain",
+          "Mise en œuvre de programmes"
+        ],
+        "location": "Ghana"
+      }
+    }
+  },
+  "impact": {
+    "title": "Notre impact",
+    "subtitle": "Mesurer le succès grâce à la transformation communautaire et au développement durable",
+    "impactStats": "Statistiques d'impact",
+    "areasOfWork": "Domaines de travail",
+    "areasOfWorkDesc": "Notre approche globale de l'autonomisation communautaire",
+    "programImpact": "Impact du programme",
+    "programImpactDesc": "Transformer des vies grâce à nos programmes phares",
+    "vslaStoriesHighlightTitle": "Témoignages de bénéficiaires VSLA",
+    "vslaStoriesHighlightDesc": "Récits détaillés de membres de groupes d'épargne sur les moyens de subsistance, la gestion de l'argent et le renforcement des foyers.",
+    "viewAllVslaStories": "Voir toutes les histoires VSLA",
+    "readStory": "Lire l'histoire",
+    "testimonials": "Témoignages",
+    "testimonialsSubtitle": "Écoutez les histoires authentiques de nos bienfaiteurs et bénévoles sur leurs expériences exceptionnelles avec nous.",
+    "leaveReview": "Laisser un avis",
+    "communitiesReached": "Communautés atteintes",
+    "vslaGroups": "Groupes VSLA formés",
+    "libraries": "Bibliothèques communautaires",
+    "reviewPositions": {
+      "Volunteer": "Bénévole",
+      "Partner": "Partenaire",
+      "Staff": "Personnel",
+      "Benefactor": "Bienfaiteur"
     },
-    multipleRegions: "Plusieurs régions",
-  },
-  // Staff Page
-  staff: {
-    title: "Notre équipe",
-    subtitle: "Rencontrez les personnes passionnées qui conduisent le changement à travers l'Afrique subsaharienne",
-    allTeam: "Toute l'équipe",
-    viewProfile: "Voir le profil",
-    about: "À propos",
-    areasOfExpertise: "Domaines d'expertise",
-    yearsExperience: "Années d'expérience",
-    department: "Département",
-    location: "Localisation",
-    contact: "Contacter",
-    education: "Éducation",
-    staffMembers: {
-      patrick: {
-        position: "Agent de projet principal",
-        bio: "Patrick est un agent de projet principal de l'équipe PDA Africa et apporte plus de 16 ans d'expérience dans la direction d'initiatives de développement communautaire. Il supervise des projets au Ghana, au Cameroun et en Côte d'Ivoire. Il a joué un rôle clé dans la mise en forme des initiatives d'inclusion financière de PDA au niveau communautaire.",
-        expertise: ["Formation", "Facilitation", "Rédaction de rapports", "Analyse de données", "Mobilisation communautaire"],
-        location: "Ghana, Cameroun, Côte d'Ivoire",
-        education: "HND en journalisme et communication",
-      },
-      david: {
-        position: "Coordinateur de projet",
-        bio: "David est coordinateur de projet pour PDA Africa. David a 14 ans d'expérience dans la direction de la mise en œuvre de plusieurs initiatives au niveau communautaire au Ghana et en Côte d'Ivoire. Il tire parti de ses nombreuses années d'expérience et de compétences en conception et coordination de projets, facilitation de la formation sur les systèmes d'action et d'apprentissage pour l'égalité des sexes, analyse de données, conception de manuels de formation et suivi et évaluation pour offrir une excellente mise en œuvre de projet.",
-        expertise: ["Conception de projets", "Coordination", "Formation GALS", "Analyse de données", "Suivi et évaluation"],
-        location: "Ghana, Côte d'Ivoire",
-        education: "MSc en économie, BSc en gestion des ressources naturelles",
-      },
-      kamil: {
-        position: "Coordinateur de projet adjoint",
-        bio: "Kamil est coordinateur de projet adjoint avec PDA Africa, dirigeant le projet de remédiation du travail des enfants. En tant que professionnel du développement expérimenté avec une expertise dans la conception et la mise en œuvre d'interventions de développement communautaire, Kamil a dirigé de nombreux projets en planification d'action communautaire (CAP), santé et bien-être communautaires, projets de développement durable, mobilisation sociale et organisation et développement de partenariats avec les institutions communautaires et étatiques. Il aime partager ses opinions et expériences sur les blogs de développement social et économique sur le développement humain et social.",
-        expertise: ["Planification d'action communautaire", "Santé communautaire", "Développement durable", "Mobilisation sociale", "Développement de partenariats"],
-        location: "Ghana",
-        education: "MSc en planification des politiques de développement, BSc en planification",
-      },
-      andrews: {
-        position: "Agent de projet adjoint",
-        bio: "Andrews est un agent de projet adjoint avec PDA Africa. Tout au long de sa carrière, Andrews a développé une expertise en facilitation de formation, supervision sur le terrain, suivi et mobilisation communautaire. Il est passionné par les initiatives qui cherchent à autonomiser économiquement les femmes et les jeunes.",
-        expertise: ["Facilitation de formation", "Supervision sur le terrain", "Suivi", "Mobilisation communautaire"],
-        location: "Ghana",
-        education: "BSc en développement organisationnel",
-      },
-      godsway: {
-        position: "Agent financier et administratif adjoint",
-        bio: "Godsway est l'agent financier de PDA Africa. Tout au long de ses cinq années d'expérience dans les rôles financiers, il a développé une riche expertise en reporting et analyse financiers.",
-        expertise: ["Reporting financier", "Analyse financière", "Comptabilité"],
-        location: "Ghana",
-        education: "BSc Administration (Comptabilité)",
-      },
-      louis: {
-        position: "Agent de terrain",
-        bio: "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
-        expertise: ["Engagement communautaire", "Travail sur le terrain", "Mise en œuvre de programmes"],
-        location: "Ghana",
-      },
-      abdallah: {
-        position: "Agent de terrain",
-        bio: "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
-        expertise: ["Engagement communautaire", "Travail sur le terrain", "Mise en œuvre de programmes"],
-        location: "Ghana",
-      },
-      joshua: {
-        position: "Agent de terrain",
-        bio: "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
-        expertise: ["Engagement communautaire", "Travail sur le terrain", "Mise en œuvre de programmes"],
-        location: "Ghana",
-      },
-      guide: {
-        position: "Agent de terrain",
-        bio: "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
-        expertise: ["Engagement communautaire", "Travail sur le terrain", "Mise en œuvre de programmes"],
-        location: "Ghana",
-      },
-      bashiru: {
-        position: "Agent de terrain",
-        bio: "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
-        expertise: ["Engagement communautaire", "Travail sur le terrain", "Mise en œuvre de programmes"],
-        location: "Ghana",
-      },
-      eunice: {
-        position: "Agent de terrain",
-        bio: "Agent de terrain travaillant directement avec les communautés pour mettre en œuvre les programmes et initiatives de PDA Africa.",
-        expertise: ["Engagement communautaire", "Travail sur le terrain", "Mise en œuvre de programmes"],
-        location: "Ghana",
-      },
-    },
-  },
-  // Impact Page
-  impact: {
-    title: "Notre impact",
-    subtitle: "Mesurer le succès grâce à la transformation communautaire et au développement durable",
-    impactStats: "Statistiques d'impact",
-    areasOfWork: "Domaines de travail",
-    areasOfWorkDesc: "Notre approche globale de l'autonomisation communautaire",
-    programImpact: "Impact du programme",
-    programImpactDesc: "Transformer des vies grâce à nos programmes phares",
-    vslaStoriesHighlightTitle: "Témoignages de bénéficiaires VSLA",
-    vslaStoriesHighlightDesc:
-      "Récits détaillés de membres de groupes d'épargne sur les moyens de subsistance, la gestion de l'argent et le renforcement des foyers.",
-    viewAllVslaStories: "Voir toutes les histoires VSLA",
-    readStory: "Lire l'histoire",
-    testimonials: "Témoignages",
-    testimonialsSubtitle: "Écoutez les histoires authentiques de nos bienfaiteurs et bénévoles sur leurs expériences exceptionnelles avec nous.",
-    leaveReview: "Laisser un avis",
-    communitiesReached: "Communautés atteintes",
-    vslaGroups: "Groupes VSLA formés",
-    libraries: "Bibliothèques communautaires",
-    reviewPositions: {
-      Volunteer: "Bénévole",
-      Partner: "Partenaire",
-      Staff: "Personnel",
-      Benefactor: "Bienfaiteur",
-    },
-    reviewFeedback: {
+    "reviewFeedback": {
       "Volunteering with PDA Africa has been the most interesting and exciting experience ever.": "Faire du bénévolat avec PDA Africa a été l'expérience la plus intéressante et passionnante qui soit.",
       "Collaborating with PDA Africa has shown us how best we can serve the communities we find ourselves.": "La collaboration avec PDA Africa nous a montré comment mieux servir les communautés dans lesquelles nous nous trouvons.",
       "PDA Africa is a great place to grow professionally, gain valuable experience, and enjoy the process while doing it.": "PDA Africa est un excellent endroit pour grandir professionnellement, acquérir une expérience précieuse et profiter du processus tout en le faisant.",
-      "Their contributions and dedication to helping my community has really been life-changing": "Leurs contributions et leur dévouement à aider ma communauté ont vraiment changé ma vie",
+      "Their contributions and dedication to helping my community has really been life-changing": "Leurs contributions et leur dévouement à aider ma communauté ont vraiment changé ma vie"
     },
-    areasOfWorkList: {
-      financialInclusion: {
-        title: "Inclusion financière",
-        description: "Autonomiser les communautés grâce aux groupes VSLA et aux programmes d'éducation financière",
+    "areasOfWorkList": {
+      "financialInclusion": {
+        "title": "Inclusion financière",
+        "description": "Autonomiser les communautés grâce aux groupes VSLA et aux programmes d'éducation financière"
       },
-      childProtection: {
-        title: "Protection de l'enfance",
-        description: "Renforcer les systèmes de protection de l'enfance et l'éducation",
+      "childProtection": {
+        "title": "Protection de l'enfance",
+        "description": "Renforcer les systèmes de protection de l'enfance et l'éducation"
       },
-      communityDevelopment: {
-        title: "Développement communautaire",
-        description: "Soutenir des initiatives de développement durable dirigées par la communauté",
+      "communityDevelopment": {
+        "title": "Développement communautaire",
+        "description": "Soutenir des initiatives de développement durable dirigées par la communauté"
       },
-      educationLiteracy: {
-        title: "Éducation et alphabétisation",
-        description: "Promouvoir l'alphabétisation et l'éducation dans les communautés productrices de cacao",
-      },
+      "educationLiteracy": {
+        "title": "Éducation et alphabétisation",
+        "description": "Promouvoir l'alphabétisation et l'éducation dans les communautés productrices de cacao"
+      }
     },
-    programs: {
-      vsla: {
-        title: "Programmes VSLA",
-        description: "Formation et formation de groupes VSLA pour l'inclusion financière et l'autonomisation économique.",
+    "programs": {
+      "vsla": {
+        "title": "Programmes VSLA",
+        "description": "Formation et formation de groupes VSLA pour l'inclusion financière et l'autonomisation économique."
       },
-      library: {
-        title: "Projet de bibliothèque",
-        description: "Promouvoir l'alphabétisation et les habitudes de lecture chez les enfants des communautés productrices de cacao.",
+      "library": {
+        "title": "Projet de bibliothèque",
+        "description": "Promouvoir l'alphabétisation et les habitudes de lecture chez les enfants des communautés productrices de cacao."
       },
-      childProtection: {
-        title: "Protection de l'enfance",
-        description: "Remédier aux cas de travail des enfants et protéger les droits des enfants.",
-      },
-    },
+      "childProtection": {
+        "title": "Protection de l'enfance",
+        "description": "Remédier aux cas de travail des enfants et protéger les droits des enfants."
+      }
+    }
   },
-  // Partners Page
-  partners: {
-    title: "Nos partenaires",
-    subtitle: "Travailler ensemble avec des organisations et des institutions pour créer un changement positif durable",
-    ourPartners: "Nos partenaires",
-    description: "Nous sommes reconnaissants pour la collaboration et le soutien de nos partenaires qui partagent notre vision d'autonomiser les communautés à travers l'Afrique subsaharienne.",
+  "partners": {
+    "title": "Nos partenaires",
+    "subtitle": "Travailler ensemble avec des organisations et des institutions pour créer un changement positif durable",
+    "ourPartners": "Nos partenaires",
+    "description": "Nous sommes reconnaissants pour la collaboration et le soutien de nos partenaires qui partagent notre vision d'autonomiser les communautés à travers l'Afrique subsaharienne."
   },
-  // Common UI
-  common: {
-    close: "Fermer",
-    loading: "Chargement…",
-    readMore: "Lire la suite",
-    showLess: "Afficher moins",
+  "common": {
+    "close": "Fermer",
+    "loading": "Chargement…",
+    "readMore": "Lire la suite",
+    "showLess": "Afficher moins"
   },
-  // Reviews/Testimonials
-  reviews: {
-    eugene: {
-      name: "Eugene Asamoah",
-      position: "Bénévole",
-      feedback: "Faire du bénévolat avec PDA Africa a été l'expérience la plus intéressante et passionnante qui soit.",
+  "reviews": {
+    "eugene": {
+      "name": "Eugene Asamoah",
+      "position": "Bénévole",
+      "feedback": "Faire du bénévolat avec PDA Africa a été l'expérience la plus intéressante et passionnante qui soit."
     },
-    beyondBeans: {
-      name: "Beyond Beans",
-      position: "Partenaire",
-      feedback: "La collaboration avec PDA Africa nous a montré comment mieux servir les communautés dans lesquelles nous nous trouvons.",
+    "beyondBeans": {
+      "name": "Beyond Beans",
+      "position": "Partenaire",
+      "feedback": "La collaboration avec PDA Africa nous a montré comment mieux servir les communautés dans lesquelles nous nous trouvons."
     },
-    emelia: {
-      name: "Emelia Anawine",
-      position: "Personnel",
-      feedback: "PDA Africa est un excellent endroit pour grandir professionnellement, acquérir une expérience précieuse et profiter du processus tout en le faisant.",
+    "emelia": {
+      "name": "Emelia Anawine",
+      "position": "Personnel",
+      "feedback": "PDA Africa est un excellent endroit pour grandir professionnellement, acquérir une expérience précieuse et profiter du processus tout en le faisant."
     },
-    janet: {
-      name: "Janet Delali",
-      position: "Bienfaiteur",
-      feedback: "Leurs contributions et leur dévouement à aider ma communauté ont vraiment changé ma vie",
-    },
+    "janet": {
+      "name": "Janet Delali",
+      "position": "Bienfaiteur",
+      "feedback": "Leurs contributions et leur dévouement à aider ma communauté ont vraiment changé ma vie"
+    }
   },
-  // CCLP Page
-  cclp: {
-    title: "Projet de bibliothèque des communautés de cacao",
-    subtitle: "Inspirer la créativité par la lecture",
-    projectSnapshot: "Aperçu du projet",
-    partner: "Partenaire",
-    period: "Période",
-    country: "Pays d'opération",
-    category: "Catégorie",
-    snapshotDescription: "Le projet de bibliothèque des communautés de cacao (CCLP) est un effort collaboratif entre Participatory Development Associates (PDA) et la Magic Libraries Foundation. Le projet vise à améliorer l'alphabétisation en lecture des enfants et à construire une culture de la lecture dans les communautés productrices de cacao dans les districts d'Ahafo Ano South East et Ahafo Ano South West de la région d'Ashanti. Initialement mis en œuvre de 2023 à 2024 dans 10 communautés, le projet a été renouvelé pour deux années supplémentaires (2025–2026) et étendu pour inclure 10 nouvelles communautés. L'initiative travaille en étroite collaboration avec le Service de l'éducation du Ghana, les dirigeants communautaires, les parents, les patrons, les directeurs d'école et les enfants eux-mêmes, et vise à avoir un impact positif sur la vie de 1 000 enfants.",
-    projectObjectives: "Objectifs du projet",
-    pdasTask: "Tâche de PDA",
-    pdasTaskDescription: "PDA dirige la coordination globale et la mise en œuvre du projet en :",
-    pdasTaskPoints: [
+  "cclp": {
+    "title": "Projet de bibliothèque des communautés de cacao",
+    "subtitle": "Inspirer la créativité par la lecture",
+    "projectSnapshot": "Aperçu du projet",
+    "partner": "Partenaire",
+    "period": "Période",
+    "country": "Pays d'opération",
+    "category": "Catégorie",
+    "snapshotDescription": "Le projet de bibliothèque des communautés de cacao (CCLP) est un effort collaboratif entre Participatory Development Associates (PDA) et la Magic Libraries Foundation. Le projet vise à améliorer l'alphabétisation en lecture des enfants et à construire une culture de la lecture dans les communautés productrices de cacao dans les districts d'Ahafo Ano South East et Ahafo Ano South West de la région d'Ashanti. Initialement mis en œuvre de 2023 à 2024 dans 10 communautés, le projet a été renouvelé pour deux années supplémentaires (2025–2026) et étendu pour inclure 10 nouvelles communautés. L'initiative travaille en étroite collaboration avec le Service de l'éducation du Ghana, les dirigeants communautaires, les parents, les patrons, les directeurs d'école et les enfants eux-mêmes, et vise à avoir un impact positif sur la vie de 1 000 enfants.",
+    "projectObjectives": "Objectifs du projet",
+    "pdasTask": "Tâche de PDA",
+    "pdasTaskDescription": "PDA dirige la coordination globale et la mise en œuvre du projet en :",
+    "pdasTaskPoints": [
       "Faciliter la formation et le suivi des clubs de lecture communautaires",
       "Organiser des évaluations de lecture au niveau communautaire, des événements d'alphabétisation et des formations",
       "Engager les principales parties prenantes, y compris les autorités traditionnelles, les éducateurs et les parents",
       "Se procurer des livres d'histoires auprès d'éditeurs locaux pour soutenir les clubs de lecture",
-      "Documenter les leçons et l'impact grâce à des rapports et des examens réguliers",
+      "Documenter les leçons et l'impact grâce à des rapports et des examens réguliers"
     ],
-    howWeWentAboutIt: "Comment nous nous y sommes pris",
-    originalPhase: "Phase originale (2023–2024)",
-    originalPhaseDescription: "Au cours de la phase initiale, PDA a mis en œuvre une série d'activités visant à favoriser l'amour de la lecture et à améliorer les résultats en alphabétisation chez les enfants de dix communautés productrices de cacao :",
-    originalPhasePoints: [
+    "howWeWentAboutIt": "Comment nous nous y sommes pris",
+    "originalPhase": "Phase originale (2023–2024)",
+    "originalPhaseDescription": "Au cours de la phase initiale, PDA a mis en œuvre une série d'activités visant à favoriser l'amour de la lecture et à améliorer les résultats en alphabétisation chez les enfants de dix communautés productrices de cacao :",
+    "originalPhasePoints": [
       "Réunions hebdomadaires des clubs de lecture : Des sessions d'alphabétisation régulières ont été organisées dans les bibliothèques communautaires, où les enfants ont participé à des activités de lecture guidée pour renforcer la compréhension et cultiver une habitude de lecture.",
       "Compétitions et quiz de lecture inter-districts : PDA a organisé des compétitions et des quiz de lecture entre les différents districts. Ces événements ont encouragé une compétition amicale entre les jeunes lecteurs, aidant à renforcer la confiance et à évaluer leur compréhension des textes.",
       "Festival annuel de lecture : Cette célébration à l'échelle du district a mis en évidence les réalisations des enfants et a promu l'alphabétisation grâce à la narration, des performances dramatiques, des expositions de livres et des défis de lecture.",
       "Ateliers de formation : PDA a organisé des sessions de renforcement des capacités pour les enseignants, les bibliothécaires et les patrons de lecture, les équipant d'outils pratiques pour soutenir le développement de la lecture des enfants.",
-      "Engagements communautaires : Des réunions de sensibilisation ont été organisées avec les dirigeants traditionnels, les parents et d'autres parties prenantes pour promouvoir la propriété locale et assurer un soutien à long terme aux bibliothèques et aux clubs de lecture.",
+      "Engagements communautaires : Des réunions de sensibilisation ont été organisées avec les dirigeants traditionnels, les parents et d'autres parties prenantes pour promouvoir la propriété locale et assurer un soutien à long terme aux bibliothèques et aux clubs de lecture."
     ],
-    renewalPhase: "Phase de renouvellement et d'expansion (2025–2026)",
-    renewalPhaseDescription: "Suite au succès de la première phase, le projet a été renouvelé pour deux années supplémentaires et étendu à dix nouvelles communautés :",
-    renewalPhasePoints: [
+    "renewalPhase": "Phase de renouvellement et d'expansion (2025–2026)",
+    "renewalPhaseDescription": "Suite au succès de la première phase, le projet a été renouvelé pour deux années supplémentaires et étendu à dix nouvelles communautés :",
+    "renewalPhasePoints": [
       "Signature du contrat et rapport d'impact : En janvier 2025, le rapport d'impact de la première phase a été finalisé et un nouveau contrat a été signé pour soutenir l'expansion du projet.",
       "Entrée et profilage communautaires : En mars, PDA a effectué des visites d'entrée et des exercices de profilage dans les dix nouvelles communautés. Cette activité a fourni des informations vitales sur les contextes des communautés, a aidé à identifier les enfants qui bénéficieraient de l'initiative et a cartographié les principales parties prenantes locales et les patrons de lecture potentiels.",
       "Évaluations de lecture : Des évaluations d'alphabétisation ont été menées pour déterminer les niveaux de lecture des enfants et comprendre les facteurs influençant leur intérêt pour la lecture. Ces résultats façonnent la conception des interventions pour la nouvelle phase.",
       "Formation de clubs de lecture : Le travail est en cours pour établir des clubs de lecture dans les nouvelles communautés. PDA collabore avec les parties prenantes locales pour identifier des facilitateurs dédiés qui peuvent diriger des sessions hebdomadaires adaptées aux besoins d'alphabétisation des enfants.",
       "Suivi des clubs existants : PDA a poursuivi l'engagement avec les clubs établis pendant la première phase. Par exemple, une visite au club de lecture de Kunsu a permis à l'équipe d'observer les progrès et d'interagir avec les enfants, le coordinateur du projet participant en tant que lecteur invité.",
-      "Achat de livres d'histoires : L'équipe a commandé 2 850 livres d'histoires culturellement pertinents auprès d'éditeurs ghanéens pour soutenir les clubs existants et nouveaux. Ces livres devraient être livrés d'ici la fin d'avril 2025.",
+      "Achat de livres d'histoires : L'équipe a commandé 2 850 livres d'histoires culturellement pertinents auprès d'éditeurs ghanéens pour soutenir les clubs existants et nouveaux. Ces livres devraient être livrés d'ici la fin d'avril 2025."
     ],
-    recentActivities2025: "Activités récentes (2025)",
-    recentActivities2025Points: [
+    "recentActivities2025": "Activités récentes (2025)",
+    "recentActivities2025Points": [
       "Suivi des activités des clubs de lecture : Les sessions de lecture hebdomadaires fonctionnent maintenant efficacement dans les 20 communautés, avec une moyenne de 481 enfants participant dans les nouvelles communautés seules. Les clubs se réunissent une ou deux fois par semaine, engageant les enfants dans des activités conçues pour inspirer la créativité et la curiosité.",
       "Distribution de livres d'histoires : Un total de 2 700 livres d'histoires a été distribué aux 10 nouveaux clubs, couvrant divers niveaux de lecture et intérêts. De nombreux enfants ont vécu la lecture indépendante pour la première fois.",
       "Atelier de réflexion pour les facilitateurs de lecture : Un atelier de formation a été organisé pour 20 facilitateurs nouveaux et existants. Les sessions ont couvert les stratégies de facilitation de la lecture et la protection de l'enfance, que les participants ont soulignées comme les plus impactantes.",
       "Activité de lecture du district (Ahafo Ano South East) : Environ 120 enfants de neuf clubs ont participé à une activité de lecture comprenant la narration, des défis de formation de mots et des visites de bibliothèque. Les enfants ont également exploré la bibliothèque du cluster d'Asuadei, s'engageant avec le bibliothécaire.",
       "Rénovation des bibliothèques de cluster (Amangoase et Nyinanufu) : Amangoase : Réparations terminées sur les structures cassées, installation du plafond, des portes et des fenêtres en cours pour préparer le carrelage et la peinture. Nyinanufu : La communauté répare le plafond, le câblage et connecte la bibliothèque à l'électricité. Les dirigeants locaux se sont engagés à soutenir l'achèvement et la durabilité.",
-      "Engagements communautaires : Plusieurs réunions ont été organisées avec les chefs, les anciens et les parties prenantes éducatives pour garantir l'engagement communautaire pour les rénovations de bibliothèque et la durabilité à long terme des ressources du projet.",
+      "Engagements communautaires : Plusieurs réunions ont été organisées avec les chefs, les anciens et les parties prenantes éducatives pour garantir l'engagement communautaire pour les rénovations de bibliothèque et la durabilité à long terme des ressources du projet."
     ],
-    recentActivities2026: "Activités récentes (2026)",
-    recentActivities2026Title: "Cérémonie officielle de remise de la bibliothèque communautaire de Nyinanufu",
-    recentActivities2026Description: "Le 13 février 2026, la bibliothèque de Nyinanufu a été officiellement remise à la communauté dans le cadre du projet CCL. La cérémonie de remise a été suivie par 33 participants, notamment des autorités traditionnelles, des représentants d'écoles, des dirigeants communautaires, la direction de l'éducation, des patrons de clubs de lecture et des parents, tous réunis pour célébrer cette réalisation importante.",
-    recentActivities2026Details: "L'événement a comporté une cérémonie de coupe de ruban pour transférer officiellement les ressources de la bibliothèque à la communauté. Les principales parties prenantes présentes ont prononcé des discours inspirants, mettant en évidence l'importance de la lecture, de l'éducation et de l'engagement communautaire dans la promotion de l'apprentissage tout au long de la vie. Le programme a également présenté des activités de lecture par deux membres du club de lecture. L'un a lu un livre intitulé \"Cocoa, A Treasure\", tandis qu'un autre a présenté une réflexion sur l'impact du projet sur les membres du club. Les participants ont été impressionnés par la confiance que les enfants ont affichée en lisant et leurs parents, qui étaient présents à la cérémonie, rayonnaient de fierté. La cérémonie a été un succès, avec une forte participation et un soutien communautaire. Les membres de la communauté ont chaleureusement embrassé la bibliothèque et se sont engagés à la gérer et à l'utiliser efficacement et durablement, avec l'objectif commun d'améliorer les résultats de lecture et d'alphabétisation pour les enfants de Nyinanufu et des communautés environnantes.",
-    communitiesInvolved: "Communautés impliquées",
-    communitiesList: [
+    "recentActivities2026": "Activités récentes (2026)",
+    "recentActivities2026Title": "Cérémonie officielle de remise de la bibliothèque communautaire de Nyinanufu",
+    "recentActivities2026Description": "Le 13 février 2026, la bibliothèque de Nyinanufu a été officiellement remise à la communauté dans le cadre du projet CCL. La cérémonie de remise a été suivie par 33 participants, notamment des autorités traditionnelles, des représentants d'écoles, des dirigeants communautaires, la direction de l'éducation, des patrons de clubs de lecture et des parents, tous réunis pour célébrer cette réalisation importante.",
+    "recentActivities2026Details": "L'événement a comporté une cérémonie de coupe de ruban pour transférer officiellement les ressources de la bibliothèque à la communauté. Les principales parties prenantes présentes ont prononcé des discours inspirants, mettant en évidence l'importance de la lecture, de l'éducation et de l'engagement communautaire dans la promotion de l'apprentissage tout au long de la vie. Le programme a également présenté des activités de lecture par deux membres du club de lecture. L'un a lu un livre intitulé \"Cocoa, A Treasure\", tandis qu'un autre a présenté une réflexion sur l'impact du projet sur les membres du club. Les participants ont été impressionnés par la confiance que les enfants ont affichée en lisant et leurs parents, qui étaient présents à la cérémonie, rayonnaient de fierté. La cérémonie a été un succès, avec une forte participation et un soutien communautaire. Les membres de la communauté ont chaleureusement embrassé la bibliothèque et se sont engagés à la gérer et à l'utiliser efficacement et durablement, avec l'objectif commun d'améliorer les résultats de lecture et d'alphabétisation pour les enfants de Nyinanufu et des communautés environnantes.",
+    "communitiesInvolved": "Communautés impliquées",
+    "communitiesList": [
       "Kwamekyemkrom",
       "Pokukrom",
       "Amangoase",
@@ -777,189 +952,184 @@ export const fr = {
       "Onyinanufu",
       "Mmrobem",
       "Nyamebekyere",
-      "Kwakunum",
+      "Kwakunum"
     ],
-    stakeholdersEngaged: "Parties prenantes engagées",
-    stakeholdersList: [
+    "stakeholdersEngaged": "Parties prenantes engagées",
+    "stakeholdersList": [
       "Directeurs de district de l'éducation",
       "Dirigeants traditionnels (chefs, anciens, porte-parole)",
-      "Acteurs au niveau scolaire (APEs, CMEs, parents, directeurs d'école, enseignants)",
+      "Acteurs au niveau scolaire (APEs, CMEs, parents, directeurs d'école, enseignants)"
     ],
-    upcomingActivities: "Activités à venir",
-    upcomingActivitiesList: [
+    "upcomingActivities": "Activités à venir",
+    "upcomingActivitiesList": [
       "Activité de lecture pour 10 clubs dans le district d'Ahafo Ano South West (sept 2025)",
       "Compétition de lecture au niveau du cluster (nov 2025) pour les 20 clubs",
       "Rénovation et mise en service des bibliothèques de cluster d'Amangoase et Nyinanufu",
       "Achat de livres d'histoires supplémentaires pour distribution",
       "Suivi continu des clubs de lecture dans les 20 communautés",
-      "Engagement communautaire continu pour soutenir la durabilité",
+      "Engagement communautaire continu pour soutenir la durabilité"
     ],
-    rationale: "Justification du festival de lecture et des compétitions",
-    competitionStructure: "Structure du festival de lecture et des compétitions",
-    competitionDescription: "Les clubs de lecture des clusters 'A' et 'B' se disputent la position de champion de lecture, inspirant les étudiants à exceller en alphabétisation.",
-    storiesOfChange: "Histoires de changement",
-    storiesDescription: "Lisez l'impact réel de notre projet sur la vie des enfants et des familles.",
-    objectives: [
+    "rationale": "Justification du festival de lecture et des compétitions",
+    "competitionStructure": "Structure du festival de lecture et des compétitions",
+    "competitionDescription": "Les clubs de lecture des clusters 'A' et 'B' se disputent la position de champion de lecture, inspirant les étudiants à exceller en alphabétisation.",
+    "storiesOfChange": "Histoires de changement",
+    "storiesDescription": "Lisez l'impact réel de notre projet sur la vie des enfants et des familles.",
+    "objectives": [
       "Améliorer l'alphabétisation en lecture des enfants dans les communautés productrices de cacao",
       "Construire une culture durable de la lecture chez les enfants",
       "Renforcer l'implication communautaire dans l'apprentissage et le développement des enfants",
       "Équiper les patrons et éducateurs locaux de compétences de facilitation de l'alphabétisation",
-      "Promouvoir l'engagement éducatif centré sur l'enfant grâce à des activités de lecture structurées",
+      "Promouvoir l'engagement éducatif centré sur l'enfant grâce à des activités de lecture structurées"
     ],
-    rationalePoints: [
+    "rationalePoints": [
       "Suscite l'intérêt des enfants pour la lecture et l'amour des livres.",
       "Encourager la lecture pour le plaisir, la lecture diversifiée et le développement cognitif.",
       "Renforcer la confiance, les compétences en alphabétisation et la créativité des enfants.",
-      "Engager les communautés locales, le Service de l'éducation du Ghana et d'autres parties prenantes pour soutenir les activités d'alphabétisation.",
-    ],
+      "Engager les communautés locales, le Service de l'éducation du Ghana et d'autres parties prenantes pour soutenir les activités d'alphabétisation."
+    ]
   },
-  // VSLA Page
-  vsla: {
-    title: "Inclusion financière et VSLA",
-    subtitle: "Autonomiser les communautés, construire des avenirs résilients",
-    whoWeAre: "Qui nous sommes",
-    whoWeAreDesc: "PDA a fait ses preuves en partenariat avec les communautés et d'autres organisations de développement.",
-    yearsOfImpact: "Années d'impact",
-    communities: "Communautés",
-    beneficiaries: "Bénéficiaires",
-    ourModel: "Notre modèle VSLA+",
-    ourModelDesc: "PDA adopte un modèle VSLA intégré unique (VSLA+) comme plateforme auto-facilitée pour intégrer des interventions de développement durable. Nos modules et composants VSLA+ diversifiés et personnalisables permettent de co-concevoir des interventions spécifiques avec nos partenaires pour un impact maximal dans les communautés cibles.",
-    modelNote: "Le modèle VSLA+ intègre des interventions telles que l'éducation financière, la formation à la sensibilité au genre et la remédiation du travail des enfants pour créer un impact durable.",
-    impactPartnerships: "Notre impact et nos partenariats",
-    impactPartnershipsDesc: "PDA a fait ses preuves en partenariat avec les communautés et d'autres organisations de développement pour mettre en œuvre des interventions de développement à grande échelle dans la promotion de chaînes d'approvisionnement de produits de base éthiques et transparentes et de communautés au cours des 21 dernières années.",
-    ourProjects: "Nos projets",
-    storiesOfChange: "Histoires de changement",
-    storiesDescription: "Lisez l'impact réel de notre projet sur la vie des enfants et des familles.",
-    location: "Localisation",
-    fieldOfficers: "Agents de terrain",
-    viewImpactStories: "Voir les histoires d'impact",
+  "vsla": {
+    "title": "Inclusion financière et VSLA",
+    "subtitle": "Autonomiser les communautés, construire des avenirs résilients",
+    "whoWeAre": "Qui nous sommes",
+    "whoWeAreDesc": "PDA a fait ses preuves en partenariat avec les communautés et d'autres organisations de développement.",
+    "yearsOfImpact": "Années d'impact",
+    "communities": "Communautés",
+    "beneficiaries": "Bénéficiaires",
+    "ourModel": "Notre modèle VSLA+",
+    "ourModelDesc": "PDA adopte un modèle VSLA intégré unique (VSLA+) comme plateforme auto-facilitée pour intégrer des interventions de développement durable. Nos modules et composants VSLA+ diversifiés et personnalisables permettent de co-concevoir des interventions spécifiques avec nos partenaires pour un impact maximal dans les communautés cibles.",
+    "modelNote": "Le modèle VSLA+ intègre des interventions telles que l'éducation financière, la formation à la sensibilité au genre et la remédiation du travail des enfants pour créer un impact durable.",
+    "impactPartnerships": "Notre impact et nos partenariats",
+    "impactPartnershipsDesc": "PDA a fait ses preuves en partenariat avec les communautés et d'autres organisations de développement pour mettre en œuvre des interventions de développement à grande échelle dans la promotion de chaînes d'approvisionnement de produits de base éthiques et transparentes et de communautés au cours des 21 dernières années.",
+    "ourProjects": "Nos projets",
+    "storiesOfChange": "Histoires de changement",
+    "storiesDescription": "Lisez l'impact réel de notre projet sur la vie des enfants et des familles.",
+    "location": "Localisation",
+    "fieldOfficers": "Agents de terrain",
+    "viewImpactStories": "Voir les histoires d'impact"
   },
-  // VSLA Impact Stories Page
-  vslaImpactStories: {
-    title: "Histoires d'impact VSLA",
-    subtitle: "Vraies histoires de bénéficiaires dont la vie a été transformée grâce à nos programmes VSLA",
-    backToVSLA: "Retour à VSLA",
-    backToAllStories: "Toutes les histoires",
-    readFullStory: "Lire l'histoire complète",
-    previousStory: "Histoire précédente",
-    nextStory: "Histoire suivante",
-    storyNavigationLabel: "Navigation entre les histoires",
-    storiesTitle: "Histoires d'impact",
-    storiesDescription: "Découvrez comment nos programmes VSLA ont permis aux individus et aux communautés de construire de meilleurs avenirs.",
-    seeingPossibilities: "Voir les possibilités différemment",
-    takingRisks: "Prendre des risques calculés",
-    learningToTrack: "Apprendre à suivre ce qui compte",
-    learningToSave: "Apprendre à épargner avec un objectif",
-    rethinkingSpending: "Repenser les habitudes de dépenses",
-    strengtheningFamily: "Renforcer les relations familiales",
-    stories: {
-      comfort: {
-        name: "Comfort Kwakye",
-        location: "Kwame Ntow",
-        group: "PEACE VSLA",
-        introduction: "Je m'appelle Comfort Kwakye et je vis à Kwame Ntow. Je suis membre du PEACE VSLA, et notre réponse est ASOMDWOE (\"paix\"). Cela fait trois ans que j'ai rejoint ce groupe, et je suis très reconnaissante de l'impact qu'il a eu sur ma vie.",
-        seeingPossibilities: "Même si nous vivons dans un village, nous ignorions que nous pouvions cultiver des légumes et les vendre pour un revenu supplémentaire. Avant les formations, nous achetions des articles tels que la viande, les tomates et le poivre. J'ai appris que je pouvais cultiver du poivre et des aubergines, même en petites quantités, pour gagner un revenu supplémentaire. Cela m'a beaucoup aidée.",
-        takingRisks: "Lorsque nous avons commencé le VSLA, j'ai contracté un petit prêt et je l'ai utilisé pour démarrer une entreprise de pain. L'entreprise a bien fonctionné et j'ai remboursé le prêt en entier. J'ai ensuite demandé un autre prêt, que j'ai utilisé pour acheter un petit congélateur pour vendre de la glace, du yaourt et d'autres articles. Je rembourse actuellement ce deuxième prêt et je suis confiante de respecter mon échéancier. Je crois fermement que je terminerai le remboursement avant la fin de la période de prêt de trois mois. Même avant le partage, je prévois de contracter un autre prêt pour investir davantage dans l'entreprise de glace afin d'atteindre mes objectifs fixés.",
-        learningToTrack: "Initialement, lorsque je commandais du pain à mes fournisseurs, je ne tenais jamais de registres. Je n'enregistrais pas les coûts de transport, les déplacements, ni même les dépenses alimentaires. Après la formation, j'ai réalisé que tous ces coûts devraient être enregistrés et déduits de mes ventes afin que je puisse connaître mon véritable profit. Les leçons m'ont ouvert les yeux sur l'importance de registres appropriés et m'ont aidée à éviter les achats impulsifs.",
-        conclusion: "Cela m'a énormément aidée. Je voudrais sincèrement remercier tous les partenaires. Aujourd'hui, je ne gagne pas seulement un revenu supplémentaire ; je prends des décisions commerciales éclairées, je planifie à l'avance et j'étends régulièrement mes activités. Mon histoire démontre comment les connaissances pratiques, combinées à la détermination personnelle, peuvent se traduire par un progrès économique durable dans les communautés rurales."
+  "vslaImpactStories": {
+    "title": "Histoires d'impact VSLA",
+    "subtitle": "Vraies histoires de bénéficiaires dont la vie a été transformée grâce à nos programmes VSLA",
+    "backToVSLA": "Retour à VSLA",
+    "backToAllStories": "Toutes les histoires",
+    "readFullStory": "Lire l'histoire complète",
+    "previousStory": "Histoire précédente",
+    "nextStory": "Histoire suivante",
+    "storyNavigationLabel": "Navigation entre les histoires",
+    "storiesTitle": "Histoires d'impact",
+    "storiesDescription": "Découvrez comment nos programmes VSLA ont permis aux individus et aux communautés de construire de meilleurs avenirs.",
+    "seeingPossibilities": "Voir les possibilités différemment",
+    "takingRisks": "Prendre des risques calculés",
+    "learningToTrack": "Apprendre à suivre ce qui compte",
+    "learningToSave": "Apprendre à épargner avec un objectif",
+    "rethinkingSpending": "Repenser les habitudes de dépenses",
+    "strengtheningFamily": "Renforcer les relations familiales",
+    "stories": {
+      "comfort": {
+        "name": "Comfort Kwakye",
+        "location": "Kwame Ntow",
+        "group": "PEACE VSLA",
+        "introduction": "Je m'appelle Comfort Kwakye et je vis à Kwame Ntow. Je suis membre du PEACE VSLA, et notre réponse est ASOMDWOE (\"paix\"). Cela fait trois ans que j'ai rejoint ce groupe, et je suis très reconnaissante de l'impact qu'il a eu sur ma vie.",
+        "seeingPossibilities": "Même si nous vivons dans un village, nous ignorions que nous pouvions cultiver des légumes et les vendre pour un revenu supplémentaire. Avant les formations, nous achetions des articles tels que la viande, les tomates et le poivre. J'ai appris que je pouvais cultiver du poivre et des aubergines, même en petites quantités, pour gagner un revenu supplémentaire. Cela m'a beaucoup aidée.",
+        "takingRisks": "Lorsque nous avons commencé le VSLA, j'ai contracté un petit prêt et je l'ai utilisé pour démarrer une entreprise de pain. L'entreprise a bien fonctionné et j'ai remboursé le prêt en entier. J'ai ensuite demandé un autre prêt, que j'ai utilisé pour acheter un petit congélateur pour vendre de la glace, du yaourt et d'autres articles. Je rembourse actuellement ce deuxième prêt et je suis confiante de respecter mon échéancier. Je crois fermement que je terminerai le remboursement avant la fin de la période de prêt de trois mois. Même avant le partage, je prévois de contracter un autre prêt pour investir davantage dans l'entreprise de glace afin d'atteindre mes objectifs fixés.",
+        "learningToTrack": "Initialement, lorsque je commandais du pain à mes fournisseurs, je ne tenais jamais de registres. Je n'enregistrais pas les coûts de transport, les déplacements, ni même les dépenses alimentaires. Après la formation, j'ai réalisé que tous ces coûts devraient être enregistrés et déduits de mes ventes afin que je puisse connaître mon véritable profit. Les leçons m'ont ouvert les yeux sur l'importance de registres appropriés et m'ont aidée à éviter les achats impulsifs.",
+        "conclusion": "Cela m'a énormément aidée. Je voudrais sincèrement remercier tous les partenaires. Aujourd'hui, je ne gagne pas seulement un revenu supplémentaire ; je prends des décisions commerciales éclairées, je planifie à l'avance et j'étends régulièrement mes activités. Mon histoire démontre comment les connaissances pratiques, combinées à la détermination personnelle, peuvent se traduire par un progrès économique durable dans les communautés rurales."
       },
-      emmanuel: {
-        name: "Emmanuel Zoryiku",
-        location: "Adansi Pewodie",
-        group: "Groupe VSLA",
-        introduction: "Je m'appelle Emmanuel Zoryiku d'Adansi Pewodie, et je voudrais partager mon expérience. Pour moi, rejoindre le VSLA n'était pas seulement une question d'argent. Cela a marqué un changement dans ma façon de penser à l'épargne, à la famille et à la responsabilité.",
-        learningToSave: "Avant de rejoindre le groupe VSLA, je n'épargnais pas d'argent. Mais depuis que je suis devenu membre, j'ai pu épargner régulièrement. La structure du groupe m'a donné un cadre, mais la discipline est venue de ma propre décision de changer mes habitudes. Grâce aux contributions régulières et à la participation, j'ai commencé à voir l'épargne non pas comme une réflexion après coup, mais comme une priorité. Au fil du temps, cette cohérence a créé un sentiment de stabilité. Au lieu de dépenser librement, j'ai commencé à planifier à l'avance et à mettre de côté des fonds intentionnellement.",
-        rethinkingSpending: "J'avais l'habitude de faire des achats impulsifs. Mais la formation en éducation financière a changé ma façon de penser. Aujourd'hui, mon approche est différente. Je n'achète plus les choses négligemment ; au lieu de cela, je me concentre sur l'épargne afin de pouvoir utiliser mon argent à des fins importantes et significatives. Le changement ne s'est pas produit du jour au lendemain. Il a fallu de la réflexion et une volonté d'ajuster des habitudes de longue date. La formation a fourni des connaissances pratiques, mais j'ai fait le choix délibéré de les appliquer dans ma vie quotidienne.",
-        strengtheningFamily: "L'un des résultats les plus significatifs pour moi a été au sein de mon foyer. Les formations ont également façonné positivement ma vie familiale. J'ai appris à soutenir ma femme davantage, et maintenant je lui donne volontiers un coup de main chaque fois que je vois qu'elle a beaucoup à faire à la maison. Pour moi, cela représente plus que des tâches partagées. Cela reflète un changement d'état d'esprit concernant le partenariat et la responsabilité. En devenant plus intentionnel à la fois financièrement et à la maison, je me vois contribuer plus significativement au bien-être de ma famille.",
-        conclusion: "Ce programme VSLA a vraiment aidé ma famille et moi. En même temps, mon histoire reflète un engagement personnel — choisir d'épargner régulièrement, choisir de dépenser sagement et choisir de soutenir ma femme plus activement. Je remercie sincèrement les entreprises qui ont apporté cette initiative. Que le Seigneur vous bénisse tous afin que vous continuiez à nous soutenir avec plus de formations comme celle-ci. Mon expérience démontre comment l'éducation financière et l'épargne de groupe peuvent servir de catalyseurs. Lorsque les individus intériorisent les leçons et agissent en conséquence, les résultats vont au-delà du revenu — influençant les habitudes, les relations et la stabilité à long terme au sein du foyer."
+      "emmanuel": {
+        "name": "Emmanuel Zoryiku",
+        "location": "Adansi Pewodie",
+        "group": "Groupe VSLA",
+        "introduction": "Je m'appelle Emmanuel Zoryiku d'Adansi Pewodie, et je voudrais partager mon expérience. Pour moi, rejoindre le VSLA n'était pas seulement une question d'argent. Cela a marqué un changement dans ma façon de penser à l'épargne, à la famille et à la responsabilité.",
+        "learningToSave": "Avant de rejoindre le groupe VSLA, je n'épargnais pas d'argent. Mais depuis que je suis devenu membre, j'ai pu épargner régulièrement. La structure du groupe m'a donné un cadre, mais la discipline est venue de ma propre décision de changer mes habitudes. Grâce aux contributions régulières et à la participation, j'ai commencé à voir l'épargne non pas comme une réflexion après coup, mais comme une priorité. Au fil du temps, cette cohérence a créé un sentiment de stabilité. Au lieu de dépenser librement, j'ai commencé à planifier à l'avance et à mettre de côté des fonds intentionnellement.",
+        "rethinkingSpending": "J'avais l'habitude de faire des achats impulsifs. Mais la formation en éducation financière a changé ma façon de penser. Aujourd'hui, mon approche est différente. Je n'achète plus les choses négligemment ; au lieu de cela, je me concentre sur l'épargne afin de pouvoir utiliser mon argent à des fins importantes et significatives. Le changement ne s'est pas produit du jour au lendemain. Il a fallu de la réflexion et une volonté d'ajuster des habitudes de longue date. La formation a fourni des connaissances pratiques, mais j'ai fait le choix délibéré de les appliquer dans ma vie quotidienne.",
+        "strengtheningFamily": "L'un des résultats les plus significatifs pour moi a été au sein de mon foyer. Les formations ont également façonné positivement ma vie familiale. J'ai appris à soutenir ma femme davantage, et maintenant je lui donne volontiers un coup de main chaque fois que je vois qu'elle a beaucoup à faire à la maison. Pour moi, cela représente plus que des tâches partagées. Cela reflète un changement d'état d'esprit concernant le partenariat et la responsabilité. En devenant plus intentionnel à la fois financièrement et à la maison, je me vois contribuer plus significativement au bien-être de ma famille.",
+        "conclusion": "Ce programme VSLA a vraiment aidé ma famille et moi. En même temps, mon histoire reflète un engagement personnel — choisir d'épargner régulièrement, choisir de dépenser sagement et choisir de soutenir ma femme plus activement. Je remercie sincèrement les entreprises qui ont apporté cette initiative. Que le Seigneur vous bénisse tous afin que vous continuiez à nous soutenir avec plus de formations comme celle-ci. Mon expérience démontre comment l'éducation financière et l'épargne de groupe peuvent servir de catalyseurs. Lorsque les individus intériorisent les leçons et agissent en conséquence, les résultats vont au-delà du revenu — influençant les habitudes, les relations et la stabilité à long terme au sein du foyer."
       }
     }
   },
-  // Nyonkopa Page
-  nyonkopa: {
-    title: "Projet de remédiation du travail des enfants Nyonkopa",
-    subtitle: "Partenariat pour un avenir meilleur : Une initiative de deux ans de Barry Callebaut et PDA",
-    projectSnapshot: "Aperçu du projet",
-    partners: "Partenaires",
-    period: "Période",
-    country: "Pays d'opération",
-    category: "Catégorie",
-    snapshotDescription: "Participatory Development Associates (PDA), en partenariat avec Right to Play et Nyonkopa, met en œuvre l'initiative de remédiation et de systèmes de référence du travail des enfants pour renforcer les structures de protection de l'enfance dans les régions productrices de cacao du Ghana. Le projet se concentre sur l'amélioration des systèmes de référence, le renforcement de la gestion des cas et la fourniture d'un soutien à la remédiation pour protéger les enfants vulnérables et lutter contre le travail des enfants de manière durable.",
-    strengtheningReferral: "Renforcement des systèmes de référence et de gestion des cas",
-    strengtheningReferralDescription: "Une étape importante en 2025 a été le référencement à grande échelle de 6 078 cas de protection de l'enfance au Département des services sociaux dans 58 districts de sept régions productrices de cacao. Cela a marqué le premier effort coordonné de cette envergure, garantissant que les enfants à risque de travail des enfants étaient formellement liés à des services de remédiation structurés.",
-    strengtheningReferralQ4: "Au quatrième trimestre (octobre–décembre), les efforts se sont concentrés sur le renforcement des systèmes de gestion des cas conformément aux politiques et procédures gouvernementales. Les procédures opérationnelles standard (SOP) ont été renforcées et des cas supplémentaires ont été formellement documentés dans le système d'information et de gestion des services sociaux (SWIMS) pour assurer un suivi, un suivi et une responsabilisation appropriés.",
-    overallReach: "Dans l'ensemble, l'intervention a touché 8 689 bénéficiaires dans 68 districts des régions d'Ashanti, de l'Est, de Bono Est, d'Ahafo, du Centre, de l'Ouest et du Nord-Ouest.",
-    buildingCapacity: "Renforcement des capacités institutionnelles",
-    buildingCapacityDescription: "Pour améliorer la gestion efficace des cas, PDA a formé 58 gestionnaires de cas sur SWIMS, avec une cohorte supplémentaire prévue. Cela a amélioré la documentation, le suivi des cas et la prestation coordonnée de services sociaux aux enfants vulnérables.",
-    strengtheningStructures: "Renforcement des structures de district et communautaires",
-    strengtheningStructuresDescription: "Le projet revitalise les comités de protection de l'enfance de district (DCPC) dans les districts sélectionnés, rassemblant des institutions clés telles que les services sociaux, DOVVSU, CHRAJ, le service de l'éducation du Ghana, le service de santé du Ghana, les autorités traditionnelles et les assemblées de district pour améliorer les systèmes de coordination et de réponse.",
-    strengtheningStructuresCommunity: "Au niveau communautaire, PDA renforce 30 comités communautaires de protection de l'enfance (CCPC) dans les zones sujettes au travail des enfants—dont 18 ont été initialement établis par Right to Play. Grâce à une formation de recyclage et un soutien à la coordination sectorielle, ces comités sont mieux équipés pour identifier, prévenir et répondre aux préoccupations de protection de l'enfance dans leurs communautés.",
-    remediationSupport: "Remédiation et soutien professionnel",
-    remediationSupportDescription: "Un composant critique du projet est de fournir des voies alternatives pour les enfants vulnérables. Jusqu'à présent, 154 enfants ont été inscrits à une formation professionnelle, avec environ 69% des enfants vulnérables identifiés transitionnant vers des programmes de développement des compétences. Ces interventions équipent les enfants de compétences employables, réduisent la vulnérabilité à l'exploitation et soutiennent leur réintégration dans des moyens de subsistance sûrs et productifs.",
-    lookingAhead: "Perspectives",
-    lookingAheadDescription: "Au cours du trimestre à venir, le projet se concentrera sur la fermeture systématique des cas référés pour assurer des résultats de remédiation durables et des systèmes de protection de l'enfance renforcés à tous les niveaux.",
-    aboutProject: "À propos du projet",
-    aboutProjectDesc: "Le projet de remédiation du travail des enfants Nyonkopa est une initiative de 2 ans entre Barry-Callebaut et Participatory Development Associates (PDA). Il vise à remédier au travail des enfants pour 10 436 enfants dans 400 communautés.",
-    childrenRemediated: "Enfants en remédiation",
-    communitiesCovered: "Communautés couvertes",
-    vslaGroupsFormed: "Groupes VSLA formés",
-    projectObjectives: "Objectifs du projet",
-    remediationProcess: "Processus de remédiation",
-    remediationProcessDesc: "Superviser le processus de remédiation pour les enfants impliqués dans le travail.",
-    economicEmpowerment: "Autonomisation économique",
-    economicEmpowermentDesc: "Améliorer la sécurité financière des ménages en formant des groupes VSLA.",
-    communitySensitization: "Sensibilisation communautaire",
-    communitySensitizationDesc: "Sensibiliser au travail des enfants et promouvoir les initiatives dirigées par la communauté.",
-    projectModule: "Module du projet",
-    projectModuleDesc: "PDA utilise un modèle de remédiation du travail des enfants à quatre niveaux qui utilise une approche participative intégrée et des méthodologies de facilitation.",
-    projectCoverage: "Couverture du projet",
-    projectCoverageDesc: "Le projet opère dans six secteurs administratifs Nyonkopa : Akim Oda, Assin Fosu, Asante Bekwai, Kasapin, Goaso et Juaboso.",
-    storiesOfChange: "Histoires de changement",
-    storiesDescription: "Lisez l'impact réel de notre projet sur la vie des enfants et des familles.",
-    childAbuseTracker: "Suivi des abus sur enfants",
+  "nyonkopa": {
+    "title": "Projet de remédiation du travail des enfants Nyonkopa",
+    "subtitle": "Partenariat pour un avenir meilleur : Une initiative de deux ans de Barry Callebaut et PDA",
+    "projectSnapshot": "Aperçu du projet",
+    "partners": "Partenaires",
+    "period": "Période",
+    "country": "Pays d'opération",
+    "category": "Catégorie",
+    "snapshotDescription": "Participatory Development Associates (PDA), en partenariat avec Right to Play et Nyonkopa, met en œuvre l'initiative de remédiation et de systèmes de référence du travail des enfants pour renforcer les structures de protection de l'enfance dans les régions productrices de cacao du Ghana. Le projet se concentre sur l'amélioration des systèmes de référence, le renforcement de la gestion des cas et la fourniture d'un soutien à la remédiation pour protéger les enfants vulnérables et lutter contre le travail des enfants de manière durable.",
+    "strengtheningReferral": "Renforcement des systèmes de référence et de gestion des cas",
+    "strengtheningReferralDescription": "Une étape importante en 2025 a été le référencement à grande échelle de 6 078 cas de protection de l'enfance au Département des services sociaux dans 58 districts de sept régions productrices de cacao. Cela a marqué le premier effort coordonné de cette envergure, garantissant que les enfants à risque de travail des enfants étaient formellement liés à des services de remédiation structurés.",
+    "strengtheningReferralQ4": "Au quatrième trimestre (octobre–décembre), les efforts se sont concentrés sur le renforcement des systèmes de gestion des cas conformément aux politiques et procédures gouvernementales. Les procédures opérationnelles standard (SOP) ont été renforcées et des cas supplémentaires ont été formellement documentés dans le système d'information et de gestion des services sociaux (SWIMS) pour assurer un suivi, un suivi et une responsabilisation appropriés.",
+    "overallReach": "Dans l'ensemble, l'intervention a touché 8 689 bénéficiaires dans 68 districts des régions d'Ashanti, de l'Est, de Bono Est, d'Ahafo, du Centre, de l'Ouest et du Nord-Ouest.",
+    "buildingCapacity": "Renforcement des capacités institutionnelles",
+    "buildingCapacityDescription": "Pour améliorer la gestion efficace des cas, PDA a formé 58 gestionnaires de cas sur SWIMS, avec une cohorte supplémentaire prévue. Cela a amélioré la documentation, le suivi des cas et la prestation coordonnée de services sociaux aux enfants vulnérables.",
+    "strengtheningStructures": "Renforcement des structures de district et communautaires",
+    "strengtheningStructuresDescription": "Le projet revitalise les comités de protection de l'enfance de district (DCPC) dans les districts sélectionnés, rassemblant des institutions clés telles que les services sociaux, DOVVSU, CHRAJ, le service de l'éducation du Ghana, le service de santé du Ghana, les autorités traditionnelles et les assemblées de district pour améliorer les systèmes de coordination et de réponse.",
+    "strengtheningStructuresCommunity": "Au niveau communautaire, PDA renforce 30 comités communautaires de protection de l'enfance (CCPC) dans les zones sujettes au travail des enfants—dont 18 ont été initialement établis par Right to Play. Grâce à une formation de recyclage et un soutien à la coordination sectorielle, ces comités sont mieux équipés pour identifier, prévenir et répondre aux préoccupations de protection de l'enfance dans leurs communautés.",
+    "remediationSupport": "Remédiation et soutien professionnel",
+    "remediationSupportDescription": "Un composant critique du projet est de fournir des voies alternatives pour les enfants vulnérables. Jusqu'à présent, 154 enfants ont été inscrits à une formation professionnelle, avec environ 69% des enfants vulnérables identifiés transitionnant vers des programmes de développement des compétences. Ces interventions équipent les enfants de compétences employables, réduisent la vulnérabilité à l'exploitation et soutiennent leur réintégration dans des moyens de subsistance sûrs et productifs.",
+    "lookingAhead": "Perspectives",
+    "lookingAheadDescription": "Au cours du trimestre à venir, le projet se concentrera sur la fermeture systématique des cas référés pour assurer des résultats de remédiation durables et des systèmes de protection de l'enfance renforcés à tous les niveaux.",
+    "aboutProject": "À propos du projet",
+    "aboutProjectDesc": "Le projet de remédiation du travail des enfants Nyonkopa est une initiative de 2 ans entre Barry-Callebaut et Participatory Development Associates (PDA). Il vise à remédier au travail des enfants pour 10 436 enfants dans 400 communautés.",
+    "childrenRemediated": "Enfants en remédiation",
+    "communitiesCovered": "Communautés couvertes",
+    "vslaGroupsFormed": "Groupes VSLA formés",
+    "projectObjectives": "Objectifs du projet",
+    "remediationProcess": "Processus de remédiation",
+    "remediationProcessDesc": "Superviser le processus de remédiation pour les enfants impliqués dans le travail.",
+    "economicEmpowerment": "Autonomisation économique",
+    "economicEmpowermentDesc": "Améliorer la sécurité financière des ménages en formant des groupes VSLA.",
+    "communitySensitization": "Sensibilisation communautaire",
+    "communitySensitizationDesc": "Sensibiliser au travail des enfants et promouvoir les initiatives dirigées par la communauté.",
+    "projectModule": "Module du projet",
+    "projectModuleDesc": "PDA utilise un modèle de remédiation du travail des enfants à quatre niveaux qui utilise une approche participative intégrée et des méthodologies de facilitation.",
+    "projectCoverage": "Couverture du projet",
+    "projectCoverageDesc": "Le projet opère dans six secteurs administratifs Nyonkopa : Akim Oda, Assin Fosu, Asante Bekwai, Kasapin, Goaso et Juaboso.",
+    "storiesOfChange": "Histoires de changement",
+    "storiesDescription": "Lisez l'impact réel de notre projet sur la vie des enfants et des familles.",
+    "childAbuseTracker": "Suivi des abus sur enfants"
   },
-  // Privacy Policy
-  privacyPolicy: {
-    title: "Politique de confidentialité",
-    subtitle: "Votre vie privée est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
-    lastUpdated: "Dernière mise à jour :",
-    introduction: "Introduction",
-    introductionText: "PDA Africa s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web.",
-    informationWeCollect: "Informations que nous collectons",
-    informationWeCollectText: "Nous pouvons collecter des informations que vous nous fournissez directement, par exemple lorsque vous remplissez des formulaires, vous abonnez à notre newsletter ou nous contactez. Cela peut inclure votre nom, votre adresse e-mail, votre numéro de téléphone et toute autre information que vous choisissez de fournir.",
-    howWeUseInformation: "Comment nous utilisons vos informations",
-    howWeUseInformationText: "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, répondre à vos demandes, vous envoyer des mises à jour sur notre travail et nous conformer aux obligations légales.",
-    dataProtection: "Protection des données",
-    dataProtectionText: "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre l'accès non autorisé, l'altération, la divulgation ou la destruction.",
-    cookies: "Cookies",
-    cookiesText: "Notre site web utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez contrôler les préférences de cookies via les paramètres de votre navigateur.",
-    thirdPartyLinks: "Liens tiers",
-    thirdPartyLinksText: "Notre site web peut contenir des liens vers des sites web tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites externes.",
-    yourRights: "Vos droits",
-    yourRightsText: "Vous avez le droit d'accéder, de mettre à jour ou de supprimer vos informations personnelles. Vous pouvez également vous désinscrire de recevoir nos communications à tout moment.",
-    contactUs: "Nous contacter",
-    contactUsText: "Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter à info@pdaafrica.org.",
+  "privacyPolicy": {
+    "title": "Politique de confidentialité",
+    "subtitle": "Votre vie privée est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
+    "lastUpdated": "Dernière mise à jour :",
+    "introduction": "Introduction",
+    "introductionText": "PDA Africa s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web.",
+    "informationWeCollect": "Informations que nous collectons",
+    "informationWeCollectText": "Nous pouvons collecter des informations que vous nous fournissez directement, par exemple lorsque vous remplissez des formulaires, vous abonnez à notre newsletter ou nous contactez. Cela peut inclure votre nom, votre adresse e-mail, votre numéro de téléphone et toute autre information que vous choisissez de fournir.",
+    "howWeUseInformation": "Comment nous utilisons vos informations",
+    "howWeUseInformationText": "Nous utilisons les informations que nous collectons pour fournir, maintenir et améliorer nos services, répondre à vos demandes, vous envoyer des mises à jour sur notre travail et nous conformer aux obligations légales.",
+    "dataProtection": "Protection des données",
+    "dataProtectionText": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre l'accès non autorisé, l'altération, la divulgation ou la destruction.",
+    "cookies": "Cookies",
+    "cookiesText": "Notre site web utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez contrôler les préférences de cookies via les paramètres de votre navigateur.",
+    "thirdPartyLinks": "Liens tiers",
+    "thirdPartyLinksText": "Notre site web peut contenir des liens vers des sites web tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites externes.",
+    "yourRights": "Vos droits",
+    "yourRightsText": "Vous avez le droit d'accéder, de mettre à jour ou de supprimer vos informations personnelles. Vous pouvez également vous désinscrire de recevoir nos communications à tout moment.",
+    "contactUs": "Nous contacter",
+    "contactUsText": "Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter à info@pdaafrica.org."
   },
-  // Terms of Service
-  termsOfService: {
-    title: "Conditions d'utilisation",
-    subtitle: "Veuillez lire attentivement ces conditions avant d'utiliser notre site web.",
-    lastUpdated: "Dernière mise à jour :",
-    acceptance: "Acceptation des conditions",
-    acceptanceText: "En accédant et en utilisant ce site web, vous acceptez et convenez d'être lié par les termes et dispositions de cet accord.",
-    useOfWebsite: "Utilisation du site web",
-    useOfWebsiteText: "Vous acceptez d'utiliser ce site web uniquement à des fins légales et d'une manière qui ne porte pas atteinte aux droits, ne restreint pas ou n'empêche pas l'utilisation et la jouissance du site web par toute autre personne.",
-    intellectualProperty: "Propriété intellectuelle",
-    intellectualPropertyText: "Tout le contenu de ce site web, y compris le texte, les graphiques, les logos, les images et les logiciels, est la propriété de PDA Africa et est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle.",
-    userContent: "Contenu utilisateur",
-    userContentText: "En soumettant du contenu à notre site web, vous accordez à PDA Africa une licence non exclusive, gratuite et perpétuelle d'utiliser, reproduire et distribuer ce contenu.",
-    disclaimer: "Avertissement",
-    disclaimerText: "Les informations sur ce site web sont fournies 'telles quelles'. PDA Africa ne fait aucune déclaration ni garantie d'aucune sorte, expresse ou implicite, concernant l'exhaustivité, l'exactitude, la fiabilité ou la disponibilité du site web.",
-    limitationOfLiability: "Limitation de responsabilité",
-    limitationOfLiabilityText: "PDA Africa ne sera pas responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif résultant de votre utilisation de ce site web.",
-    changesToTerms: "Modifications des conditions",
-    changesToTermsText: "Nous nous réservons le droit de modifier ces conditions à tout moment. Votre utilisation continue du site web après toute modification constitue une acceptation des nouvelles conditions.",
-    contactUs: "Nous contacter",
-    contactUsText: "Si vous avez des questions sur ces conditions d'utilisation, veuillez nous contacter à info@pdaafrica.org.",
-  },
+  "termsOfService": {
+    "title": "Conditions d'utilisation",
+    "subtitle": "Veuillez lire attentivement ces conditions avant d'utiliser notre site web.",
+    "lastUpdated": "Dernière mise à jour :",
+    "acceptance": "Acceptation des conditions",
+    "acceptanceText": "En accédant et en utilisant ce site web, vous acceptez et convenez d'être lié par les termes et dispositions de cet accord.",
+    "useOfWebsite": "Utilisation du site web",
+    "useOfWebsiteText": "Vous acceptez d'utiliser ce site web uniquement à des fins légales et d'une manière qui ne porte pas atteinte aux droits, ne restreint pas ou n'empêche pas l'utilisation et la jouissance du site web par toute autre personne.",
+    "intellectualProperty": "Propriété intellectuelle",
+    "intellectualPropertyText": "Tout le contenu de ce site web, y compris le texte, les graphiques, les logos, les images et les logiciels, est la propriété de PDA Africa et est protégé par les lois sur le droit d'auteur et autres lois sur la propriété intellectuelle.",
+    "userContent": "Contenu utilisateur",
+    "userContentText": "En soumettant du contenu à notre site web, vous accordez à PDA Africa une licence non exclusive, gratuite et perpétuelle d'utiliser, reproduire et distribuer ce contenu.",
+    "disclaimer": "Avertissement",
+    "disclaimerText": "Les informations sur ce site web sont fournies 'telles quelles'. PDA Africa ne fait aucune déclaration ni garantie d'aucune sorte, expresse ou implicite, concernant l'exhaustivité, l'exactitude, la fiabilité ou la disponibilité du site web.",
+    "limitationOfLiability": "Limitation de responsabilité",
+    "limitationOfLiabilityText": "PDA Africa ne sera pas responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif résultant de votre utilisation de ce site web.",
+    "changesToTerms": "Modifications des conditions",
+    "changesToTermsText": "Nous nous réservons le droit de modifier ces conditions à tout moment. Votre utilisation continue du site web après toute modification constitue une acceptation des nouvelles conditions.",
+    "contactUs": "Nous contacter",
+    "contactUsText": "Si vous avez des questions sur ces conditions d'utilisation, veuillez nous contacter à info@pdaafrica.org."
+  }
 };

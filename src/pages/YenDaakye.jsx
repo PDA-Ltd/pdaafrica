@@ -8,7 +8,7 @@ import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const YenDaakye = () => {
   const { language } = useLanguage();
-  const t = language === "en" ? en.yenDaakye : fr.yenDaakye;
+  const t = (language === "en" ? en.yenDaakye : fr.yenDaakye) || {};
   
   const [heroRef, heroVisible] = useScrollAnimation();
   const [snapshotRef, snapshotVisible] = useScrollAnimation();

@@ -195,19 +195,37 @@ Legacy path **`/our-impact`** redirects to **`/impact`** (see `OurImpact.jsx`).
 ## Internationalisation (i18n)
 
 - **Provider:** `LanguageProvider` wraps the app in `App.jsx`.
-- **Hook:** `useLanguage()` → `{ language, setLanguage }` (`"en"` | `"fr"`).
-- **Strings:** `src/translations/en.js` and `src/translations/fr.js` export large nested objects (e.g. `en.home`, `en.projects`, `en.ksw`).
+- **Hook:** `useLanguage()` → `{ language, setLanguage, toggleLanguage }` (`"en"` | `"fr"`).
 
-**Pattern in a page:**
+### Where strings live
+
+Manual modules: **`src/translations/en.js`** and **`src/translations/fr.js`** export `en` and `fr` objects. Components typically do:
 
 ```jsx
 const { language } = useLanguage();
-const t = language === "en" ? en.sectionKey : fr.sectionKey;
+const copy = language === "en" ? en.sectionKey : fr.sectionKey;
 ```
 
-When adding copy, add matching keys in **both** `en.js` and `fr.js` to avoid missing translations.
+### Adding or editing copy
+
+1. Edit **`src/translations/en.js`** (mirror nesting, e.g. `contact.hero.title`).
+2. Edit **`src/translations/fr.js`** for French, or use DeepL below to fill gaps.
+
+### Optional: auto-fill missing French with DeepL
+
+Requires a **[DeepL API](https://www.deepl.com/pro-api)** key (`DEEPL_API_KEY`). Uses the free endpoint by default; set `DEEPL_API_URL` if you use Pro. Writes merged French back to **`src/translations/fr.js`**.
+
+```bash
+# Count gaps only (does not write files or call paid APIs)
+npm run i18n:translate:dry
+
+# Write missing FR strings into src/translations/fr.js
+set DEEPL_API_KEY=your_key_here   # PowerShell: $env:DEEPL_API_KEY="..."
+npm run i18n:translate
+```
 
 ---
+
 
 ## Content & feature areas
 

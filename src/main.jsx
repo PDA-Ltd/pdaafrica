@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Contact from "./pages/Contact.jsx";
+// import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
@@ -21,8 +21,8 @@ import VSLA from "./pages/VSLA.jsx";
 import WhoWeAre from "./pages/WhoWeAre.jsx";
 import WhatWeDo from "./pages/WhatWeDo.jsx";
 import EthicalReviewCommittee from "./pages/EthicalReviewCommittee.jsx";
-import Staff from "./pages/Staff.jsx";
-import Teams from "./pages/Teams.jsx";
+// import Staff from "./pages/Staff.jsx";
+// import Teams from "./pages/Teams.jsx";
 import ChildAbuseTracker from "./pages/ChildAbuseTracker.jsx";
 import Covid19 from "./pages/Covid19.jsx";
 import OurImpact from "./pages/OurImpact.jsx";
@@ -38,6 +38,7 @@ import VSLAImpactStoryPage from "./pages/VSLAImpactStoryPage.jsx";
 import YoFeB4G from "./pages/YoFeB4G.jsx";
 import CLDCollaborative from "./pages/CLDCollaborative.jsx";
 import KnowledgeSharingWorkshops from "./pages/KnowledgeSharingWorkshops.jsx";
+import DraftPage from "./pages/DraftPage.jsx";
 // import Aboutafrica from "./sections/Aboutafrica.jsx";
 // import AfricaGallery from "./sections/AfricaGallery.jsx";
 // import PdaafricaContact from "./sections/PdaafricaContact.jsx";
@@ -78,10 +79,10 @@ const router = createBrowserRouter([
         path: "/financial-inclusion-and-vsla",
         element: <VSLA />,
       },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
+      // {
+      //   path: "/contact",
+      //   element: <Contact />,
+      // },
       {
         path: "/",
         element: <Home />,
@@ -183,14 +184,14 @@ const router = createBrowserRouter([
         path: "/podcast",
         element: <Podcast />,
       },
-      {
-        path: "/staff",
-        element: <Staff />,
-      },
-      {
-        path: "/teams",
-        element: <Teams />,
-      },
+      // {
+      //   path: "/staff",
+      //   element: <Staff />,
+      // },
+      // {
+      //   path: "/teams",
+      //   element: <Teams />,
+      // },
       {
         path: "/ethical-review-committee",
         element: <EthicalReviewCommittee />,
@@ -238,6 +239,10 @@ const router = createBrowserRouter([
       {
         path: "/knowledge-sharing-workshops-child-protection",
         element: <KnowledgeSharingWorkshops />,
+      },
+       {
+        path: "/draft-page",
+        element: <DraftPage />,
       },
     ],
   },

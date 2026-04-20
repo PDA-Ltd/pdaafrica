@@ -452,6 +452,7 @@ export const africaLinks = [
   { href: "/impact", label: "Impact" },
   { href: "/get-involved", label: "Get Involved" },
   { href: "/contact-us", label: "Contact Us" },
+  // { href: "/draft-page", label: "Draft Page" },
 ];
 
 export const donateButton = [

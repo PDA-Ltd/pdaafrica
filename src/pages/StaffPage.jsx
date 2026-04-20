@@ -24,7 +24,7 @@ import {
   abu,
   sanni,
   incoom,
-  tietaar
+  tietaar,
 } from "../assets/images";
 
 const StaffPage = () => {
@@ -100,15 +100,19 @@ const StaffPage = () => {
     },
     {
       id: 5,
-       name: "Louis Nyar Tietaar",
-      position: "Project Officer, PDA Africa",
+      name: "Louis Nyar Tietaar",
+      position: t.staffMembers?.tietaar?.position || "Project Officer, PDA Africa",
       department: "programs",
       image: tietaar,
-      bio: "Louis is a data analyst with a strong foundation in Excel and a growing expertise in machine learning and data analytics. He holds a Bachelor's degree in Accounting from Kwame Nkrumah University of Science and Technology and a Data Analytics certification from Azubi Africa. Louis is passionate about using data to generate insights, support decision-making, and build practical, data-driven solutions while continuously developing his skills in analytics and AI technologies.",
-      expertise: ["Data Analysis", "Excel", "Machine Learning", "Data Analytics", "AI Technologies"],
+      bio:
+        t.staffMembers?.tietaar?.bio ||
+        "Louis is a data analyst with a strong foundation in Excel and a growing expertise in machine learning and data analytics. He holds a Bachelor's degree in Accounting from Kwame Nkrumah University of Science and Technology and a Data Analytics certification from Azubi Africa. Louis is passionate about using data to generate insights, support decision-making, and build practical, data-driven solutions while continuously developing his skills in analytics and AI technologies.",
+      expertise: t.staffMembers?.tietaar?.expertise || ["Data Analysis", "Excel", "Machine Learning", "Data Analytics", "AI Technologies"],
       experience: "3+",
-      location: "Ghana",
-      education: "Bachelor's degree in Accounting, Data Analytics certification from Azubi Africa",
+      location: t.staffMembers?.tietaar?.location || "Ghana",
+      education:
+        t.staffMembers?.tietaar?.education ||
+        "Bachelor's degree in Accounting, Data Analytics certification from Azubi Africa",
     },
     {
       id: 6,
@@ -179,102 +183,121 @@ const StaffPage = () => {
     {
       id: 13,
       name: "PHILIP QUAICOE",
-      position: "Field Officer",
+      position: t.staffMembers?.philip?.position || "Field Officer",
       department: "fieldOfficers",
       image: philip,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.philip?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.philip?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.philip?.location || "Ghana",
     },
     {
       id: 14,
       name: "EUNICE YARO",
-      position: "Field Officer",
+      position: t.staffMembers?.yaro?.position || "Field Officer",
       department: "fieldOfficers",
       image: yaro,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.yaro?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.yaro?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.yaro?.location || "Ghana",
     },
     {
       id: 15,
       name: "HARRISSON ADU",
-      position: "Field Officer",
+      position: t.staffMembers?.harrison?.position || "Field Officer",
       department: "fieldOfficers",
       image: harrison,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.harrison?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.harrison?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.harrison?.location || "Ghana",
     },
     {
       id: 16,
       name: "EUGENE ASAMOAH BOAKYE",
-      position: "Field Officer",
+      position: t.staffMembers?.eugene?.position || "Field Officer",
       department: "fieldOfficers",
       image: eugene,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.eugene?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.eugene?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.eugene?.location || "Ghana",
     },
     {
       id: 17,
       name: "RACHEL KANJAMBUDA BLESSING",
-      position: "Field Officer",
+      position: t.staffMembers?.racheal?.position || "Field Officer",
       department: "fieldOfficers",
       image: racheal,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.racheal?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.racheal?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.racheal?.location || "Ghana",
     },
     {
       id: 18,
       name: "EMELIA ANAWINE",
-      position: "Field Officer",
+      position: t.staffMembers?.emelia?.position || "Field Officer",
       department: "fieldOfficers",
       image: emelia,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.emelia?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.emelia?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.emelia?.location || "Ghana",
     },
     {
       id: 19,
       name: "ABU MUSAH",
-      position: "Field Officer",
+      position: t.staffMembers?.abu?.position || "Field Officer",
       department: "fieldOfficers",
       image: abu,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.abu?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.abu?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.abu?.location || "Ghana",
     },
     {
       id: 20,
       name: "ISSIFU SANI",
-      position: "Field Officer",
+      position: t.staffMembers?.sanni?.position || "Field Officer",
       department: "fieldOfficers",
       image: sanni,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.sanni?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.sanni?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.sanni?.location || "Ghana",
     },
     {
       id: 21,
       name: "SAMUEL INCOOM JUNIOR",
-      position: "Field Officer",
+      position: t.staffMembers?.incoom?.position || "Field Officer",
       department: "fieldOfficers",
       image: incoom,
-      bio: "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
-      expertise: ["Community Engagement", "Field Work", "Program Implementation"],
+      bio:
+        t.staffMembers?.incoom?.bio ||
+        "Field Officer working directly with communities to implement PDA Africa's programs and initiatives.",
+      expertise: t.staffMembers?.incoom?.expertise || ["Community Engagement", "Field Work", "Program Implementation"],
       experience: "3+",
-      location: "Ghana",
+      location: t.staffMembers?.incoom?.location || "Ghana",
     },
+  
   ];
 
   const departments = [
