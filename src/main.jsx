@@ -244,6 +244,7 @@ const router = createBrowserRouter([
         path: "/draft-page",
         element: <DraftPage />,
       },
+       
     ],
   },
 ]);

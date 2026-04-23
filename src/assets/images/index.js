@@ -186,6 +186,7 @@ import incoom from "./Incoom.jpg";
 import tietaar from "./Tietaar.jpg";
 import socam from "./Socam.jpg";
 
+
 export {
   image1,
   image2,
@@ -364,4 +365,5 @@ export {
   incoom,
   tietaar,
   socam,
+
 };

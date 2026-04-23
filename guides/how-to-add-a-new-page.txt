@@ -1,0 +1,91 @@
+================================================================================
+HOW TO ADD A NEW PAGE (for someone who does not write code)
+PDA Africa website
+================================================================================
+
+WHAT “A NEW PAGE” MEANS HERE
+-----------------------------
+A visitor opens a URL like:  https://yoursite.org/some-path
+The site must know: (1) what to show, and (2) that the path is allowed.
+
+This project uses React: each page is usually a file under src/pages/ and the
+URL is registered in src/main.jsx.
+
+OPTION A — YOU ONLY WRITE CONTENT (RECOMMENDED FOR NON-CODERS)
+--------------------------------------------------------------
+1. Prepare in Word or email:
+   - The exact URL you want (example: /annual-report-2026)
+   - Page title and all sections of text
+   - Any photos with filenames
+
+2. Ask your developer to:
+   - Create src/pages/YourPageName.jsx (often by copying a similar page)
+   - Register the route in src/main.jsx
+   - Add menu links if needed (navbar / footer may be in src/components or
+     src/constants — your developer will know)
+   - Add English and French strings in src/translations/en.js and fr.js if the
+     page uses the language toggle
+
+OPTION B — YOU EDIT FILES YOURSELF (ADVANCED)
+----------------------------------------------
+You need a code editor and care with punctuation (commas, brackets, quotes).
+
+1) CREATE THE PAGE COMPONENT
+-----------------------------
+- Copy an existing page file in src/pages/ that looks similar to what you want
+  (for example another programme page).
+- Rename the file (example: AnnualReport.jsx).
+- Inside the file, change visible text. If the page uses:
+    import { en } from "../translations/en";
+    import { fr } from "../translations/fr";
+  then long text should go into en.js / fr.js instead of hard-coding, to keep
+  English and French in sync — follow patterns from that copied page.
+
+2) REGISTER THE URL (ROUTE)
+----------------------------
+File: src/main.jsx
+
+- Near the top: add a line like
+    import AnnualReport from "./pages/AnnualReport.jsx";
+  (path and name must match your file)
+
+- Inside createBrowserRouter([ ... children: [ ... find other routes and add:
+
+    {
+      path: "/annual-report-2026",
+      element: <AnnualReport />,
+    },
+
+- path is what appears in the browser after the domain. Use lowercase and
+  hyphens for readability.
+
+3) LINK TO THE PAGE (OPTIONAL)
+-------------------------------
+- From the Projects list: set link in src/constants/index.js (see
+  how-to-add-projects.txt).
+- From the navigation bar: often src/constants/index.js (footerLinks, etc.) or
+  header components — search for an existing path like /projects to find where
+  to add a new menu item.
+
+4) TRANSLATIONS
+---------------
+If the page uses useLanguage() and en / fr objects, add matching keys to:
+  src/translations/en.js
+  src/translations/fr.js
+
+5) TEST
+-------
+Ask your developer to run the site locally and open your new URL. Fix typos
+before they deploy.
+
+COMMON MISTAKES
+---------------
+- Forgetting the import in main.jsx → blank page or error.
+- Wrong path spelling between link and route.
+- Mismatched French/English keys inside translation files.
+
+AFTER CHANGES
+-------------
+Someone must save files, commit to Git, and deploy (same as any site update).
+
+================================================================================

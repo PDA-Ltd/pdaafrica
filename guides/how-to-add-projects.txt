@@ -1,0 +1,78 @@
+================================================================================
+HOW TO ADD OR EDIT PROJECTS (for someone who does not write code)
+PDA Africa website
+================================================================================
+
+OVERVIEW
+--------
+“Projects” are mainly controlled in one list that drives the Projects page and
+project cards elsewhere. Text in English and French for card titles is stored
+separately and MUST match the project name exactly.
+
+STEP 1 — ADD OR EDIT THE PROJECT CARD (IMAGE, LINK, SHORT BLURB)
+----------------------------------------------------------------
+File: src/constants/index.js
+
+1. Search for:  export const projects = [
+
+2. Each project is one block inside the list, for example:
+     {
+       imgURL: cclp,          ← picture (developer imports images at top)
+       label: "Cocoa Communities' Library Project",   ← official English name
+       subtext: "Short description...",
+       button: "Read More",
+       link: "/cocoa-communities-library-project",     ← page URL path
+     },
+
+3. To ADD a new project:
+   - Copy a whole block { ... }, paste it in the list.
+   - Change label, subtext, link.
+   - imgURL: your developer must add an image import at the top of this file
+     and pass the variable name here (like vsla, cclp, etc.).
+
+4. link rules:
+   - Internal page: starts with / and matches a route in src/main.jsx
+     (see “how-to-add-a-new-page.txt”).
+   - External website: full URL starting with https://
+
+STEP 2 — ENGLISH AND FRENCH TEXT ON THE PROJECTS PAGE
+------------------------------------------------------
+Files: src/translations/en.js  AND  src/translations/fr.js
+
+1. In BOTH files, find:  "projects": {  ...  "projectList": {
+
+2. Inside projectList, each entry is keyed by the EXACT English label string
+   from constants (the label field), including punctuation and quotes.
+   Example key:  "Cocoa Communities' Library Project"
+
+3. Copy an existing projectList block and change:
+   - label  — usually same as the key (English)
+   - subtext — French or English line under the title on the card
+   - button — e.g. Read More / Lire la suite
+
+If the key does not match label exactly, the site falls back to English from
+constants and French may be missing for that card.
+
+Project cards on the Projects page do not use overlay icons (only the project
+image is shown on each card). The “Impact” statistics further down the same page
+use icons — that is separate; you do not add icons per project.
+
+STEP 3 — IF THE PROJECT NEEDS ITS OWN PAGE
+------------------------------------------
+If link is an internal path like /my-new-programme:
+
+1. There must be a real page component under src/pages/ (often copied from a
+   similar programme page).
+
+2. That path must be registered in src/main.jsx in the router (see the guide
+   “how-to-add-a-new-page.txt”).
+
+3. Add translation copy for that page in en.js / fr.js if the page uses them.
+
+WHO SHOULD DO WHAT
+------------------
+- Non-coder: edit label, subtext, link in constants; copy/paste projectList
+  entries in en.js and fr.js with careful spelling.
+- Developer: new images, new page file, new route, testing, deploy.
+
+================================================================================

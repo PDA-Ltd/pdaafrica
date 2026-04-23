@@ -1,0 +1,114 @@
+================================================================================
+HOW TO ADD NEWS (for someone who does not write code)
+PDA Africa website
+================================================================================
+
+WHAT YOU NEED
+-------------
+- A text editor (Notepad, VS Code, or Cursor) — NOT Microsoft Word.
+- Someone on the team who can save the files and publish the site (Git / deploy),
+  OR ask your web developer to apply your changes after you prepare the text.
+
+WHERE THE STORIES LIVE (ONE DATA FILE)
+--------------------------------------
+News text is stored in:
+
+  src/data/newsPageArticles.js
+
+There are two lists in that file:
+
+  1) newsPageArticles
+     — Full articles for the “News & Updates” page (/news-and-updates), with
+       a pop-up reader for the full story.
+     — The home page “Latest news” carousel uses the **first four** stories in
+       this same list (same order, same text). Put your newest full stories at
+       the top; the first four are what appear on the home page automatically.
+
+  2) homeNewsPreviewArticles
+     — Optional list of **three** short items (with external  link ) for a
+       reusable “News & Updates” **section** component. The main home page
+       does **not** use this; it uses (1) above. If you reuse the
+       NewsAndUpdates section somewhere else, edit this list for that block.
+
+BILINGUAL ENGLISH / FRENCH
+---------------------------
+Each story is one object with id, image, and two blocks:  en  and  fr.
+
+Both  en  and  fr  should have the same fields:
+
+  For a FULL article (newsPageArticles):
+    title, date, category, excerpt, content
+
+  For a HOME preview only (homeNewsPreviewArticles):
+    title, date, category, excerpt
+    (plus a  link  on the parent object — same for all languages)
+
+When visitors switch the site to French, the French block is shown; in English,
+the English block is shown.
+
+MOST RECENT STORY — ORDER (WHAT SHOWS FIRST) AND id (STORY NUMBER)
+------------------------------------------------------------------
+- **What appears first** on the News page is the **order of items in the file**,
+  not the id. Newest / most important update: **paste the new block at the TOP**
+  of the  newsPageArticles  list, immediately after the opening  [  .
+
+- **id** is only a **unique label** for that story (and for the website’s code).
+  It does **not** set “newest.” Use a **new number** that is not already used.
+  Example: if you already have ids 1, 2, 3, 4, the next story uses **id: 5**
+  and you still place that block **first** in the list. You would **not** change
+  an old story to id 5; you add a new object with id 5 at the top.
+
+- So: **position in the list = order on the page. id = never reuse; always
+  the next free number** (unless a developer renumbers the whole file).
+
+HOW TO ADD ONE NEW FULL ARTICLE (newsPageArticles)
+---------------------------------------------------
+1. Open  src/data/newsPageArticles.js
+
+2. Find:  export const newsPageArticles = [
+
+3. Copy an entire existing item { id, image, en: { ... }, fr: { ... } },
+   including the comma after the closing }.
+
+4. **Paste the copy at the TOP of the list** (so the new item is the first
+   in the [ ... ] array) unless you want it in another position on purpose.
+
+5. Change:
+   - id — use a **new** number: one higher than the largest id already in the
+     file, or any unused number (e.g. if 1–4 exist, use **5** for the new story)
+   - image — must match a name imported at the top of the file; if you need a
+     new photo, ask your developer to add it under src/assets/images and add
+     the import.
+   - en: { title, date, category, excerpt, content } — your English text
+   - fr: { title, date, category, excerpt, content } — your French translation
+
+6. Long text: use backticks ` ... ` for content, like the existing articles.
+
+7. You do NOT need to edit NewsPage.jsx for normal text changes — it loads
+   this data file automatically.
+
+HOW TO UPDATE THE HOME “LATEST NEWS” PREVIEW
+--------------------------------------------
+1. Same file:  src/data/newsPageArticles.js
+
+2. Find:  export const homeNewsPreviewArticles = [
+
+3. Each item has:  id, image, link, en: { ... }, fr: { ... }
+   The  en  and  fr  blocks only need title, date, category, excerpt (no long
+   content in the home list).
+
+4. The  link  is usually an external article on pdaghana.com — ask your comms
+   team for the correct URL.
+
+Page chrome (e.g. “News & Updates” in the menu) still comes from:
+  src/translations/en.js  and  src/translations/fr.js  (section "news" and
+  "nav").
+
+TIPS
+----
+- Do not delete commas between items; a missing comma can break the site.
+- English and French keys and structure should match.
+- If the site fails to build after an edit, undo the last change or ask a
+  developer — often it is a quote or bracket problem.
+
+================================================================================
