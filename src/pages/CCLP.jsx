@@ -172,7 +172,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import { FaBook, FaChild, FaSchool, FaChartLine, FaArrowLeft, FaHandshake, FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaTasks, FaClock, FaBuilding, FaBookOpen, FaCheckCircle } from "react-icons/fa";
 import { FiBox } from "react-icons/fi";
 import { IoIosPeople } from "react-icons/io";
@@ -184,6 +184,8 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 const successStories = [
   "“Reading interest has improved to the point that some children come to my house to call me for us to have reading sessions. On a scale of 1-10, I would say the reading  improvement is at 7.” – Patron, Asempaneye",

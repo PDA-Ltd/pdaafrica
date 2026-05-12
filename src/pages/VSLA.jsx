@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import { FaArrowLeft } from "react-icons/fa";
 import { modul, obuasi } from "../assets/images";
 import {
@@ -29,6 +29,8 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 // const ProjectCard = ({ title, description, location, officers }) => (
 //   <div className="border rounded-lg p-6 shadow-md">

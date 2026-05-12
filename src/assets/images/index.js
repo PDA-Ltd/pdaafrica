@@ -185,6 +185,8 @@ import sanni from "./Sanni.jpg";
 import incoom from "./Incoom.jpg";
 import tietaar from "./Tietaar.jpg";
 import socam from "./Socam.jpg";
+import poa_enu_hiring from "./POA_enu_hiring.jpeg";
+import poa_sup_hiring from "./POA_sup_hiring.jpeg";
 
 
 export {
@@ -365,5 +367,7 @@ export {
   incoom,
   tietaar,
   socam,
+  poa_enu_hiring,
+  poa_sup_hiring,
 
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ReviewCard from "../components/ReviewCard";
@@ -12,6 +12,8 @@ import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import { finance, clipboard, globe, signal } from "../assets/icons";
 import { getVslaImpactStorySummaries } from "../data/vslaImpactStories";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 const ImpactPage = () => {
   const { language } = useLanguage();

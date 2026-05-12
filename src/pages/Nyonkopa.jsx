@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import {
   FaChild,
   FaUsers,
@@ -21,6 +21,8 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 const successStories = [
   "“Joining the VSLA group has helped me save for my children's education.” – Cocoa Farmer",

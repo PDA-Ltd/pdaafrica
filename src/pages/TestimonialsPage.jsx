@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ReviewCard from "../components/ReviewCard";
@@ -8,6 +8,8 @@ import ReviewForm from "../components/ReviewForm";
 import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 const TestimonialsPage = () => {
   const { language } = useLanguage();

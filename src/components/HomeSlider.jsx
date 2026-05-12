@@ -1,9 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { imageArray } from "../constants"; // Your array of images
 import { picture1, picture2 } from "../assets/images";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 const HomeSlider = () => {
   const settings = {

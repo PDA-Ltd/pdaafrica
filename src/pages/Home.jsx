@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa, chocoa, etg1, farmervoice, ksw, newhero } from "../assets/images";
+import { mission, farmer, child, africateam, reachout, cclp, vsla, cocoa, chocoa, etg1, farmervoice, ksw, newhero, poa_enu_hiring, poa_sup_hiring } from "../assets/images";
 import { reviews } from "../constants";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../constants";
@@ -11,6 +11,8 @@ import { useLanguage } from "../contexts/LanguageContext";
 import { en } from "../translations/en";
 import { fr } from "../translations/fr";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
+const Slider = ReactSlick.default ?? ReactSlick;
 
 const Home = () => {
   const { language } = useLanguage();
@@ -284,6 +286,22 @@ const Home = () => {
               {[
                 {
                   id: 1,
+                  title: "We Are Hiring: Enumerators for Program Outcomes Assessment (POA)",
+                  date: "May 11, 2026",
+                  category: "PDA Activities and Events",
+                  image: poa_enu_hiring,
+                  excerpt: "Participatory Development Associates (PDA) is recruiting qualified Enumerators to support the implementation of a Program Outcomes Assessment (POA), a one-time survey aimed at generating evidence on the outcomes of programs supporting young people. DEADLINE FOR APPLICATIONS: 19th May 2026...",
+                },
+                {
+                  id: 2,
+                  title: "We Are Hiring: Field Supervisors for Program Outcomes Assessment (POA)",
+                  date: "May 11, 2026",
+                  category: "PDA Activities and Events",
+                  image: poa_sup_hiring,
+                  excerpt: "Participatory Development Associates (PDA) is recruiting qualified Field Supervisors to support the implementation of a Program Outcomes Assessment (POA), a one-time survey aimed at generating evidence on the outcomes of programs supporting young people. DEADLINE FOR APPLICATIONS: 19th May 2026...",
+                },
+                {
+                  id: 3,
                   title: "PDA Delivers GALS + CHILD Methodology Training for ETG Uganda",
                   date: "March 9, 2026",
                   category: "PDA Activities and Events",
@@ -291,7 +309,7 @@ const Home = () => {
                   excerpt: "Participatory Development Associates (PDA) is currently implementing a Training of Trainers (TOT) programme on the Gender Action Learning System (GALS) + CHILD methodology for Export Trading Group (ETG) Uganda.",
                 },
                 {
-                  id: 2,
+                  id: 4,
                   title: "PDA at Amsterdam Chocoa Week 2026",
                   date: "February 20, 2026",
                   category: "PDA Activities and Events",
@@ -299,7 +317,7 @@ const Home = () => {
                   excerpt: "Participatory Development Associates Ltd (PDA) will participate in the Chocoa Conference 2026, held as part of Amsterdam Chocoa Week, one of the leading global platforms for dialogue on sustainable cocoa and responsible chocolate production.",
                 },
                 {
-                  id: 3,
+                  id: 5,
                   title: "Farmers' Voice Radio Academy: Empowering Ghana's Cocoa Farmers Through Participatory Local Language Radio",
                   date: "December 15, 2025",
                   category: "PDA Activities and Events",
@@ -307,7 +325,7 @@ const Home = () => {
                   excerpt: "We are working to empower 100,000 smallholder cocoa farmers in Ghana by raising under-represented voices and connecting farmers with the knowledge they need to build resilient, inclusive and thriving cocoa communities.",
                 },
                 {
-                  id: 4,
+                  id: 6,
                   title: "PDA Holds 8th Child Protection Workshop Spotlighting Galamsey's Threat to Children",
                   date: "December 11, 2025",
                   category: "PDA Activities and Events",
