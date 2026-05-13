@@ -76,6 +76,10 @@ For further enquiries, applicants may contact:
 0508493127
 careers@pdaghana.com
 
+Application Duration
+
+June - August 2026 (includes 8 days training)
+
 Application Deadline
 
 DEADLINE FOR APPLICATIONS: 19th May 2026
@@ -136,6 +140,10 @@ Les candidatures doivent être envoyées à :
 careers@pdaghana.com
 Pour toute demande de renseignements complémentaires, les candidats peuvent contacter :
 0508493127
+
+Durée de la mission
+
+Juin - Août 2026 (inclut 8 jours de formation)
 
 Date limite de candidature
 
@@ -205,6 +213,10 @@ careers@pdaghana.com
 For further enquiries, applicants may contact:
 0508493127
 
+Application Duration
+
+June - August 2026 (includes 8 days training)
+
 Application Deadline
 
 DEADLINE FOR APPLICATIONS: 19th May 2026
@@ -267,6 +279,10 @@ Les candidatures doivent être envoyées à :
 careers@pdaghana.com
 Pour toute demande de renseignements complémentaires, les candidats peuvent contacter :
 0508493127
+
+Durée de la mission
+
+Juin - Août 2026 (inclut 8 jours de formation)
 
 Date limite de candidature
 
